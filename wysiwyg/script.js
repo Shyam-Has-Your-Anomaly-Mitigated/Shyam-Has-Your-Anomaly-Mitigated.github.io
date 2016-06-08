@@ -64,14 +64,14 @@ function format(type, arg) {
         case '-':
             ; document.execCommand('decreaseFontSize')   ; break;
         case 'pt':
-            ; var pt = 0;
+            ; var pt = 0
             ; while((!Number.isInteger(pt)) || pt<1 || 7<pt) {
                 ; pt = prompt('Text size between 1 and 7, inclusive.','3')
                 ; pt = isNaN(pt)? 0: Number(pt)
             }
             ; document.execCommand('fontSize', 0, pt)    ; break;
         case 'h':
-            ; var h = 0;
+            ; var h = 0
             ; while((!Number.isInteger(h)) || h<1 || 6<h) {
                 ; h = prompt('Heading size between 6 and 1, inclusive.','4')
                 ; h = isNaN(h)? 0: Number(h)
