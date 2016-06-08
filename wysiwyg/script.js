@@ -33,7 +33,7 @@ function format(type, arg) {
     /*
         https://developer.mozilla.org/en/docs/Web/API/Document/execCommand
     */
-    switch(type) {//hmm, lets leave this alone for now...
+    switch(type) {
         case 'b':
             ; document.execCommand('bold')               ; break;
         case 'i':
