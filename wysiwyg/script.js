@@ -6,11 +6,8 @@ function out2in() {
     ; var x = document.getElementById('output').innerHTML
     ; document.getElementById('input').innerHTML = unescapeHtml(x)
 }
-function resize_out() {
-    ; document.getElementById('output').style.width = document.getElementById('input').style.width
-}
-function resize_in() {
-    ; document.getElementById('input').style.width = document.getElementById('output').style.width
+function resize(div) {
+    ; document.getElementById(div+'put').style.width = document.getElementById((div=='in'? 'out': 'in')+'put').style.width
 }
 function escapeHtml(str) {
     /*
