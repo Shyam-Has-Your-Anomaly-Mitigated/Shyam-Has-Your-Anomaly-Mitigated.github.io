@@ -1,39 +1,39 @@
 function in2out() {
-    var x = document.getElementById('input').innerHTML;
-    document.getElementById('output').innerHTML = escapeHtml(x);
+    ; var x = document.getElementById('input').innerHTML
+    ; document.getElementById('output').innerHTML = escapeHtml(x)
 }
 function out2in() {
-    var x = document.getElementById('output').innerHTML;
-    document.getElementById('input').innerHTML = unescapeHtml(x);
+    ; var x = document.getElementById('output').innerHTML
+    ; document.getElementById('input').innerHTML = unescapeHtml(x)
 }
 function resize_out() {
-    document.getElementById('output').style.width = document.getElementById('input').style.width;
+    ; document.getElementById('output').style.width = document.getElementById('input').style.width
 }
 function resize_in() {
-    document.getElementById('input').style.width = document.getElementById('output').style.width;
+    ; document.getElementById('input').style.width = document.getElementById('output').style.width
 }
 function escapeHtml(str) {
     /*
-    http://shebang.brandonmintern.com/foolproof-html-escaping-in-javascript/
+        http://shebang.brandonmintern.com/foolproof-html-escaping-in-javascript/
     */
-    var div = document.createElement('div');
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
+    ; var div = document.createElement('div')
+    ; div.appendChild(document.createTextNode(str))
+    ; return div.innerHTML
 };
 function unescapeHtml(escapedStr) {
     /*
-    http://shebang.brandonmintern.com/foolproof-html-escaping-in-javascript/
+        http://shebang.brandonmintern.com/foolproof-html-escaping-in-javascript/
     */
-    var div = document.createElement('div');
-    div.innerHTML = escapedStr;
-    var child = div.childNodes[0];
-    return child ? child.nodeValue : '';
+    ; var div = document.createElement('div')
+    ; div.innerHTML = escapedStr
+    ; var child = div.childNodes[0]
+    ; return child ? child.nodeValue : ''
 };
 function format(type, arg) {
     /*
-    https://developer.mozilla.org/en/docs/Web/API/Document/execCommand
+        https://developer.mozilla.org/en/docs/Web/API/Document/execCommand
     */
-    switch(type) {
+    switch(type) {//hmm, lets leave this alone for now...
         case 'b':
             document.execCommand('bold');                break;
         case 'i':
@@ -88,5 +88,5 @@ function format(type, arg) {
         default:
                                                          break;
     }
-    in2out();
+    ; in2out()
 }
