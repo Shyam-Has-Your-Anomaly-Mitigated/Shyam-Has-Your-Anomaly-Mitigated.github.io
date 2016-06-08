@@ -35,58 +35,58 @@ function format(type, arg) {
     */
     switch(type) {//hmm, lets leave this alone for now...
         case 'b':
-            document.execCommand('bold');                break;
+            ; document.execCommand('bold')               ; break;
         case 'i':
-            document.execCommand('italic');              break;
+            ; document.execCommand('italic')             ; break;
         case 'u':
-            document.execCommand('underline');           break;
+            ; document.execCommand('underline')          ; break;
         case 's':
-            document.execCommand('strikeThrough');       break;
+            ; document.execCommand('strikeThrough')      ; break;
         case '>':
-            document.execCommand('indent');              break;
+            ; document.execCommand('indent')             ; break;
         case '<':
-            document.execCommand('outdent');             break;
+            ; document.execCommand('outdent')            ; break;
         case 'ˢ':
-            document.execCommand('superscript');         break;
+            ; document.execCommand('superscript')        ; break;
         case 'ₛ':
-            document.execCommand('subscript');           break;
+            ; document.execCommand('subscript')          ; break;
         case '∞':
-            var url = prompt('HREF URI string');
-            document.execCommand('createLink', 0, url);  break;
+            ; var url = prompt('HREF URI string')
+            ; document.execCommand('createLink', 0, url) ; break;
         case '∝':
-            document.execCommand('unlink');              break;
+            ; document.execCommand('unlink')             ; break;
         case 'fg':
-            document.execCommand('foreColor', 0, arg);   break;
+            ; document.execCommand('foreColor', 0, arg)  ; break;
         case 'bg':
-            document.execCommand('hiliteColor', 0, arg); break;
+            ; document.execCommand('hiliteColor', 0, arg); break;
         case '+':
-            document.execCommand('increaseFontSize');    break;
+            ; document.execCommand('increaseFontSize')   ; break;
         case '-':
-            document.execCommand('decreaseFontSize');    break;
+            ; document.execCommand('decreaseFontSize')   ; break;
         case 'pt':
-            var pt = 0;
-            while((!Number.isInteger(pt)) || pt<1 || 7<pt) {
-                pt = prompt('Text size between 1 and 7, inclusive.','3');
-                pt = isNaN(pt)? 0: Number(pt);
+            ; var pt = 0;
+            ; while((!Number.isInteger(pt)) || pt<1 || 7<pt) {
+                ; pt = prompt('Text size between 1 and 7, inclusive.','3')
+                ; pt = isNaN(pt)? 0: Number(pt)
             }
-            document.execCommand('fontSize', 0, pt);     break;
+            ; document.execCommand('fontSize', 0, pt)    ; break;
         case 'h':
-            var h = 0;
-            while((!Number.isInteger(h)) || h<1 || 6<h) {
-                h = prompt('Heading size between 6 and 1, inclusive.','4');
-                h = isNaN(h)? 0: Number(h);
+            ; var h = 0;
+            ; while((!Number.isInteger(h)) || h<1 || 6<h) {
+                ; h = prompt('Heading size between 6 and 1, inclusive.','4')
+                ; h = isNaN(h)? 0: Number(h)
             }
-            document.execCommand('heading', 0, 'h'+h);   break;
+            ; document.execCommand('heading', 0, 'h'+h)  ; break;
         case 'f':
-            document.execCommand('fontName', 0, arg);    break;
+            ; document.execCommand('fontName', 0, arg)   ; break;
         case 'x':
-            document.execCommand('removeFormat');        break;
+            ; document.execCommand('removeFormat')       ; break;
         case 'css':
-            document.execCommand('useCSS');              break;
+            ; document.execCommand('useCSS')             ; break;
         case 'style':
-            document.execCommand('styleWithCSS');        break;
+            ; document.execCommand('styleWithCSS')       ; break;
         default:
-                                                         break;
+                                                         ; break;
     }
     ; in2out()
 }
