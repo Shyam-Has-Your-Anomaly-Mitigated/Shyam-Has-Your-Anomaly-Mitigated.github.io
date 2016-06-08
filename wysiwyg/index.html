@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+    <title>Shyam Has Your Anomaly Mitigated! :D</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+    <input type='button' value='B'       title='Fat Text'         onclick='format("b");'>
+    <input type='button' value='I'       title='Slant Text'       onclick='format("i");'>
+    <input type='button' value='U'       title='Rule Text'        onclick='format("u");'>
+    <input type='button' value='S'       title='Cross Text'       onclick='format("s");'>
+    <input type='button' value='>'       title='Nestfull Text'    onclick='format(">");'>
+    <input type='button' value='<'       title='Nestless Text'    onclick='format("<");'>
+    <input type='button' value='^'       title='Super Text'       onclick='format("ˢ");'><!-- promote -->
+    <input type='button' value='v'       title='Sub Text'         onclick='format("ₛ");'><!-- demote -->
+    <input type='button' value='&#8734;' title='Hyperlink'        onclick='format("∞");'><!-- &infin -->
+    <input type='button' value='&#8733;' title='Unlink'           onclick='format("∝");'><!-- &prop; -->
+    <input type='color'  value='#003366' title='Textual Colour'   onclick='format("fg", this.value);' onchange='format("fg", this.value);'>
+    <input type='color'  value='#ffff00' title='Highlight Colour' onclick='format("bg", this.value);' onchange='format("bg", this.value);'>
+    <input type='button' value='+'       title='Big Text'         onclick='format("+");'>
+    <input type='button' value='-'       title='Small Text'       onclick='format("-");'>
+    <input type='button' value='pt'      title='Resize Text'      onclick='format("pt");'>
+    <input type='button' value='H'       title='Title'            onclick='format("h");'>
+    <select onclick='format("f", this.value);' onchange='format("f", this.value);'>
+        <!--
+            https://en.wikipedia.org/wiki/Web_typography#Generic_font_families
+            http://code.stephenmorley.org/html-and-css/the-myth-of-web-safe-fonts/
+            http://web.mit.edu/jmorzins/www/fonts.html
+            http://www.w3schools.com/cssref/css_websafe_fonts.asp
+        -->
+        <option disabled>Web Safe</option>
+        <!-- The monospaced stack -->
+        <option value='courier new,courier,monospace,sans-serif'     >Monospace</option>
+        <!-- The sans-monoed stack -->
+        <option value='lucida console,monaco,monospace,sans-serif'   >Sans-mono</option>
+        <!-- The pure-monoed stack -->
+        <option value='monospace,sans-serif'                 selected>Pure-mono</option>
+        <!-- The wide sans-serif stack -->
+        <option value='verdana,geneva,sans-serif'                    >Sans-serif</option>
+        <!-- The narrow sans-serif stack -->
+        <option value='helvetica,arial,sans-serif'                   >Little Mermaid</option>
+        <!-- The wide serif stack -->
+        <option value='georgia,utopia,charter,serif'                 >Serif</option>
+        <!-- The narrow serif stack -->
+        <option value='times new roman,times,serif'                  >Roman Num</option>
+        <option disabled>!!!</option>
+        <!-- The cursive stack -->
+        <option value='comic sans ms,cursive,sans-serif'             >Comical</option>
+        <!-- The fantasy stacks -->
+        <option disabled>Serif</option>
+        <option value='georgia,serif'                                >Georgia</option>
+        <option value='palatino linotype,book antiqua,palatino,serif'>Palatino</option>
+        <option value='times new roman,times,serif'                  >Times</option>
+        <option disabled>Sans-Serif</option>
+        <option value='arial,helvetica,sans-serif'                   >Arial</option>
+        <option value='arial black,gadget,sans-serif'                >Arial Black</option>
+        <option value='impact,charcoal,sans-serif'                   >Impact</option>
+        <option value='lucida sans unicode,lucida grande,sans-serif' >Lucida Dreama</option>
+        <option value='tahoma,geneva,sans-serif'                     >Tahoma</option>
+        <option value='trebuchet ms,helvetica,sans-serif'            >Trebuchet MS</option>
+        <option value='verdana,geneva,sans-serif'                    >Verdana</option>
+    </select>
+    <input type='button' value='X'     title='Clear Formatting' onclick='format("x");'>
+    <input type='button' value='CSS'   title='useCSS'           onclick='format("css");'>
+    <input type='button' value='Style' title='styleWithCSS'     onclick='format("style");'>
+
+    <div id='xput'>
+        <div id='input' onkeyup='in2out();' onmouseup='resize_out();' contenteditable>
+            abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+        <div id='output' onkeyup='out2in();' onmouseup='resize_in();' contenteditable>
+            abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+        Iceweasel (and Chromium) are supported (eventually).
+        <br>Clear formatting to remove redundant colourings, fonts,..
+        <br>...
+        <br><b>onselect</b> does not function for <b>input</b> selection; only textual selection.
+        <br>Use <b>oninput</b> instead of a combination of <b>onclick</b> and <b>onchange</b>..? Nope, doesn't work as intended...
+        <br>...
+        <br>Need to override <b>document.execCommand()</b> to use <b>span</b> tags instead.
+        <br>Don't use libraries, or anything, like jQuery; Raw Browser Instructions FTW! :D
+        <br>CSS/Style do the trick; now just need to fuse the <b>span</b> tags...
+    </div>
+
+    <script>
+        function in2out() {
+            var x = document.getElementById('input').innerHTML;
+            document.getElementById('output').innerHTML = escapeHtml(x);
+        }
+        function out2in() {
+            var x = document.getElementById('output').innerHTML;
+            document.getElementById('input').innerHTML = unescapeHtml(x);
+        }
+        function resize_out() {
+            document.getElementById('output').style.width = document.getElementById('input').style.width;
+        }
+        function resize_in() {
+            document.getElementById('input').style.width = document.getElementById('output').style.width;
+        }
+        function escapeHtml(str) {
+            /*
+            http://shebang.brandonmintern.com/foolproof-html-escaping-in-javascript/
+            */
+            var div = document.createElement('div');
+            div.appendChild(document.createTextNode(str));
+            return div.innerHTML;
+        };
+        function unescapeHtml(escapedStr) {
+            /*
+            http://shebang.brandonmintern.com/foolproof-html-escaping-in-javascript/
+            */
+            var div = document.createElement('div');
+            div.innerHTML = escapedStr;
+            var child = div.childNodes[0];
+            return child ? child.nodeValue : '';
+        };
+        function format(type, arg) {
+            /*
+            https://developer.mozilla.org/en/docs/Web/API/Document/execCommand
+            */
+            switch(type) {
+                case 'b':
+                    document.execCommand('bold');                break;
+                case 'i':
+                    document.execCommand('italic');              break;
+                case 'u':
+                    document.execCommand('underline');           break;
+                case 's':
+                    document.execCommand('strikeThrough');       break;
+                case '>':
+                    document.execCommand('indent');              break;
+                case '<':
+                    document.execCommand('outdent');             break;
+                case 'ˢ':
+                    document.execCommand('superscript');         break;
+                case 'ₛ':
+                    document.execCommand('subscript');           break;
+                case '∞':
+                    var url = prompt('HREF URI string');
+                    document.execCommand('createLink', 0, url);  break;
+                case '∝':
+                    document.execCommand('unlink');              break;
+                case 'fg':
+                    document.execCommand('foreColor', 0, arg);   break;
+                case 'bg':
+                    document.execCommand('hiliteColor', 0, arg); break;
+                case '+':
+                    document.execCommand('increaseFontSize');    break;
+                case '-':
+                    document.execCommand('decreaseFontSize');    break;
+                case 'pt':
+                    var pt = 0;
+                    while((!Number.isInteger(pt)) || pt<1 || 7<pt) {
+                        pt = prompt('Text size between 1 and 7, inclusive.','3');
+                        pt = isNaN(pt)? 0: Number(pt);
+                    }
+                    document.execCommand('fontSize', 0, pt);     break;
+                case 'h':
+                    var h = 0;
+                    while((!Number.isInteger(h)) || h<1 || 6<h) {
+                        h = prompt('Heading size between 6 and 1, inclusive.','4');
+                        h = isNaN(h)? 0: Number(h);
+                    }
+                    document.execCommand('heading', 0, 'h'+h);   break;
+                case 'f':
+                    document.execCommand('fontName', 0, arg);    break;
+                case 'x':
+                    document.execCommand('removeFormat');        break;
+                case 'css':
+                    document.execCommand('useCSS');              break;
+                case 'style':
+                    document.execCommand('styleWithCSS');        break;
+                default:
+                                                                 break;
+            }
+            in2out();
+        }
+    </script>
+</body>
+</html>
