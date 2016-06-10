@@ -1,6 +1,3 @@
-onclick='; format("fg", this.value)' onchange='; format("fg", this.value)'>
-onclick='; format("bg", this.value)' onchange='; format("bg", this.value)'>
-
 ; document.write(
     input({type: 'button', value: 'B'      , title: 'Fat Text'        , onclick: '; format(\'b\')'})
     input({type: 'button', value: 'I'      , title: 'Slant Text'      , onclick: '; format(\'i\')'})
