@@ -1,6 +1,6 @@
 ; var shyam = 'श्याम'
-; var content
-    = br + '🖖 Hello World,'
+; var content =
+    br + '🖖 Hello World,'
     + br + br + 'My name is S.H.Y.A.M'
     + br + br + 'That's...'
     + tab + bold('S') + 'hyam.'
