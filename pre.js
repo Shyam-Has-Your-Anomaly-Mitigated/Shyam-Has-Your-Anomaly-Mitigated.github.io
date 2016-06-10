@@ -1,4 +1,3 @@
-; document.write('test')
 ; var shyam = 'श्याम'
 ; document.write(
     br + '🖖 Hello World,'
@@ -19,4 +18,3 @@
     + br + br + '🕴'
     + br + br + bold('M') + 'igrating ' + bold('I') + 'nfestive ' + bold('B') + 'ugs ' + bold('!') + '!'
 )
-; document.write('test')
