@@ -3,8 +3,8 @@
     + input({type: 'button', value: 'I'      , title: 'Slant Text'      , onclick: '; format(\'i\')'})
     + input({type: 'button', value: 'U'      , title: 'Rule Text'       , onclick: '; format(\'u\')'})
     + input({type: 'button', value: 'S'      , title: 'Cross Text'      , onclick: '; format(\'s\')'})
-    + input({type: 'button', value: '&#62;'  , title: 'Nestfull Text'   , onclick: '; format(\'>\')'}) // &gt;
-    + input({type: 'button', value: '<'      , title: 'Nestless Text'   , onclick: '; format(\'<\')'})
+    + input({type: 'button', value: '>'      , title: 'Nestfull Text'   , onclick: '; format(\'›\')'})
+    + input({type: 'button', value: '<'      , title: 'Nestless Text'   , onclick: '; format(\'‹\')'})
     + input({type: 'button', value: '^'      , title: 'Super Text'      , onclick: '; format(\'ˢ\')'}) // promote
     + input({type: 'button', value: 'v'      , title: 'Sub Text'        , onclick: '; format(\'ₛ\')'}) // demote
     + input({type: 'button', value: '&#8734;', title: 'Hyper Link'      , onclick: '; format(\'∞\')'}) // &infin;
