@@ -24,7 +24,7 @@
     ; var div = document.createElement('div')
     ; div.innerHTML = escapedStr
     ; var child = div.childNodes[0]
-    ; return child ? child.nodeValue : ''
+    ; return child? child.nodeValue: ''
 }
 ; function format(type, arg) {
     /*
