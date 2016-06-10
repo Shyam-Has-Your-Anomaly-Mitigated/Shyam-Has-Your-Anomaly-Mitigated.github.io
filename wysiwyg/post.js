@@ -39,9 +39,9 @@
             ; document.execCommand('underline')          ; break;
         case 's':
             ; document.execCommand('strikeThrough')      ; break;
-        case '>':
+        case '›':
             ; document.execCommand('indent')             ; break;
-        case '<':
+        case '‹':
             ; document.execCommand('outdent')            ; break;
         case 'ˢ':
             ; document.execCommand('superscript')        ; break;
