@@ -1,5 +1,5 @@
 ; document.write(
-    input(  {type: 'button', value: 'B'      , title: 'Fat Text'        , onclick: '; format(\'b\')'})
+    input(  {type: 'button', value: 'B'      , title: 'Fat Text'        , onclick: '; format("b")'})
     + input({type: 'button', value: 'I'      , title: 'Slant Text'      , onclick: '; format(\'i\')'})
     + input({type: 'button', value: 'U'      , title: 'Rule Text'       , onclick: '; format(\'u\')'})
     + input({type: 'button', value: 'S'      , title: 'Cross Text'      , onclick: '; format(\'s\')'})
