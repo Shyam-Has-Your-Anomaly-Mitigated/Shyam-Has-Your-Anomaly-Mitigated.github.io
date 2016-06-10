@@ -23,29 +23,29 @@
 
 //; function input({type, value, title, onclick, onchange} = {}) {
 ; function input(attributes) {
-    ; var attributes = attributes? {}: attributes
+    ; var attributes = attributes === undefined? {}: attributes
     ; return '<input'
-        + (attributes.type    ? ' type=\''     + attributes.type     + '\'': '')
-        + (attributes.value   ? ' value=\''    + attributes.value    + '\'': '')
-        + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
-        + (attributes.onclick ? ' onclick=\''  + attributes.onclick  + '\'': '')
-        + (attributes.onchange? ' onchange=\'' + attributes.onchange + '\'': '')
+        + (attributes.type     === undefined? ' type=\''     + attributes.type     + '\'': '')
+        + (attributes.value    === undefined? ' value=\''    + attributes.value    + '\'': '')
+        + (attributes.title    === undefined? ' title=\''    + attributes.title    + '\'': '')
+        + (attributes.onclick  === undefined? ' onclick=\''  + attributes.onclick  + '\'': '')
+        + (attributes.onchange === undefined? ' onchange=\'' + attributes.onchange + '\'': '')
         + '>'
 }
 
 ; function select(innerHTML, attributes) {
-    ; var attributes = attributes? {}: attributes
+    ; var attributes = attributes === undefined? {}: attributes
     ; return '<select '
-        + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
-        + (attributes.onclick ? ' onclick=\''  + attributes.onclick  + '\'': '')
-        + (attributes.onchange? ' onchange=\'' + attributes.onchange + '\'': '')
+        + (attributes.title    === undefined? ' title=\''    + attributes.title    + '\'': '')
+        + (attributes.onclick  === undefined? ' onclick=\''  + attributes.onclick  + '\'': '')
+        + (attributes.onchange === undefined? ' onchange=\'' + attributes.onchange + '\'': '')
 }
 ; function option(innerHTML, attributes) {
-    ; var attributes = attributes? {}: attributes
+    ; var attributes = attributes === undefined? {}: attributes
     ; return '<option '
-        + (attributes.value   ? ' value=\'' + attributes.value + '\'': '')
-        + (attributes.disabled? ' disabled': '')
-        + (attributes.selected? ' selected': '')
+        + (attributes.value    === undefined? ' value=\'' + attributes.value + '\'': '')
+        + (attributes.disabled === undefined? ' disabled': '')
+        + (attributes.selected === undefined? ' selected': '')
         + '>' + innerHTML + '</option>'
 }
 
