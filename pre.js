@@ -1,7 +1,7 @@
 ; var shyam = 'श्याम'
 ; document.write(
     br + '🖖 Hello World,'
-    + br + br + 'My name is S.H.Y.A.M'
+    + br + br + 'My name is S.H.Y.A.M.'
     + br + br + 'That\'s...'
     + br + tab + bold('S') + 'hyam.'
     + br + tab + bold('H') + 'as.'
