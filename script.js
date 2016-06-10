@@ -39,6 +39,7 @@
         + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
         + (attributes.onclick ? ' onclick=\''  + attributes.onclick  + '\'': '')
         + (attributes.onchange? ' onchange=\'' + attributes.onchange + '\'': '')
+        + '>' + innerHTML + '</select>'
 }
 ; function option(innerHTML, attributes) {
     ; var attributes = attributes? attributes: {}
