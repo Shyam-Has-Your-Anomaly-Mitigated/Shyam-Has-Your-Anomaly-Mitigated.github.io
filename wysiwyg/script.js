@@ -1,13 +1,13 @@
 ; function in2out() {
-    ; var x = document.getElementById('input').innerHTML
-    ; document.getElementById('output').innerHTML = escapeHtml(x)
+    ; var x = getId('input').innerHTML
+    ; getId('output').innerHTML = escapeHtml(x)
 }
 ; function out2in() {
-    ; var x = document.getElementById('output').innerHTML
-    ; document.getElementById('input').innerHTML = unescapeHtml(x)
+    ; var x = getId('output').innerHTML
+    ; getId('input').innerHTML = unescapeHtml(x)
 }
 ; function resize(div) {
-    ; document.getElementById(div+'put').style.width = document.getElementById((div=='in'? 'out': 'in')+'put').style.width
+    ; getId(div+'put').style.width = getId((div=='in'? 'out': 'in')+'put').style.width
 }
 ; function escapeHtml(str) {
     /*
