@@ -21,7 +21,15 @@
     ; return '<a href=\'' + url + '\' target=\'_blank\'>' + text + '</a>'
 }
 
-; function input(type) {; return '<input type=\'' + type + '\'>'}
+; function input({type, value, title, onclick, onchange} = {}) {
+    ; return '<input '
+        + (type?     'type=\''     + type     + '\'': '')
+        + (value?    'value=\''    + value    + '\'': '')
+        + (title?    'title=\''    + title    + '\'': '')
+        + (onclick?  'onclick=\''  + onclick  + '\'': '')
+        + (onchange? 'onchange=\'' + onchange + '\'': '')
+        + '>'
+}
 
 ; function heading(title, type) {
     ; if(type < 1) type = 1
