@@ -13,23 +13,15 @@
     ; if(-1<options.indexOf('u')) text = u(text)
     ; return text
 }
-; function b(text) {
-    ; return '<b>' + text + '</b>'
-}
-; function i(text) {
-    ; return '<i>' + text + '</i>'
-}
-; function u(text) {
-    ; return '<u>' + text + '</u>'
-}
+; function b(text) {; return '<b>' + text + '</b>'}
+; function i(text) {; return '<i>' + text + '</i>'}
+; function u(text) {; return '<u>' + text + '</u>'}
 
 ; function hyperlink(text, url) {
     ; return '<a href=\'' + url + '\' target=\'_blank\'>' + text + '</a>'
 }
 
-; function input(type) {
-    ; return '<input type=\'' + type + '\'>'
-}
+; function input(type) {; return '<input type=\'' + type + '\'>'}
 
 ; function heading(title, type) {
     ; if(type < 1) type = 1
