@@ -1,7 +1,7 @@
 * {
-    ; font-family: courier new,courier,monospace,sans-serif
+    ; font-family     : courier new,courier,monospace,sans-serif
     ; background-color: #333
-    ; color: #999
+    ; color           : #999
 }
 
 h1, h2, h3, h4, h5, h6 {; text-transform: uppercase}
