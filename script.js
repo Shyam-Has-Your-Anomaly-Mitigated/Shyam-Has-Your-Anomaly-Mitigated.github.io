@@ -8,14 +8,14 @@
 
 ; function format(text, options) {
     // ...is this used as format('abc','ui') ?!?
-    ; if(-1<options.indexOf('b')) text = b(text)
-    ; if(-1<options.indexOf('i')) text = i(text)
-    ; if(-1<options.indexOf('u')) text = u(text)
+    ; if(-1<options.indexOf('b')) text = bold(text)
+    ; if(-1<options.indexOf('i')) text = italics(text)
+    ; if(-1<options.indexOf('u')) text = underline(text)
     ; return text
 }
-; function b(text) {; return '<b>' + text + '</b>'}
-; function i(text) {; return '<i>' + text + '</i>'}
-; function u(text) {; return '<u>' + text + '</u>'}
+; function bold(text) {; return '<b>' + text + '</b>'}
+; function italics(text) {; return '<i>' + text + '</i>'}
+; function underline(text) {; return '<u>' + text + '</u>'}
 
 ; function hyperlink(text, url) {
     ; return '<a href=\'' + url + '\' target=\'_blank\'>' + text + '</a>'
