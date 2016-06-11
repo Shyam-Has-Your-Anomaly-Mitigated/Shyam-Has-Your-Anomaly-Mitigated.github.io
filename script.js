@@ -17,7 +17,7 @@
 }
 ; function bold(text) {; return '<b>' + text + '</b>'}
 ; function italics(text) {; return '<i>' + text + '</i>'}
-; function underline(text) {; return '<u>' + text + '</u>'}
+; function underline(text, class) {; return '<u ' + (class? 'class="' + class + '"': '') + '>' + text + '</u>'}
 
 ; function hyperlink(text, url) {
     ; return '<a href=\'' + url + '\' target=\'_blank\'>' + text + '</a>'
