@@ -1,5 +1,5 @@
 ; document.write(
-    ; tabulate(
+    tabulate(
         [
             [ 'Program', 'Description', 'Source']
             ,['GIMP'    , '2D Raster Editor', hyperlink('GNU Project', 'https://www.gimp.org/')]
