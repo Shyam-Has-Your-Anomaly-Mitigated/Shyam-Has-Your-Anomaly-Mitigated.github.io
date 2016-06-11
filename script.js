@@ -22,6 +22,7 @@
     }
     ; return text
 }
+// ...are these redundant? ...or should they have single width namespaces?
 ; function bold(     text, attributes) {; return format(text, 'b', attributes)}
 ; function italics(  text, attributes) {; return format(text, 'i', attributes)}
 ; function underline(text, attributes) {; return format(text, 'u', attributes)}
