@@ -1,6 +1,6 @@
 ; document.write(
     br   + format('Larry_Wall(Perl)', 'ub')
-    + br + 'I can use it to write everything else..!'
+    + br + 'I can use it to write everything else..! :D'
     + br + 'Unre' + format('strict', 'bu') + 'ed is freedom; but it could be a lot more free/powerful..!'
     + br + 'The author is not a co-founder of ' + bold('G') + format('o', 'bu', {class: 'hover'})
 )
