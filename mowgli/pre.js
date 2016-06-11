@@ -6,5 +6,5 @@
     + br + 'Emails∈{"@ShYaM", "@rMIT"}'
     + br + '@ShYaM = Blue Border'
     + br + '@rMIT  = Red Border'
-    + br + 'URL navigation FTW! :D'
+    + br + 'URL navigation FTW! :D (no need for dynamic external loading; a simple branch.map in this cyberspace should do the hack)'
 )
