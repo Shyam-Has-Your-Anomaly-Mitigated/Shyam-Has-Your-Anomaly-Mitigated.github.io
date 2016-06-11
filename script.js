@@ -6,7 +6,7 @@
 ; var tab = '&nbsp;&nbsp;&nbsp;&nbsp;'
 ; var br = '<br>' // newline == \n\r || lf+cr
 
-; function format(text, options, attributes) {
+; function format(innerHTML, options, attributes) {
     // ...is this used as format('abc','ui') ?!?
     ; var attributes = attributes? attributes: {}
     ; for(var char of options.split('')) {
@@ -14,22 +14,22 @@
             case 'b':
             case 'i':
             case 'u':
-                ; text = '<'
+                ; innerHTML = '<'
                     + char
                     + (attributes.class? ' class=\'' + attributes.class + '\'': '')
                     + (attributes.title? ' title=\'' + attributes.title + '\'': '')
-                    + '>' + text + '</' + char + '>'
+                    + '>' + innerHTML + '</' + char + '>'
         }
     }
-    ; return text
+    ; return innerHTML
 }
 // ...are these redundant? ...or should they have single width namespaces?
-; function bold(     text, attributes) {; return format(text, 'b', attributes)}
-; function italics(  text, attributes) {; return format(text, 'i', attributes)}
-; function underline(text, attributes) {; return format(text, 'u', attributes)}
+; function bold(     innerHTML, attributes) {; return format(innerHTML, 'b', attributes)}
+; function italics(  innerHTML, attributes) {; return format(innerHTML, 'i', attributes)}
+; function underline(innerHTML, attributes) {; return format(innerHTML, 'u', attributes)}
 
-; function hyperlink(text, url) {
-    ; return '<a href=\'' + url + '\' target=\'_blank\'>' + text + '</a>'
+; function hyperlink(innerHTML, url) {
+    ; return '<a href=\'' + url + '\' target=\'_blank\'>' + innerHTML + '</a>'
 }
 ; function image(attributes) {
     ; var attributes = attributes? attributes: {}
