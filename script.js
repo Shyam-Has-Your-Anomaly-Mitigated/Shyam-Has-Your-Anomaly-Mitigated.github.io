@@ -6,21 +6,22 @@
 ; var tab = '&nbsp;&nbsp;&nbsp;&nbsp;'
 ; var br = '<br>' // newline == \n\r || lf+cr
 
-; function format(text, options) {
+; function format(text, options, attributes) {
     // ...is this used as format('abc','ui') ?!?
+    ; var attributes = attributes? attributes: {}
     ; for(var char of options.split('')) {
-        ; if(char == ('b')) text = bold(text)
-        ; if(char == ('i')) text = italics(text)
-        ; if(char == ('u')) text = underline(text)
+        switch(char) {
+            case 'b':
+            case 'i':
+            case 'u':
+                '<' + char + ' ' + (attributes.class? 'class="' + attributes.class + '"': '') + '>' + text + '</' + char + '>'
+        }
     }
     ; return text
 }
-; function bold(text) {; return '<b>' + text + '</b>'}
-; function italics(text) {; return '<i>' + text + '</i>'}
-; function underline(text, attributes) {
-    ; var attributes = attributes? attributes: {}
-    ; return '<u ' + (attributes.class? 'class="' + attributes.class + '"': '') + '>' + text + '</u>'
-}
+; function bold(     text, attributes) {; return format(text, 'b', attributes)}
+; function italics(  text, attributes) {; return format(text, 'i', attributes)}
+; function underline(text, attributes) {; return format(text, 'u', attributes)}
 
 ; function hyperlink(text, url) {
     ; return '<a href=\'' + url + '\' target=\'_blank\'>' + text + '</a>'
