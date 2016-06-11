@@ -8,9 +8,11 @@
 
 ; function format(text, options) {
     // ...is this used as format('abc','ui') ?!?
-    ; if(-1<options.indexOf('b')) text = bold(text)
-    ; if(-1<options.indexOf('i')) text = italics(text)
-    ; if(-1<options.indexOf('u')) text = underline(text)
+    ; for(var char of options.split('')) {
+        ; if(char == ('b')) text = bold(text)
+        ; if(char == ('i')) text = italics(text)
+        ; if(char == ('u')) text = underline(text)
+    }
     ; return text
 }
 ; function bold(text) {; return '<b>' + text + '</b>'}
