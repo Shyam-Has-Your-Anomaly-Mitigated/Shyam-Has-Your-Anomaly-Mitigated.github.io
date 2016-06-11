@@ -17,6 +17,7 @@
                 ; text = '<'
                     + char
                     + (attributes.class? ' class=\'' + attributes.class + '\'': '')
+                    + (attributes.title? ' title=\'' + attributes.title + '\'': '')
                     + '>' + text + '</' + char + '>'
         }
     }
