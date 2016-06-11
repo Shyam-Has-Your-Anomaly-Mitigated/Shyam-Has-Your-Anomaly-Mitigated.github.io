@@ -14,7 +14,7 @@
             case 'b':
             case 'i':
             case 'u':
-                text = '<'
+                ; text = '<'
                     + char
                     + (attributes.class? ' class=\'' + attributes.class + '\'': '')
                     + '>' + text + '</' + char + '>'
