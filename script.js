@@ -14,7 +14,10 @@
             case 'b':
             case 'i':
             case 'u':
-                '<' + char + ' ' + (attributes.class? 'class="' + attributes.class + '"': '') + '>' + text + '</' + char + '>'
+                text = '<'
+                    + char
+                    + (attributes.class? ' class=\'' + attributes.class + '\'': '')
+                    + '>' + text + '</' + char + '>'
         }
     }
     ; return text
