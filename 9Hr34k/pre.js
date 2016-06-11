@@ -5,5 +5,5 @@
         + underline('!')
         , 4
     )
-    + 'Write 34K bits/bytes/chars/lines/whatever in ≤9HRs straight (AKA the 1 day XP)'
+    + 'Write 34K bits/bytes/chars/lines/whatever in ≤9HRs straight (AKA the 1D XP)'
 )
