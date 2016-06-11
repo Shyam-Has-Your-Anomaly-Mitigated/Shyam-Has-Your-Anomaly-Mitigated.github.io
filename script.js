@@ -36,7 +36,7 @@
         + (attributes.url    ? ' src=\''     + attributes.url     + '\'': '')
         + (attributes.alt    ? ' alt=\''     + attributes.alt     + '\'': '')
         + (attributes.class  ? ' class=\''   + attributes.class   + '\'': '')
-        + (attributes.onerror? ' onerror=\'' + attributes.onerror + '\'': '')
+        + (attributes.onerror? ' onerror=\'' + attributes.onerror + '\'': '') // onerror: '; this.src="./favicon.ico"; this.onerror=""'
         + '/>'
 }
 
