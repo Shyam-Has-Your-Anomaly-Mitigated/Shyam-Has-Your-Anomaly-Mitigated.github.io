@@ -5,7 +5,7 @@
     + br + 'The author is not a co-founder of ' + bold('Go')
 )
 ; for(var i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
-    ; document.write(String.fromCharCode(i))
+    ; document.write(bold(String.fromCharCode(i)))
 }
 ; document.write(
     bold('ogle') + '.'
