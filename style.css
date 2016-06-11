@@ -4,8 +4,6 @@
     ; color           : #999
 }
 
-h1, h2, h3, h4, h5, h6 {; text-transform: uppercase}
-
 a {; background-color: transparent}
 a:link, a:visited {; text-decoration: none     }
 a:hover, a:active {; text-decoration: underline}
@@ -13,3 +11,18 @@ a:link    {; color: pink      }
 a:visited {; color: PowderBlue}
 a:hover   {; color: SkyBlue   }
 a:active  {; color: PaleGreen }
+
+h1, h2, h3, h4, h5, h6 {; text-transform: uppercase}
+
+table, th, td {
+    ; border          : 1px solid black
+    ; border-collapse : collapse
+    ; text-align      : center
+    ; background-color: #666
+    ; color           : #ccc
+}
+th, td {; padding 5px}
+.ico {
+    width : 16px;
+    height: 16px;
+}
