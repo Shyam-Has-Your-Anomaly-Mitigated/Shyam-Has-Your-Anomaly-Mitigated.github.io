@@ -33,9 +33,10 @@
 ; function image(attributes) {
     ; var attributes = attributes? attributes: {}
     ; return '<img'
-        + (attributes.url  ? ' src=\''   + attributes.url   + '\'': '')
-        + (attributes.alt  ? ' alt=\''   + attributes.alt   + '\'': '')
-        + (attributes.class? ' class=\'' + attributes.class + '\'': '')
+        + (attributes.url    ? ' src=\''     + attributes.url     + '\'': '')
+        + (attributes.alt    ? ' alt=\''     + attributes.alt     + '\'': '')
+        + (attributes.class  ? ' class=\''   + attributes.class   + '\'': '')
+        + (attributes.onerror? ' onerror=\'' + attributes.onerror + '\'': '')
         + '/>'
 }
 
