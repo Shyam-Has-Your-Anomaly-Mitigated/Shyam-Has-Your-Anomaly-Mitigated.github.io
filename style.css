@@ -21,8 +21,8 @@ table, th, td {
     ; background-color: #666
     ; color           : #ccc
 }
-th, td {; padding 5px}
+th, td {; padding: 5px}
 .ico {
-    width : 16px;
-    height: 16px;
+    ; width : 16px
+    ; height: 16px
 }
