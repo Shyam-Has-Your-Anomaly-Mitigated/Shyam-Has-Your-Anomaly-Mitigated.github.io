@@ -30,6 +30,14 @@
 ; function hyperlink(text, url) {
     ; return '<a href=\'' + url + '\' target=\'_blank\'>' + text + '</a>'
 }
+; function image(attributes) {
+    ; var attributes = attributes? attributes: {}
+    ; return '<img'
+        + (attributes.url  ? ' src=\''   + attributes.url   + '\'': '')
+        + (attributes.alt  ? ' alt=\''   + attributes.alt   + '\'': '')
+        + (attributes.class? ' class=\'' + attributes.class + '\'': '')
+        + '/>'
+}
 
 //; function input({type, value, title, onclick, onchange} = {}) {
 ; function input(attributes) {
