@@ -11,7 +11,7 @@
     format('o', 'bu', {class: 'hover'}) + bold('gle') + '.'
     + br
     + br + format('Bram_Moolenaar(Vim)', 'ub')
-    + br + 'ℝ341 programmers use the ' + hyperlink('cat', '/cat') + '!'
+    + br + hyperlink('ℝ341 programmers', '/9Hr34k') + ' use the ' + hyperlink('cat', '/cat') + '!'
     + br + 'But 1337 programmers use vim to clean up what the ' + hyperlink('cat', '/cat') + ' poops out.'
     + br
     + br + format('Linus_Torvalds(Linux_Kernel)', 'ub')
