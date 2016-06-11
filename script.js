@@ -72,3 +72,30 @@
     ; for(var val of list) {; ret += '<li>' + val + '</li>'}
     ; return ret + '</' + type + '>'
 }
+
+; function tabulate(matrix, heading) {
+    /*
+        tabulate(
+            [
+                ['A', 'B']
+                , ['a', 'b']
+            ], true
+        )
+    */
+    ; var table = '<table>'
+    ; if(heading) {
+        ; table += '<tr>'
+        ; for(var col of matrix.shift()) {
+            ; table += '<th>' + col + '</th>'
+        }
+        ; table += '</tr>'
+    }
+    ; for(var row of matrix) {
+        ; table += '<tr>'
+        ; for(var col of row) {
+            ; table += '<td>' + col + '</td>'
+        }
+        ; table += '</tr>'
+    }
+    ; return table + '</table>'
+}
