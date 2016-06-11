@@ -1,4 +1,5 @@
 .hover:hover {
-    ; font-style: italic
-    ; cursor: pointer
+    ; font-weight     : bold
+    ; color           : #fff
+    ; cursor          : pointer
 }
