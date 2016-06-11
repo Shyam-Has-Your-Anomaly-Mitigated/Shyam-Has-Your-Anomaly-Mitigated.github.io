@@ -21,7 +21,7 @@
     + br + italics('A cat has no name!!!')
     + br
     + br + 'Pussy dive into asian boxen...'
-    + br + 'Hypnotic ' + hyperlink('cirlces', 'http://www.sloganmaker.net/2014/10/trick-your-cat-with-circles/') + ' make a pussy ' + hyperlink('catatonic', 'https://youtu.be/XRciHfhLzrA') + '...'
+    + br + 'Hypnotic ' + hyperlink('cirlces', 'http://www.sloganmaker.net/2014/10/trick-your-cat-with-circles/') + ' make pussy ' + hyperlink('catatonic', 'https://youtu.be/XRciHfhLzrA') + '...'
     + br + 'Japanese school girls eat pussy...'
     + br
     + br + 'Who are you? '
