@@ -7,11 +7,11 @@ shyam.id.au
 \in_progress
 /wysiwyg
 /warez
-    ^gimp
-    ^inkscape
-    ^blender
+    ^gimp...
+    ^inkscape...
+    ^blender...
 /cs
-    *languages.
+    *languages
         /cat
     *cybersciences...
     (eventually make them subdirectories and make this cyberspace into a branch.map)
