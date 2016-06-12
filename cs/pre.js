@@ -1,6 +1,6 @@
 ; var bellabia = '𝄞三¾三♩三♩三♬三|三♩三♩三♬三‖'
 ; document.write(
-    heading('Language Bases', 3)
+    heading(underline('Language Bases'), 3)
     + heading('Machine-based Language', 4)
     +      format('RMI', 'u', {class: 'hover', title: 'Raw Machine Instructions'}) + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is atomic tech.'
     + br + format('ASM', 'u', {class: 'hover', title: 'Assembly'}) + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is nano&nbsp;&nbsp;&nbsp;tech.'
