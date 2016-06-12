@@ -8,7 +8,7 @@
     + br + 'Java&nbsp;&nbsp;&nbsp;&nbsp;is milli&nbsp;&nbsp;tech.'
     + br + hyperlink('Perl', 'https://en.wikipedia.org/wiki/Text_processing') + '&nbsp;&nbsp;&nbsp;&nbsp;is ' + hyperlink('high', 'http://search.cpan.org/~ingy/Inline-0.80/lib/Inline.pod') + '&nbsp;&nbsp;&nbsp;' + hyperlink('tech', 'https://metacpan.org/pod/Inline') + '.'
     + br + hyperlink('Haskell', 'https://en.wikipedia.org/wiki/Concurrency') + ' ' + hyperlink('is', 'https://en.wikipedia.org/wiki/Parallel') + ' ' + hyperlink('rocket', 'https://en.wikipedia.org/wiki/Neural_network_%28disambiguation%29') + ' ' + hyperlink('science', 'https://en.wikipedia.org/wiki/Multiprocessing') + ' ' + hyperlink('.', 'https://en.wikipedia.org/wiki/Distributed_computing')
-    + br + hyperlink('Prolog', 'https://en.wikipedia.org/wiki/Automatic_programming') + '&nbsp;is ' + hyperlink('philosophical', 'https://en.wikipedia.org/wiki/Metaprogramming') + ' ' + hyperlink('sentience', 'https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29') + '.'
+    + br + hyperlink('Prolog', 'https://en.wikipedia.org/wiki/Automatic_programming') + '&nbsp;&nbsp;is ' + hyperlink('philosophical', 'https://en.wikipedia.org/wiki/Metaprogramming') + ' ' + hyperlink('sentience', 'https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29') + '.'
     + heading('Browser-based Language', 4)
     +      'Javascript is atomic tech; for the client-side of "-thing"s'
     + br + 'LOLCODE/LOLScript is meme tech; for the server-side of "-thing"s &becaus; the Cybernet likes ' + hyperlink('cat', '/cat') + '.'
