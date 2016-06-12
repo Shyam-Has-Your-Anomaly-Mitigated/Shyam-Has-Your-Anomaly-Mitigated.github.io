@@ -14,4 +14,5 @@
     + heading(underline('URL Format'), 4)
     + 'shyam.id.au/mowgli/N'
     + br + 'N as in the Nth in chronology'
+    + br + 'Balance the number on zero, that way the middle is obvious'
 )
