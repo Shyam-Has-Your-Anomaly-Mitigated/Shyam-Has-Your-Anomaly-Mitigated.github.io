@@ -10,6 +10,14 @@ shyam.id.au
     ^gimp
     ^inkscape
     ^blender
+/cs
+    *languages.
+    *cybersciences...
+    (eventually make them subdirectories and make this cyberspace into a branch.map)
+/mowgli
+    ^<N>
+    (make a similar /student directory, for the forums; thread-based /{cpt,enr}<XXX>/<descriptor> (sub)²directories)
+    (also the other emails, especially what happened in scripting, and the base-{2,3,10,16} computer systems)
 
 \unfinished_business
 /awooga
