@@ -15,7 +15,7 @@
     + heading('Text-based Language', 4)
     +      '(La)TeX is a text processor; probably implemented by Perl...'
     + br + 'Perl&nbsp;&nbsp;&nbsp;&nbsp;is a text processing language; powered by RatExp...'
-    + br + 'RegExp  is a text processing language; making Perl a metalanguage...'
+    + br + 'RegExp&nbsp;&nbsp;is a text processing language; making Perl a metalanguage...'
     + heading('Audio-based Language', 4)
     +      'iTeX ' + bellabia + ' will include audio processing capabilities...'
     + br + 'Textual speech synthesis is already a thing...'
