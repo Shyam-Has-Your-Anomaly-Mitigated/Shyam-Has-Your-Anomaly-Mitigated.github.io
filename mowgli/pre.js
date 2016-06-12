@@ -7,4 +7,11 @@
     + br + '@ShYaM = Blue Border'
     + br + '@rMIT  = Red Border'
     + br + 'URL navigation FTW! :D (no need for dynamic external loading; a simple branch.map in this cyberspace should do the hack)'
+    + heading('Site.Map Format', 4)
+    + '@Me @ &lt;YYYY-MM-DD hh:mm:ss&gt;'
+    + br + '@Me provides @Time zone information; both are unkown anyway...'
+    + br + '@ShYaM has "+1000"; whatever that means...'
+    + heading('URL Format', 4)
+    + 'shyam.id.au/mowgli/N'
+    + br + 'N as in the Nth in chronology'
 )
