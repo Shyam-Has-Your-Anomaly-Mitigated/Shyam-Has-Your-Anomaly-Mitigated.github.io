@@ -28,5 +28,5 @@
     + heading(underline('Security'), 3)
     + heading('Functional ' + format('OTP', 'u', {class: 'hover', title: 'One Time Pad'}), 4)
     +      'y = f(x), graphically...'
-    + br + 'OTP begins at y=0, with a positivity increase in Quadrant I'
+    + br + 'OTP begins at y=0, with a positivity increase in Quadrant I; no it should be customisable parameters...'
 )
