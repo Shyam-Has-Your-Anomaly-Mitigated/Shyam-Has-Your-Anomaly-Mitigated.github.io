@@ -31,5 +31,5 @@
     + br + 'Example: OTP initiates at y=0 in Quadrant I, and positively increasing...'
     + br + 'Obviously initiating at x=0 is more logical...'
     + br + 'Non-negative is unsigned, otherwise signed...'
-    + br + 'Geometric/spiral/orbital/whatever equations...'
+    + br + 'Geometric/spiral/orbital/wave/whatever equations...'
 )
