@@ -30,4 +30,5 @@
     +      'y = f(x), graphically...'
     + br + 'Example: OTP begins at y=0 in Quadrant I, and positively increasing...'
     + br + 'Non-negative is unsigned, otherwise signed...'
+    + br + 'Geometric/spiral/orbital/whatever equations...'
 )
