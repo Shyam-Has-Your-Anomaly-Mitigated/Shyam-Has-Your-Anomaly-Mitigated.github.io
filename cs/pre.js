@@ -28,8 +28,8 @@
     + heading(underline('Security'), 3)
     + heading('Functional ' + format('OTP', 'u', {class: 'hover', title: 'One Time Pad'}), 4)
     +      'y = f(x), graphically...'
-    + br + 'Example: OTP begins at y=0 in Quadrant I, and positively increasing...'
-    + br + 'Obviously beginning at x=0 is more logical...'
+    + br + 'Example: OTP initiates at y=0 in Quadrant I, and positively increasing...'
+    + br + 'Obviously initiating at x=0 is more logical...'
     + br + 'Non-negative is unsigned, otherwise signed...'
     + br + 'Geometric/spiral/orbital/whatever equations...'
 )
