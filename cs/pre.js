@@ -27,5 +27,5 @@
     +      'I like Sergei Lewis\'s and Joshua Schulter\'s well-ordered ' + hyperlink('Piet(-Q, ++)', 'http://www.dangermouse.net/esoteric/piet/samples.html') + ' style(&iquest;s?)...'
     + heading(underline('Security'), 3)
     + heading('Functional ' + format('OTP', 'u', {class: 'hover', title: 'One Time Password'}), 4)
-    +      'y = f(x)'
+    +      'y = f(x), graphically...'
 )
