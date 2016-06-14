@@ -25,4 +25,7 @@
     + br + 'I do not understand what ' + hyperlink('JIT hacking', 'https://en.wikipedia.org/wiki/Live_coding') + ' has to do with noise...'
     + heading('Image-based Language', 4)
     +      'I like Sergei Lewis\'s and Joshua Schulter\'s well-ordered ' + hyperlink('Piet(-Q, ++)', 'http://www.dangermouse.net/esoteric/piet/samples.html') + ' style(&iquest;s?)...'
+    + heading(underline('Security'), 3)
+    +      'Functional OTPs.'
+    + br + 'f(xᵣ), where x = password and ᵣ = radix.'
 )
