@@ -35,13 +35,13 @@
     + heading(underline('Computational Whispers'), 3)
     + heading('Logic: Vulcan vs ' + hyperlink('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
-    + br + 'Numerical logic is different from yoda logic, not to be confused.'
+    + br + 'Numerical logic is different from Yoda logic, not to be confused.'
     + br + bold('Standard logic form:')
     + br + tab + 'constant comparison variable'
-    + br + tab + italics('sky is blue')
+    + br + tab + italics('Yoda is green')
     + br + bold('Yoda logic form:')
     + br + tab + 'variable comparison constant'
-    + br + tab + italics('blue is sky')
+    + br + tab + italics('green is Yoda')
     + br + bold('Numerical logic form:')
     + br + tab + '-a < -b ≤ -c < ∓0 < +d ≤ +e < +f'
     + br + tab + 'What languages support this?'
