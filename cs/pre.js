@@ -50,4 +50,13 @@
     + br + format('What languages support this?', 'u', {class: 'hover', title: 'All my languages will support logic chains and char∈{±,∓,+,−,×,÷,√,!,=,≠,<,>,≤,≥,∨,∧,∞,ℕ,ℤ,ℝ,..}'})
     + br + '-∞ < -a ≤ -b ≤ -c ≤ ∓0 ≤ +x ≤ +y ≤ +z < +∞'
     + br + 'Traditions die hard!'
+    + heading('Functional Pointing', 4)
+    +      underline('Efficiency: with function pointers')
+    + br + '; if(condition) {; f = a()} else {; f = b()}'
+    + br + '; loop(logic) {; f->(parameter_list)}'
+    + br
+    + br + underline('Inefficiency: without function pointers')
+    + br + '; loop(logic) {; if(condition) {; a()} else {; b()}}'
+    + br
+    + br + italics('It\'s redundant to repetitively compute things; ' + bold('if you can help it.'))
 )
