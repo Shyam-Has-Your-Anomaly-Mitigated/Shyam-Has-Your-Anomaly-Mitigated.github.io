@@ -32,4 +32,19 @@
     + br + 'Obviously initiating at x=0 is more logical...'
     + br + 'Non-negative is unsigned, otherwise signed...'
     + br + 'Geometric/spiral/orbital/wave/whatever equations...'
+    + heading(underline('Computational Whispers'), 3)
+    + heading('Logic: Vulcan vs ' + hyperlink('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
+    +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
+    + br + 'Numerical logic is different from yoda logic, not to be confused.'
+    + br + bold('Standard logic form:')
+    + br + tab + 'constant comparison variable'
+    + br + tab + italics('sky is blue')
+    + br + bold('Yoda logic form:')
+    + br + tab + 'variable comparison constant'
+    + br + tab + italics('blue is sky')
+    + br + bold('Numerical logic form:')
+    + br + tab + '-a < -b ≤ -c < ∓0 < +d ≤ +e < +f'
+    + br + tab + 'What languages support this?'
+    + br + tab + 'All my languages will support logic chains and char∈{±,∓,+,−,×,÷,√,!,=,≠,<,>,≤,≥,∨,∧,∞,ℕ,ℤ,ℝ,...}.'
+    + br + 'Comparing constants and variables is different when considering numerical data, and should be approached mathematically.'
 )
