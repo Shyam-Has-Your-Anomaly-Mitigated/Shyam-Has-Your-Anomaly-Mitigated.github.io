@@ -58,5 +58,5 @@
     + br + underline('Inefficiency: without function pointers')
     + br + '; loop(logic) {; if(condition) {; a()} else {; b()}}'
     + br
-    + br + italics('It\'s redundant to repetitively compute things; ' + bold('if you can help it.'))
+    + br + italics('It\'s redundant to repetitively compute "-thing"s; ' + bold('if you can help it.'))
 )
