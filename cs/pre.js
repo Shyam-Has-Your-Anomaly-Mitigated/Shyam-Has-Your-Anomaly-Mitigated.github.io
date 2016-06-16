@@ -44,9 +44,10 @@
     + br + tab + italics('green is Yoda')
     + br + bold('Numerical logic form:')
     + br + tab + 'mathematically logical; well-ordered'
-    + br + tab + italics('(0.665m < Yoda) ∧ (Yoda < 0.667m) ∵ traditions die hard!')
+    + br + tab + italics('(0.665m < Yoda) ∧ (Yoda < 0.667m)')
     + br + 'Comparing constants and variables is different when considering numerical data, and should be approached mathematically.'
     + br
     + br + format('What languages support this?', 'u', {class: 'hover', title: 'All my languages will support logic chains and char∈{±,∓,+,−,×,÷,√,!,=,≠,<,>,≤,≥,∨,∧,∞,ℕ,ℤ,ℝ,..}'})
     + br + '-∞ < -a ≤ -b ≤ -c ≤ ∓0 ≤ +x ≤ +y ≤ +z < +∞'
+    + br + 'Traditions die hard!'
 )
