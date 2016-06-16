@@ -32,7 +32,7 @@
     + br + 'Obviously initiating at x=0 is more logical...'
     + br + 'Non-negative is unsigned, otherwise signed...'
     + br + 'Geometric/spiral/orbital/wave/whatever equations...'
-    + heading(underline('Computational Whispers'), 3)
+    + heading(underline('Instructional Whispers'), 3)
     + heading('Logic: Vulcan vs ' + hyperlink('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
     + br + 'Numerical logic is different from Yoda logic, not to be confused.'
