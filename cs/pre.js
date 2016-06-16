@@ -37,10 +37,10 @@
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
     + br + 'Numerical logic is different from Yoda logic, not to be confused.'
     + br + bold('Standard logic form:')
-    + br + tab + 'constant comparison variable'
+    + br + tab + 'grammatically logical; constant comparison variable'
     + br + tab + italics('Yoda is green')
     + br + bold('Yoda logic form:')
-    + br + tab + 'variable comparison constant'
+    + br + tab + 'grammatically illogical; variable comparison constant'
     + br + tab + italics('green is Yoda')
     + br + bold('Numerical logic form:')
     + br + tab + '-a < -b ≤ -c < ∓0 < +d ≤ +e < +f'
