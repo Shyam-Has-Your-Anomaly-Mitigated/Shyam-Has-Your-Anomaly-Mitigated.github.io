@@ -46,5 +46,6 @@
     + br + tab + '-∞ < -a ≤ -b ≤ -c ≤ ∓0 ≤ +x ≤ +y ≤ +z < +∞'
     + br + tab + 'What languages support this?'
     + br + tab + 'All my languages will support logic chains and char∈{±,∓,+,−,×,÷,√,!,=,≠,<,>,≤,≥,∨,∧,∞,ℕ,ℤ,ℝ,...}.'
+    + br + tab + '(0.665m < Yoda) ∧ (Yoda < 0.667m) ∵ traditions die hard!'
     + br + 'Comparing constants and variables is different when considering numerical data, and should be approached mathematically.'
 )
