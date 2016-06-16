@@ -53,7 +53,7 @@
     + heading('Functional Pointing', 4)
     +      underline('Efficiency: with function pointers')
     + br + '; if(condition) {; f = a()} else {; f = b()}'
-    + br + '; loop(logic) {; f->(parameter_list)}'
+    + br + '; loop(logic) {; f()}'
     + br
     + br + underline('Inefficiency: without function pointers')
     + br + '; loop(logic) {; if(condition) {; a()} else {; b()}}'
