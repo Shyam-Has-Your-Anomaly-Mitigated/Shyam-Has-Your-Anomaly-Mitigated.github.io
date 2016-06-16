@@ -6,6 +6,10 @@
 ; var tab = '&nbsp;&nbsp;&nbsp;&nbsp;'
 ; var br = '<br>' // newline == \n\r || lf+cr
 
+; function Sanskrit(Devanagari) {
+    return '<span class="Sanskrit">' + Devanagari + '</span>'
+}
+
 ; function format(innerHTML, options, attributes) {
     // ...is this used as format('abc','ui') ?!?
     ; var attributes = attributes? attributes: {}
