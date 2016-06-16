@@ -43,7 +43,7 @@
     + br + tab + 'grammatically illogical; variable comparison constant'
     + br + tab + italics('green is Yoda')
     + br + bold('Numerical logic form:')
-    + br + tab + '-a < -b ≤ -c < ∓0 < +d ≤ +e < +f'
+    + br + tab + '-a < -b ≤ -c < ∓0 < +x ≤ +y < +z'
     + br + tab + 'What languages support this?'
     + br + tab + 'All my languages will support logic chains and char∈{±,∓,+,−,×,÷,√,!,=,≠,<,>,≤,≥,∨,∧,∞,ℕ,ℤ,ℝ,...}.'
     + br + 'Comparing constants and variables is different when considering numerical data, and should be approached mathematically.'
