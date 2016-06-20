@@ -26,7 +26,7 @@
     + br
     + br + 'Who are you? '
     + br + italics('No ' + hyperlink('oNe', 'http://matrix.wikia.com/wiki/Prime_Program') + '.')
-    + br + 'If a cat says hiths name, a man will let hith roam in a virgin core tonight? '
+    + br + 'If a cat says hiths name, a man will let hith roam in a virginal core tonight? '
     + br + italics('A cat has no name.')
     + br + 'If a cat says hiths name, a man will feed hith 9Hr34k-RAM tonight? '
     + br + italics('A cat has no name.')
