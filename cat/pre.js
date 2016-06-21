@@ -28,7 +28,7 @@
     + br + italics('No ' + hyperlink('oNe', 'http://matrix.wikia.com/wiki/Prime_Program') + '.')
     + br + 'If a cat says hiths name, a man will let hith roam in a virginal core tonight? '
     + br + italics('A cat has no name.')
-    + br + 'If a cat says hiths name, a man will feed hith ' + hyperlink('9Hr34k', '/9Hr34k') + '-' + format(hyperlink('RAM', '/milk'), 'u', {class: 'hover', title: 'mæᚅꜵry glans'}) + ' tonight? '
+    + br + 'If a cat says hiths name, a man will feed hith ' + hyperlink('9Hr34k', '/9Hr34k') + '-' + format(hyperlink('RAM', '/milk'), 'u', {class: 'hover', title: 'mæ<big><big><big><sub><sup>ᚅ</sup></sub></big></big></big>ꜵry glans'}) + ' tonight? '
     + br + italics('A cat has no name.')
     + br + 'If a cat says hiths name, a man will give hith a graphical user interface? '
     + br + italics('A cat has no name.')
