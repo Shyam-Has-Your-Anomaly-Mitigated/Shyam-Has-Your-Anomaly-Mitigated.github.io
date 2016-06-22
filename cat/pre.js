@@ -11,7 +11,7 @@
     + br + 'A cat can ' + format('pounce'     , 'u', {class: 'hover', title: 'Concatenate>Output Image TarBallZ'}) + '...'
     + br + 'A cat can ' + format('chase'      , 'u', {class: 'hover', title: 'HereSay <<WHEN'})                    + '...'
     + br + 'A cat can ' + format('poop'       , 'u', {class: 'hover', title: 'Pipe | DownUnder'})                  + '...'
-    + br + 'A cat has ' + format('whiskers'   , 'u', {class: 'hover', title: 'Append>>Output<<<Line'})       + '...'
+    + br + 'A cat has ' + format('whiskers'   , 'u', {class: 'hover', title: 'Redirection>>Output<<<Input'})       + '...'
     + br
     + br + 'What is a cats name? '
     + br + italics('A cat has no name.')
