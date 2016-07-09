@@ -1,5 +1,5 @@
 ; document.write(
-    heading(underline('From CPT112 User-Centred Design Discussion Board'), 4)
+    heading(underline('Discussion Board: CPT112 User-Centred Design'), 4)
     + bold('Forum : ') + 'Assignment 1'
     + br + bold('Thread: ') + 'UI'
     + br
