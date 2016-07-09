@@ -1,0 +1,15 @@
+.default {; font-family: georgia, serif}
+p, span, div {
+    ; color           : black
+    ; background-color: white
+}
+div {
+    ; padding: 1px 15px
+    ; margin: 10px 0px
+}
+a.WTF {
+    ; text-decoration: underline
+    ; color: #009
+}
+span.WTF, strong {; color: #036}
+
