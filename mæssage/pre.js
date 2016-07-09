@@ -1,6 +1,6 @@
 ; document.write(
     heading(underline('From CPT112 User-Centred Design Discussion Board'), 4)
-    + bold('Forum: ') + 'Assignment 1'
+    + bold('Forum : ') + 'Assignment 1'
     + br + bold('Thread: ') + 'UI'
     + br
     + br + underline('Shyam, 2016-06-10 13:58:36 AEST')
