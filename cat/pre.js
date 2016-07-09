@@ -46,7 +46,7 @@
     + '...'
     + br + br
     + br + bold('Forum : ') + 'General Discussion'
-    + br + italics('A forum for general course-related discussion. You are also able to ask questions directly to your instructor, via the email address ') + hyperlink('cpt270 &#x20e0; open.edu.au', 'https://youtu.be/kJa2kwoZ2a4') + italics('.')
+    + br + italics('A forum for general course-related discussion. You are also able to ask questions directly to your instructor, via the email address ') + hyperlink('cpt270@open.edu.au', 'https://youtu.be/kJa2kwoZ2a4') + italics('.')
     + br + bold('Thread: ') + 'Using notepad++'
     + br
     + br + underline('Kiet, 2014-12-17 12:32:03 EST')
