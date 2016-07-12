@@ -15,7 +15,7 @@
 
 ; function idiosync(attributes) {
     ; var attributes = attributes? attributes: {}
-    ; return ''//this is very inefficient... switch(it)?
+    ; return ''//this is very inefficient...saves the bandwidth! switch(it)?
         + (attributes.class   ? ' class=\''    + attributes.class    + '\'': '')
         + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
         + (attributes.url     ? ' src=\''      + attributes.url      + '\'': '')
@@ -29,6 +29,12 @@
         + (attributes.selected? ' selected': '')
 }
 
+; function span(innerHTML,attributes) {
+    ; var attributes = attributes? attributes: {}
+    ; return '<span'
+        + idiosync(attributes)// title, class
+        + '>' + innerHTML + '</span'
+}
 ; function f(innerHTML, options, attributes) {// format
     // ...is this used as format('abc','ui') ?!?
     ; for(var char of options.split('')) {
