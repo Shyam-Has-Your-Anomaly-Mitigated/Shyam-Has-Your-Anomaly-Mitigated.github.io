@@ -33,7 +33,7 @@
     ; var attributes = attributes? attributes: {}
     ; return '<span'
         + idiosync(attributes)// title, class
-        + '>' + innerHTML + '</span'
+        + '>' + innerHTML + '</span>'
 }
 ; function f(innerHTML, options, attributes) {// format
     // ...is this used as format('abc','ui') ?!?
