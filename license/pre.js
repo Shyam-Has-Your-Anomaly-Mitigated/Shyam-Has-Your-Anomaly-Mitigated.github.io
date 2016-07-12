@@ -19,5 +19,5 @@
             hyperlink('', 'mailto:___@___?Subject=Subpœna')
         ], 'o'
     )
-    + italics('I like to think of cyberspace as no different to international waters; where others acknowledge universal jurisdiction...'
+    + italics('I like to think of cyberspace as no different to international waters; where others acknowledge universal jurisdiction...')
 )
