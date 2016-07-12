@@ -70,7 +70,7 @@
 ; italics   = i
 ; underline = u
 
-; function a(innerHTML, url, attributes) {hyperlink
+; function a(innerHTML, url, attributes) {//hyperlink
     ; return '<a href=\'' + url + '\''
         + idiosync(attributes)// class, title
         + ' target=\'_blank\''
