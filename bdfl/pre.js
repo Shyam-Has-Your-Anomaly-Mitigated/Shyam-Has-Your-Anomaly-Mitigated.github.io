@@ -2,13 +2,13 @@
     br   + format('Larry_Wall(Perl)', 'ub')
     + br + 'I can use it to write everything else..! :D'
     + br + 'Unre' + format('strict', 'bu') + 'ed is freedom; but it could be a lot more free/powerful..!'
-    + br + 'The author is not a co-founder of ' + format('G', 'b') + format('o', 'bu', {c: 'hover'})
+    + br + 'The author is not a co-founder of ' + format('G' + span('o', {c: 'hover'}), 'b')
 )
 ; for(var i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
-    ; document.write(format(String.fromCharCode(i), 'u', {c: 'hover'}))
+    ; document.write(span(String.fromCharCode(i), {c: 'hover'}))
 }
 ; document.write(
-    format('o', 'bu', {c: 'hover'}) + format('gle', 'b') + '.'
+    format(span('o', {c: 'hover'}) + 'gle', 'b') + '.'
     + br
     + br + format('Bram_Moolenaar(Vim)', 'ub')
     + br + link('ℝ341 programmers', '/9Hr34k') + ' use the ' + link('cat', '/cat') + '!'
