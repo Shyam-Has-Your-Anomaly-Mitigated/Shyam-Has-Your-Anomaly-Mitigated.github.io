@@ -13,7 +13,7 @@
             hyperlink('', 'mailto:___@___?Subject=Hello%20<[.htm]>!%20:D')
         ], 'u'
     )
-    + format(hyperlink('Criminals:', 'http://rosettacode.org/wiki/Help:Similar_Sites', {class: 'hover', title: 'Script Kiddies'), 'ub')
+    + format(hyperlink('Criminals:', 'http://rosettacode.org/wiki/Help:Similar_Sites', {class: 'hover', title: 'Script Kiddies'}, 'ub')
     + listify(
         [
             hyperlink('', 'mailto:___@___?Subject=Subpœna')
