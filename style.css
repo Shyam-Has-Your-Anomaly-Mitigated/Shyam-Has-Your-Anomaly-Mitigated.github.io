@@ -3,9 +3,7 @@ body {
     ; background-color: #333
     ; color           : #999
 }
-.Sanskrit {
-    ; font-family     : courier new, courier, monospace, sans-serif
-}
+.Sanskrit {; font-family: courier new, courier, monospace, sans-serif}
 
 a {; background-color: transparent}
 a:link, a:visited {; text-decoration: none     }
@@ -31,8 +29,6 @@ th, td {; padding: 5px}
     ; height : 16px
 }
 
-.hover {
-    ; border-bottom: 1px dashed #999
-}
+.hover {; border-bottom: 1px dashed #999}
 
 h1, h2, h3, h4, h5, h6 {; text-transform: uppercase}

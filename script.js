@@ -6,47 +6,61 @@
 ; var tab = '&nbsp;&nbsp;&nbsp;&nbsp;'
 ; var br = '<br>' // newline == \n\r || lf+cr
 
+// need attributes(), div(), span() functions...
+// first clean up {b(),i(),u()} as f(), and heading() as h(), and hyperlink() as link()
+
 ; function Sanskrit(Devanagari) {
     return '<span class="Sanskrit">' + Devanagari + '</span>'
 }
 
-; function format(innerHTML, options, attributes) {
-    // ...is this used as format('abc','ui') ?!?
+; function attributes(attributes) {
     ; var attributes = attributes? attributes: {}
+    ; return ''
+        + (attributes.class? ' class=\'' + attributes.class + '\'': '')
+        + (attributes.title? ' title=\'' + attributes.title + '\'': '')
+}
+
+; function f(innerHTML, options, attributes) {// format
+    // ...is this used as format('abc','ui') ?!?
     ; for(var char of options.split('')) {
         switch(char) {
-            case 'b':
-            case 'i':
-            case 'u':
+            case 'b':// bold
+            case 'i':// italics
+            case 'u':// underline
+            case 's':// strikethrough
                 ; innerHTML = '<'
                     + char
-                    + (attributes.class? ' class=\'' + attributes.class + '\'': '')
-                    + (attributes.title? ' title=\'' + attributes.title + '\'': '')
+                    + attributes(attributes)// class, title
                     + '>' + innerHTML + '</' + char + '>'
+                ; break
         }
     }
     ; return innerHTML
 }
 // ...are these redundant? ...or should they have single width namespaces?
-; function bold(     innerHTML, attributes) {; return format(innerHTML, 'b', attributes)}
-; function italics(  innerHTML, attributes) {; return format(innerHTML, 'i', attributes)}
-; function underline(innerHTML, attributes) {; return format(innerHTML, 'u', attributes)}
+; function b(innerHTML, attributes) {; return format(innerHTML, 'b', attributes)}
+; function i(innerHTML, attributes) {; return format(innerHTML, 'i', attributes)}
+; function u(innerHTML, attributes) {; return format(innerHTML, 'u', attributes)}
+// why can't these be the other way around? one has value, the other doesn't; unambiguous!
+; format    = f
+; bold      = b
+; italics   = i
+; underline = u
 
-; function hyperlink(innerHTML, url, attributes) {
-    ; var attributes = attributes? attributes: {}
+; function link(innerHTML, url, attributes) {
     ; return '<a href=\'' + url + '\''
-        + (attributes.class? ' class=\'' + attributes.class + '\'': '')
-        + (attributes.title? ' title=\'' + attributes.title + '\'': '')
+        + attributes(attributes)// class, title
         + ' target=\'_blank\''
         + '>' + innerHTML + '</a>'
 }
+; hyperlink = link
 ; function image(attributes) {
     ; var attributes = attributes? attributes: {}
     ; return '<img'
         + (attributes.url    ? ' src=\''     + attributes.url     + '\'': '')
         + (attributes.alt    ? ' alt=\''     + attributes.alt     + '\'': '')
         + (attributes.class  ? ' class=\''   + attributes.class   + '\'': '')
-        + (attributes.onerror? ' onerror=\'' + attributes.onerror + '\'': '') // onerror: '; this.src="./favicon.ico"; this.onerror=""'
+        + (attributes.onerror? ' onerror=\'' + attributes.onerror + '\'': '')// onerror: '; this.src="./favicon.ico"; this.onerror=""'
         + '/>'
 }
 
@@ -79,13 +93,14 @@
         + '>' + innerHTML + '</option>'
 }
 
-; function heading(title, type) {
+; function h(title, type) {
     ; if(type < 1) type = 1
     ; if(6 < type) type = 6
     ; return '<h'+type+'>' + title + '</h'+type+'>'
 }
+; heading = h
 
-; function listify(list, type) { // listicle
+; function listify(list, type) {// listicle
     /*
         listify(
             [
