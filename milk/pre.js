@@ -8,7 +8,7 @@
     + br + 'In the ℝeal North where the White Walkers wake...'
     + br
     + br + br + bold(underline('Season 6'))
-    + br +
+    + br
     + br + 'Undead&nbsp;&nbsp;&nbsp;bastard king&nbsp;&nbsp;to the north...'
     + br + 'Foretold widow&nbsp;&nbsp;&nbsp;queen to the throne...'
     + br + 'Barren&nbsp;&nbsp;&nbsp;widow&nbsp;&nbsp;&nbsp;' + hyperlink('queen on a&nbsp;&nbsp;&nbsp;boat', 'https://youtu.be/avaSdC0QOUM') + '...'
