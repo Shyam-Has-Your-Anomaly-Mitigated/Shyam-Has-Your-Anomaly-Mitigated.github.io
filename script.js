@@ -13,11 +13,20 @@
     return '<span class="Sanskrit">' + Devanagari + '</span>'
 }
 
-; function at(attributes) {
+; function idiosync(attributes) {
     ; var attributes = attributes? attributes: {}
-    ; return ''
-        + (attributes.class? ' class=\'' + attributes.class + '\'': '')
-        + (attributes.title? ' title=\'' + attributes.title + '\'': '')
+    ; return ''//this is very inefficient... switch(it)?
+        + (attributes.class   ? ' class=\''    + attributes.class    + '\'': '')
+        + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
+        + (attributes.url     ? ' src=\''      + attributes.url      + '\'': '')
+        + (attributes.alt     ? ' alt=\''      + attributes.alt      + '\'': '')
+        + (attributes.onerror ? ' onerror=\''  + attributes.onerror  + '\'': '')// onerror: '; this.src="./favicon.ico"; this.onerror=""'
+        + (attributes.type    ? ' type=\''     + attributes.type     + '\'': '')
+        + (attributes.value   ? ' value=\''    + attributes.value    + '\'': '')
+        + (attributes.onclick ? ' onclick=\''  + attributes.onclick  + '\'': '')
+        + (attributes.onchange? ' onchange=\'' + attributes.onchange + '\'': '')
+        + (attributes.disabled? ' disabled': '')
+        + (attributes.selected? ' selected': '')
 }
 
 ; function f(innerHTML, options, attributes) {// format
@@ -30,7 +39,7 @@
             case 's':// strikethrough
                 ; innerHTML = '<'
                     + char
-                    + at(attributes)// class, title
+                    + idiosync(attributes)// class, title
                     + '>' + innerHTML + '</' + char + '>'
                 ; break
         }
@@ -49,7 +58,7 @@
 
 ; function link(innerHTML, url, attributes) {
     ; return '<a href=\'' + url + '\''
-        + at(attributes)// class, title
+        + idiosync(attributes)// class, title
         + ' target=\'_blank\''
         + '>' + innerHTML + '</a>'
 }
@@ -57,10 +66,7 @@
 ; function image(attributes) {
     ; var attributes = attributes? attributes: {}
     ; return '<img'
-        + (attributes.url    ? ' src=\''     + attributes.url     + '\'': '')
-        + (attributes.alt    ? ' alt=\''     + attributes.alt     + '\'': '')
-        + (attributes.class  ? ' class=\''   + attributes.class   + '\'': '')
-        + (attributes.onerror? ' onerror=\'' + attributes.onerror + '\'': '')// onerror: '; this.src="./favicon.ico"; this.onerror=""'
+        + idiosync(attributes)// url, alt, class, onerror
         + '/>'
 }
 
@@ -68,28 +74,20 @@
 ; function input(attributes) {
     ; var attributes = attributes? attributes: {}
     ; return '<input'
-        + (attributes.type    ? ' type=\''     + attributes.type     + '\'': '')
-        + (attributes.value   ? ' value=\''    + attributes.value    + '\'': '')
-        + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
-        + (attributes.onclick ? ' onclick=\''  + attributes.onclick  + '\'': '')
-        + (attributes.onchange? ' onchange=\'' + attributes.onchange + '\'': '')
+        + idiosync(attributes)// type, value, title, onclick, onchange
         + '>'
 }
 
 ; function select(innerHTML, attributes) {
     ; var attributes = attributes? attributes: {}
     ; return '<select '
-        + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
-        + (attributes.onclick ? ' onclick=\''  + attributes.onclick  + '\'': '')
-        + (attributes.onchange? ' onchange=\'' + attributes.onchange + '\'': '')
+        + idiosync(attributes)// title, onclick, onchange
         + '>' + innerHTML + '</select>'
 }
 ; function option(innerHTML, attributes) {
     ; var attributes = attributes? attributes: {}
     ; return '<option '
-        + (attributes.value   ? ' value=\'' + attributes.value + '\'': '')
-        + (attributes.disabled? ' disabled': '')
-        + (attributes.selected? ' selected': '')
+        + idiosync(attributes)// value, disabled, selected
         + '>' + innerHTML + '</option>'
 }
 
