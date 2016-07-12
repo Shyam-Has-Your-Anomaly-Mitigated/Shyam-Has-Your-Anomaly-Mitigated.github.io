@@ -29,8 +29,7 @@
         + (attributes.selected? ' selected': '')
 }
 
-; function span(innerHTML,attributes) {
-    ; var attributes = attributes? attributes: {}
+; function span(innerHTML, attributes) {
     ; return '<span'
         + idiosync(attributes)// title, class
         + '>' + innerHTML + '</span>'
@@ -70,7 +69,6 @@
 }
 ; hyperlink = link
 ; function image(attributes) {
-    ; var attributes = attributes? attributes: {}
     ; return '<img'
         + idiosync(attributes)// url, alt, class, onerror
         + '/>'
@@ -78,20 +76,17 @@
 
 //; function input({type, value, title, onclick, onchange} = {}) {
 ; function input(attributes) {
-    ; var attributes = attributes? attributes: {}
     ; return '<input'
         + idiosync(attributes)// type, value, title, onclick, onchange
         + '>'
 }
 
 ; function select(innerHTML, attributes) {
-    ; var attributes = attributes? attributes: {}
     ; return '<select '
         + idiosync(attributes)// title, onclick, onchange
         + '>' + innerHTML + '</select>'
 }
 ; function option(innerHTML, attributes) {
-    ; var attributes = attributes? attributes: {}
     ; return '<option '
         + idiosync(attributes)// value, disabled, selected
         + '>' + innerHTML + '</option>'
