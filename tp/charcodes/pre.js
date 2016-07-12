@@ -1,6 +1,5 @@
 ; document.write(//https://en.wikipedia.org/wiki/Category:Typography
-    br
-    + br + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
+    br   + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
     + br + link(format('Proofs' , 'u'), '')
     + br + 'Therefore: ∴'
     + br + 'Because &nbsp;: ∵'
