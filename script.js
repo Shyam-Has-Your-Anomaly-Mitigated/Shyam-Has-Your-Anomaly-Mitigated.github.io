@@ -13,7 +13,7 @@
     return '<span class="Sanskrit">' + Devanagari + '</span>'
 }
 
-; function attributes(attributes) {
+; function at(attributes) {
     ; var attributes = attributes? attributes: {}
     ; return ''
         + (attributes.class? ' class=\'' + attributes.class + '\'': '')
@@ -30,7 +30,7 @@
             case 's':// strikethrough
                 ; innerHTML = '<'
                     + char
-                    + attributes(attributes)// class, title
+                    + at(attributes)// class, title
                     + '>' + innerHTML + '</' + char + '>'
                 ; break
         }
@@ -49,7 +49,7 @@
 
 ; function link(innerHTML, url, attributes) {
     ; return '<a href=\'' + url + '\''
-        + attributes(attributes)// class, title
+        + at(attributes)// class, title
         + ' target=\'_blank\''
         + '>' + innerHTML + '</a>'
 }
