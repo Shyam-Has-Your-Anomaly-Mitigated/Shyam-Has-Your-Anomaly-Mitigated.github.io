@@ -5,5 +5,5 @@
         + '!'
         , 'u'
     ), 4)
-    + 'Write 34K bits/bytes/chars/lines/files/instructions/whatever in ≤9HRs straight (AKA the 1D XP)'
+    + 'Write 34K bits/bytes/chars/lines/files/instructions/whatever in ≤9HRs straight (AKA the ' + link('1D XP', '/license') + ')'
 )
