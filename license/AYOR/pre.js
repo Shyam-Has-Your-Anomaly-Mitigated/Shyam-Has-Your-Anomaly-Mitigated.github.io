@@ -1,3 +1,3 @@
 ; document.write(
-    br + hyperlink('AYOR', '/LICENSE')
+    br + link('AYOR', '/LICENSE')
 )

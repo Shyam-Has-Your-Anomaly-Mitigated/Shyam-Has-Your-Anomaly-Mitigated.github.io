@@ -3,6 +3,10 @@
 ; function getClass(string) {; return document.getElementsByClassName(string)}
 
 /***************************** Text_Processing.pl *****************************/
+/* screw the server, I need readability!!!
+ * at least for function names
+ * attributes can be single char namespaces where it makes sense; class, title,..
+ */
 ; var tab = '&nbsp;&nbsp;&nbsp;&nbsp;'
 ; var br = '<br>' // newline == \n\r || lf+cr
 
@@ -16,8 +20,10 @@
 ; function idiosync(attributes) {
     ; var attributes = attributes? attributes: {}
     ; return ''//this is very inefficient...saves the bandwidth! switch(it)?
+        + (attributes.c       ? ' class=\''    + attributes.c        + '\'': '')
         + (attributes.class   ? ' class=\''    + attributes.class    + '\'': '')
-        + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')
+        + (attributes.t       ? ' title=\''    + attributes.t        + '\'': '')//change to h..?
+        + (attributes.title   ? ' title=\''    + attributes.title    + '\'': '')//change to hover
         + (attributes.url     ? ' src=\''      + attributes.url      + '\'': '')
         + (attributes.alt     ? ' alt=\''      + attributes.alt      + '\'': '')
         + (attributes.onerror ? ' onerror=\''  + attributes.onerror  + '\'': '')// onerror: '; this.src="./favicon.ico"; this.onerror=""'
@@ -29,15 +35,17 @@
         + (attributes.selected? ' selected': '')
 }
 
-; function span(innerHTML, attributes) {
+; function s(innerHTML, attributes) {
     ; return '<span'
         + idiosync(attributes)// title, class
         + '>' + innerHTML + '</span>'
 }
 ; function f(innerHTML, options, attributes) {// format
     // ...is this used as format('abc','ui') ?!?
+    // options should come first...another time...
     ; for(var char of options.split('')) {
         switch(char) {
+            // heading could/should be 'h'
             case 'b':// bold
             case 'i':// italics
             case 'u':// underline
@@ -56,6 +64,7 @@
 ; function i(innerHTML, attributes) {; return format(innerHTML, 'i', attributes)}
 ; function u(innerHTML, attributes) {; return format(innerHTML, 'u', attributes)}
 // why can't these be the other way around? one has value, the other doesn't; unambiguous!
+; span      = s
 ; format    = f
 ; bold      = b
 ; italics   = i

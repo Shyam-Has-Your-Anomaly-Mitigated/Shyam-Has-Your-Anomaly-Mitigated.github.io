@@ -1,20 +1,20 @@
 ; document.write(
-    input(  {type: 'button', value: 'B'      , title: 'Fat Text'        , onclick: '; format("b")'})
-    + input({type: 'button', value: 'I'      , title: 'Slant Text'      , onclick: '; format("i")'})
-    + input({type: 'button', value: 'U'      , title: 'Rule Text'       , onclick: '; format("u")'})
-    + input({type: 'button', value: 'S'      , title: 'Cross Text'      , onclick: '; format("s")'})
-    + input({type: 'button', value: '>'      , title: 'Nestfull Text'   , onclick: '; format("›")'})
-    + input({type: 'button', value: '<'      , title: 'Nestless Text'   , onclick: '; format("‹")'})
-    + input({type: 'button', value: '^'      , title: 'Super Text'      , onclick: '; format("ˢ")'}) // promote
-    + input({type: 'button', value: 'v'      , title: 'Sub Text'        , onclick: '; format("ₛ")'}) // demote
-    + input({type: 'button', value: '&#8734;', title: 'Hyper Link'      , onclick: '; format("∞")'}) // &infin;
-    + input({type: 'button', value: '&#8733;', title: '! Link'          , onclick: '; format("∝")'}) // &prop;
-    + input({type: 'color' , value: '#003366', title: 'Textual Colour'  , onclick: '; format("fg", this.value)', onchange: '; format("fg", this.value)'})
-    + input({type: 'color' , value: '#ffff00', title: 'Highlight Colour', onclick: '; format("bg", this.value)', onchange: '; format("bg", this.value)'})
-    + input({type: 'button', value: '+'      , title: 'Big Text'        , onclick: '; format("+")'})
-    + input({type: 'button', value: '-'      , title: 'Small Text'      , onclick: '; format("-")'})
-    + input({type: 'button', value: 'pt'     , title: 'Resize Text'     , onclick: '; format("pt")'})
-    + input({type: 'button', value: 'H'      , title: 'Title Text'      , onclick: '; format("h")'})
+    input(  {type: 'button', value: 'B'      , t: 'Fat Text'        , onclick: '; format("b")'})
+    + input({type: 'button', value: 'I'      , t: 'Slant Text'      , onclick: '; format("i")'})
+    + input({type: 'button', value: 'U'      , t: 'Rule Text'       , onclick: '; format("u")'})
+    + input({type: 'button', value: 'S'      , t: 'Cross Text'      , onclick: '; format("s")'})
+    + input({type: 'button', value: '>'      , t: 'Nestfull Text'   , onclick: '; format("›")'})
+    + input({type: 'button', value: '<'      , t: 'Nestless Text'   , onclick: '; format("‹")'})
+    + input({type: 'button', value: '^'      , t: 'Super Text'      , onclick: '; format("ˢ")'}) // promote
+    + input({type: 'button', value: 'v'      , t: 'Sub Text'        , onclick: '; format("ₛ")'}) // demote
+    + input({type: 'button', value: '&#8734;', t: 'Hyper Link'      , onclick: '; format("∞")'}) // &infin;
+    + input({type: 'button', value: '&#8733;', t: '! Link'          , onclick: '; format("∝")'}) // &prop;
+    + input({type: 'color' , value: '#003366', t: 'Textual Colour'  , onclick: '; format("fg", this.value)', onchange: '; format("fg", this.value)'})
+    + input({type: 'color' , value: '#ffff00', t: 'Highlight Colour', onclick: '; format("bg", this.value)', onchange: '; format("bg", this.value)'})
+    + input({type: 'button', value: '+'      , t: 'Big Text'        , onclick: '; format("+")'})
+    + input({type: 'button', value: '-'      , t: 'Small Text'      , onclick: '; format("-")'})
+    + input({type: 'button', value: 'pt'     , t: 'Resize Text'     , onclick: '; format("pt")'})
+    + input({type: 'button', value: 'H'      , t: 'Title Text'      , onclick: '; format("h")'})
     + select(
         /*
             https://en.wikipedia.org/wiki/Web_typography#Generic_font_families
@@ -53,9 +53,9 @@
         + option('Tahoma'       , {value: 'tahoma,geneva,sans-serif'})
         + option('Trebuchet MS' , {value: 'trebuchet ms,helvetica,sans-serif'})
         + option('Verdana'      , {value: 'verdana,geneva,sans-serif'})
-        , {onclick: '; format("f", this.value)', onchange: '; format("f", this.value)', title: 'Textual Font'}
+        , {onclick: '; format("f", this.value)', onchange: '; format("f", this.value)', t: 'Textual Font'}
     )
-    + input({type: 'button', value: 'X'    , title: 'Clear Formatting', onclick: '; format("x")'})
-    + input({type: 'button', value: 'CSS'  , title: 'useCSS'          , onclick: '; format("css")'})
-    + input({type: 'button', value: 'Style', title: 'styleWithCSS'    , onclick: '; format("style")'})
+    + input({type: 'button', value: 'X'    , t: 'Clear Formatting', onclick: '; format("x")'})
+    + input({type: 'button', value: 'CSS'  , t: 'useCSS'          , onclick: '; format("css")'})
+    + input({type: 'button', value: 'Style', t: 'styleWithCSS'    , onclick: '; format("style")'})
 )
