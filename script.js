@@ -32,8 +32,13 @@
 ; function italics(  innerHTML, attributes) {; return format(innerHTML, 'i', attributes)}
 ; function underline(innerHTML, attributes) {; return format(innerHTML, 'u', attributes)}
 
-; function hyperlink(innerHTML, url) {
-    ; return '<a href=\'' + url + '\' target=\'_blank\'>' + innerHTML + '</a>'
+; function hyperlink(innerHTML, url, attributes) {
+    ; var attributes = attributes? attributes: {}
+    ; return '<a href=\'' + url + '\''
+        + (attributes.class? ' class=\'' + attributes.class + '\'': '')
+        + (attributes.title? ' title=\'' + attributes.title + '\'': '')
+        + ' target=\'_blank\''
+        + '>' + innerHTML + '</a>'
 }
 ; function image(attributes) {
     ; var attributes = attributes? attributes: {}
@@ -81,6 +86,15 @@
 }
 
 ; function listify(list, type) { // listicle
+    /*
+        listify(
+            [
+                'a'
+                , 'b'
+                , 'c'
+            ], 'o'
+        )
+    */
     ; var ret = '<' + type + '>'
     //; for(var i=0; i<list.length ;i++) {; ret += list[i] + '<br>'}
     ; for(var val of list) {; ret += '<li>' + val + '</li>'}
