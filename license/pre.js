@@ -4,20 +4,20 @@
     + br + format(hyperlink('Licensees:', '/9Hr34k', {class: 'hover', title: 'License depends on request; details to be included in the licensee&apos;s [.htm] file.'}), 'ub')
     + listify(
         [
-            hyperlink('...', 'http://shyam.id.au/license/___.htm')
-        ], 'o'
+            hyperlink('', 'http://shyam.id.au/license/___.htm')
+        ], 'ol'
     )
     + format(hyperlink('Pending..:', 'https://en.wikipedia.org/wiki/Template:Unsolved_problems'), 'ub')
     + listify(
         [
-            hyperlink('...', 'mailto:___@___?Subject=Hello%20<[.htm]>!%20:D')
-        ], 'u'
+            hyperlink('', 'mailto:___@___?Subject=Hello%20<[.htm]>!%20:D')
+        ], 'ul'
     )
     + format(hyperlink('Criminals:', 'http://rosettacode.org/wiki/Help:Similar_Sites', {class: 'hover', title: 'Script Kiddies'}), 'ub')
     + listify(
         [
-            hyperlink('...', 'mailto:___@___?Subject=Subpœna')
-        ], 'o'
+            hyperlink('', 'mailto:___@___?Subject=Subpœna')
+        ], 'ol'
     )
     + italics('I like to think of cyberspace as no different to international waters; where others acknowledge universal jurisdiction...')
 )
