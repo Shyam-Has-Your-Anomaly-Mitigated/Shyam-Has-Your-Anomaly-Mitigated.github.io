@@ -41,11 +41,11 @@
         , {i: 'casing'}
     )
     + select(
-        + option('UNI', {value: 'unicode')
-        + option('DEC', {value: 'decimal')
-        + option('HEX', {value: 'hexadec', selected: true)
-        + option('CSS', {value: 'cstyles')
-        + option('URL', {value: 'percent', disabled: true)//selected
+        + option('UNI', {value: 'unicode'})
+        + option('DEC', {value: 'decimal'})
+        + option('HEX', {value: 'hexadec', selected: true})
+        + option('CSS', {value: 'cstyles'})
+        + option('URL', {value: 'percent', disabled: true})//selected
         , {i: 'coding'}
     )
     + input({type:'button', value:'encode', onclick:';characterise()'})
