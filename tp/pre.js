@@ -1,7 +1,7 @@
 ; function characterise() {//http://www.amp-what.com/
     ; var
-        r        = ''
-        , s      = getId('percent').value
+        r        = ''                    //return
+        , s      = getId('percent').value//string
         , coding = getId('coding').value
         , encode
     ; switch(coding) {
