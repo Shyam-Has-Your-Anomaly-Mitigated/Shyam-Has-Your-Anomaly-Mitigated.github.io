@@ -12,6 +12,7 @@ var
     + br + 'I think, ' + tf + ' I am'
     + br + link('1 = <3', 'https://youtu.be/D67kAbAN8BM?t=3m29s') + ' ' + bc + ' 1+1 = <3'
     + br + a + '2, Brute?'
+    + br + 'Be' + n + 'afraid!'
     + br
     + br + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
     + br + link(format('Proofs' , 'u'), '')
