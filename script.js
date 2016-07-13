@@ -7,8 +7,9 @@
  * at least for function names
  * attributes can be single char namespaces where it makes sense; class, title,..
  */
+; var br  = '<br>' // newline == \n\r || lf+cr
 ; var tab = '&nbsp;&nbsp;&nbsp;&nbsp;'
-; var br = '<br>' // newline == \n\r || lf+cr
+; var hr  = '<hr>'
 
 // need div() function...
 // first clean up heading() as h()
@@ -20,6 +21,8 @@
 ; function idiosync(attributes) {
     ; var a = attributes? attributes: {}
     ; return ''//this is very inefficient...saves the bandwidth! switch(it)?
+        + (a.i       ? ' id=\''       + a.i        + '\'': '')
+        + (a.id      ? ' id=\''       + a.id       + '\'': '')
         + (a.c       ? ' class=\''    + a.c        + '\'': '')
         + (a.class   ? ' class=\''    + a.class    + '\'': '')
         + (a.t       ? ' title=\''    + a.t        + '\'': '')//change to h..?
