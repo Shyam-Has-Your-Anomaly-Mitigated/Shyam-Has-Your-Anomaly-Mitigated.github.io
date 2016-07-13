@@ -28,20 +28,19 @@
     ; getId('percent').value = getId('casing').value=='lower'? r.toLowerCase(): r.toUpperCase()
 }
 ; document.write(
-    br
-    + heading(format(link('Text Processing', 'https://en.wikipedia.org/wiki/Text_Processing_Utility'), 'u'), 3)
+    heading(format(link('Text Processing', 'https://en.wikipedia.org/wiki/Text_Processing_Utility'), 'u'), 3)
     + link('wysiwyg', './wysiwyg')
     + br + link('charcodes', './charcodes')
     + br
     + br + hr
     + br
     + select(
-        + option('lower', {value: 'lower', selected: true})
+        option('lower', {value: 'lower', selected: true})
         + option('UPPER', {value: 'CAPITAL'})
         , {i: 'casing'}
     )
     + select(
-        + option('UNI', {value: 'unicode'})
+        option('UNI', {value: 'unicode'})
         + option('DEC', {value: 'decimal'})
         + option('HEX', {value: 'hexadec', selected: true})
         + option('CSS', {value: 'cstyles'})
