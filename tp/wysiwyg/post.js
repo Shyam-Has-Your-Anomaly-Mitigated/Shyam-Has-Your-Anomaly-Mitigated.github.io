@@ -1,5 +1,6 @@
 ; function in2out() {
     ; var x = getId('input').innerHTML
+    ; alert(x)
     ; getId('output').innerHTML = escapeHtml(x)
 }
 ; function out2in() {
