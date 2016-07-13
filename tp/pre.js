@@ -1,25 +1,20 @@
 ; function characterise() {//http://www.amp-what.com/
     ; var
-        r = ''
-        , s = getId('percent').value
-        , encode
+        r        = ''
+        , s      = getId('percent').value
         , coding = getId('coding').value
+        , encode
     ; switch(coding) {
         case 'unicode':
-            encode = function(c) {return 'U+'  + c.toString(16) + ' '};
-            break;
+            ; encode = function(c) {return 'U+'  + c.toString(16) + ' '}; break;
         case 'decimal':
-            encode = function(c) {return '&#'  + c + ';'};
-            break;
+            ; encode = function(c) {return '&#'  + c + ';'             }; break;
         case 'hexadec':
-            encode = function(c) {return '&#x' + c.toString(16) + ';'};
-            break;
+            ; encode = function(c) {return '&#x' + c.toString(16) + ';'}; break;
         case 'cstyles':
-            encode = function(c) {return '\\'  + c.toString(16) + '␠'};
-            break;
+            ; encode = function(c) {return '\\'  + c.toString(16) + '␠'}; break;
         case 'percent':
-            encode = function(c) {return 'pending...'};
-            break;
+            ; encode = function(c) {return 'pending...'                }; break;
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
         ;var char = s.codePointAt(a)
