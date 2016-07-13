@@ -1,7 +1,6 @@
 ; function in2out() {
     ; var x = getId('input').innerHTML
-    ; alert(x)
-    ; getId('output').innerHTML = escapeHtml(x)
+    ; getId('output').innerHTML = escapeHtml(x.replace(/<br>$/, ''))
 }
 ; function out2in() {
     ; var x = getId('output').innerHTML
