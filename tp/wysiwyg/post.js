@@ -4,7 +4,7 @@
 }
 ; function out2in() {
     ; var x = getId('output').innerHTML
-    ; getId('input').innerHTML = unescapeHtml(x)
+    ; getId('input').innerHTML = unescapeHtml(x).replace(/\n/g, '')
 }
 ; function resize(div) {
     ; getId(div+'put').style.width = getId((div=='in'? 'out': 'in')+'put').style.width
