@@ -1,5 +1,16 @@
+var
+    w    = 'c̄'
+    , a  = '∧'
+    , o  = '∨'
+    , n  = '¬'
+    , bc = '∵'
+    , tf = '∴'
+    , fa = '∀'
+    , st = '|'
 ; document.write(//https://en.wikipedia.org/wiki/Category:Typography
-    br   + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
+    br + '1' + fa + a + 'A1'
+    + br
+    + br + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
     + br + link(format('Proofs' , 'u'), '')
     + br + 'Therefore: ∴'
     + br + 'Because &nbsp;: ∵'
