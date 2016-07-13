@@ -9,6 +9,7 @@ var
     , st = '|'
 ; document.write(//https://en.wikipedia.org/wiki/Category:Typography
     br + '1' + fa + a + 'A1'
+    + br 'I think, ' + tf + ' I am'
     + br
     + br + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
     + br + link(format('Proofs' , 'u'), '')
