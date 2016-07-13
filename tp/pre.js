@@ -17,7 +17,7 @@
             ; encode = function(c) {return 'pending...'                }; break;
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
-        ;var char = s.codePointAt(a)
+        ; var char = s.codePointAt(a)
         ; r += encode(char)
     }
     ; getId('percent').value = getId('casing').value=='lower'? r.toLowerCase(): r.toUpperCase()
@@ -35,7 +35,7 @@
         , {i: 'casing'}
     )
     + select(
-        option('UNI', {value: 'unicode'})
+        option(  'UNI', {value: 'unicode'})
         + option('DEC', {value: 'decimal'})
         + option('HEX', {value: 'hexadec', selected: true})
         + option('CSS', {value: 'cstyles'})
