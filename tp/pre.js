@@ -77,6 +77,6 @@
     + input({type: 'button', value: 'encode', onclick: ';characterise()'})
     + input({type: 'button', value: 'decode', onclick: ';alert("pending...")'})
     + br + '<textarea id="charbx"></textarea>'
-    + br +  link('☺', 'http://www.amp-what.com/')
+    + br    + link('☺', 'http://www.amp-what.com/')
     + '...' + link('™', 'http://textmechanic.co/ASCII-to-Unicode-Converter.html')
 )
