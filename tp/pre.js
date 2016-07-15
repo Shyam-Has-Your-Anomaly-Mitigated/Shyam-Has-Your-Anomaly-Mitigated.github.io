@@ -6,15 +6,15 @@
         , s      = getId('charbx').value//string
         , coding = getId('coding').value
         , encode
-        , encase
+        , encase = (getId('casing').value == 'lower'
+            ? function(x) {return x.toLowerCase()}
+            : function(x) {return x.toUpperCase()}
+        )
         , o = getId('open').value
         , c = getId('close').value
-    ; encase = getId('casing').value == 'lower'
-        ? function(x) {return x.toLowerCase()}
-        : function(x) {return x.toUpperCase()}
     ; switch(coding) {
         case 'unicode': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
-        case 'decimal': encode = function(x) {return o + encase(x)              + c}; break;
+        case 'decimal': encode = function(x) {return o + encase(x.toString(10)) + c}; break;
         case 'hexadec': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
         case 'cstyles': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
         case 'percent': encode = function(x) {return 'pending...'}; break;
