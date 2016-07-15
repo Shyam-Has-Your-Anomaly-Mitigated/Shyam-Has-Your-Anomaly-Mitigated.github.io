@@ -13,13 +13,13 @@
         , o = getId('open').value
         , c = getId('close').value
     ; switch(coding) {
-        case 'unicode': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
-        case 'decimal': encode = function(x) {return o + encase(x.toString(10)) + c}; break;
-        case 'hexadec': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
+        case 'unicode':
+        case 'hexadec':
         case 'cstyles': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
-        case 'percent': encode = function(x) {return o + encase('pending...'  ) + c}; break;
-        case 'extendm': encode = function(x) {return o + encase('pending...'  ) + c}; break;
-        case 'hypertm': encode = function(x) {return o + encase('pending...'  ) + c}; break;
+        case 'decimal': encode = function(x) {return o + encase(x.toString(10)) + c}; break;
+        case 'percent':
+        case 'extendm':
+        case 'hypertm':
         case 'xypertm': encode = function(x) {return o + encase('pending...'  ) + c}; break;
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
