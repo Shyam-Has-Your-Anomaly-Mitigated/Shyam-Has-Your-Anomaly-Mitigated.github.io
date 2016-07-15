@@ -36,8 +36,8 @@
         case 'hexadec': o = '&#x'; c = ';'; break;
         case 'cstyles': o = '\\' ; c = '␠'; break;
         case 'percent': o = '%'  ; c = '' ; break;
-        case 'extendm': o = '&'  ; c = ';'; break;
-        case 'hypertm': o = '&'  ; c = ';'; break;
+        case 'extendm':
+        case 'hypertm':
         case 'xypertm': o = '&'  ; c = ';'; break;
         default: o = ''; c = '';
     }
