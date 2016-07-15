@@ -17,10 +17,10 @@
         case 'decimal': encode = function(x) {return o + encase(x)              + c}; break;
         case 'hexadec': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
         case 'cstyles': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
-        case 'percent': encode = function(x) {return 'pending...'          }; break;
-        case 'extendm': encode = function(x) {return 'pending...'          }; break;
-        case 'hypertm': encode = function(x) {return 'pending...'          }; break;
-        case 'xypertm': encode = function(x) {return 'pending...'          }; break;
+        case 'percent': encode = function(x) {return 'pending...'}; break;
+        case 'extendm': encode = function(x) {return 'pending...'}; break;
+        case 'hypertm': encode = function(x) {return 'pending...'}; break;
+        case 'xypertm': encode = function(x) {return 'pending...'}; break;
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
         ; var char = s.codePointAt(a)
