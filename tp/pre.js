@@ -1,16 +1,20 @@
+//https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+//https://en.wikipedia.org/wiki/Character_encodings_in_HTML
 ; function characterise() {
     ; var
         r        = ''                    //return
-        , s      = getId('percent').value//string
-        , coding = getId('coding' ).value
+        , s      = getId('charbx').value//string
+        , coding = getId('coding').value
         , encode
+        , encase
         , o = getId('open').value
         , c = getId('close').value
+    ; encase = getId('casing').value=='lower'? function(x) {return x.toLowerCase()}: function(x) {return x.toUpperCase()}
     ; switch(coding) {
-        case 'unicode': encode = function(x) {return o + x.toString(16) + c}; break;
-        case 'decimal': encode = function(x) {return o + x              + c}; break;
-        case 'hexadec': encode = function(x) {return o + x.toString(16) + c}; break;
-        case 'cstyles': encode = function(x) {return o + x.toString(16) + c}; break;
+        case 'unicode': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
+        case 'decimal': encode = function(x) {return o + encase(x)              + c}; break;
+        case 'hexadec': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
+        case 'cstyles': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
         case 'percent': encode = function(x) {return 'pending...'          }; break;
         case 'extendm': encode = function(x) {return 'pending...'          }; break;
         case 'hypertm': encode = function(x) {return 'pending...'          }; break;
@@ -20,7 +24,7 @@
         ; var char = s.codePointAt(a)
         ; r += encode(char)
     }
-    ; getId('percent').value = getId('casing').value=='lower'? r.toLowerCase(): r.toUpperCase()
+    ; getId('charbx').value = r
 }
 ; function reformat(option) {
     ; var o, c
@@ -47,8 +51,8 @@
     + br
     + input({type: 'text', id: 'open', placeholder: 'open', size: '5'})
     + select(
-        option('lower', {value: 'lower', selected: true})
-        + option('UPPER', {value: 'CAPITAL'})
+        option(  'lower', {value: 'lower'})
+        + option('UPPER', {value: 'CAPITAL', selected: true})
         , {i: 'casing'}
     )
     + select(
@@ -70,7 +74,7 @@
     + input({type: 'text', id: 'close', placeholder: 'close', size: '5'})
     + input({type:'button', value:'encode', onclick:';characterise()'})
     + input({type:'button', value:'decode', onclick:';alert("pending...")'})
-    + br + '<textarea id="percent"></textarea>'
+    + br + '<textarea id="charbx"></textarea>'
     + br +  link('☺', 'http://www.amp-what.com/')
     + '...' + link('™', 'http://textmechanic.co/ASCII-to-Unicode-Converter.html')
 )
