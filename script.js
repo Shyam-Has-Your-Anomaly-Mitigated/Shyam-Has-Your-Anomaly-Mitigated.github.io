@@ -1,3 +1,23 @@
+// This will probably get annoying...
+; var
+	n = '\n'
+	, title = 'ℝ𝔼𝕊ℙ𝕆ℕ𝕊𝕀𝔹𝕃𝔼 ℂ𝕐𝔹𝔼ℝ 𝕊𝕌ℝ𝔽𝕀ℕ𝔾'
+	, whistle = '𝄞三¾三♩三♩三♬三|三♩三♩三♬三‖'
+; alert(
+    'This website stores files on your computer!'
+    + n + '...but it\'s your responsibility ∵ you made the request!'
+    + n + 'This website will probably store cookies, among other "-thing"s, at some temporal point (¿now?), but nothing will change; I am not liable, and never was!'
+    + n
+    + n + title
+    + n + '0) Download source code without assembling/compiling/interpreting/rendering it.'
+    + n + '1) Read through ALL of it.'
+    + n + '3) AYOR, assemble/compile/interpret/render it.'
+    + n
+    + n + 'I\'m Nigerian Prince; complete.'
+    + n + whistle
+    + n + 'https://youtu.be/s3zjRcMnRNY'
+)
+
 // Should these be anonymous..?
 ; function getId(string)    {; return document.getElementById(string)        }
 ; function getClass(string) {; return document.getElementsByClassName(string)}
