@@ -1,7 +1,7 @@
-a    {top: 50%; position: absolute}
-body {font-family: monospace, sans-serif; text-align: center; font-size: 5vw;}
+a    {; top: 50%; position: absolute}
+body {; font-family: monospace, sans-serif; text-align: center; font-size: 5vw}
 @keyframes awooga {
-    0%, 100% {background-color: red   ; color: yellow;}
-    50%      {background-color: yellow; color: red   ;}
+    0%, 100% {; background-color: red   ; color: yellow}
+    50%      {; background-color: yellow; color: red   }
 }
 a, body {; animation: awooga 5s infinite; text-decoration: none}
