@@ -18,20 +18,18 @@
     return '<span class="Sanskrit">' + Devanagari + '</span>'
 }
 
-//http://stackoverflow.com/a/32542368
-; function getName(property) {; return /\.([^\.;]+);?\s*\}$/.exec(property.toString())[1]}
 ; function idiosync(attributes) {
     ; var
         r = ''// return
         , a = attributes? attributes: {}
     ; for(var e in a) {// for each in attributes
         ; switch(e) {
-            case 'i'       : r += ' id=\''    + a[e] + '\'';
-            case 'c'       : r += ' class=\'' + a[e] + '\'';
-            case 't'       : r += ' title=\'' + a[e] + '\'';//change to h & hover?
-            case 'url'     : r += ' src=\''   + a[e] + '\'';//change to geller?uri
-            case 'disabled': r += ' disabled';
-            case 'selected': r += ' selected';
+            case 'i'       : r += ' id=\''    + a[e] + '\''; break;
+            case 'c'       : r += ' class=\'' + a[e] + '\''; break;
+            case 't'       : r += ' title=\'' + a[e] + '\''; break;//change to h & hover?
+            case 'url'     : r += ' src=\''   + a[e] + '\''; break;//change to geller?uri
+            case 'disabled': r += ' disabled'; break;
+            case 'selected': r += ' selected'; break;
             case default   : r += ' ' + e + '=\'' + a[e] + '\'';
         }
     }
