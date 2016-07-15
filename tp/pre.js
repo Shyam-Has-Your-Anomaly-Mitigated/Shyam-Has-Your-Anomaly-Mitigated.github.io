@@ -1,5 +1,6 @@
 //https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
 //https://en.wikipedia.org/wiki/Character_encodings_in_HTML
+//https://en.wikipedia.org/wiki/Blackboard_bold
 ; function characterise() {
     ; var
         r        = ''                    //return
