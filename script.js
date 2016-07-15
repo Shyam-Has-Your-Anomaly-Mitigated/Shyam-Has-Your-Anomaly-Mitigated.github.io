@@ -8,6 +8,7 @@
     + n + '...but it\'s your responsibility ∵ you made the request!'
     + n + 'This website will probably store cookies, among other "-thing"s, at some temporal point (¿now?), but nothing will change; I am not liable, and never was!'
     + n + 'Get your bloody license; or get off the bandwidth!'
+    + n + 'shyam.id.au/license'
     + n
     + n + title
     + n + '0) Download source code without assembling/compiling/interpreting/rendering it.'
