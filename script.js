@@ -18,24 +18,24 @@
     return '<span class="Sanskrit">' + Devanagari + '</span>'
 }
 
+//http://stackoverflow.com/a/32542368
+; function getName(property) {; return /\.([^\.;]+);?\s*\}$/.exec(property.toString())[1]}
 ; function idiosync(attributes) {
-    ; var a = attributes? attributes: {}
-    ; return ''//this is very inefficient...saves the bandwidth! switch(it)?
-        + (a.i       ? ' id=\''       + a.i        + '\'': '')
-        + (a.id      ? ' id=\''       + a.id       + '\'': '')
-        + (a.c       ? ' class=\''    + a.c        + '\'': '')
-        + (a.class   ? ' class=\''    + a.class    + '\'': '')
-        + (a.t       ? ' title=\''    + a.t        + '\'': '')//change to h..?
-        + (a.title   ? ' title=\''    + a.title    + '\'': '')//change to hover
-        + (a.url     ? ' src=\''      + a.url      + '\'': '')
-        + (a.alt     ? ' alt=\''      + a.alt      + '\'': '')
-        + (a.onerror ? ' onerror=\''  + a.onerror  + '\'': '')// onerror: '; this.src="./favicon.ico"; this.onerror=""'
-        + (a.type    ? ' type=\''     + a.type     + '\'': '')
-        + (a.value   ? ' value=\''    + a.value    + '\'': '')
-        + (a.onclick ? ' onclick=\''  + a.onclick  + '\'': '')
-        + (a.onchange? ' onchange=\'' + a.onchange + '\'': '')
-        + (a.disabled? ' disabled': '')
-        + (a.selected? ' selected': '')
+    ; var
+        r = ''// return
+        , a = attributes? attributes: {}
+    ; for(var e in a) {// for each in attributes
+        ; switch(e) {
+            case 'i'       : r += ' id=\''    + a[e] + '\'';
+            case 'c'       : r += ' class=\'' + a[e] + '\'';
+            case 't'       : r += ' title=\'' + a[e] + '\'';//change to h & hover?
+            case 'url'     : r += ' src=\''   + a[e] + '\'';//change to geller?uri
+            case 'disabled': r += ' disabled';
+            case 'selected': r += ' selected';
+            case default   : r += ' ' + e + '=\'' + a[e] + '\'';
+        }
+    }
+    ; return r
 }
 
 ; function s(innerHTML, attributes) {// span
@@ -47,7 +47,7 @@
     // ...is this used as format('abc','ui') ?!?
     // options should come first...another time...
     ; for(var char of options.split('')) {
-        switch(char) {
+        ; switch(char) {
             // heading could/should be 'h'
             case 'b':// bold
             case 'i':// italics
@@ -58,6 +58,7 @@
                     + idiosync(attributes)// class, title
                     + '>' + innerHTML + '</' + char + '>'
                 ; break
+                ;
         }
     }
     ; return innerHTML
