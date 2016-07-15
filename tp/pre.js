@@ -4,7 +4,6 @@
     ; var
         r        = ''                    //return
         , s      = getId('charbx').value//string
-        , coding = getId('coding').value
         , encode
         , encase = (getId('casing').value == 'lower'
             ? function(x) {return x.toLowerCase()}
@@ -12,7 +11,7 @@
         )
         , o = getId('open').value
         , c = getId('close').value
-    ; switch(coding) {
+    ; switch(getId('coding').value) {
         case 'unicode':
         case 'hexadec':
         case 'cstyles': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
