@@ -30,7 +30,7 @@
             case 'url'     : r += ' src=\''   + a[e] + '\''; break;//change to geller?uri
             case 'disabled': r += ' disabled'; break;
             case 'selected': r += ' selected'; break;
-            case default   : r += ' ' + e + '=\'' + a[e] + '\'';
+            default        : r += ' ' + e + '=\'' + a[e] + '\'';
         }
     }
     ; return r
