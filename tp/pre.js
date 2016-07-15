@@ -9,7 +9,9 @@
         , encase
         , o = getId('open').value
         , c = getId('close').value
-    ; encase = getId('casing').value=='lower'? function(x) {return x.toLowerCase()}: function(x) {return x.toUpperCase()}
+    ; encase = getId('casing').value=='lower'
+        ? function(x) {return x.toLowerCase()}
+        : function(x) {return x.toUpperCase()}
     ; switch(coding) {
         case 'unicode': encode = function(x) {return o + encase(x.toString(16)) + c}; break;
         case 'decimal': encode = function(x) {return o + encase(x)              + c}; break;
