@@ -1,3 +1,1 @@
-; document.write(
-    br + link('AYOR', '/LICENSE')
-)
+; document.write(link('AYOR', '/LICENSE'))
