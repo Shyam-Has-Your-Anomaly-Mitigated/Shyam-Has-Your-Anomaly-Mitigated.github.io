@@ -149,20 +149,22 @@
     ; return ret + '</' + type + '>'
 }
 
-; function tabulate(matrix, heading) {// hopefully this isn't being used yet...
+; function tabulate(matrix, heading, attributes) {// hopefully this isn't being used yet...
     /*
         tabulate(
             [
                 [['A', {attributes}], ['B', {attributes}]]
                 , [['a', {attributes}], ['b', {attributes}]]
-            ], true
+            ], true, {}
         )
     */
-    ; var table = '<table>'
+    ; var
+        a       = attributes? attributes: {}
+        , table = '<table' + idiosync(attributes) + '>'
     ; if(heading) {
         ; table += '<tr>'
         ; for(var col of matrix.shift()) {
-            ; var a = col[1]? col[1]: {};
+            ; var a = col[1]? col[1]: {}
             ; table += '<th' + idiosync(a) + '>' + col[0] + '</th>'
         }
         ; table += '</tr>'
@@ -170,7 +172,7 @@
     ; for(var row of matrix) {
         ; table += '<tr>'
         ; for(var col of row) {
-            ; var a = col[1]? col[1]: {};
+            ; var a = col[1]? col[1]: {}
             ; table += '<td' + idiosync(a) + '>' + col[0] + '</td>'
         }
         ; table += '</tr>'
