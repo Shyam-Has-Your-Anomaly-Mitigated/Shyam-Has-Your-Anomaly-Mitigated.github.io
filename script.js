@@ -1,8 +1,8 @@
 // This will probably get annoying...
 ; var
-	n = '\n'
-	, title = 'ℝ𝔼𝕊ℙ𝕆ℕ𝕊𝕀𝔹𝕃𝔼 ℂ𝕐𝔹𝔼ℝ 𝕊𝕌ℝ𝔽𝕀ℕ𝔾'
-	, whistle = '𝄞三¾三♩三♩三♬三|三♩三♩三♬三‖'
+    n = '\n'
+    , title = 'ℝ𝔼𝕊ℙ𝕆ℕ𝕊𝕀𝔹𝕃𝔼 ℂ𝕐𝔹𝔼ℝ 𝕊𝕌ℝ𝔽𝕀ℕ𝔾'
+    , whistle = '𝄞三¾三♩三♩三♬三|三♩三♩三♬三‖'
 ; alert(
     'This website stores files on your computer!'
     + n + '...but it\'s your responsibility ∵ you made the request!'
@@ -149,12 +149,12 @@
     ; return ret + '</' + type + '>'
 }
 
-; function tabulate(matrix, heading) {
+; function tabulate(matrix, heading) {// hopefully this isn't being used yet...
     /*
         tabulate(
             [
-                ['A', 'B']
-                , ['a', 'b']
+                [['A', {attributes}], ['B', {attributes}]]
+                , [['a', {attributes}], ['b', {attributes}]]
             ], true
         )
     */
@@ -162,14 +162,16 @@
     ; if(heading) {
         ; table += '<tr>'
         ; for(var col of matrix.shift()) {
-            ; table += '<th>' + col + '</th>'
+            ; var a = col[1]? col[1]: {};
+            ; table += '<th' + idiosync(a) + '>' + col[0] + '</th>'
         }
         ; table += '</tr>'
     }
     ; for(var row of matrix) {
         ; table += '<tr>'
         ; for(var col of row) {
-            ; table += '<td>' + col + '</td>'
+            ; var a = col[1]? col[1]: {};
+            ; table += '<td' + idiosync(a) + '>' + col[0] + '</td>'
         }
         ; table += '</tr>'
     }
