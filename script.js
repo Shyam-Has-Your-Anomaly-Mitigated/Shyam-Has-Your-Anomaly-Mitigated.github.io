@@ -159,8 +159,8 @@
         )
     */
     ; var
-        a       = attributes? attributes: {}
-        , table = '<table' + idiosync(attributes) + '>'
+        attributes = attributes? attributes: {}
+        , table    = '<table' + idiosync(attributes) + '>'
     ; if(heading) {
         ; table += '<tr>'
         ; for(var col of matrix.shift()) {
