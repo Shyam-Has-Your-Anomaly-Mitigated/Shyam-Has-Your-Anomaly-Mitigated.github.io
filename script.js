@@ -155,7 +155,7 @@
             [
                 [['A', {attributes}], ['B', {attributes}]]
                 , [['a', {attributes}], ['b', {attributes}]]
-            ], true, {}
+            ], true, {attributes}
         )
     */
     ; var
