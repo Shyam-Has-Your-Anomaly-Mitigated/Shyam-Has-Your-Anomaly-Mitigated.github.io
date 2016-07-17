@@ -208,3 +208,21 @@ time∈{
 */
 
 // NEED TO WRITE UP SOME KIND OF WYSIWYG FOR THIS... (temporal conversions to seconds, and the rest of JSON; replace the recommendations.)
+
+/*
+awooga_profiles
+    animation: DONT_PANIC 5s infinite
+        colour_A = FF0
+        colour_Z = F00
+    animation: biomedical 5s infinite
+        colour_A = FF0
+        colour_Z = 0FF
+    animation: static 5s infinite
+        colour_A = F
+        colour_Z = 0
+
+linked_clicks
+    update time
+    log stats
+    open link in new tab
+*/
