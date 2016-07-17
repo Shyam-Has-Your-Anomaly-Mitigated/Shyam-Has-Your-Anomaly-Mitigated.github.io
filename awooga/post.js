@@ -137,10 +137,10 @@ function load() {
         for(var e in list) {
             var oc = '; rc["'+table+'"].row'+'["'+Object.keys(rc[table].row)[e]+'"].time = new Date; localStorage.rc = no(rc, 0)';
             list[e] = [
-                ['start'  , {id: list[e] + '-start'}]
-                , ['stop' , {id: list[e] + '-stop' }]
-                , [list[e], {id: list[e] + '-ident', onclick: oc}]
-                , [''     , {id: list[e] + '-time' , onclick: oc}]
+                ['start'  , {id: list[e] + '-start', class: 'start'}]
+                , ['stop' , {id: list[e] + '-stop' , class: 'stop' }]
+                , [list[e], {id: list[e] + '-ident', class: 'ident', onclick: oc}]
+                , [''     , {id: list[e] + '-time' , class: 'time' , onclick: oc}]
             ];
         };
         h.innerHTML += tabulate(
