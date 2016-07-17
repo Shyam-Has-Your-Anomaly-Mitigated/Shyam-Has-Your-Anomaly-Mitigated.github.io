@@ -46,15 +46,15 @@ https://xkcd.com/1179/
 */
 function timestamp(t) {
     var
-        zero  =(x=>(x<10)?'0' +x:x) // function zero(i) {return (i<10?'0'+i:i);}
-        , zeroes=(x=>(x<10)?'00'+x:x<100?'0'+x:x) // function zeroes(i) {return (i<10?'00'+i:i<100?'0'+i:i);}
-        , Y  =        t.getFullYear()
-        , M  = zero(  t.getMonth() +1)
-        , D  = zero(  t.getDate())
-        , h  = zero(  t.getHours())
-        , m  = zero(  t.getMinutes())
-        , s  = zero(  t.getSeconds())
-        , ms = zeroes(t.getMilliseconds());
+        zeroes = (x => (x<10)? '00'+x: x<100? '0'+x: x)
+        , zero = (x => (x<10)? '0' +x: x)
+        , Y    =        t.getFullYear()
+        , M    = zero(  t.getMonth()+1)
+        , D    = zero(  t.getDate()   )
+        , h    = zero(  t.getHours()  )
+        , m    = zero(  t.getMinutes())
+        , s    = zero(  t.getSeconds())
+        , ms   = zeroes(t.getMilliseconds());
     return Y+'-'+M+'-'+D+' '+h+':'+m+':'+s+'.'+ms;
 }
 function secondstamp(time) { // time=seconds
@@ -100,27 +100,19 @@ function init() {
         load();
         reset_timers();
     }
-    update_tables();
     reset_tables();
 }
 
 function reset_tables() {
     for(var t in rc) {for(var e in rc[t].row) {// for each in table in rc
-        timer_clock(e, rc[t].row[e], 'time');
+        timer_clock(e + '-time', rc[t].row[e], 'time');
     }};
 }
 
 function test() {
     reset_timers();
-    update_tables();
     for(var t in rc) {for(var e in rc[t].row) {// for each in table in rc
-        timer_clock(e, rc[t].row[e], 'time');
-    }};
-}
-function update_tables() {
-    localStorage.rc = no(rc,0);
-    for(var t in rc) {for(var e in rc[t].row) {// for each in table in rc
-        getId(e).title = timestamp(new Date(rc[t].row[e].time));
+        timer_clock(e + '-time', rc[t].row[e], 'time');
     }};
 }
 function reset_timers() {
@@ -135,7 +127,6 @@ function load() {
         reset_timers();
         localStorage.rc = no(rc, 0);
 //        getId('f').reset()
-//        update_tables();
 //        reset_tables();
 //        location.reload();
     }
@@ -144,12 +135,12 @@ function load() {
     for(var table in rc) {
         var list = foldm(Object.keys(rc[table].row), 1)
         for(var e in list) {
-            var oc = 'rc["'+table+'"].row'+'["'+Object.keys(rc[table].row)[e]+'"].time = new Date';
+            var oc = '; rc["'+table+'"].row'+'["'+Object.keys(rc[table].row)[e]+'"].time = new Date; localStorage.rc = no(rc, 0)';
             list[e] = [
-                ['start', {}]
-                , ['stop', {}]
-                , [list[e], {}]
-                , ['', {id: list[e], onclick: oc}]
+                ['start'  , {id: list[e] + '-start'}]
+                , ['stop' , {id: list[e] + '-stop' }]
+                , [list[e], {id: list[e] + '-ident', onclick: oc}]
+                , [''     , {id: list[e] + '-time' , onclick: oc}]
             ];
         };
         h.innerHTML += tabulate(
@@ -157,13 +148,6 @@ function load() {
             , true, {style: "; display: inline-block; vertical-align: top"}
         );
     }
-}
-
-function click_to_update(type) {
-    for(var t in rc) {for(var e in rc[t].row) {// for each in table in rc
-        rc[t].row[e].time = new Date();
-    }};
-    update_tables();
 }
 
 // add exceptions for sleep, wake, man, and auto; above...
@@ -178,3 +162,49 @@ function click_to_update(type) {
 // FFS; make the whole row clickable!!! D-:<
 
 // awoogarc.json: drag'n'drop, weblinks...
+
+/* Awoogas
+taboo
+    time = <seconds>
+    on   : 0s to this(time)         ; awooga(time_colours)
+    off  : this(time) to done
+    on   : done to next(time)       ; awooga(time_colours)
+    done = 0s
+tardy
+    time = <seconds>
+    off  : 0s to this(time)
+    on   : this(time) to done       ; awooga(time_colours)
+    off  : done to next(time)
+    done = 0s
+taboo & tardy
+    taby = <seconds>
+    tard = <seconds>
+    on   : 0s to this(taby)         ; awooga(taby_colours)
+    off  : this(taby) to this(tard)
+    on   : this(tard) to done       ; awooga(tard_colours)
+    on   : done to next(taby)       ; awooga(taby_colours)
+    done = 0s
+
+every <time> after <seconds>
+    {laundry∈every(week)|[6am,+∞)}
+every <time> between <seconds> and <seconds>
+    {rehydrate∈every(hour)|[6am,9pm]}
+
+time∈{
+    "other"∈{
+        "secondly", "minutely"   , "hourly" , "daily"
+        , "weekly", "fortnightly", "monthly", "yearly"
+    }
+    , {"seconds"∈ℤ|[1,+∞ )}
+    , {"second" ∈ℤ|[1,60 ]}
+    , {"minute" ∈ℤ|[1,60 ]}
+    , {"hour"   ∈ℤ|[1,24 ]}
+    , {"wday"   ∈ℤ|[1,7  ]}
+    , {"mday"   ∈ℤ|[1,31 ]}
+    , {"day"    ∈ℤ|[1,365]}
+    , {"week"   ∈ℤ|[1,52 ]}
+    , {"month"  ∈ℤ|[1,12 ]}
+}
+*/
+
+// NEED TO WRITE UP SOME KIND OF WYSIWYG FOR THIS... (temporal conversions to seconds, and the rest of JSON; replace the recommendations.)
