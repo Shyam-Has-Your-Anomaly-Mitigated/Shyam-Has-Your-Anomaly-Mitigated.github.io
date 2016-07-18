@@ -1,4 +1,17 @@
+// https://gist.github.com/webinista/11240585
+; const foldm = (r,j) => r.reduce((a,b,i,g) => !(i % j)? (a.push(g.slice(i,i+j)), a): a, [])
+
+// is File API available?
+; if(!(window.File && window.FileReader && window.FileList && window.Blob)) {; alert('Where\'s my File API?.')}
+// is localStorage available?
+; if(typeof window.localStorage===undefined || typeof localStorage===undefined){; alert('Where\'s my localStorage?')}
+
+// globals
 ; var rc, timeout={}
+
+// main
+; clock()
+; init()// whatever the fuck is going on here; should've just used the good old hard-coded system..!
 
 // drag & drop; http://stackoverflow.com/a/33917000
 ; var dnd = getId('dnd')
@@ -16,10 +29,7 @@
     ; hideDropZone()
     ; try {
         ; var r = new FileReader()
-        ; r.onload = function() {
-            ; localStorage.rc = r.result
-            ; reconfigure()
-        }
+        ; r.onload = function() {; reconfigure(r.result, 0)}
         ; r.readAsText(e.dataTransfer.files[0])
     } catch(e) {; alert(e)}
 }
@@ -29,24 +39,18 @@
 ; dnd.addEventListener(   'dragleave', function(e) {; hideDropZone()})// 3
 ; dnd.addEventListener(   'drop'     , handleDrop                    )// 4
 
+// file browser
 ; function storeClientFile(f) {// f.name, f.type, f.size, f.lastModified, f.lastModifiedDate, f.slice
     ; try {
         ; if(f.type == 'application/json') {// http://www.ietf.org/rfc/rfc4627.txt
             ; var r = new FileReader()
-            ; r.onload = function() {
-                ; localStorage.rc = r.result
-                ; reconfigure()
-            }
+            ; r.onload = function() {; reconfigure(r.result, 0)}
             ; r.readAsText(f)
         } else {; alert('Your file is MIME:'+f.type+', it must be MIME:application/json')}
     } catch(e) {; alert(e)}
 }
 
-; function reconfigure() {
-    ; rc = no(localStorage.rc, 1)
-    ; load()
-}
-
+// json
 ; function no(s, j) {
     ; try {
         ; return j? JSON.parse(s): JSON.stringify(s)
@@ -66,14 +70,6 @@
         )
     }
 }
-
-// https://gist.github.com/webinista/11240585
-; const foldm = (r,j) => r.reduce((a,b,i,g) => !(i % j)? (a.push(g.slice(i,i+j)), a): a, [])
-
-// is File API available?
-; if(!(window.File && window.FileReader && window.FileList && window.Blob)) {; alert('Where\'s my File API?.')}
-// is localStorage available?
-; if(typeof window.localStorage===undefined || typeof localStorage===undefined){; alert('Where\'s my localStorage?')}
 
 /*
 http://time.is/widgets
@@ -99,7 +95,7 @@ https://xkcd.com/1179/
         + ' ' + h + ':' + m + ':' + s + '.' + ms
         + ' ' + z
 }
-; function secondstamp(time) { // time=seconds
+; function secondstamp(time) {// time=seconds
     ; var s, m, h, d
     ; s = time % 60
     ; time = (time - s)/60
@@ -127,49 +123,32 @@ https://xkcd.com/1179/
     ; var t
     ; getId('clock').innerHTML = timestamp(new Date())
     ; t = setTimeout(clock, 1)//100
-}; clock()
-
-; init()// whatever the fuck is going on here; should've just used the good old hard-coded system..!
+}
 
 ; function init() {
-    if('rc' in localStorage) {
-        ; rc = no(localStorage.rc, 1)
-        ; load()
-    } else {
-        ; var
-            xmlhttp = new XMLHttpRequest()
-            , url = 'awoogarc.json'
-        ; xmlhttp.onreadystatechange = function() {
-            ; if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                ; var json = xmlhttp.responseText
-                ; rc = no(json, 1)
-                ; reset_timers()// to reset, or not to reset; that is configurable...
-                ; load()
+    if('rc' in localStorage) {; reconfigure(localStorage.rc, 0)}
+    else {; download('awoogarc.json')}
+}
+; function download(url) {
+        ; var xhr = new XMLHttpRequest()
+        ; xhr.onreadystatechange = function() {
+            ; if (xhr.readyState == 4 && xhr.status == 200) {
+                ; reconfigure(xhr.responseText, 1)
             }
         }
-        ; xmlhttp.open("GET", url, true)
-        ; xmlhttp.send()
-    }
+        ; xhr.open("GET", url, true)
+        ; xhr.send()
 }
 
-; function reset_tables() {
-    ; for(var e in timeout) {// for each in timeout
-        ; clearTimeout(timeout[e])
-    }
-    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
-        ; timer_clock(e + '-time', rc[t].row[e], 'time', e)
-    }}
-}
-
-; function reset_timers() {
-    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
-        ; rc[t].row[e].time = Date.now()
-    }}
+; function reconfigure(json, reset) {
+    ; rc = no(json, 1)
+    ; if(reset) {; reset_timers()}// to reset, or not to reset; that is configurable...
     ; localStorage.rc = no(rc, 0)
+    ; Molly()
+    ; reset_tables()
 }
-
-; function load() {
-    ; var h = getId('Holly')
+; function Molly() {
+    ; var h = getId('Holly')// ^
     ; h.innerHTML = ''
     ; for(var table in rc) {
         ; var list = foldm(Object.keys(rc[table].row), 1)
@@ -184,10 +163,20 @@ https://xkcd.com/1179/
         }
         ; h.innerHTML += tabulate(
             [[[table, {colspan: '4'}]]].concat(list)
-            , true, {style: "; display: inline-block; vertical-align: top"}
+            , true, {style: "; display: inline-block; vertical-align: top; margin: 3px"}
         )
     }
-    ; reset_tables()
+}
+; function reset_timers() {
+    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
+        ; rc[t].row[e].time = Date.now()
+    }}
+}
+; function reset_tables() {
+    ; for(var e in timeout) {; clearTimeout(timeout[e])}
+    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
+        ; timer_clock(e + '-time', rc[t].row[e], 'time', e)
+    }}
 }
 
 // add exceptions for sleep, wake, man, and auto; above...
@@ -270,3 +259,6 @@ custom_files
     awoogarc.json
     awoogarc.css
 */
+
+// this needs validation...
+// <input type="button" value="Cyberphile" onclick="download(prompt())">
