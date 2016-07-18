@@ -1,4 +1,4 @@
-#notepad {
+textarea#notepad {
     ; width: 100%
     ; min-width: 100%
     ; max-width: 100%
@@ -6,3 +6,15 @@
 
 .start, .stop {; cursor: default}
 .time, .ident {; cursor: copy}
+
+div#dnd {
+  background: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0.6;
+  visibility: hidden;
+}

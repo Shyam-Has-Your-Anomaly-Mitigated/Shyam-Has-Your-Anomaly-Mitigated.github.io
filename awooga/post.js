@@ -1,16 +1,50 @@
 ; var rc, timeout={}
 
+// drag & drop; http://stackoverflow.com/a/33917000
+; var dnd = getId('dnd')
+; function showDropZone() {; dnd.style.visibility = "visible"}
+; function hideDropZone() {; dnd.style.visibility = "hidden" }
+; function allowDrag(e) {
+    ; if (true) {  // Test that the item being dragged is a valid one
+        ; e.dataTransfer.dropEffect = 'copy'
+        ; e.preventDefault()
+    }
+}
+; function handleDrop(e) {
+    ; e.preventDefault()
+    ; e.stopPropagation()
+    ; hideDropZone()
+    ; try {
+        ; var r = new FileReader()
+        ; r.onload = function() {
+            ; localStorage.rc = r.result
+            ; reconfigure()
+        }
+        ; r.readAsText(e.dataTransfer.files[0])
+    } catch(e) {; alert(e)}
+}
+; window.addEventListener('dragenter', function(e) {; showDropZone()})// 1
+; dnd.addEventListener(   'dragenter', allowDrag                     )// 2
+; dnd.addEventListener(   'dragover' , allowDrag                     )// 2
+; dnd.addEventListener(   'dragleave', function(e) {; hideDropZone()})// 3
+; dnd.addEventListener(   'drop'     , handleDrop                    )// 4
+
 ; function storeClientFile(f) {// f.name, f.type, f.size, f.lastModified, f.lastModifiedDate, f.slice
     ; try {
         ; if(f.type == 'application/json') {// http://www.ietf.org/rfc/rfc4627.txt
             ; var r = new FileReader()
             ; r.onload = function() {
                 ; localStorage.rc = r.result
-                ; load()
+                ; reconfigure()
             }
             ; r.readAsText(f)
         } else {; alert('Your file is MIME:'+f.type+', it must be MIME:application/json')}
     } catch(e) {; alert(e)}
+}
+
+; function reconfigure() {
+    ; rc = no(localStorage.rc, 1)
+    ; load()
 }
 
 ; function no(s, j) {
@@ -135,10 +169,6 @@ https://xkcd.com/1179/
 }
 
 ; function load() {
-    ; if(getId('f').value!=='') {// HOW TO RESET TIMERS FOR NEW FILE?!?
-        ; rc = no(localStorage.rc, 1)
-        ; reset_timers()
-    }
     ; var h = getId('Holly')
     ; h.innerHTML = ''
     ; for(var table in rc) {

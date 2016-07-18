@@ -10,13 +10,14 @@
     <script src='pre.js'></script>
 </head>
 <body>
-    <a href="#" download="comment.log" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(getId('notepad').value)">Download</a>
+    <a href="#" download="comment.log" onclick="; this.download='comment_' + Date.now() + '.log'; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(getId('notepad').value)">Download</a>
     <br>
     <textarea id="notepad" rows="1" autofocus></textarea>
     <br>
     <br>
-    <a href="#" onclick="; delete localStorage.rc; init()">Reconfigure</a>:
+    <a href="#" onclick="; delete localStorage.rc; init()">Reconfigure</a>: Drag & Drop, or
     <input type="file" id="f" onchange="storeClientFile(this.files[0])">
+    <div id="dnd"></div><!-- drag & drop -->
     <a href="#" download="awoogarc.json" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(no(rc, 0))">Backup</a>
     (compressed)
     <br>
