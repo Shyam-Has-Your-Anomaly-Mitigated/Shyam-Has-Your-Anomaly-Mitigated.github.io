@@ -83,7 +83,7 @@ https://xkcd.com/1179/
     ; diff = new Date(new Date() - new Date(object[property]))
     ; [d,h,m,s] = secondstamp(parseInt(diff/1000))
     ; getId(id).innerHTML = (0<d?d+'d ':'') + (0<h?h+'h ':'') + (0<m?m+'m ':'') + s + 's'
-    ; timeout[t] = setTimeout(timer_clock, 1000, id, object, property, t)
+    ; timeout[t] = setTimeout(timer_clock, 100, id, object, property, t)
 }
 ; function clock() {
     ; var t
@@ -94,10 +94,25 @@ https://xkcd.com/1179/
 ; init()// whatever the fuck is going on here; should've just used the good old hard-coded system..!
 
 ; function init() {
-    ; rc = localStorage.rc !== undefined
-        ? no(localStorage.rc, 1)
-        : rc = no('{"Lucid REMS":{"header":{"hover":"dynamic polyphasic reboot","link":"https://en.wikipedia.org/wiki/Biphasic_and_polyphasic_sleep","time":null,"alarm":null},"row":{"sleep":{"time":null,"alarm":null},"wake":{"time":null,"alarm":null},"man":{"time":null,"alarm":null},"auto":{"time":null,"alarm":null}}},"Refuel":{"header":{"hover":"input","link":"https://en.wikipedia.org/wiki/Garbage_in,_garbage_out","time":null,"alarm":null},"row":{"Inhalation":{"time":null,"alarm":null},"rehydration":{"time":null,"alarm":null},"consumption":{"time":null,"alarm":null},"Electrification":{"time":null,"alarm":null}}},"Garbage":{"header":{"hover":"output","link":"https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)","time":null,"alarm":null},"row":{"Perspiration":{"time":null,"alarm":null},"Presmegation":{"hover":"Smeghead, it\'s dick cheese!","time":null,"alarm":null},"Parturition":{"hover":"I don\'t know what all the fuss is about, it\'s painless; quite an enjoyable experience actually, and always has been...","link":"http://forlackofabettercomic.com/?id=47","time":null,"alarm":null},"Urination":{"time":null,"alarm":null},"Defecation":{"time":null,"alarm":null},"Regurgitation":{"time":null,"alarm":null}}},"Śuci":{"header":{"time":null,"alarm":null},"row":{"Brush Teeth":{"time":null,"alarm":null},"Scrape Tongue":{"time":null,"alarm":null},"Floss Teeth":{"time":null,"alarm":null},"Wash Mouth":{"time":null,"alarm":null},"Shave Head":{"time":null,"alarm":null},"Shower Body":{"time":null,"alarm":null}}},"TGIM":{"header":{"time":null,"alarm":null},"row":{"Watch TGIM":{"link":"https://www.youtube.com/user/etthehiphoppreacher/videos","time":null,"alarm":null},"Laundry":{"time":null,"alarm":null},"Vacuum":{"time":null,"alarm":null},"Clip Nails":{"time":null,"alarm":null},"Check Mail":{"time":null,"alarm":null}}}}', 1)
-    ; load()
+    ; localStorage.clear()// testing-only
+    if(localStorage.rc !== undefined) {
+        ; rc = no(localStorage.rc, 1)
+        ; load()
+    } else {
+        ; var
+            xmlhttp = new XMLHttpRequest()
+            , url = 'awoogarc.json'
+        ; xmlhttp.onreadystatechange = function() {
+            ; if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                ; var json = xmlhttp.responseText
+                ; rc = no(json, 1)
+                ; reset_timers()// to reset, or not to reset; that is configurable...
+                ; load()
+            }
+        }
+        ; xmlhttp.open("GET", url, true)
+        ; xmlhttp.send()
+    }
 }
 
 ; function reset_tables() {

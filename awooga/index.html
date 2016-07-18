@@ -10,13 +10,15 @@
     <script src='pre.js'></script>
 </head>
 <body>
-    <a href="" id="link" download="code.txt" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(getId('txt').value)">Download</a>
+    <a href="" download="code.txt" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(getId('txt').value)">Download</a>
     <br>
     <textarea id="txt"></textarea>
     <br>
     <br>
-    Reconfigure: <input type="file" id="f" onchange="storeClientFile(this.files[0])">
-    <a href="" id="awoogarc.json" download="awoogarc.json" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(no(rc, 0))">Backup</a>
+    Reconfigure:
+    <input type="file" id="f" onchange="storeClientFile(this.files[0])">
+    <a href="" download="awoogarc.json" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(no(rc, 0))">Backup</a>
+    (compressed)
     <br>
     <br>
     Time Is TICKING...
