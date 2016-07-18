@@ -94,7 +94,7 @@ https://xkcd.com/1179/
 ; init()// whatever the fuck is going on here; should've just used the good old hard-coded system..!
 
 ; function init() {
-    ; localStorage.clear()// testing-only
+    //; localStorage.clear()// testing-only
     if(localStorage.rc !== undefined) {
         ; rc = no(localStorage.rc, 1)
         ; load()
