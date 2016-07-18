@@ -1,2 +1,8 @@
-.start, .stop {cursor: default;}
-.time, .ident {cursor: copy;}
+#notepad {
+    ; width: 100%
+    ; min-width: 100%
+    ; max-width: 100%
+}
+
+.start, .stop {; cursor: default}
+.time, .ident {; cursor: copy}
