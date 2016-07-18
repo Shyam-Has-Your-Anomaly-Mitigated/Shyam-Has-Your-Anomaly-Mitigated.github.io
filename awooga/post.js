@@ -151,21 +151,54 @@ https://xkcd.com/1179/
     ; var h = getId('Holly')// ^
     ; h.innerHTML = ''
     ; for(var table in rc) {
-        ; var list = foldm(Object.keys(rc[table].row), 1)
-        ; for(var e in list) {
-            ; var oc = '; rc["'+table+'"].row'+'["'+Object.keys(rc[table].row)[e]+'"].time = new Date; localStorage.rc = no(rc, 0)'
-            ; list[e] = [
-                [  'start', {id: list[e] + '-start', class: 'start'}]
-                , ['stop' , {id: list[e] + '-stop' , class: 'stop' }]
-                , [list[e], {id: list[e] + '-ident', class: 'ident', onclick: oc}]
-                , [''     , {id: list[e] + '-time' , class: 'time' , onclick: oc}]
-            ]
-        }
+        ; var list = tabulate_row(foldm(Object.keys(rc[table].row), 1), table)
+        ; var head = tabulate_header(foldm(Object.keys(rc[table].header), 1), table)
         ; h.innerHTML += tabulate(
-            [[[table, {colspan: '4'}]]].concat(list)
+            [head].concat(list)
             , true, {style: "; display: inline-block; vertical-align: top; margin: 3px"}
         )
     }
+}
+; function tabulate_hover(object, name) {
+    ; var s = 'hover' in object
+        ? {class: 'hover', title: object.hover.replace(/'/g, '&#x27;')}
+        : {}
+    ; return 'hover' in object? span(name, s): name
+}
+; function tabulate_link(object, name) {; return 'link' in object? name + ' ∞': name}
+; function tabulate_header(list, table) {
+    ; var th = {colspan: 4}, h
+    ; return [[
+        [
+            tabulate_link(rc[table].header, tabulate_hover(rc[table].header, table))
+            , th
+        ],{onclick: (// what a waste...
+                'link' in rc[table].header
+                ? 'window.open(&#x27;' + rc[table].header.link + '&#x27;, &#x27;_blank&#x27;).focus()'
+                : ''
+        )}
+    ]]
+}
+; function tabulate_row(list, table) {
+    ; for(var e in list) {
+        ; var js = '; rc["'+table+'"].row'+'["'+Object.keys(rc[table].row)[e]+'"].time = new Date; localStorage.rc = no(rc, 0)'
+//        ; if('hover' in rc[table].row[list[e]]) alert(rc[table].row[list[e]].hover)
+        ; list[e] = [
+            [  'start', {id: list[e] + '-start', class: 'start'}]
+            , ['stop' , {id: list[e] + '-stop' , class: 'stop' }]
+            , [
+                tabulate_link(rc[table].row[list[e]], tabulate_hover(rc[table].row[list[e]], list[e]))
+                , {id: list[e] + '-ident', class: 'ident', onclick: js}
+            ]
+            , ['', {id: list[e] + '-time' , class: 'time' , onclick: js}]
+            , {onclick: (// what a waste...
+                'link' in rc[table].row[list[e]]
+                ? 'window.open(&#x27;' + rc[table].row[list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'
+                : ''
+            )}
+        ]
+    }
+    ; return list
 }
 ; function reset_timers() {
     ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
