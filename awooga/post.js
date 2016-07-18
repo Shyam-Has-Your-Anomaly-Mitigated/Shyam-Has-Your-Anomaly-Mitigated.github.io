@@ -126,8 +126,8 @@ https://xkcd.com/1179/
 }
 
 ; function init() {
-    if('rc' in localStorage) {; reconfigure(localStorage.rc, 0)}
-    else {; download('awoogarc.json')}
+    ; if('rc' in localStorage) {; reconfigure(localStorage.rc, 0)}
+        else {; download('awoogarc.json')}
 }
 ; function download(url) {
         ; var xhr = new XMLHttpRequest()
@@ -182,10 +182,9 @@ https://xkcd.com/1179/
 ; function tabulate_row(list, table) {
     ; for(var e in list) {
         ; var js = '; rc["'+table+'"].row'+'["'+Object.keys(rc[table].row)[e]+'"].time = new Date; localStorage.rc = no(rc, 0)'
-//        ; if('hover' in rc[table].row[list[e]]) alert(rc[table].row[list[e]].hover)
         ; list[e] = [
-            [  'start', {id: list[e] + '-start', class: 'start'}]
-            , ['stop' , {id: list[e] + '-stop' , class: 'stop' }]
+            [  '↦', {id: list[e] + '-start', class: 'start'}]
+            , ['⇥' , {id: list[e] + '-stop' , class: 'stop' }]
             , [
                 tabulate_link(rc[table].row[list[e]], tabulate_hover(rc[table].row[list[e]], list[e]))
                 , {id: list[e] + '-ident', class: 'ident', onclick: js}

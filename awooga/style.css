@@ -4,7 +4,7 @@ textarea#notepad {
     ; max-width: 100%
 }
 
-.start, .stop {; cursor: default}
+.start, .stop {; cursor: default; font-size: 1.5em; padding-top: 0px; padding-bottom: 0px}
 .time, .ident {; cursor: copy}
 
 div#dnd {
