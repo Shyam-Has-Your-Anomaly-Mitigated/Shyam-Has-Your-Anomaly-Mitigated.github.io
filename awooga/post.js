@@ -59,11 +59,11 @@ https://xkcd.com/1179/
         , m    = zero(  t.getMinutes())
         , s    = zero(  t.getSeconds())
         , ms   = zeroes(t.getMilliseconds())
-        , z    = t.toString()
+        , z    = t.toString().replace(/^.+:\d+ /, '')
     ; return ''
         + Y + '-' + M + '-' + D
         + ' ' + h + ':' + m + ':' + s + '.' + ms
-        + ' ' + z.replace(/^.+:\d+ /, '')
+        + ' ' + z
 }
 ; function secondstamp(time) { // time=seconds
     ; var s, m, h, d
