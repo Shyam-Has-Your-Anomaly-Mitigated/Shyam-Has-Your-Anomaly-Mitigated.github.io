@@ -59,7 +59,11 @@ https://xkcd.com/1179/
         , m    = zero(  t.getMinutes())
         , s    = zero(  t.getSeconds())
         , ms   = zeroes(t.getMilliseconds())
-    ; return Y+'-'+M+'-'+D+' '+h+':'+m+':'+s+'.'+ms
+        , z    = t.toString()
+    ; return ''
+        + Y + '-' + M + '-' + D
+        + ' ' + h + ':' + m + ':' + s + '.' + ms
+        + ' ' + z.replace(/^.+:\d+ /, '')
 }
 ; function secondstamp(time) { // time=seconds
     ; var s, m, h, d
@@ -80,14 +84,14 @@ https://xkcd.com/1179/
 }
 ; function timer_clock(id, object, property, t) {
     ; var diff,d,h,m,s
-    ; diff = new Date(new Date() - new Date(object[property]))
+    ; diff = new Date(Date.now() - new Date(object[property]))
     ; [d,h,m,s] = secondstamp(parseInt(diff/1000))
     ; getId(id).innerHTML = (0<d?d+'d ':'') + (0<h?h+'h ':'') + (0<m?m+'m ':'') + s + 's'
     ; timeout[t] = setTimeout(timer_clock, 100, id, object, property, t)
 }
 ; function clock() {
     ; var t
-    ; getId('clock').innerHTML = timestamp(new Date()) + ' (' + new Date() + ')'
+    ; getId('clock').innerHTML = timestamp(new Date())
     ; t = setTimeout(clock, 1)//100
 }; clock()
 
@@ -125,7 +129,7 @@ https://xkcd.com/1179/
 
 ; function reset_timers() {
     ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
-        ; rc[t].row[e].time = new Date()
+        ; rc[t].row[e].time = Date.now()
     }}
     ; localStorage.rc = no(rc, 0)
 }
