@@ -15,9 +15,9 @@
     <textarea id="txt"></textarea>
     <br>
     <br>
-    <a href="" onclick="; localStorage.clear()">Reconfigure</a>:
+    <a href="#" onclick="; delete localStorage.rc; init()">Reconfigure</a>:
     <input type="file" id="f" onchange="storeClientFile(this.files[0])">
-    <a href="" download="awoogarc.json" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(no(rc, 0))">Backup</a>
+    <a href="#" download="awoogarc.json" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(no(rc, 0))">Backup</a>
     (compressed)
     <br>
     <br>
