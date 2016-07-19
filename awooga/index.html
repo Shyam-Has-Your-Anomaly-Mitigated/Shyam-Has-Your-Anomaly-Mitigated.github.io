@@ -12,7 +12,7 @@
 <body>
     <a href="#" download="comment.log" onclick="; this.download='comment_' + Date.now() + '.log'; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(getId('notepad').value)">Download</a>
     <br>
-    <textarea id="notepad" rows="1" autofocus></textarea>
+    <textarea id="notepad" rows="1" placeholder="Notes" autofocus></textarea>
     <br>
     <br>
     <a href="#" onclick="; delete localStorage.rc; init()">Reconfigure</a>: Drag & Drop, or
