@@ -4,6 +4,10 @@
         /LICENSE
 shyam.id.au
     /mæssage
+        /cat
+        /tp
+            ^wysiwyg
+            ^charcodes
     /bdfl
         /cat
             /9Hr34k
@@ -15,9 +19,6 @@ shyam.id.au
 
 \in_progress
 /awooga
-/tp
-    ^wysiwyg
-    ^charcodes
 /warez
     ^vim...
     ^git.sh

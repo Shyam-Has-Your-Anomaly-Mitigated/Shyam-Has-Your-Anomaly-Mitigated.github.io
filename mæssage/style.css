@@ -1,9 +1,7 @@
 .default {; font-family: georgia, serif}
-p, span, div {
+div {
     ; color           : black
     ; background-color: white
-}
-div {
     ; padding: 1px 15px
     ; margin: 10px 0px
 }
