@@ -14,13 +14,17 @@ shyam.id.au
                 /9Hr34k
 
 \in_progress
+/awooga
 /tp
     ^wysiwyg
     ^charcodes
 /warez
+    ^vim...
+    ^git.sh
     ^gimp...
     ^inkscape...
     ^blender...
+    /cat
 /cs
     *languages
         /cat
@@ -32,5 +36,4 @@ shyam.id.au
     (also the other emails, especially what happened in scripting, and the base-{2,3,10,16} computer systems)
 
 \unfinished_business
-/awooga
 /perl

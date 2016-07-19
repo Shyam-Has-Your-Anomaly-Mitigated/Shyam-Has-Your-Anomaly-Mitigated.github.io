@@ -10,10 +10,22 @@
                 , ['Source',{}]
                 , {}
             ], [
+                [image({url: 'https://assets-cdn.github.com/favicon.ico', alt: 'ICO', c: 'ico'}),{}]
+                , [link('CAT', '/cat', {class: 'hover', title: 'see after playful'}),{}]
+                , ['Bit Reader/Writer',{}]
+                , [link('UNIX', 'http://ftp.gnu.org/gnu/coreutils/'),{}]
+                , {}
+            ], [
+                [image({url: 'http://www.vim.org/images/vim_shortcut.ico', alt: 'ICO', c: 'ico'}),{}]
+                , ['VIM',{}]
+                , ['Bit Editor',{}]
+                , [link('Indiana Jones', 'http://www.vim.org/'),{}]
+                , {}
+            ], [
                 [image({url: 'https://git-scm.com/favicon.ico', alt: 'ICO', c: 'ico'}),{}]
-                , [link('GIT', './git.sh/'),{type: 'text/html'}]
+                , [link('GIT', 'git.sh'),{}]
                 , ['Software .Config Manager',{}]
-                , [link('Linux', 'https://git-scm.com/'),{}]
+                , [link('L' + format('IN' + format('U', 'u') + 'X', 'b'), 'https://git-scm.com/'),{}]
                 , {}
             ], [
                 [image({url: 'https://www.gimp.org/images/wilber16.png', alt: 'ICO', c: 'ico'}),{}]
