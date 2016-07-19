@@ -3,7 +3,7 @@
         ; xhr.onreadystatechange = function() {
             ; if (xhr.readyState == 4 && xhr.status == 200) {
                 ; document.write(
-                    xhr.responseText.replace(/\n/g, br).replace(/</g, '&lt;')
+                    xhr.responseText.replace(/</g, '&lt;').replace(/\n/g, br)
                 )
             }
         }
