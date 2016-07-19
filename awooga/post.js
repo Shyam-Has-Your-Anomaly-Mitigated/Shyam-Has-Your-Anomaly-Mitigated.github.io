@@ -167,21 +167,6 @@ https://xkcd.com/1179/
 }
 ; function Molly_link(object, name) {; return 'link' in object? name + ' ∞': name}
 ; function Molly_header(list, table) {
-    /*
-        tabulate(
-            [
-                [
-                    ['A', {attributes}]
-                    , ['B', {attributes}]
-                    , {attributes}
-                ], [
-                    ['a', {attributes}]
-                    , ['b', {attributes}]
-                    , {attributes}
-                ]
-            ], true, {attributes}
-        )
-    */
     ; var th = {colspan: 4}, h
     ; return [
         [
