@@ -7,7 +7,7 @@
     ), 4)
     + span('OHTT', {class: 'hover', title: 'One Hand Touch Typing'}) + ' allows for using two keyboards/computers simultaneously; c̄ braille and ' + link('CAR/NLP', 'https://en.wikipedia.org/wiki/Template:Natural_Language_Processing') + '.'
     + br + '^Beat that Speech/Speaker Recognition! q:'
-    + br + '_^' + link('!Xhöömei', 'https://en.wikipedia.org/wiki/Xhosa_language') + ' ' + span('&', {class: 'hover', title: '!Xamehameha'}) + ' ' + link('!Xhosa', 'https://en.wikipedia.org/wiki/Khoomei') + ' ' + link('means', '/cat') + ' all your base are belong to us.'
+    + br + '_^' + link('!Xhöömei', 'https://en.wikipedia.org/wiki/Xhosa_language') + ' ' + span('&', {class: 'hover', title: '!Xamehameha'}) + ' ' + link('!Xhosa', 'https://en.wikipedia.org/wiki/Khoomei') + ' ' + link('means:', '/cat') + ' all your base are belong to us.'
     + br + '__^Why not combine them?'
     + br + '___^' + link('Digital Thought Interface', 'https://en.wikipedia.org/wiki/Template:Electrodiagnosis') + ' will allow the possibility of gaming...'
     + br + br + span(link('shyam.id.au/tp', '/tp'), {class: 'hover', title: 'This goes here.'})
