@@ -1,5 +1,5 @@
 #flip {
-display: inline-block
+    ; display: inline-block
     ; -webkit-transform: scaleX(-1)
     ; -moz-transform: scaleX(-1)
     ; -ms-transform: scaleX(-1)

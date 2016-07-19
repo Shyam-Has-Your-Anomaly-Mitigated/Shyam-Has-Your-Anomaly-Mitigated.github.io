@@ -11,7 +11,7 @@
                 , {}
             ], [
                 [image({url: 'https://assets-cdn.github.com/favicon.ico', alt: 'ICO', c: 'ico'}),{}]
-                , [link('CAT', '/cat', {class: 'hover', title: 'see after playful'}),{}]
+                , [link('CAT', '/cat', {class: 'hover', title: 'Ctrl∧Alt∧T=CLI; see after playful'}),{}]
                 , ['Bit Reader/Writer',{}]
                 , [link('UNIX', 'http://ftp.gnu.org/gnu/coreutils/'),{}]
                 , {}
