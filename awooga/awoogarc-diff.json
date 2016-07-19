@@ -228,6 +228,16 @@
         "link": "https://www.math.hmc.edu/~benjamin/papers.html",
         "time": null,
         "alarm": null
+      },
+      "XKCD": {
+        "link": "https://xkcd.com/",
+        "time": null,
+        "alarm": null
+      },
+      "CommitStrip": {
+        "link": "http://www.commitstrip.com/",
+        "time": null,
+        "alarm": null
       }
     }
   },
