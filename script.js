@@ -153,26 +153,22 @@
     /*
         tabulate(
             [
-                [['A', {attributes}], ['B', {attributes}], {attributes}]
-                , [['a', {attributes}], ['b', {attributes}], {attributes}]
+                [
+                    ['A', {attributes}]
+                    , ['B', {attributes}]
+                    , {attributes}
+                ], [
+                    ['a', {attributes}]
+                    , ['b', {attributes}]
+                    , {attributes}
+                ]
             ], true, {attributes}
         )
     */
     ; var
         attributes = attributes? attributes: {}
         , table    = '<table' + idiosync(attributes) + '>'
-    ; if(heading) {
-            ; var row = matrix.shift()[0]
-            ; var a = row.pop()
-//            ; alert(Object.prototype.toString.call(row) + '\n' + row)
-            ; a = a? a: {}
-            ; table += '<tr' + idiosync(a) + '>'
-            ; for(var col of row) {
-                ; var a = col[1]? col[1]: {}
-                ; table += '<th' + idiosync(a) + '>' + col[0] + '</th>'
-            }
-            ; table += '</tr>'
-    }
+    ; if(heading) {; table += tabulate_head(matrix.shift())}
     ; for(var row of matrix) {
         ; var a = row.pop()
         ; a = a? a: {}
@@ -184,4 +180,13 @@
         ; table += '</tr>'
     }
     ; return table + '</table>'
+}
+function tabulate_head(row) {
+    ; var r = '', a = row.pop()
+    ; r += '<tr' + idiosync(a? a: {}) + '>'
+    ; for(var col of row) {
+        ; r += '<th' + idiosync(col[1]? col[1]: {}) + '>' + col[0] + '</th>'
+    }
+    ; r += '</tr>'
+    ; return r
 }
