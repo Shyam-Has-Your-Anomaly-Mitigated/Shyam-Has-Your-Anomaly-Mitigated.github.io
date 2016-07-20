@@ -129,7 +129,7 @@
         + option('Octal'      , {value: 'octcode'})
         + option('Hexadecimal', {value: 'hexcode'})
         + option('Unicode'    , {value: 'ucoding'})
-        + option('Web...'     , {value: '.......', disabled: true})
+        + option('Web...'     , {disabled: true  })
         + option('Unicode'    , {value: 'unicode'})
         + option('Decimal'    , {value: 'decimal'})
         + option('Hexadecimal', {value: 'hexadec'})
