@@ -111,7 +111,7 @@
 ; document.write(
     heading(format(link('Text Processing', 'https://en.wikipedia.org/wiki/Text_Processing_Utility'), 'u'), 3)
     + link('wysiwyg', './wysiwyg')
-    + br + link('charcodes', './charcodes')
+    + br + link('chars', './chars')
     + br
     + br + hr
     + br
