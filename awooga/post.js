@@ -294,3 +294,29 @@ custom_files
 
 // this needs validation...
 // <input type="button" value="Cyberphile" onclick="download(prompt())">
+
+/*
+The old style should be kept...
+
+| Heading_0 |
+|   Task_0  |
+|   Task_1  |
+|   Task_2  |
+| separator |
+| Heading_1 |
+|   Task_0  |
+|   Task_1  |
+|   Task_2  |
+| separator |
+| Heading_2 |
+|   Task_0  |
+|   Task_1  |
+|   Task_2  |
+
+...the row should flash? what about start/stop? there must be special conditions... (¿dependencies?)
+
+https://en.wikipedia.org/wiki/General_medical_examination
+    BMI = (height, weight) => kg ÷ m²
+    Nutrition = (age, {food}) => ...switch or something; I'm 26, so 1000mg/day Calcium for me! :-D
+
+*/
