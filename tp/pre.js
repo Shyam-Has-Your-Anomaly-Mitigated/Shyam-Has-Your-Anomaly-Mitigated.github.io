@@ -64,8 +64,8 @@
     ; switch(getId('coding').value) {
         case 'casings': encode = x => o + encase(String.fromCodePoint(x)) + c; break;
         case 'blckbrd': encode = x => tr_mathbb(o, String.fromCodePoint(x), c); break;
-        case 'bincode': encode = x => o + x.toString(2) + c; break
-        case 'octcode': encode = x => o + x.toString(8) + c; break
+        case 'bincode': encode = x => o + x.toString(2) + c; break;
+        case 'octcode': encode = x => o + x.toString(8) + c; break;
         case 'hexcode':
         case 'ucoding':
         case 'unicode':
@@ -80,6 +80,47 @@
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
         ; var char = s.codePointAt(a)
+        ; r += encode(char)
+    }
+    ; getId('charbx').value = r
+}
+
+; function uncharacterise() {
+    ; var
+        r        = ''                    //return
+        , s      = getId('charbx').value//string
+        , encode
+        , encase = (getId('casing').value == 'lower'// should these be swapped?
+            ? x => x.toLowerCase()
+            : x => x.toUpperCase()
+        )
+        , o = getId('open').value
+        , c = getId('close').value
+    ; switch(getId('coding').value) {
+        case 'casings':
+        case 'blckbrd':
+        case 'bincode':
+        case 'octcode':
+        case 'hexcode':
+        case 'ucoding':
+        case 'unicode':
+        case 'hexadec':
+        case 'cstyles':
+        case 'decimal':
+        case 'percent':
+        case 'urllink':
+        case 'extendm':
+        case 'hypertm':
+        case 'xypertm':
+        default       :
+            ; alert('Pending...')
+            ; return
+    }
+    ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
+        ; var char = s.codePointAt(a)
+        // ^\o\chars\c$
+        // if char starts with o
+        // what about empty o/c?
         ; r += encode(char)
     }
     ; getId('charbx').value = r
@@ -147,8 +188,8 @@
         }
     )
     + input({type: 'text', id: 'close', placeholder: 'close', size: '5'})
-    + input({type: 'button', value: 'encode', onclick: ';characterise()'})
-    + input({type: 'button', value: 'decode', onclick: ';alert("pending...")'})
+    + input({type: 'button', value: 'encode', onclick: '; characterise()'})
+    + input({type: 'button', value: 'decode', onclick: '; uncharacterise()'})
     + br + '<textarea id="charbx"></textarea>'
     + br    + link('☺', 'http://www.amp-what.com/')
     + '...' + link('™', 'http://textmechanic.co/ASCII-to-Unicode-Converter.html')

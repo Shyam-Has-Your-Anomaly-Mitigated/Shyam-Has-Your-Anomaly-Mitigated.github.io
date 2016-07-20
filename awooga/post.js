@@ -313,6 +313,8 @@ The old style should be kept...
 |   Task_1  |
 |   Task_2  |
 
+but the separator is a waste of space..!
+
 ...the row should flash? what about start/stop? there must be special conditions... (¿dependencies?)
 
 https://en.wikipedia.org/wiki/General_medical_examination
