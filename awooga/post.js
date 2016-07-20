@@ -298,20 +298,20 @@ custom_files
 /*
 The old style should be kept...
 
-| Heading_0 |
+| Heading_0 | | Heading_3 |
+|   Task_0  | |   Task_0  |
+|   Task_1  | |   Task_1  |
+|   Task_2  | |   Task_2  |
+| separator | | separator |
+| Heading_1 | | Heading_4 |
+|   Task_0  | |   Task_0  |
+|   Task_1  | |   Task_1  |
+|   Task_2  | |   Task_2  |
+| separator | |   Task_3  |
+| Heading_2 | |   Task_4  |
 |   Task_0  |
-|   Task_1  |
-|   Task_2  |
-| separator |
-| Heading_1 |
-|   Task_0  |
-|   Task_1  |
-|   Task_2  |
-| separator |
-| Heading_2 |
-|   Task_0  |
-|   Task_1  |
-|   Task_2  |
+|   Task_1  | | Heading_5 |
+|   Task_2  | |   Task_0  |
 
 but the separator is a waste of space..!
 
