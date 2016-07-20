@@ -1,4 +1,3 @@
-//https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
 //https://en.wikipedia.org/wiki/Character_encodings_in_HTML
 //http://stackoverflow.com/a/17471151
 
