@@ -14,43 +14,39 @@
     ; return set_C
 }
 
-; function tr_mathbb(char) {// https://en.wikipedia.org/wiki/Blackboard_bold
-    ; return tr(
-        [
-            '𝟘'  , '𝟙', '𝟚', '𝟛', '𝟜', '𝟝', '𝟞', '𝟟', '𝟠', '𝟡'
-            , '𝔸', '𝔹', 'ℂ', '𝔻', '𝔼', '𝔽', '𝔾', 'ℍ', '𝕀', '𝕁', '𝕂', '𝕃', '𝕄', 'ℕ', '𝕆', 'ℙ', 'ℚ', 'ℝ', '𝕊', '𝕋', '𝕌', '𝕍', '𝕎', '𝕏', '𝕐', 'ℤ'
-            , '𝕒', '𝕓', '𝕔', '𝕕', '𝕖', '𝕗', '𝕘', '𝕙', '𝕚', '𝕛', '𝕜', '𝕝', '𝕞', '𝕟', '𝕠', '𝕡', '𝕢', '𝕣', '𝕤', '𝕥', '𝕦', '𝕧', '𝕨', '𝕩', '𝕪', '𝕫'
-            , 'ℾ', 'ℽ', 'ℿ', 'ℼ', '⅀'
-        ], [
-            '0'  , '1', '2', '3', '4', '5', '6', '7', '8', '9'
-            , 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
-            , 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-            , 'Γ', 'γ', 'Π', 'π', 'Σ'
-        ]
-    )[char.codePointAt(0)]
+; function tr_mathbb(o, char, c) {// https://en.wikipedia.org/wiki/Blackboard_bold
+    ; var
+        charset  = '0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,Γ,γ,Π,π,Σ'.split(',')
+        , BBSetal = '𝟘,𝟙,𝟚,𝟛,𝟜,𝟝,𝟞,𝟟,𝟠,𝟡,𝔸,𝔹,ℂ,𝔻,𝔼,𝔽,𝔾,ℍ,𝕀,𝕁,𝕂,𝕃,𝕄,ℕ,𝕆,ℙ,ℚ,ℝ,𝕊,𝕋,𝕌,𝕍,𝕎,𝕏,𝕐,ℤ,𝕒,𝕓,𝕔,𝕕,𝕖,𝕗,𝕘,𝕙,𝕚,𝕛,𝕜,𝕝,𝕞,𝕟,𝕠,𝕡,𝕢,𝕣,𝕤,𝕥,𝕦,𝕧,𝕨,𝕩,𝕪,𝕫,ℾ,ℽ,ℿ,ℼ,⅀'.split(',')
+    ; return charset.indexOf(char) < 0
+        ? char
+        : o + tr(charset, BBSetal)[char.codePointAt(0)] + c
 }
 
-; function tr_xml(char) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
-    ; return tr(
-        [  '"'   , '&'  , '\''  , '<' , '>' ]
-        , ['quot', 'amp', 'apos', 'lt', 'gt']
-    )[char.codePointAt(0)]
+; function tr_xml(o, char, c) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
+    ; var charset = '",&,\',<,>'.split(',')
+    ; return charset.indexOf(char) < 0
+        ? char
+        : o + tr(charset, 'quot,amp,apos,lt,gt'.split(','))[char.codePointAt(0)] + c
 }
 
-; function tr_xhtml(char) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Entities_representing_special_characters_in_XHTML
-    ; return tr(
-        [  '"'   , '&'  , '<' , '>' ]
-        , ['quot', 'amp', 'lt', 'gt']
-    )[char.codePointAt(0)]
+; function tr_xhtml(o, char, c) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Entities_representing_special_characters_in_XHTML
+    ; var charset = '",&,<,>'.split(',')
+    ; return charset.indexOf(char) < 0
+        ? char
+        : o + tr(charset, 'quot,amp,lt,gt'.split(','))[char.codePointAt(0)] + c
 }
 
-; function tr_html(char) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML
+; function tr_html(o, char, c) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML
     // missing: shy,zwnj,zwj,lrm,rlm
     // test: "&'<> ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒˆ˜ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωϑϒϖ   –—‘’‚“”„†‡•…‰′″‹›‾⁄€ℑ℘ℜ™ℵ←↑→↓↔↵⇐⇑⇒⇓⇔∀∂∃∅∇∈∉∋∏∑−∗√∝∞∠∧∨∩∪∫∴∼≅≈≠≡≤≥⊂⊃⊄⊆⊇⊕⊗⊥⋅⌈⌉⌊⌋〈〉◊♠♣♥♦
-    ; return tr(
-        '",&,\',<,>, ,¡,¢,£,¤,¥,¦,§,¨,©,ª,«,¬,,®,¯,°,±,²,³,´,µ,¶,·,¸,¹,º,»,¼,½,¾,¿,À,Á,Â,Ã,Ä,Å,Æ,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ð,Ñ,Ò,Ó,Ô,Õ,Ö,×,Ø,Ù,Ú,Û,Ü,Ý,Þ,ß,à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ú,û,ü,ý,þ,ÿ,Œ,œ,Š,š,Ÿ,ƒ,ˆ,˜,Α,Β,Γ,Δ,Ε,Ζ,Η,Θ,Ι,Κ,Λ,Μ,Ν,Ξ,Ο,Π,Ρ,Σ,Τ,Υ,Φ,Χ,Ψ,Ω,α,β,γ,δ,ε,ζ,η,θ,ι,κ,λ,μ,ν,ξ,ο,π,ρ,ς,σ,τ,υ,φ,χ,ψ,ω,ϑ,ϒ,ϖ, , , ,,,,,–,—,‘,’,‚,“,”,„,†,‡,•,…,‰,′,″,‹,›,‾,⁄,€,ℑ,℘,ℜ,™,ℵ,←,↑,→,↓,↔,↵,⇐,⇑,⇒,⇓,⇔,∀,∂,∃,∅,∇,∈,∉,∋,∏,∑,−,∗,√,∝,∞,∠,∧,∨,∩,∪,∫,∴,∼,≅,≈,≠,≡,≤,≥,⊂,⊃,⊄,⊆,⊇,⊕,⊗,⊥,⋅,⌈,⌉,⌊,⌋,〈,〉,◊,♠,♣,♥,♦'.split(',')
-        , 'quot,amp,apos,lt,gt,nbsp,iexcl,cent,pound,curren,yen,brvbar,sect,uml,copy,ordf,laquo,not,shy,reg,macr,deg,plusmn,sup2,sup3,acute,micro,para,middot,cedil,sup1,ordm,raquo,frac14,frac12,frac34,iquest,Agrave,Aacute,Acirc,Atilde,Auml,Aring,AElig,Ccedil,Egrave,Eacute,Ecirc,Euml,Igrave,Iacute,Icirc,Iuml,ETH,Ntilde,Ograve,Oacute,Ocirc,Otilde,Ouml,times,Oslash,Ugrave,Uacute,Ucirc,Uuml,Yacute,THORN,szlig,agrave,aacute,acirc,atilde,auml,aring,aelig,ccedil,egrave,eacute,ecirc,euml,igrave,iacute,icirc,iuml,eth,ntilde,ograve,oacute,ocirc,otilde,ouml,divide,oslash,ugrave,uacute,ucirc,uuml,yacute,thorn,yuml,OElig,oelig,Scaron,scaron,Yuml,fnof,circ,tilde,Alpha,Beta,Gamma,Delta,Epsilon,Zeta,Eta,Theta,Iota,Kappa,Lambda,Mu,Nu,Xi,Omicron,Pi,Rho,Sigma,Tau,Upsilon,Phi,Chi,Psi,Omega,alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,xi,omicron,pi,rho,sigmaf,sigma,tau,upsilon,phi,chi,psi,omega,thetasym,upsih,piv,ensp,emsp,thinsp,zwnj,zwj,lrm,rlm,ndash,mdash,lsquo,rsquo,sbquo,ldquo,rdquo,bdquo,dagger,Dagger,bull,hellip,permil,prime,Prime,lsaquo,rsaquo,oline,frasl,euro,image,weierp,real,trade,alefsym,larr,uarr,rarr,darr,harr,crarr,lArr,uArr,rArr,dArr,hArr,forall,part,exist,empty,nabla,isin,notin,ni,prod,sum,minus,lowast,radic,prop,infin,ang,and,or,cap,cup,int,there4,sim,cong,asymp,ne,equiv,le,ge,sub,sup,nsub,sube,supe,oplus,otimes,perp,sdot,lceil,rceil,lfloor,rfloor,lang,rang,loz,spades,clubs,hearts,diams'.split(',')
-    )[char.codePointAt(0)]
+    ; var charset = '",&,\',<,>, ,¡,¢,£,¤,¥,¦,§,¨,©,ª,«,¬,,®,¯,°,±,²,³,´,µ,¶,·,¸,¹,º,»,¼,½,¾,¿,À,Á,Â,Ã,Ä,Å,Æ,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ð,Ñ,Ò,Ó,Ô,Õ,Ö,×,Ø,Ù,Ú,Û,Ü,Ý,Þ,ß,à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ú,û,ü,ý,þ,ÿ,Œ,œ,Š,š,Ÿ,ƒ,ˆ,˜,Α,Β,Γ,Δ,Ε,Ζ,Η,Θ,Ι,Κ,Λ,Μ,Ν,Ξ,Ο,Π,Ρ,Σ,Τ,Υ,Φ,Χ,Ψ,Ω,α,β,γ,δ,ε,ζ,η,θ,ι,κ,λ,μ,ν,ξ,ο,π,ρ,ς,σ,τ,υ,φ,χ,ψ,ω,ϑ,ϒ,ϖ, , , ,,,,,–,—,‘,’,‚,“,”,„,†,‡,•,…,‰,′,″,‹,›,‾,⁄,€,ℑ,℘,ℜ,™,ℵ,←,↑,→,↓,↔,↵,⇐,⇑,⇒,⇓,⇔,∀,∂,∃,∅,∇,∈,∉,∋,∏,∑,−,∗,√,∝,∞,∠,∧,∨,∩,∪,∫,∴,∼,≅,≈,≠,≡,≤,≥,⊂,⊃,⊄,⊆,⊇,⊕,⊗,⊥,⋅,⌈,⌉,⌊,⌋,〈,〉,◊,♠,♣,♥,♦'.split(',')
+    ; return charset.indexOf(char) < 0
+        ? char
+        : o + tr(
+            charset
+            , 'quot,amp,apos,lt,gt,nbsp,iexcl,cent,pound,curren,yen,brvbar,sect,uml,copy,ordf,laquo,not,shy,reg,macr,deg,plusmn,sup2,sup3,acute,micro,para,middot,cedil,sup1,ordm,raquo,frac14,frac12,frac34,iquest,Agrave,Aacute,Acirc,Atilde,Auml,Aring,AElig,Ccedil,Egrave,Eacute,Ecirc,Euml,Igrave,Iacute,Icirc,Iuml,ETH,Ntilde,Ograve,Oacute,Ocirc,Otilde,Ouml,times,Oslash,Ugrave,Uacute,Ucirc,Uuml,Yacute,THORN,szlig,agrave,aacute,acirc,atilde,auml,aring,aelig,ccedil,egrave,eacute,ecirc,euml,igrave,iacute,icirc,iuml,eth,ntilde,ograve,oacute,ocirc,otilde,ouml,divide,oslash,ugrave,uacute,ucirc,uuml,yacute,thorn,yuml,OElig,oelig,Scaron,scaron,Yuml,fnof,circ,tilde,Alpha,Beta,Gamma,Delta,Epsilon,Zeta,Eta,Theta,Iota,Kappa,Lambda,Mu,Nu,Xi,Omicron,Pi,Rho,Sigma,Tau,Upsilon,Phi,Chi,Psi,Omega,alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,xi,omicron,pi,rho,sigmaf,sigma,tau,upsilon,phi,chi,psi,omega,thetasym,upsih,piv,ensp,emsp,thinsp,zwnj,zwj,lrm,rlm,ndash,mdash,lsquo,rsquo,sbquo,ldquo,rdquo,bdquo,dagger,Dagger,bull,hellip,permil,prime,Prime,lsaquo,rsaquo,oline,frasl,euro,image,weierp,real,trade,alefsym,larr,uarr,rarr,darr,harr,crarr,lArr,uArr,rArr,dArr,hArr,forall,part,exist,empty,nabla,isin,notin,ni,prod,sum,minus,lowast,radic,prop,infin,ang,and,or,cap,cup,int,there4,sim,cong,asymp,ne,equiv,le,ge,sub,sup,nsub,sube,supe,oplus,otimes,perp,sdot,lceil,rceil,lfloor,rfloor,lang,rang,loz,spades,clubs,hearts,diams'.split(',')
+        )[char.codePointAt(0)] + c
 }
 
 ; function characterise() {
@@ -66,16 +62,20 @@
         , c = getId('close').value
     ; switch(getId('coding').value) {
         case 'casings': encode = x => o + encase(String.fromCodePoint(x)) + c; break;
-        case 'blckbrd': encode = x => o + tr_mathbb(String.fromCodePoint(x)) + c; break;
+        case 'blckbrd': encode = x => tr_mathbb(o, String.fromCodePoint(x), c); break;
+        case 'bincode': encode = x => o + x.toString(2) + c; break
+        case 'octcode': encode = x => o + x.toString(8) + c; break
+        case 'hexcode':
+        case 'ucoding':
         case 'unicode':
         case 'hexadec':
         case 'cstyles': encode = x => o + encase(x.toString(16)) + c; break;
         case 'decimal': encode = x => o + encase(x.toString(10)) + c; break;
         case 'percent': encode = x => o + encase(encodeURIComponent(String.fromCodePoint(x))) + c; break;
         case 'urllink': encode = x => o + encase(encodeURI(String.fromCodePoint(x))) + c; break;
-        case 'extendm': encode = x => o + tr_xml(String.fromCodePoint(x)) + c; break;
-        case 'hypertm': encode = x => o + tr_html(String.fromCodePoint(x)) + c; break;
-        case 'xypertm': encode = x => o + tr_xhtml(String.fromCodePoint(x)) + c; break;
+        case 'extendm': encode = x => tr_xml(o, String.fromCodePoint(x), c); break;
+        case 'hypertm': encode = x => tr_html(o, String.fromCodePoint(x), c); break;
+        case 'xypertm': encode = x => tr_xhtml(o, String.fromCodePoint(x), c); break;
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
         ; var char = s.codePointAt(a)
@@ -91,7 +91,11 @@
         case 'blckbrd':
         case 'percent':
         case 'urllink': o = ''   ; c = '' ; break;
+        case 'bincode': o = '0b' ; c = ' '; break;
+        case 'octcode': o = '0'  ; c = ' '; break;
+        case 'hexcode': o = '0x' ; c = ' '; break;
         case 'unicode': o = 'U+' ; c = ' '; break;
+        case 'ucoding': o = '\\u'; c = ' '; break;
         case 'decimal': o = '&#' ; c = ';'; break;
         case 'hexadec': o = '&#x'; c = ';'; break;
         case 'cstyles': o = '\\' ; c = '␠'; break;
@@ -121,7 +125,11 @@
         option(  '...'        , {value: '.......', disabled: true, selected: true})
         + option('Case'       , {value: 'casings'})
         + option('MathBB'     , {value: 'blckbrd'})
-        + option('...'        , {value: '.......', disabled: true})
+        + option('Binary'     , {value: 'bincode'})
+        + option('Octal'      , {value: 'octcode'})
+        + option('Hexadecimal', {value: 'hexcode'})
+        + option('Unicode'    , {value: 'ucoding'})
+        + option('Web...'     , {value: '.......', disabled: true})
         + option('Unicode'    , {value: 'unicode'})
         + option('Decimal'    , {value: 'decimal'})
         + option('Hexadecimal', {value: 'hexadec'})
