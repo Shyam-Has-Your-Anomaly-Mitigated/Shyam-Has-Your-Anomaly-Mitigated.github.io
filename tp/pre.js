@@ -162,8 +162,8 @@
         case 'bincode': o = '0b' ; c = ' '; break;
         case 'octcode': o = '0'  ; c = ' '; break;
         case 'hexcode': o = '0x' ; c = ' '; break;
-        case 'unicode': o = 'U+' ; c = ' '; break;
         case 'ucoding': o = '\\u'; c = ' '; break;
+        case 'unicode': o = 'U+' ; c = ' '; break;
         case 'decimal': o = '&#' ; c = ';'; break;
         case 'hexadec': o = '&#x'; c = ';'; break;
         case 'cstyles': o = '\\' ; c = '␠'; break;
