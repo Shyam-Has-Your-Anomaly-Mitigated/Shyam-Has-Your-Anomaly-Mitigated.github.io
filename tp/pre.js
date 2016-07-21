@@ -13,29 +13,61 @@
     }
     ; return set_C
 }
+; function tr_char(o, char, c, set_A, set_C) {// inefficiency: ...I just feel like this could be done better!
+    ; return set_A.indexOf(char) < 0
+        ? char
+        : o + set_C[char.codePointAt(0)] + c
+}
+; function tr_string(o, s, c, set_B, set_C) {// efficiency: lower set_X reassignment frequency
+    ; set_B.forEach(
+        x => s = s.replace(
+            new RegExp(
+                (o+x+c).replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&")
+                ,'g'
+            )
+            , set_C[x.codePointAt(0)]
+        )
+    )
+    ; return s
+}
 
-; function tr_mathbb(o, char, c) {// https://en.wikipedia.org/wiki/Blackboard_bold
+; function tr_mathbb(char, target) {// https://en.wikipedia.org/wiki/Blackboard_bold
     // missing: ⅅ,ⅆ,ⅇ,ⅈ,ⅉ
     ; var
-        charset  = '0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,Γ,γ,Π,π,Σ'.split(',')
-        , BBSetal = '𝟘,𝟙,𝟚,𝟛,𝟜,𝟝,𝟞,𝟟,𝟠,𝟡,𝔸,𝔹,ℂ,𝔻,𝔼,𝔽,𝔾,ℍ,𝕀,𝕁,𝕂,𝕃,𝕄,ℕ,𝕆,ℙ,ℚ,ℝ,𝕊,𝕋,𝕌,𝕍,𝕎,𝕏,𝕐,ℤ,𝕒,𝕓,𝕔,𝕕,𝕖,𝕗,𝕘,𝕙,𝕚,𝕛,𝕜,𝕝,𝕞,𝕟,𝕠,𝕡,𝕢,𝕣,𝕤,𝕥,𝕦,𝕧,𝕨,𝕩,𝕪,𝕫,ℾ,ℽ,ℿ,ℼ,⅀'.split(',')
-    ; return charset.indexOf(char) < 0
-        ? char
-        : o + tr(charset, BBSetal)[char.codePointAt(0)] + c
+        set_A   = '0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,Γ,γ,Π,π,Σ'.split(',')
+        , set_B = '𝟘,𝟙,𝟚,𝟛,𝟜,𝟝,𝟞,𝟟,𝟠,𝟡,𝔸,𝔹,ℂ,𝔻,𝔼,𝔽,𝔾,ℍ,𝕀,𝕁,𝕂,𝕃,𝕄,ℕ,𝕆,ℙ,ℚ,ℝ,𝕊,𝕋,𝕌,𝕍,𝕎,𝕏,𝕐,ℤ,𝕒,𝕓,𝕔,𝕕,𝕖,𝕗,𝕘,𝕙,𝕚,𝕛,𝕜,𝕝,𝕞,𝕟,𝕠,𝕡,𝕢,𝕣,𝕤,𝕥,𝕦,𝕧,𝕨,𝕩,𝕪,𝕫,ℾ,ℽ,ℿ,ℼ,⅀'.split(',')
+        , set_C = tr(set_A, set_B)
+    ; return target
+        ? (
+            set_A.indexOf(char) < 0
+            ? char
+            : set_C[char.codePointAt(0)]
+        )
+        : (
+            set_B.indexOf(char) < 0
+            ? char
+            : set_C[char.codePointAt(0)]
+        )
 }
 
-; function tr_xml(o, char, c) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
-    ; var charset = '",&,\',<,>'.split(',')
-    ; return charset.indexOf(char) < 0
-        ? char
-        : o + tr(charset, 'quot,amp,apos,lt,gt'.split(','))[char.codePointAt(0)] + c
+; function tr_xml(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
+    ; var
+        set_A   = '",&,\',<,>'.split(',')// WTF?!? amp>& works for xhtml... D=8<
+        , set_B = 'quot,amp,apos,lt,gt'.split(',')
+        , set_C = tr(set_A, set_B)
+    ; return target
+        ? tr_char(o, text, c, set_A, set_C)
+        : tr_string(o, text, c, set_B, set_C)
 }
 
-; function tr_xhtml(o, char, c) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Entities_representing_special_characters_in_XHTML
-    ; var charset = '",&,<,>'.split(',')
-    ; return charset.indexOf(char) < 0
-        ? char
-        : o + tr(charset, 'quot,amp,lt,gt'.split(','))[char.codePointAt(0)] + c
+; function tr_xhtml(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Entities_representing_special_characters_in_XHTML
+    ; var
+        set_A   = '",&,<,>'.split(',')
+        , set_B = 'quot,amp,lt,gt'.split(',')
+        , set_C = tr(set_A, set_B)
+    ; return target
+        ? tr_char(o, text, c, set_A, set_C)
+        : tr_string(o, text, c, set_B, set_C)
 }
 
 ; function tr_html(o, char, c) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML
@@ -63,7 +95,7 @@
         , c = getId('close').value
     ; switch(getId('coding').value) {
         case 'casings': encode = x => o + encase(String.fromCodePoint(x)) + c; break;
-        case 'blckbrd': encode = x => tr_mathbb(o, String.fromCodePoint(x), c); break;
+        case 'blckbrd': encode = x => tr_mathbb(String.fromCodePoint(x), 0); break;
         case 'bincode': encode = x => o + x.toString(2) + c; break;
         case 'octcode': encode = x => o + x.toString(8) + c; break;
         case 'hexcode':
@@ -74,9 +106,9 @@
         case 'decimal': encode = x => o + encase(x.toString(10)) + c; break;
         case 'percent': encode = x => o + encase(encodeURIComponent(String.fromCodePoint(x))) + c; break;
         case 'urllink': encode = x => o + encase(encodeURI(String.fromCodePoint(x))) + c; break;
-        case 'extendm': encode = x => tr_xml(o, String.fromCodePoint(x), c); break;
+        case 'extendm': encode = x => tr_xml(o, String.fromCodePoint(x), c, 1); break;
         case 'hypertm': encode = x => tr_html(o, String.fromCodePoint(x), c); break;
-        case 'xypertm': encode = x => tr_xhtml(o, String.fromCodePoint(x), c); break;
+        case 'xypertm': encode = x => tr_xhtml(o, String.fromCodePoint(x), c, 1); break;
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
         ; var char = s.codePointAt(a)
@@ -85,20 +117,22 @@
     ; getId('charbx').value = r
 }
 
-; function uncharacterise() {
+; function uncharacterise() {// drop this and one button encodes/decodes? @mathbb
     ; var
         r        = ''                    //return
         , s      = getId('charbx').value//string
-        , encode
-        , encase = (getId('casing').value == 'lower'// should these be swapped?
-            ? x => x.toLowerCase()
-            : x => x.toUpperCase()
+        , decode
+        , encase = (getId('casing').value == 'lower'
+            ? x => x.toUpperCase()
+            : x => x.toLowerCase()
         )
         , o = getId('open').value
         , c = getId('close').value
     ; switch(getId('coding').value) {
-        case 'casings':
-        case 'blckbrd':
+        case 'casings': getId('charbx').value = encase(s); return;// need to ignore \o nad \c
+        case 'blckbrd': decode = x => tr_mathbb(String.fromCodePoint(x), 0); break;
+        case 'extendm': getId('charbx').value = tr_xml(o,s,c, 0); return;
+        case 'xypertm': getId('charbx').value = tr_xhtml(o,s,c, 0); return;
         case 'bincode':
         case 'octcode':
         case 'hexcode':
@@ -109,9 +143,7 @@
         case 'decimal':
         case 'percent':
         case 'urllink':
-        case 'extendm':
         case 'hypertm':
-        case 'xypertm':
         default       :
             ; alert('Pending...')
             ; return
@@ -119,9 +151,11 @@
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
         ; var char = s.codePointAt(a)
         // ^\o\chars\c$
-        // if char starts with o
-        // what about empty o/c?
-        ; r += encode(char)
+        // if \char starts with \o
+        // what about empty \o X \c? (where X = ∧/∨, ¬ >/<)
+        //
+        // s.match(/\o\(sth)\c/i?g).forEach(/* strip \o & \c before .replace() */)
+        ; r += decode(char)
     }
     ; getId('charbx').value = r
 }

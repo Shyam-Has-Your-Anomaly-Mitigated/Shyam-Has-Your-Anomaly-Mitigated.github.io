@@ -320,5 +320,14 @@ but the separator is a waste of space..!
 https://en.wikipedia.org/wiki/General_medical_examination
     BMI = (height, weight) => kg ÷ m²
     Nutrition = (age, {food}) => ...switch or something; I'm 26, so 1000mg/day Calcium for me! :-D
+statistical logs = spreadsheet
+star trek
+    Notes = captains logs (the user is the captain)
+    medical  logs (medical officer)
+    activity logs (first/science officer; educational officer? table-dependent...)
+
+primary links have optional/variable secondary links for things like webcomics, file://pdf#pages, and http://pdf#pages
+    plink
+    slink
 
 */
