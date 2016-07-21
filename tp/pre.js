@@ -20,7 +20,7 @@
 }
 ; function tr_string(o, s, c, set_B, set_C) {// efficiency: lower set_X reassignment frequency
     ; set_B.forEach(
-        x => s = s.replace(
+        x => s = s.replace(// the xml/html bug is here!!! ...it must be?
             new RegExp(
                 (o+x+c).replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&")
                 ,'g'
@@ -37,17 +37,9 @@
         set_A   = '0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,Γ,γ,Π,π,Σ'.split(',')
         , set_B = '𝟘,𝟙,𝟚,𝟛,𝟜,𝟝,𝟞,𝟟,𝟠,𝟡,𝔸,𝔹,ℂ,𝔻,𝔼,𝔽,𝔾,ℍ,𝕀,𝕁,𝕂,𝕃,𝕄,ℕ,𝕆,ℙ,ℚ,ℝ,𝕊,𝕋,𝕌,𝕍,𝕎,𝕏,𝕐,ℤ,𝕒,𝕓,𝕔,𝕕,𝕖,𝕗,𝕘,𝕙,𝕚,𝕛,𝕜,𝕝,𝕞,𝕟,𝕠,𝕡,𝕢,𝕣,𝕤,𝕥,𝕦,𝕧,𝕨,𝕩,𝕪,𝕫,ℾ,ℽ,ℿ,ℼ,⅀'.split(',')
         , set_C = tr(set_A, set_B)
-    ; return target
-        ? (
-            set_A.indexOf(char) < 0
-            ? char
-            : set_C[char.codePointAt(0)]
-        )
-        : (
-            set_B.indexOf(char) < 0
-            ? char
-            : set_C[char.codePointAt(0)]
-        )
+    ; return (target && set_A.indexOf(char) < 0) || (!target && set_B.indexOf(char) < 0)
+        ? char
+        : set_C[char.codePointAt(0)]
 }
 
 ; function tr_xml(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
@@ -70,16 +62,16 @@
         : tr_string(o, text, c, set_B, set_C)
 }
 
-; function tr_html(o, char, c) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML
+; function tr_html(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML
     // missing: shy,zwnj,zwj,lrm,rlm
     // test: "&'<> ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒˆ˜ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωϑϒϖ   –—‘’‚“”„†‡•…‰′″‹›‾⁄€ℑ℘ℜ™ℵ←↑→↓↔↵⇐⇑⇒⇓⇔∀∂∃∅∇∈∉∋∏∑−∗√∝∞∠∧∨∩∪∫∴∼≅≈≠≡≤≥⊂⊃⊄⊆⊇⊕⊗⊥⋅⌈⌉⌊⌋〈〉◊♠♣♥♦
-    ; var charset = '",&,\',<,>, ,¡,¢,£,¤,¥,¦,§,¨,©,ª,«,¬,,®,¯,°,±,²,³,´,µ,¶,·,¸,¹,º,»,¼,½,¾,¿,À,Á,Â,Ã,Ä,Å,Æ,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ð,Ñ,Ò,Ó,Ô,Õ,Ö,×,Ø,Ù,Ú,Û,Ü,Ý,Þ,ß,à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ú,û,ü,ý,þ,ÿ,Œ,œ,Š,š,Ÿ,ƒ,ˆ,˜,Α,Β,Γ,Δ,Ε,Ζ,Η,Θ,Ι,Κ,Λ,Μ,Ν,Ξ,Ο,Π,Ρ,Σ,Τ,Υ,Φ,Χ,Ψ,Ω,α,β,γ,δ,ε,ζ,η,θ,ι,κ,λ,μ,ν,ξ,ο,π,ρ,ς,σ,τ,υ,φ,χ,ψ,ω,ϑ,ϒ,ϖ, , , ,,,,,–,—,‘,’,‚,“,”,„,†,‡,•,…,‰,′,″,‹,›,‾,⁄,€,ℑ,℘,ℜ,™,ℵ,←,↑,→,↓,↔,↵,⇐,⇑,⇒,⇓,⇔,∀,∂,∃,∅,∇,∈,∉,∋,∏,∑,−,∗,√,∝,∞,∠,∧,∨,∩,∪,∫,∴,∼,≅,≈,≠,≡,≤,≥,⊂,⊃,⊄,⊆,⊇,⊕,⊗,⊥,⋅,⌈,⌉,⌊,⌋,〈,〉,◊,♠,♣,♥,♦'.split(',')
-    ; return charset.indexOf(char) < 0
-        ? char
-        : o + tr(
-            charset
-            , 'quot,amp,apos,lt,gt,nbsp,iexcl,cent,pound,curren,yen,brvbar,sect,uml,copy,ordf,laquo,not,shy,reg,macr,deg,plusmn,sup2,sup3,acute,micro,para,middot,cedil,sup1,ordm,raquo,frac14,frac12,frac34,iquest,Agrave,Aacute,Acirc,Atilde,Auml,Aring,AElig,Ccedil,Egrave,Eacute,Ecirc,Euml,Igrave,Iacute,Icirc,Iuml,ETH,Ntilde,Ograve,Oacute,Ocirc,Otilde,Ouml,times,Oslash,Ugrave,Uacute,Ucirc,Uuml,Yacute,THORN,szlig,agrave,aacute,acirc,atilde,auml,aring,aelig,ccedil,egrave,eacute,ecirc,euml,igrave,iacute,icirc,iuml,eth,ntilde,ograve,oacute,ocirc,otilde,ouml,divide,oslash,ugrave,uacute,ucirc,uuml,yacute,thorn,yuml,OElig,oelig,Scaron,scaron,Yuml,fnof,circ,tilde,Alpha,Beta,Gamma,Delta,Epsilon,Zeta,Eta,Theta,Iota,Kappa,Lambda,Mu,Nu,Xi,Omicron,Pi,Rho,Sigma,Tau,Upsilon,Phi,Chi,Psi,Omega,alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,xi,omicron,pi,rho,sigmaf,sigma,tau,upsilon,phi,chi,psi,omega,thetasym,upsih,piv,ensp,emsp,thinsp,zwnj,zwj,lrm,rlm,ndash,mdash,lsquo,rsquo,sbquo,ldquo,rdquo,bdquo,dagger,Dagger,bull,hellip,permil,prime,Prime,lsaquo,rsaquo,oline,frasl,euro,image,weierp,real,trade,alefsym,larr,uarr,rarr,darr,harr,crarr,lArr,uArr,rArr,dArr,hArr,forall,part,exist,empty,nabla,isin,notin,ni,prod,sum,minus,lowast,radic,prop,infin,ang,and,or,cap,cup,int,there4,sim,cong,asymp,ne,equiv,le,ge,sub,sup,nsub,sube,supe,oplus,otimes,perp,sdot,lceil,rceil,lfloor,rfloor,lang,rang,loz,spades,clubs,hearts,diams'.split(',')
-        )[char.codePointAt(0)] + c
+    ; var
+        set_A   = '",&,\',<,>, ,¡,¢,£,¤,¥,¦,§,¨,©,ª,«,¬,,®,¯,°,±,²,³,´,µ,¶,·,¸,¹,º,»,¼,½,¾,¿,À,Á,Â,Ã,Ä,Å,Æ,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ð,Ñ,Ò,Ó,Ô,Õ,Ö,×,Ø,Ù,Ú,Û,Ü,Ý,Þ,ß,à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ú,û,ü,ý,þ,ÿ,Œ,œ,Š,š,Ÿ,ƒ,ˆ,˜,Α,Β,Γ,Δ,Ε,Ζ,Η,Θ,Ι,Κ,Λ,Μ,Ν,Ξ,Ο,Π,Ρ,Σ,Τ,Υ,Φ,Χ,Ψ,Ω,α,β,γ,δ,ε,ζ,η,θ,ι,κ,λ,μ,ν,ξ,ο,π,ρ,ς,σ,τ,υ,φ,χ,ψ,ω,ϑ,ϒ,ϖ, , , ,,,,,–,—,‘,’,‚,“,”,„,†,‡,•,…,‰,′,″,‹,›,‾,⁄,€,ℑ,℘,ℜ,™,ℵ,←,↑,→,↓,↔,↵,⇐,⇑,⇒,⇓,⇔,∀,∂,∃,∅,∇,∈,∉,∋,∏,∑,−,∗,√,∝,∞,∠,∧,∨,∩,∪,∫,∴,∼,≅,≈,≠,≡,≤,≥,⊂,⊃,⊄,⊆,⊇,⊕,⊗,⊥,⋅,⌈,⌉,⌊,⌋,〈,〉,◊,♠,♣,♥,♦'.split(',')
+        , set_B = 'quot,amp,apos,lt,gt,nbsp,iexcl,cent,pound,curren,yen,brvbar,sect,uml,copy,ordf,laquo,not,shy,reg,macr,deg,plusmn,sup2,sup3,acute,micro,para,middot,cedil,sup1,ordm,raquo,frac14,frac12,frac34,iquest,Agrave,Aacute,Acirc,Atilde,Auml,Aring,AElig,Ccedil,Egrave,Eacute,Ecirc,Euml,Igrave,Iacute,Icirc,Iuml,ETH,Ntilde,Ograve,Oacute,Ocirc,Otilde,Ouml,times,Oslash,Ugrave,Uacute,Ucirc,Uuml,Yacute,THORN,szlig,agrave,aacute,acirc,atilde,auml,aring,aelig,ccedil,egrave,eacute,ecirc,euml,igrave,iacute,icirc,iuml,eth,ntilde,ograve,oacute,ocirc,otilde,ouml,divide,oslash,ugrave,uacute,ucirc,uuml,yacute,thorn,yuml,OElig,oelig,Scaron,scaron,Yuml,fnof,circ,tilde,Alpha,Beta,Gamma,Delta,Epsilon,Zeta,Eta,Theta,Iota,Kappa,Lambda,Mu,Nu,Xi,Omicron,Pi,Rho,Sigma,Tau,Upsilon,Phi,Chi,Psi,Omega,alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,xi,omicron,pi,rho,sigmaf,sigma,tau,upsilon,phi,chi,psi,omega,thetasym,upsih,piv,ensp,emsp,thinsp,zwnj,zwj,lrm,rlm,ndash,mdash,lsquo,rsquo,sbquo,ldquo,rdquo,bdquo,dagger,Dagger,bull,hellip,permil,prime,Prime,lsaquo,rsaquo,oline,frasl,euro,image,weierp,real,trade,alefsym,larr,uarr,rarr,darr,harr,crarr,lArr,uArr,rArr,dArr,hArr,forall,part,exist,empty,nabla,isin,notin,ni,prod,sum,minus,lowast,radic,prop,infin,ang,and,or,cap,cup,int,there4,sim,cong,asymp,ne,equiv,le,ge,sub,sup,nsub,sube,supe,oplus,otimes,perp,sdot,lceil,rceil,lfloor,rfloor,lang,rang,loz,spades,clubs,hearts,diams'.split(',')
+        , set_C = tr(set_A, set_B)
+    ; return target
+        ? tr_char(o, text, c, set_A, set_C)
+        : tr_string(o, text, c, set_B, set_C)
 }
 
 ; function characterise() {
@@ -95,7 +87,7 @@
         , c = getId('close').value
     ; switch(getId('coding').value) {
         case 'casings': encode = x => o + encase(String.fromCodePoint(x)) + c; break;
-        case 'blckbrd': encode = x => tr_mathbb(String.fromCodePoint(x), 0); break;
+        case 'blckbrd': encode = x => tr_mathbb(String.fromCodePoint(x), 1); break;
         case 'bincode': encode = x => o + x.toString(2) + c; break;
         case 'octcode': encode = x => o + x.toString(8) + c; break;
         case 'hexcode':
@@ -107,7 +99,7 @@
         case 'percent': encode = x => o + encase(encodeURIComponent(String.fromCodePoint(x))) + c; break;
         case 'urllink': encode = x => o + encase(encodeURI(String.fromCodePoint(x))) + c; break;
         case 'extendm': encode = x => tr_xml(o, String.fromCodePoint(x), c, 1); break;
-        case 'hypertm': encode = x => tr_html(o, String.fromCodePoint(x), c); break;
+        case 'hypertm': encode = x => tr_html(o, String.fromCodePoint(x), c, 1); break;
         case 'xypertm': encode = x => tr_xhtml(o, String.fromCodePoint(x), c, 1); break;
     }
     ; for (var a = 0, z = s.length; a < z; a += String.fromCodePoint(char).length) {
@@ -117,7 +109,7 @@
     ; getId('charbx').value = r
 }
 
-; function uncharacterise() {// drop this and one button encodes/decodes? @mathbb
+; function uncharacterise() {
     ; var
         r        = ''                    //return
         , s      = getId('charbx').value//string
@@ -132,6 +124,7 @@
         case 'casings': getId('charbx').value = encase(s); return;// need to ignore \o nad \c
         case 'blckbrd': decode = x => tr_mathbb(String.fromCodePoint(x), 0); break;
         case 'extendm': getId('charbx').value = tr_xml(o,s,c, 0); return;
+        case 'hypertm': getId('charbx').value = tr_html(o,s,c, 0); return;
         case 'xypertm': getId('charbx').value = tr_xhtml(o,s,c, 0); return;
         case 'bincode':
         case 'octcode':
@@ -143,7 +136,6 @@
         case 'decimal':
         case 'percent':
         case 'urllink':
-        case 'hypertm':
         default       :
             ; alert('Pending...')
             ; return
