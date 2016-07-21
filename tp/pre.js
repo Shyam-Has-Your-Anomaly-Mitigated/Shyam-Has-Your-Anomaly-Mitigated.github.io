@@ -2,36 +2,23 @@
 //http://stackoverflow.com/a/17471151
 
 ; function tr(set_A, type_A, set_B, type_B) {
-    // the xml/html bug is here!!! ...it must be?
-    // need exceptions for sets of strings..!
     ; var set_C = {}
     ; if(set_A.length == set_B.length) {
         ; for(var i = 0; i < set_A.length; i++) {
             ; set_C[
                 type_A
                 ? set_A[i].codePointAt(0)
-                : set_B[i].codePointAt(0)*-1//
+                : set_B[i].codePointAt(0)*-1
             ] = set_B[i]
             ; set_C[
                 type_B
                 ? set_B[i].codePointAt(0)
-                : set_A[i].codePointAt(0)*-1//
+                : set_A[i].codePointAt(0)*-1
             ] = set_A[i]
         }
     } else {
         ; alert('You have found a bug!\nPlease send your text, and configuration, to shyam@shyam.id.au')
     }
-//*
-/*/
-    ; alert(
-        Object.keys(set_C)
-        + '\n' + Object.keys(set_C).map(key => set_C[key])
-        + '\n' + set_A
-        + '\n' + set_A.map(x => x.codePointAt(0))
-        + '\n' + set_B
-        + '\n' + set_B.map(x => x.codePointAt(0))
-    )
-//*/
     ; return set_C
 }
 ; function tr_char(o, char, c, set_A, set_C) {// inefficiency: ...I just feel like this could be done better!
@@ -65,7 +52,7 @@
 
 ; function tr_xml(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
     ; var
-        set_A   = "\",&,',<,>".split(',')// WTF?!? amp>& works for xhtml... D=8<
+        set_A   = "\",&,',<,>".split(',')
         , set_B = 'quot,amp,apos,lt,gt'.split(',')
         , set_C = tr(set_A, 1, set_B, 0)
     ; return target
