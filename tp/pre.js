@@ -52,7 +52,7 @@
 
 ; function tr_xml(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Predefined_entities_in_XML
     ; var
-        set_A   = '",&,\',<,>'.split(',')// WTF?!? amp>& works for xhtml... D=8<
+        set_A   = "\",&,',<,>".split(',')// WTF?!? amp>& works for xhtml... D=8<
         , set_B = 'quot,amp,apos,lt,gt'.split(',')
         , set_C = tr(set_A, set_B)
     ; return target
