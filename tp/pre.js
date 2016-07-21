@@ -1,16 +1,37 @@
 //https://en.wikipedia.org/wiki/Character_encodings_in_HTML
 //http://stackoverflow.com/a/17471151
 
-; function tr(set_A, set_B) {
+; function tr(set_A, type_A, set_B, type_B) {
+    // the xml/html bug is here!!! ...it must be?
+    // need exceptions for sets of strings..!
     ; var set_C = {}
     ; if(set_A.length == set_B.length) {
         ; for(var i = 0; i < set_A.length; i++) {
-            ; set_C[set_A[i].codePointAt(0)] = set_B[i]
-            ; set_C[set_B[i].codePointAt(0)] = set_A[i]
+            ; set_C[
+                type_A
+                ? set_A[i].codePointAt(0)
+                : set_B[i].codePointAt(0)*-1//
+            ] = set_B[i]
+            ; set_C[
+                type_B
+                ? set_B[i].codePointAt(0)
+                : set_A[i].codePointAt(0)*-1//
+            ] = set_A[i]
         }
     } else {
         ; alert('You have found a bug!\nPlease send your text, and configuration, to shyam@shyam.id.au')
     }
+//*
+/*/
+    ; alert(
+        Object.keys(set_C)
+        + '\n' + Object.keys(set_C).map(key => set_C[key])
+        + '\n' + set_A
+        + '\n' + set_A.map(x => x.codePointAt(0))
+        + '\n' + set_B
+        + '\n' + set_B.map(x => x.codePointAt(0))
+    )
+//*/
     ; return set_C
 }
 ; function tr_char(o, char, c, set_A, set_C) {// inefficiency: ...I just feel like this could be done better!
@@ -18,16 +39,16 @@
         ? char
         : o + set_C[char.codePointAt(0)] + c
 }
-; function tr_string(o, s, c, set_B, set_C) {// efficiency: lower set_X reassignment frequency
-    ; set_B.forEach(
-        x => s = s.replace(// the xml/html bug is here!!! ...it must be?
+; function tr_string(o, s, c, set_A, set_B, set_C) {// efficiency: lower set_X reassignment frequency
+    ; for(var i=0; i< set_A.length; i++) {
+        s = s.replace(
             new RegExp(
-                (o+x+c).replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&")
+                (o+set_B[i]+c).replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&")
                 ,'g'
             )
-            , set_C[x.codePointAt(0)]
+            , set_C[set_A[i].codePointAt(0)*-1]
         )
-    )
+    }
     ; return s
 }
 
@@ -36,7 +57,7 @@
     ; var
         set_A   = '0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,Γ,γ,Π,π,Σ'.split(',')
         , set_B = '𝟘,𝟙,𝟚,𝟛,𝟜,𝟝,𝟞,𝟟,𝟠,𝟡,𝔸,𝔹,ℂ,𝔻,𝔼,𝔽,𝔾,ℍ,𝕀,𝕁,𝕂,𝕃,𝕄,ℕ,𝕆,ℙ,ℚ,ℝ,𝕊,𝕋,𝕌,𝕍,𝕎,𝕏,𝕐,ℤ,𝕒,𝕓,𝕔,𝕕,𝕖,𝕗,𝕘,𝕙,𝕚,𝕛,𝕜,𝕝,𝕞,𝕟,𝕠,𝕡,𝕢,𝕣,𝕤,𝕥,𝕦,𝕧,𝕨,𝕩,𝕪,𝕫,ℾ,ℽ,ℿ,ℼ,⅀'.split(',')
-        , set_C = tr(set_A, set_B)
+        , set_C = tr(set_A, 1, set_B, 1)
     ; return (target && set_A.indexOf(char) < 0) || (!target && set_B.indexOf(char) < 0)
         ? char
         : set_C[char.codePointAt(0)]
@@ -46,20 +67,20 @@
     ; var
         set_A   = "\",&,',<,>".split(',')// WTF?!? amp>& works for xhtml... D=8<
         , set_B = 'quot,amp,apos,lt,gt'.split(',')
-        , set_C = tr(set_A, set_B)
+        , set_C = tr(set_A, 1, set_B, 0)
     ; return target
         ? tr_char(o, text, c, set_A, set_C)
-        : tr_string(o, text, c, set_B, set_C)
+        : tr_string(o, text, c, set_A, set_B, set_C)
 }
 
 ; function tr_xhtml(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Entities_representing_special_characters_in_XHTML
     ; var
         set_A   = '",&,<,>'.split(',')
         , set_B = 'quot,amp,lt,gt'.split(',')
-        , set_C = tr(set_A, set_B)
+        , set_C = tr(set_A, 1, set_B, 0)
     ; return target
         ? tr_char(o, text, c, set_A, set_C)
-        : tr_string(o, text, c, set_B, set_C)
+        : tr_string(o, text, c, set_A, set_B, set_C)
 }
 
 ; function tr_html(o, text, c, target) {// https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML
@@ -68,10 +89,10 @@
     ; var
         set_A   = '",&,\',<,>, ,¡,¢,£,¤,¥,¦,§,¨,©,ª,«,¬,,®,¯,°,±,²,³,´,µ,¶,·,¸,¹,º,»,¼,½,¾,¿,À,Á,Â,Ã,Ä,Å,Æ,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ð,Ñ,Ò,Ó,Ô,Õ,Ö,×,Ø,Ù,Ú,Û,Ü,Ý,Þ,ß,à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ú,û,ü,ý,þ,ÿ,Œ,œ,Š,š,Ÿ,ƒ,ˆ,˜,Α,Β,Γ,Δ,Ε,Ζ,Η,Θ,Ι,Κ,Λ,Μ,Ν,Ξ,Ο,Π,Ρ,Σ,Τ,Υ,Φ,Χ,Ψ,Ω,α,β,γ,δ,ε,ζ,η,θ,ι,κ,λ,μ,ν,ξ,ο,π,ρ,ς,σ,τ,υ,φ,χ,ψ,ω,ϑ,ϒ,ϖ, , , ,,,,,–,—,‘,’,‚,“,”,„,†,‡,•,…,‰,′,″,‹,›,‾,⁄,€,ℑ,℘,ℜ,™,ℵ,←,↑,→,↓,↔,↵,⇐,⇑,⇒,⇓,⇔,∀,∂,∃,∅,∇,∈,∉,∋,∏,∑,−,∗,√,∝,∞,∠,∧,∨,∩,∪,∫,∴,∼,≅,≈,≠,≡,≤,≥,⊂,⊃,⊄,⊆,⊇,⊕,⊗,⊥,⋅,⌈,⌉,⌊,⌋,〈,〉,◊,♠,♣,♥,♦'.split(',')
         , set_B = 'quot,amp,apos,lt,gt,nbsp,iexcl,cent,pound,curren,yen,brvbar,sect,uml,copy,ordf,laquo,not,shy,reg,macr,deg,plusmn,sup2,sup3,acute,micro,para,middot,cedil,sup1,ordm,raquo,frac14,frac12,frac34,iquest,Agrave,Aacute,Acirc,Atilde,Auml,Aring,AElig,Ccedil,Egrave,Eacute,Ecirc,Euml,Igrave,Iacute,Icirc,Iuml,ETH,Ntilde,Ograve,Oacute,Ocirc,Otilde,Ouml,times,Oslash,Ugrave,Uacute,Ucirc,Uuml,Yacute,THORN,szlig,agrave,aacute,acirc,atilde,auml,aring,aelig,ccedil,egrave,eacute,ecirc,euml,igrave,iacute,icirc,iuml,eth,ntilde,ograve,oacute,ocirc,otilde,ouml,divide,oslash,ugrave,uacute,ucirc,uuml,yacute,thorn,yuml,OElig,oelig,Scaron,scaron,Yuml,fnof,circ,tilde,Alpha,Beta,Gamma,Delta,Epsilon,Zeta,Eta,Theta,Iota,Kappa,Lambda,Mu,Nu,Xi,Omicron,Pi,Rho,Sigma,Tau,Upsilon,Phi,Chi,Psi,Omega,alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,xi,omicron,pi,rho,sigmaf,sigma,tau,upsilon,phi,chi,psi,omega,thetasym,upsih,piv,ensp,emsp,thinsp,zwnj,zwj,lrm,rlm,ndash,mdash,lsquo,rsquo,sbquo,ldquo,rdquo,bdquo,dagger,Dagger,bull,hellip,permil,prime,Prime,lsaquo,rsaquo,oline,frasl,euro,image,weierp,real,trade,alefsym,larr,uarr,rarr,darr,harr,crarr,lArr,uArr,rArr,dArr,hArr,forall,part,exist,empty,nabla,isin,notin,ni,prod,sum,minus,lowast,radic,prop,infin,ang,and,or,cap,cup,int,there4,sim,cong,asymp,ne,equiv,le,ge,sub,sup,nsub,sube,supe,oplus,otimes,perp,sdot,lceil,rceil,lfloor,rfloor,lang,rang,loz,spades,clubs,hearts,diams'.split(',')
-        , set_C = tr(set_A, set_B)
+        , set_C = tr(set_A, 1, set_B, 0)
     ; return target
         ? tr_char(o, text, c, set_A, set_C)
-        : tr_string(o, text, c, set_B, set_C)
+        : tr_string(o, text, c, set_A, set_B, set_C)
 }
 
 ; function characterise() {
