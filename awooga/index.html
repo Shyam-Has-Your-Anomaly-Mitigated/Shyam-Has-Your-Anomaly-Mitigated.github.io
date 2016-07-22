@@ -18,8 +18,7 @@
     <a href="#" onclick="; delete localStorage.rc; init()">Reconfigure</a>: Drag & Drop, or
     <input type="file" id="f" onchange="storeClientFile(this.files[0])">
     <div id="dnd"></div><!-- drag & drop -->
-    <a href="#" download="awoogarc.json" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(no(rc, 0))">Backup</a>
-    (compressed)
+    <a href="#" class="hover" title="(compressed)" download="awoogarc.json" onclick="; this.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(no(rc, 0))">Backup</a>
     <br>
     <br>
     Time Is TICKING...
