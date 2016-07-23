@@ -12,12 +12,13 @@ function github { # $1=commit_message
 #                    status_B=$(git status);
 #                    if [ "$status_B" != "$test" ];
 #                        then
-#                            printf "$status_A\n$status_B";
+#                            cat<<<"$status_A";
+#                            cat<<<"$status_B";
 #                        else
-#                            echo "$status_B";
+#                            cat<<<"$status_B";
 #                    fi;
                 else
-#                    echo "$status_A";
+#                    cat<<<"$status_A";
                     git status;
             fi;
         else
