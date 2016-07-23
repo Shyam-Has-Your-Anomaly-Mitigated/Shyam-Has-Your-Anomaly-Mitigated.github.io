@@ -1,12 +1,40 @@
-clear; git status;
-
-clear; git status; git add *; git status
-git commit -m 'm'; git push origin master
-Shyam-Has-Your-Anomaly-Mitigated
+function github { # $1=commit_message
+    clear;
+    if [ -z "$1" ];
+        then
+            status_A=$(git status);
+            test=$'On branch master\nYour branch is up-to-date with \'origin/master\'.\nnothing to commit, working directory clean';
+            if [ "$status_A" != "$test" ];
+                then
+                    git status;
+                    git add *;
+                    git status;
+#                    status_B=$(git status);
+#                    if [ "$status_B" != "$test" ];
+#                        then
+#                            printf "$status_A\n$status_B";
+#                        else
+#                            echo "$status_B";
+#                    fi;
+                else
+#                    echo "$status_A";
+                    git status;
+            fi;
+        else
+            git commit -m "$1";
+            git push origin master;
+#            64_Hare_Kṛṣṇa_Hare_Kṛṣṇa_Kṛṣṇa_Kṛṣṇa_Hare_Hare_Hare_Rāma_Hare_Rāma_Rāma_Rāma_Hare_Hare_108
+    fi;
+} # ...how to capture colour from command?
+# clear; git status; git add *; git status
+github
+#git commit -m 'm'; git push origin master
+github 'm'
 64_Hare_Kṛṣṇa_Hare_Kṛṣṇa_Kṛṣṇa_Kṛṣṇa_Hare_Hare_Hare_Rāma_Hare_Rāma_Rāma_Rāma_Hare_Hare_108
 # ...is there a way to automate user and password?!?
 
 clear; git status; git pull --all
+# ...does `git status` check GitHub "Pull requests"? Like I'll ever get any of those anyway...
 
 # Check commit index
 git status
