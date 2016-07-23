@@ -4,19 +4,20 @@
     + br + format(link('Licensees:', '/9Hr34k', {c: 'hover', t: 'License depends on request; details to be included in the licensee&apos;s [.htm] file.'}), 'ub')
     + listify(
         [
-            link('', 'http://shyam.id.au/license/___.htm')
+            link('Shyam', 'Shyam.htm')
+            , link('Octocat', 'Octocat.htm')
         ], 'ol'
     )
-    + format(link('Pending..:', 'https://en.wikipedia.org/wiki/Template:Unsolved_problems'), 'ub')
+    + format(link('Pending..:', 'https://en.wikipedia.org/wiki/Template:Unsolved_problems', {c: 'hover', t: 'Polymeric Falcighol Derivation'}), 'ub')
     + listify(
         [
-            link('', 'mailto:___@___?Subject=Hello%20<[.htm]>!%20:D')
+            link('', 'http://shyam.id.au/license/___.htm')
         ], 'ul'
     )
     + format(link('Criminals:', 'http://rosettacode.org/wiki/Help:Similar_Sites', {c: 'hover', t: 'Script Kiddies'}), 'ub')
     + listify(
         [
-            link('', 'mailto:___@___?Subject=Subpœna')
+            link('', 'http://shyam.id.au/license/___.htm')
         ], 'ol'
     )
     + format('I like to think of cyberspace as no different to international waters; where others acknowledge universal jurisdiction...', 'i')
