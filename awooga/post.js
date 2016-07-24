@@ -12,17 +12,11 @@
 // main
 ; (clock = () => {; getId('clock').innerHTML = timestamp(new Date()); setTimeout(clock, 1)})();
 ; (init = () => 'rc' in localStorage? reconfigure(localStorage.rc, 0): download('awoogarc.json'))()
-/*
-; init()
-; function init() {
-    ; if('rc' in localStorage) {; reconfigure(localStorage.rc, 0)}
-        else {; download('awoogarc.json')}
-}*/
 
 // drag & drop; http://stackoverflow.com/a/33917000
 ; function dnd_show()  {; dnd.style.visibility = "visible"}
 ; function dnd_hide()  {; dnd.style.visibility = "hidden" }
-; function dnd_drag(e) {; e.dataTransfer.dropEffect = 'copy'; e.preventDefault()}// Since when is true not going to be true?!?
+; function dnd_drag(e) {; e.dataTransfer.dropEffect = 'copy'; e.preventDefault()}
 ; function dnd_drop(e) {
     ; e.preventDefault()
     ; e.stopPropagation()
@@ -33,7 +27,6 @@
         ; r.readAsText(e.dataTransfer.files[0])
     } catch(e) {; alert(e)}
 }
-// I kind of just want to put window into win; just for this...
 ; window.addEventListener('dragenter', dnd_show)// 1
 ; dnd.addEventListener(   'dragenter', dnd_drag)// 2
 ; dnd.addEventListener(   'dragover' , dnd_drag)// 2
