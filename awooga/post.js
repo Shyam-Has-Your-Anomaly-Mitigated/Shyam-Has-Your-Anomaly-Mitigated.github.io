@@ -190,11 +190,14 @@ https://xkcd.com/1179/
                 , {id: list[e] + '-ident', class: 'ident', onclick: js}
             ]
             , ['', {id: list[e] + '-time' , class: 'time' , onclick: js}]
-            , {onclick: (// what a waste...
-                'link' in rc[table].row[list[e]]
-                ? 'window.open(&#x27;' + rc[table].row[list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'
-                : ''
-            )}
+            , {
+                id: list[e] + '-row'
+                , onclick: (// what a waste...
+                    'link' in rc[table].row[list[e]]
+                    ? 'window.open(&#x27;' + rc[table].row[list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'
+                    : ''
+                )
+            }
         ]
     }
     ; return list
@@ -281,6 +284,17 @@ awooga_profiles
     animation: static 5s infinite
         colour_A = F
         colour_Z = 0
+taboo always static?
+    but all of that pre-emptive flashing..?
+        mostly just for consumption..!
+            taboo always static! :D
+taboo: {
+    duration: 60*60*1.5
+}
+alarm: {
+    time: 60*60*24
+    type: DONT_PANIC
+}
 
 linked_clicks
     update time
@@ -329,5 +343,38 @@ star trek
 primary links have optional/variable secondary links for things like webcomics, file://pdf#pages, and http://pdf#pages
     plink
     slink
+
+*/
+////////////////////////////////////////////////////////////////////////////////
+/*
+
+What I can tell from my archaeological discoveries of the primitive system...
+    Sleep   // static ; maximum possible time spent sleeping; no functionality
+    Awake   // static ; minimum possible time spent awakened; THIS.click, Sleep.time = Active.time, THIS.time = Active.time = 0
+    Active  // static ; storage                             ; display; THIS.click, Awake.time = THIS.time, THIS.time = 0s
+    Auto    // dynamic; storage                             ; mouse.move, Active.time += THIS.time, THIS.time = 0s
+
+; function act() {
+    ; update_time_table()
+    ; css()
+}
+; function activetype() {
+    ; rest.active = new Date();//man
+    ; act();
+}
+; function activity() {
+    ; rest.since = new Date();//auto
+    ; act();
+}
+document.onkeypress  = () => activetype()//ONKEYPRESS
+document.onclick     = () => activity()  //ONCLICK
+document.onmousemove = () => activity()  //ONMOUSEMOVE
+
+"I have reason to believe that there is an entire culture that worships The Rings Of Saturn?!?" -- JAPH
+"But Neptune has rings too!?!" -- Steven Lisberger
+"Temporal distortions make our very own Moon look like a ring around the bad wolf..." -- Guess Who
+"The Moon could be used as an International Scientific Interest Station; particle-airy astronomy, and robotic automation." -- Shyam Has Your Anomaly Mitigated! :D
+...
+An airborne platform tethered to the Moon will stop the Moon from achieving escape velocity; we can also fly to the platform and "just keep climbing, just keep climbing, just keep climbing, climbing, climbing, what do we do? we climb, climb, climb"~
 
 */

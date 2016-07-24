@@ -34,6 +34,8 @@ github 'm'
 64_Hare_Kṛṣṇa_Hare_Kṛṣṇa_Kṛṣṇa_Kṛṣṇa_Hare_Hare_Hare_Rāma_Hare_Rāma_Rāma_Rāma_Hare_Hare_108
 # ...is there a way to automate user and password?!?
 
+git diff --cached
+
 clear; git status; git pull --all
 # ...does `git status` check GitHub "Pull requests"? Like I'll ever get any of those anyway...
 
