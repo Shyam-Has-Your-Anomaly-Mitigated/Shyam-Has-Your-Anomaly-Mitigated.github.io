@@ -10,8 +10,8 @@
 ; var rc, timeout = {}, dnd = getId('dnd'), clock, init
 
 // main
-; (clock = () => {; getId('clock').innerHTML = timestamp(new Date()); setTimeout(clock, 1)})();
-; (init = () => 'rc' in localStorage? reconfigure(localStorage.rc, 0): download('awoogarc.json'))()
+; (clock = () => {; getId('clock').innerHTML = timestamp(new Date()); setTimeout(clock, 1)})()
+; (init  = () => 'rc' in localStorage? reconfigure(localStorage.rc, 0): download('awoogarc.json'))()
 
 // drag & drop; http://stackoverflow.com/a/33917000
 ; function dnd_show()  {; dnd.style.visibility = "visible"}
@@ -131,6 +131,17 @@ https://xkcd.com/1179/
     ; Molly()
     ; reset_tables()
 }
+; function reset_timers() {
+    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
+        ; rc[t].row[e].time = Date.now()
+    }}
+}
+; function reset_tables() {
+    ; for(var id in timeout) {; clearTimeout(timeout[id])}
+    ; for(var t in rc) {; for(var id in rc[t].row) {// for id in table in rc
+        ; timer(id, rc[t].row[id], 'time')
+    }}
+}
 ; function Molly() {
     ; var h = getId('Holly')// ^
     ; h.innerHTML = ''
@@ -186,17 +197,6 @@ https://xkcd.com/1179/
     }
     ; return list
 }
-; function reset_timers() {
-    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
-        ; rc[t].row[e].time = Date.now()
-    }}
-}
-; function reset_tables() {
-    ; for(var id in timeout) {; clearTimeout(timeout[id])}
-    ; for(var t in rc) {; for(var id in rc[t].row) {// for id in table in rc
-        ; timer(id, rc[t].row[id], 'time')
-    }}
-}
 
 // add exceptions for sleep, wake, man, and auto; above...
 // add CSS awooga and timers here, need to adjust table structure and whatever else...
@@ -208,7 +208,7 @@ https://xkcd.com/1179/
 
 // FFS; make the whole row clickable!!! D-:<
 
-// awoogarc.json: drag'n'drop, weblinks...
+// dnd∈{file,link}, ∀*:validation...
 
 /* Awoogas
 taboo
@@ -252,11 +252,7 @@ time∈{
     , {"week"   ∈ℤ|[1,52 ]}
     , {"month"  ∈ℤ|[1,12 ]}
 }
-*/
 
-// NEED TO WRITE UP SOME KIND OF WYSIWYG FOR THIS... (temporal conversions to seconds, and the rest of JSON; replace the recommendations.)
-
-/*
 awooga_profiles
     animation: DONT_PANIC 5s infinite
         colour_A = FF0
@@ -273,6 +269,7 @@ taboo always static?
             taboo always static! :D
 taboo: {
     duration: 60*60*1.5
+    type    : static
 }
 alarm: {
     time: 60*60*24
@@ -290,12 +287,8 @@ custom_files
     awoogarc.js
 drag&drop
     /awoogarc/
-*/
+NEED TO WRITE UP SOME KIND OF WYSIWYG FOR THIS... (temporal conversions to seconds, and the rest of JSON; replace the recommendations.)
 
-// this needs validation...
-// <input type="button" value="Cyberphile" onclick="download(prompt())">
-
-/*
 The old style should be kept...
 
 | Heading_0 | | Heading_3 |
