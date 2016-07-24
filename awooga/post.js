@@ -1,43 +1,44 @@
 // https://gist.github.com/webinista/11240585
-; const foldm = (r,j) => r.reduce((a,b,i,g) => !(i % j)? (a.push(g.slice(i,i+j)), a): a, [])
+; const foldm = (r, j) => r.reduce((a, b, i, g) => !(i % j)? (a.push(g.slice(i, i + j)), a): a, [])
 
 // is File API available?
 ; if(!(window.File && window.FileReader && window.FileList && window.Blob)) {; alert('Where\'s my File API?.')}
 // is localStorage available?
-; if(typeof window.localStorage===undefined || typeof localStorage===undefined){; alert('Where\'s my localStorage?')}
+; if(typeof window.localStorage === undefined || typeof localStorage === undefined){; alert('Where\'s my localStorage?')}
 
 // globals
-; var rc, timeout={}
+; var rc, timeout = {}, dnd = getId('dnd'), clock, init
 
 // main
-; clock()
-; init()// whatever the fuck is going on here; should've just used the good old hard-coded system..!
+; (clock = () => {; getId('clock').innerHTML = timestamp(new Date()); setTimeout(clock, 1)})();
+; (init = () => 'rc' in localStorage? reconfigure(localStorage.rc, 0): download('awoogarc.json'))()
+/*
+; init()
+; function init() {
+    ; if('rc' in localStorage) {; reconfigure(localStorage.rc, 0)}
+        else {; download('awoogarc.json')}
+}*/
 
 // drag & drop; http://stackoverflow.com/a/33917000
-; var dnd = getId('dnd')
-; function showDropZone() {; dnd.style.visibility = "visible"}
-; function hideDropZone() {; dnd.style.visibility = "hidden" }
-; function allowDrag(e) {
-    ; if (true) {  // Test that the item being dragged is a valid one
-        ; e.dataTransfer.dropEffect = 'copy'
-        ; e.preventDefault()
-    }
-}
-; function handleDrop(e) {
+; function dnd_show()  {; dnd.style.visibility = "visible"}
+; function dnd_hide()  {; dnd.style.visibility = "hidden" }
+; function dnd_drag(e) {; e.dataTransfer.dropEffect = 'copy'; e.preventDefault()}// Since when is true not going to be true?!?
+; function dnd_drop(e) {
     ; e.preventDefault()
     ; e.stopPropagation()
-    ; hideDropZone()
+    ; dnd.style.visibility = "hidden"
     ; try {
         ; var r = new FileReader()
-        ; r.onload = function() {; reconfigure(r.result, 0)}
+        ; r.onload = () => reconfigure(r.result, 0)
         ; r.readAsText(e.dataTransfer.files[0])
     } catch(e) {; alert(e)}
 }
-; window.addEventListener('dragenter', function(e) {; showDropZone()})// 1
-; dnd.addEventListener(   'dragenter', allowDrag                     )// 2
-; dnd.addEventListener(   'dragover' , allowDrag                     )// 2
-; dnd.addEventListener(   'dragleave', function(e) {; hideDropZone()})// 3
-; dnd.addEventListener(   'drop'     , handleDrop                    )// 4
+// I kind of just want to put window into win; just for this...
+; window.addEventListener('dragenter', dnd_show)// 1
+; dnd.addEventListener(   'dragenter', dnd_drag)// 2
+; dnd.addEventListener(   'dragover' , dnd_drag)// 2
+; dnd.addEventListener(   'dragleave', dnd_hide)// 3
+; dnd.addEventListener(   'drop'     , dnd_drop)// 4
 
 // file browser
 ; function storeClientFile(f) {// f.name, f.type, f.size, f.lastModified, f.lastModifiedDate, f.slice
@@ -46,7 +47,7 @@
             ; var r = new FileReader()
             ; r.onload = function() {; reconfigure(r.result, 0)}
             ; r.readAsText(f)
-        } else {; alert('Your file is MIME:'+f.type+', it must be MIME:application/json')}
+        } else {; alert('Your file is MIME:' + f.type + ', it must be MIME:application/json')}
     } catch(e) {; alert(e)}
 }
 
@@ -78,16 +79,16 @@ http://www.iso.org/iso/home/standards/iso8601.htm
 https://en.wikipedia.org/wiki/ISO_8601
 https://xkcd.com/1179/
 */
+; function zero(x) {; return (x < 10)? '0' + x: x}
 ; function timestamp(t) {
     ; var
-        zeroes = (x => (x<10)? '00'+x: x<100? '0'+x: x)
-        , zero = (x => (x<10)? '0' +x: x)
+        zeroes = (x => (x < 10)? '00' + x: x < 100? '0' + x: x)
         , Y    =        t.getFullYear()
-        , M    = zero(  t.getMonth()+1)
-        , D    = zero(  t.getDate()   )
-        , h    = zero(  t.getHours()  )
-        , m    = zero(  t.getMinutes())
-        , s    = zero(  t.getSeconds())
+        , M    = zero(  t.getMonth() + 1)
+        , D    = zero(  t.getDate()     )
+        , h    = zero(  t.getHours()    )
+        , m    = zero(  t.getMinutes()  )
+        , s    = zero(  t.getSeconds()  )
         , ms   = zeroes(t.getMilliseconds())
         , z    = t.toString().replace(/^.+:\d+ /, '')
     ; return ''
@@ -95,40 +96,30 @@ https://xkcd.com/1179/
         + ' ' + h + ':' + m + ':' + s + '.' + ms
         + ' ' + z
 }
+; function timer(id, object, property) {
+    ; var
+        diff           = new Date(Date.now() - new Date(object[property]))
+        , [d, h, m, s] = secondstamp(parseInt(diff/1000))
+    ; getId(id + '-time').innerHTML = (
+        (  0 < d? zero(d) + 'd ': '')
+        + (0 < h? zero(h) + 'h ': '')
+        + (0 < m? zero(m) + 'm ': '')
+        +         zero(s) + 's'
+    )
+    ; timeout[id] = setTimeout(timer, 100, id, object, property)
+}
 ; function secondstamp(time) {// time=seconds
     ; var s, m, h, d
     ; s = time % 60
-    ; time = (time - s)/60
+    ; time = (time - s) / 60
     ; m = time % 60
-    ; time = (time - m)/60
+    ; time = (time - m) / 60
     ; h = time % 24
-    ; time = (time - h)/24
+    ; time = (time - h) / 24
     ; d = time
     ; return [d, h, m, s]
 }
-; function timer(a, b) {
-    ; var
-        diff = new Date(new Date(b) - new Date(a))
-        , [d,h,m,s] = secondstamp(parseInt(diff/1000))
-    ; return ((0<d?d+'d ':'') + (0<h?h+'h ':'') + (0<m?m+'m ':'') + s + 's')
-}
-; function timer_clock(id, object, property, t) {
-    ; var diff,d,h,m,s
-    ; diff = new Date(Date.now() - new Date(object[property]))
-    ; [d,h,m,s] = secondstamp(parseInt(diff/1000))
-    ; getId(id).innerHTML = (0<d?d+'d ':'') + (0<h?h+'h ':'') + (0<m?m+'m ':'') + s + 's'
-    ; timeout[t] = setTimeout(timer_clock, 100, id, object, property, t)
-}
-; function clock() {
-    ; var t
-    ; getId('clock').innerHTML = timestamp(new Date())
-    ; t = setTimeout(clock, 1)//100
-}
 
-; function init() {
-    ; if('rc' in localStorage) {; reconfigure(localStorage.rc, 0)}
-        else {; download('awoogarc.json')}
-}
 ; function download(url) {
         ; var xhr = new XMLHttpRequest()
         ; xhr.onreadystatechange = function() {
@@ -181,10 +172,10 @@ https://xkcd.com/1179/
 }
 ; function Molly_row(list, table) {
     ; for(var e in list) {
-        ; var js = '; rc["'+table+'"].row'+'["'+Object.keys(rc[table].row)[e]+'"].time = new Date; localStorage.rc = no(rc, 0)'
+        ; var js = '; rc["' + table + '"].row' + '["' + Object.keys(rc[table].row)[e] + '"].time = new Date; localStorage.rc = no(rc, 0)'
         ; list[e] = [
             [  '↦', {id: list[e] + '-start', class: 'start'}]
-            , ['⇥' , {id: list[e] + '-stop' , class: 'stop' }]
+            , ['⇥', {id: list[e] + '-stop' , class: 'stop' }]
             , [
                 Molly_link(rc[table].row[list[e]], Molly_hover(rc[table].row[list[e]], list[e]))
                 , {id: list[e] + '-ident', class: 'ident', onclick: js}
@@ -208,9 +199,9 @@ https://xkcd.com/1179/
     }}
 }
 ; function reset_tables() {
-    ; for(var e in timeout) {; clearTimeout(timeout[e])}
-    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
-        ; timer_clock(e + '-time', rc[t].row[e], 'time', e)
+    ; for(var id in timeout) {; clearTimeout(timeout[id])}
+    ; for(var t in rc) {; for(var id in rc[t].row) {// for id in table in rc
+        ; timer(id, rc[t].row[id], 'time')
     }}
 }
 
@@ -364,21 +355,27 @@ What I can tell from my archaeological discoveries of the primitive system...
     ; css()
 }
 ; function activetype() {
-    ; rest.active = new Date();//man
-    ; act();
+    ; rest.active = new Date()//man
+    ; act()
 }
 ; function activity() {
-    ; rest.since = new Date();//auto
-    ; act();
+    ; rest.since = new Date()//auto
+    ; act()
 }
-document.onkeypress  = () => activetype()//ONKEYPRESS
-document.onclick     = () => activity()  //ONCLICK
-document.onmousemove = () => activity()  //ONMOUSEMOVE
+; document.onkeypress  = () => activetype()//ONKEYPRESS
+; document.onclick     = () => activity()  //ONCLICK
+; document.onmousemove = () => activity()  //ONMOUSEMOVE
 
-"I have reason to believe that there is an entire culture that worships The Rings Of Saturn?!?" -- JAPH
+"I have reason to believe that there exists an entire culture that worships The Rings Of Saturn?!?" -- JAPH
 "But Neptune has rings too!?!" -- Steven Lisberger
 "Temporal distortions make our very own Moon look like a ring around the bad wolf..." -- Guess Who
 "The Moon could be used as an International Scientific Interest Station; particle-airy astronomy, and robotic automation." -- Shyam Has Your Anomaly Mitigated! :D
 :..an airborne platform tethered to the Moon will stop the Moon from achieving escape velocity; we can also fly to the platform and "just keep climbing, just keep climbing, just keep climbing, climbing, climbing, what do we do? we climb, climb, climb"~
+
+Females are forbidden to practice Tuvan Throat Singing; cursed with "infecundity", if they do.
+    They'll become exceptionally skilled with their tongue; lesbian =^^^^^^^^^^^
+    Otherwise their husband'll put it in their mouth instead; which =^^^^^^^^^^^
+THE CURSE IS ℝEAL!!!
+इति सिद्धम्
 
 */
