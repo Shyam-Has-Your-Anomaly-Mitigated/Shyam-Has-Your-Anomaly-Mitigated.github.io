@@ -7,7 +7,14 @@
 ; if(typeof window.localStorage === undefined || typeof localStorage === undefined){; alert('Where\'s my localStorage?')}
 
 // globals
-; var rc, timeout = {}, dnd = getId('dnd'), clock, init
+; var
+    rc
+    , timeout  = {}
+    , re_local = /(file):\/\/\/(.+?\/)+.+\.json/// Can't test on other platforms; MS must be backwards..?
+    , re_cyber = /(https?|ftp)(:\/\/)(.+?\.)+(.+?\/)+.+\.json/
+    , dnd      = getId('dnd')
+    , clock
+    , init
 
 // main
 ; (clock = () => {; getId('clock').innerHTML = timestamp(new Date()); setTimeout(clock, 1)})()
@@ -21,11 +28,7 @@
     ; e.preventDefault()
     ; e.stopPropagation()
     ; dnd.style.visibility = "hidden"
-    ; try {
-        ; var r = new FileReader()
-        ; r.onload = () => reconfigure(r.result, 0)
-        ; r.readAsText(e.dataTransfer.files[0])
-    } catch(e) {; alert(e)}
+    ; download(e.dataTransfer.getData('text'))// Doesn't support drag & drop from text editor..?
 }
 ; window.addEventListener('dragenter', dnd_show)// 1
 ; dnd.addEventListener(   'dragenter', dnd_drag)// 2
@@ -33,12 +36,27 @@
 ; dnd.addEventListener(   'dragleave', dnd_hide)// 3
 ; dnd.addEventListener(   'drop'     , dnd_drop)// 4
 
-// file browser
-; function storeClientFile(f) {// f.name, f.type, f.size, f.lastModified, f.lastModifiedDate, f.slice
+; function download(address) {
+        ; if(!(address.match(re_cyber) || address.match(re_local))) {// WTF is the data scheme? Find out ∧ support it! 8D
+            ; alert('Invalid address!\nMust begin with: {file, ftp, http, https}∋scheme://\nMust end with: .json\n\nPlease transmit bugs towards: shyam@shyam.id.au')
+            ; return false
+        }
+        ; var xhr = new XMLHttpRequest()
+        ; xhr.onreadystatechange = function() {
+            ; if (xhr.readyState == 4 && xhr.status == 200) {
+                ; reconfigure(xhr.responseText, 1)
+            }
+        }
+        ; xhr.open("GET", address, true)
+        ; xhr.send()
+        ; return true
+}
+
+; function browse_file(f) {// f.name.match(/\.json$/) only enforced for dnd ∧ links
     ; try {
         ; if(f.type == 'application/json') {// http://www.ietf.org/rfc/rfc4627.txt
             ; var r = new FileReader()
-            ; r.onload = function() {; reconfigure(r.result, 0)}
+            ; r.onload = () => reconfigure(r.result, 0)
             ; r.readAsText(f)
         } else {; alert('Your file is MIME:' + f.type + ', it must be MIME:application/json')}
     } catch(e) {; alert(e)}
@@ -111,17 +129,6 @@ https://xkcd.com/1179/
     ; time = (time - h) / 24
     ; d = time
     ; return [d, h, m, s]
-}
-
-; function download(url) {
-        ; var xhr = new XMLHttpRequest()
-        ; xhr.onreadystatechange = function() {
-            ; if (xhr.readyState == 4 && xhr.status == 200) {
-                ; reconfigure(xhr.responseText, 1)
-            }
-        }
-        ; xhr.open("GET", url, true)
-        ; xhr.send()
 }
 
 ; function reconfigure(json, reset) {
