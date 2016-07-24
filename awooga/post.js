@@ -331,7 +331,8 @@ The old style should be kept...
 
 but the separator is a waste of space..!
 
-Tabs are better?
+What about tabs?
+Only alarms will flash the tabs; no taboo...
 
 ...the row should flash? what about start/stop? there must be special conditions... (¿dependencies?)
 
