@@ -215,8 +215,6 @@ https://xkcd.com/1179/
 
 // FFS; make the whole row clickable!!! D-:<
 
-// dnd∈{file,link}, ∀*:validation...
-
 /* Awoogas
 taboo
     time = <seconds>
