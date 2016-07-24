@@ -53,6 +53,8 @@
             case 'url'     : r += ' src=\''   + a[e] + '\''; break;//change to geller?uri
             case 'disabled': r += ' disabled'; break;
             case 'selected': r += ' selected'; break;
+            case 'checked' : r += ' checked' ; break;
+            case 'disabled': r += ' disabled'; break;
             default        : r += ' ' + e + '=\'' + a[e] + '\'';
         }
     }

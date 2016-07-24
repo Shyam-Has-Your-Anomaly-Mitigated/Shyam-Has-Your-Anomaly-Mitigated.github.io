@@ -331,6 +331,19 @@ primary links have optional/variable secondary links for things like webcomics, 
     plink
     slink
 
+rc = {
+    tables: {<current(awoogarc.json)>}
+    , alarms: {
+        static: {colour_A: 0, colour_Z: F, duration: 5(seconds)}
+        , DONT_PANIC: {...}
+        , life_threatening: {...}
+
+    }
+}
+
+Can add support for non-hex colours later; like way later, probably...
+Alarms can be gradually ¿dis?colouring, or spontaneously flashing...
+
 */
 ////////////////////////////////////////////////////////////////////////////////
 /*

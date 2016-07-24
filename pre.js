@@ -13,7 +13,7 @@
     + br + '<iframe width=\'200\' height=\'113\' src=\'https://www.youtube-nocookie.com/embed/CxU3JOWzZdg?rel=0&amp;controls=0&amp;showinfo=0\' frameborder=\'0\' allowfullscreen></iframe>'
     + br + br + 'I whisper sweet nothings to my machine and it just listens to me (' + format('like nobody else will', 'i') + '); I am a ' + format('Computer Whisperer', 'b') + ', but I whisper with my ' + link('finger tips', '/mæssage') + '...'
     + br + br + format('Transceiver: ', 'b') + link('shyam@shyam.id.au', 'mailto:shyam@shyam.id.au?Subject=YOU%20HAVE%20MAIL%20!!!')
-    + br + '^Don\'t bother me if I become a ' + link('Ben, Dick, & Forelife', '/bdfl') + '; I will contact you. ;)'
+    + br + '^Don\'t ' + link('bother', '/cv') + ' me if I become a ' + link('Ben, Dick, & Forelife', '/bdfl') + '; I will contact you. ;)'
     + br + br + 'LIVE LONG AND PROSPER \\V/,'
     + br + 'AGENT S.'
     + br + '🕴'
