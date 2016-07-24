@@ -39,7 +39,7 @@ git diff --cached
 # before github; against after github
 git diff
 # before github; but as if it is after github
-git diff  HEAD
+git diff HEAD
 
 clear; git status; git pull --all
 # ...does `git status` check GitHub "Pull requests"? Like I'll ever get any of those anyway...

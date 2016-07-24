@@ -217,9 +217,8 @@ https://xkcd.com/1179/
 // add exceptions for sleep, wake, man, and auto; above...
 // add CSS awooga and timers here, need to adjust table structure and whatever else...
 // clean up; pre.js...
-// implement statistical logging; replace "Download" and textarea...
+// implement statistical logging; move/reformat "Download"...
 // implement start/stop for statistical logging...
-// add <input> for notes/commenting statistical logs...
 // scrutinise paperwork before scanning/shredding...
 // add study, and what not, to the awoogarc.json file...
 
@@ -304,6 +303,9 @@ linked_clicks
 custom_files
     awoogarc.json
     awoogarc.css
+    awoogarc.js
+drag&drop
+    /awoogarc/
 */
 
 // this needs validation...
@@ -329,6 +331,8 @@ The old style should be kept...
 
 but the separator is a waste of space..!
 
+Tabs are better?
+
 ...the row should flash? what about start/stop? there must be special conditions... (¿dependencies?)
 
 https://en.wikipedia.org/wiki/General_medical_examination
@@ -351,7 +355,7 @@ primary links have optional/variable secondary links for things like webcomics, 
 What I can tell from my archaeological discoveries of the primitive system...
     Sleep   // static ; maximum possible time spent sleeping; no functionality
     Awake   // static ; minimum possible time spent awakened; THIS.click, Sleep.time = Active.time, THIS.time = Active.time = 0
-    Active  // static ; storage                             ; display; THIS.click, Awake.time = THIS.time, THIS.time = 0s
+    Active  // static ; storage                             ; THIS.click, Awake.time = THIS.time, THIS.time = 0s
     Auto    // dynamic; storage                             ; mouse.move, Active.time += THIS.time, THIS.time = 0s
 
 ; function act() {
@@ -374,7 +378,6 @@ document.onmousemove = () => activity()  //ONMOUSEMOVE
 "But Neptune has rings too!?!" -- Steven Lisberger
 "Temporal distortions make our very own Moon look like a ring around the bad wolf..." -- Guess Who
 "The Moon could be used as an International Scientific Interest Station; particle-airy astronomy, and robotic automation." -- Shyam Has Your Anomaly Mitigated! :D
-...
-An airborne platform tethered to the Moon will stop the Moon from achieving escape velocity; we can also fly to the platform and "just keep climbing, just keep climbing, just keep climbing, climbing, climbing, what do we do? we climb, climb, climb"~
+:..an airborne platform tethered to the Moon will stop the Moon from achieving escape velocity; we can also fly to the platform and "just keep climbing, just keep climbing, just keep climbing, climbing, climbing, what do we do? we climb, climb, climb"~
 
 */
