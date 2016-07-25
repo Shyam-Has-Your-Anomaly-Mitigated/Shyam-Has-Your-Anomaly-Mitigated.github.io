@@ -7,7 +7,7 @@ function github { # $1=commit_message
             if [ "$status_A" != "$test" ];
                 then
                     git status;
-                    git add *;
+                    git add .;
                     git status;
 #                    status_B=$(git status);
 #                    if [ "$status_B" != "$test" ];

@@ -157,7 +157,7 @@ https://xkcd.com/1179/
         ; var list = Molly_row(foldm(Object.keys(rc[table].row), 1), table)
         ; h.innerHTML += tabulate(
             [head].concat(list)
-            , true, {style: "; display: inline-block; vertical-align: top; margin: 3px"}
+            , {style: "; display: inline-block; vertical-align: top; margin: 3px"}
         )
     }
 }
@@ -169,16 +169,15 @@ https://xkcd.com/1179/
 }
 ; function Molly_link(object, name) {; return 'link' in object? name + ' ∞': name}
 ; function Molly_header(list, table) {
-    ; var th = {colspan: 4}, h
     ; return [
         [
-            Molly_link(rc[table].header, Molly_hover(rc[table].header, table))
-            , th
-        ],{onclick: (// what a waste...
-                'link' in rc[table].header
-                ? 'window.open(&#x27;' + rc[table].header.link + '&#x27;, &#x27;_blank&#x27;).focus()'
-                : ''
-        )}
+            Molly_link(rc[table].header, Molly_hover(rc[table].header, table))// WTF is this?!? I don't think that's how you hover a link..?
+            , {colspan: 4}
+        ]
+        , 'th'
+        , 'link' in rc[table].header
+        ? {onclick: 'window.open(&#x27;' + rc[table].header.link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Hopefully this works; need to test it..! :D
+        : {}
     ]
 }
 ; function Molly_row(list, table) {
@@ -192,14 +191,10 @@ https://xkcd.com/1179/
                 , {id: list[e] + '-ident', class: 'ident', onclick: js}
             ]
             , ['', {id: list[e] + '-time' , class: 'time' , onclick: js}]
-            , {
-                id: list[e] + '-row'
-                , onclick: (// what a waste...
-                    'link' in rc[table].row[list[e]]
-                    ? 'window.open(&#x27;' + rc[table].row[list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'
-                    : ''
-                )
-            }
+            , 'td'
+            , 'link' in rc[table].row[list[e]]
+            ? {id: list[e] + '-row', onclick: 'window.open(&#x27;' + rc[table].row[list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}
+            : {id: list[e] + '-row'}
         ]
     }
     ; return list

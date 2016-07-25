@@ -54,7 +54,6 @@
             case 'disabled': r += ' disabled'; break;
             case 'selected': r += ' selected'; break;
             case 'checked' : r += ' checked' ; break;
-            case 'disabled': r += ' disabled'; break;
             default        : r += ' ' + e + '=\'' + a[e] + '\'';
         }
     }
@@ -151,44 +150,34 @@
     ; return ret + '</' + type + '>'
 }
 
-; function tabulate(matrix, heading, attributes) {// hopefully this isn't being used yet...
+; function tabulate(matrix, attributes) {// grep -rnw . -e 'tabulate'
     /*
         tabulate(
             [
                 [
                     ['A', {attributes}]
                     , ['B', {attributes}]
+                    , 'th'
                     , {attributes}
                 ], [
                     ['a', {attributes}]
                     , ['b', {attributes}]
+                    , 'td'
                     , {attributes}
                 ]
-            ], true, {attributes}
+            ], {attributes}
         )
     */
     ; var
         attributes = attributes? attributes: {}
         , table    = '<table' + idiosync(attributes) + '>'
-    ; if(heading) {; table += tabulate_head(matrix.shift())}
     ; for(var row of matrix) {
-        ; var a = row.pop()
-        ; a = a? a: {}
+        ; var [t, a] = row.splice(row.length - 2, 2)// type, attributes
         ; table += '<tr' + idiosync(a) + '>'
         ; for(var col of row) {
-            ; var a = col[1]? col[1]: {}
-            ; table += '<td' + idiosync(a) + '>' + col[0] + '</td>'
+            ; table += '<' + t + idiosync(col[1]) + '>' + col[0] + '</' + t + '>'
         }
         ; table += '</tr>'
     }
     ; return table + '</table>'
-}
-function tabulate_head(row) {
-    ; var r = '', a = row.pop()
-    ; r += '<tr' + idiosync(a? a: {}) + '>'
-    ; for(var col of row) {
-        ; r += '<th' + idiosync(col[1]? col[1]: {}) + '>' + col[0] + '</th>'
-    }
-    ; r += '</tr>'
-    ; return r
 }

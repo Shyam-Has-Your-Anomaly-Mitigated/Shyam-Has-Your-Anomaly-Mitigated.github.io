@@ -1,6 +1,4 @@
-; var
-    bellabia = '𝄞三¾三♩三♩三♬三|三♩三♩三♬三‖'
-    , Ahimsā = 'अहिंसा'
+; var Ahimsā = 'अहिंसा'
 ; document.write(
     link(heading(format(
         'Will code for '
