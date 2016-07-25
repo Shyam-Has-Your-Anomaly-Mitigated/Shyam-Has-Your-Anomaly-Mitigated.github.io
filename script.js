@@ -21,25 +21,36 @@
     + n + 'https://youtu.be/M94ii6MVilw'
 )
 
-// Should these be anonymous..?
-; function getId(string)    {; return document.getElementById(string)        }
-; function getClass(string) {; return document.getElementsByClassName(string)}
+// Should this be anonymous..?
+; String.prototype.times = function(n) {// multiplier
+    var r = ''
+    for(var e in [...Array(n)]) {r += this}// this is a problem...
+    return r
+}
 
 /***************************** Text_Processing.pl *****************************/
 /* screw the server, I need readability!!!
  * at least for function names
  * attributes can be single char namespaces where it makes sense; class, title,..
  */
-; var br  = '<br>' // newline == \n\r || lf+cr
-; var tab = '&nbsp;&nbsp;&nbsp;&nbsp;'
-; var hr  = '<hr>'
-
-// need div() function...
-// first clean up heading() as h()
-
-; function Sanskrit(Devanagari) {
-    return '<span class="Sanskrit">' + Devanagari + '</span>'
-}
+; var
+    br  = '<br>'// newline: \n\r ∨ lf+cr
+    , sp  = '&nbsp;'
+    , tab = sp.times(4)
+    , hr  = '<hr>'
+    , getId     = (s) => document.getElementById(string)
+    , getClass  = (s) => document.getElementsByClassName(string)
+    , bold      = (innerHTML, attributes) => format(innerHTML, 'b', attributes)
+    , italics   = (innerHTML, attributes) => format(innerHTML, 'i', attributes)
+    , underline = (innerHTML, attributes) => format(innerHTML, 'u', attributes)
+    , strike    = (innerHTML, attributes) => format(innerHTML, 's', attributes)
+    , hover     = (innerHTML, title)      => span(innerHTML, {c: 'hover', t: title})
+    , b = bold
+    , i = italics
+    , u = underline
+    , s = strike
+    , a = link
+    , h = heading
 
 ; function idiosync(attributes) {
     ; var
@@ -60,12 +71,17 @@
     ; return r
 }
 
-; function s(innerHTML, attributes) {// span
+; function div(innerHTML, attributes) {// is that all I need to do?
+    ; return '<div'
+        + idiosync(attributes)// title, class
+        + '>' + innerHTML + '</div>'
+}
+; function span(innerHTML, attributes) {
     ; return '<span'
         + idiosync(attributes)// title, class
         + '>' + innerHTML + '</span>'
 }
-; function f(innerHTML, options, attributes) {// format
+; function format(innerHTML, options, attributes) {// format; options should be at the start?
     // ...is this used as format('abc','ui') ?!?
     // options should come first...another time...
     ; for(var char of options.split('')) {
@@ -86,23 +102,13 @@
     ; return innerHTML
 }
 // ...are these redundant? ...or should they have single width namespaces?
-; function b(innerHTML, attributes) {; return format(innerHTML, 'b', attributes)}
-; function i(innerHTML, attributes) {; return format(innerHTML, 'i', attributes)}
-; function u(innerHTML, attributes) {; return format(innerHTML, 'u', attributes)}
-// why can't these be the other way around? one has value, the other doesn't; unambiguous!
-; span      = s
-; format    = f
-; bold      = b
-; italics   = i
-; underline = u
 
-; function a(innerHTML, url, attributes) {//hyperlink
+; function link(innerHTML, url, attributes) {//hyperlink
     ; return '<a href=\'' + url + '\''
         + idiosync(attributes)// class, title
         + ' target=\'_blank\''
         + '>' + innerHTML + '</a>'
 }
-; link = a
 ; function image(attributes) {
     ; return '<img'
         + idiosync(attributes)// url, alt, class, onerror
@@ -127,12 +133,11 @@
         + '>' + innerHTML + '</option>'
 }
 
-; function h(title, type) {
+; function heading(title, type) {
     ; if(type < 1) type = 1
     ; if(6 < type) type = 6
     ; return '<h'+type+'>' + title + '</h'+type+'>'
 }
-; heading = h
 
 ; function listify(list, type) {// listicle
     /*

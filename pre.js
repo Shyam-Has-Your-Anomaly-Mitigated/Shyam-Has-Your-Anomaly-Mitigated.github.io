@@ -8,7 +8,7 @@
     + br + tab + format('Y', 'b') + 'our.'
     + br + tab + format('A', 'b') + 'nomaly.'
     + br + tab + format('M', 'b') + 'itigated.'
-    + br + br + Sanskrit(Shyam) + ' means ' + link('Dark-Complexioned Lord', 'https://en.wikipedia.org/wiki/List_of_titles_and_names_of_Krishna')
+    + br + br + Shyam + ' means ' + link('Dark-Complexioned Lord', 'https://en.wikipedia.org/wiki/List_of_titles_and_names_of_Krishna')
     + br + br + 'Here is how to pronounce Śyāma'
     + br + '<iframe width=\'200\' height=\'113\' src=\'https://www.youtube-nocookie.com/embed/CxU3JOWzZdg?rel=0&amp;controls=0&amp;showinfo=0\' frameborder=\'0\' allowfullscreen></iframe>'
     + br + br + 'I whisper sweet nothings to my machine and it just listens to me (' + format('like nobody else will', 'i') + '); I am a ' + format('Computer Whisperer', 'b') + ', but I whisper with my ' + link('finger tips', '/mæssage') + '...'
