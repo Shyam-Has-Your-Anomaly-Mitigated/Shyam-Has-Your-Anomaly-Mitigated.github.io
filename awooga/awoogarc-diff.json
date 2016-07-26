@@ -206,6 +206,23 @@
       }
     }
   },
+  "Hourly Habits": {
+    "header": {
+      "hover": "Hourlies",
+      "time": null,
+      "alarm": null
+    },
+    "row": {
+      "Drink Water": {
+        "time": null,
+        "alarm": null
+      },
+      "Stand & Stretch": {
+        "time": null,
+        "alarm": null
+      }
+    }
+  },
   "Reading": {
     "header": {
       "hover": "file://PDF#link",

@@ -28,7 +28,23 @@
     ; e.preventDefault()
     ; e.stopPropagation()
     ; dnd.style.visibility = "hidden"
-    ; download(e.dataTransfer.getData('text'))// Doesn't support drag & drop from text editor..?
+    ; if (e.dataTransfer.getData('text').match(re_local)) {
+        ; browse_file(e.dataTransfer.files[0])
+    } else {
+        ; alert('Blame the W3C.')
+        /* HotTeST Social Engineering Public Computer
+            Host a server.
+            Tansmit address to server.
+            Server downloads file from address.
+            Transmit file from server.
+            ... https://youtu.be/kJa2kwoZ2a4
+            Store their address.
+            Edrop their transmissions.
+            Phish their username.
+            Crack their password.
+        */// RoA54: ν = (wealth)′ = r÷t = ∫profits! :D
+        //; download(e.dataTransfer.getData('text'))// Doesn't support drag & drop from text editor..?
+    }
 }
 ; window.addEventListener('dragenter', dnd_show)// 1
 ; dnd.addEventListener(   'dragenter', dnd_drag)// 2
@@ -37,7 +53,7 @@
 ; dnd.addEventListener(   'drop'     , dnd_drop)// 4
 
 ; function download(address) {
-        ; if(!(address.match(re_cyber) || address.match(re_local))) {// WTF is the data scheme? Find out ∧ support it! 8D
+        ; if(!(address == 'awoogarc.json' || address.match(re_cyber))) {// WTF is the data scheme? Find out ∧ support it! 8D
             ; alert('Invalid address!\nMust begin with: {file, ftp, http, https}∋scheme://\nMust end with: .json\n\nPlease transmit bugs towards: shyam@shyam.id.au')
             ; return false
         }
