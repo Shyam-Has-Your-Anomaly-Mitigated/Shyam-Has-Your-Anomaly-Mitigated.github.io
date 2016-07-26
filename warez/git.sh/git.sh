@@ -1,47 +1,35 @@
 function github { # $1=commit_message
     clear;
-    if [ -z "$1" ];
-        then
-            status_A=$(git status);
-            test=$'On branch master\nYour branch is up-to-date with \'origin/master\'.\nnothing to commit, working directory clean';
-            if [ "$status_A" != "$test" ];
-                then
-                    git status;
-                    git add .;
-                    git status;
-#                    status_B=$(git status);
-#                    if [ "$status_B" != "$test" ];
-#                        then
-#                            cat<<<"$status_A";
-#                            cat<<<"$status_B";
-#                        else
-#                            cat<<<"$status_B";
-#                    fi;
-                else
-#                    cat<<<"$status_A";
-                    git status;
-            fi;
-        else
-            git commit -m "$1";
-            git push origin master;
-#            64_Hare_Kṛṣṇa_Hare_Kṛṣṇa_Kṛṣṇa_Kṛṣṇa_Hare_Hare_Hare_Rāma_Hare_Rāma_Rāma_Rāma_Hare_Hare_108
+    if [ -z "$1" ]; then
+        git status;
+        git add . ;             # add all
+        git status;
+    elif [ "$1" == '-a' ]     ; # all
+        then git diff HEAD    ; # before github; but as if it is after github
+    elif [ "$1" == '-s' ]     ; # staged
+        then git diff --cached; # after  github
+    elif [ "$1" == '-d' ]     ; # default
+        then git diff         ; # before github; against after pseudo github
+    elif [ "$1" == '-f' ]     ; # fetch
+        then git status       ;
+        git pull --all        ;
+    else
+        git commit -m "$1"    ;
+        git push origin master;
     fi;
 } # ...how to capture colour from command?
-# clear; git status; git add *; git status
+# clear; git status; git add .; git status
 github
-#git commit -m 'm'; git push origin master
+# git diffs
+github -a
+github -s
+github -d
+# git pull -all
+github -f
+# git commit -m 'm'; git push origin master
 github 'm'
 64_Hare_Kṛṣṇa_Hare_Kṛṣṇa_Kṛṣṇa_Kṛṣṇa_Hare_Hare_Hare_Rāma_Hare_Rāma_Rāma_Rāma_Hare_Hare_108
-# ...is there a way to automate user and password?!?
-
-# after  github
-git diff --cached
-# before github; against after github
-git diff
-# before github; but as if it is after github
-git diff HEAD
-
-clear; git status; git pull --all
+# ...is there a way to automate password?!?
 # ...does `git status` check GitHub "Pull requests"? Like I'll ever get any of those anyway...
 
 # Check commit index
@@ -51,8 +39,7 @@ git rm files
 # Move file or directory; also moves the actual file or directory
 git mv /path/from /path/to
 # Add file to commit index
-clear; git status; git add *; git status
-git add file.ext
+git add /path/file
 # Commit the index you just ∑up
 git commit -m 'verbosely descriptive message of changes'
 # Push changes to GitHub
@@ -85,7 +72,7 @@ clear; git config --global user.name 'Shyam'
 clear; git config --global user.email 'shyam@shyam.id.au'
 # Clone
 clear; git clone 'https://Shyam-Has-Your-Anomaly-Mitigated@github.com/Shyam-Has-Your-Anomaly-Mitigated/Shyam-Has-Your-Anomaly-Mitigated.github.io.git'
-# Integrate username; probably can just clone the address...
+# Integrate username; probably can just clone the SSH address...
 git remote set-url origin 'https://Shyam-Has-Your-Anomaly-Mitigated@github.com/Shyam-Has-Your-Anomaly-Mitigated/Shyam-Has-Your-Anomaly-Mitigated.github.io.git'
 
 #HTTPS = convenience

@@ -34,12 +34,12 @@
  * attributes can be single char namespaces where it makes sense; class, title,..
  */
 ; var
-    br  = '<br>'// newline: \n\r ∨ lf+cr
+    br    = '<br>'// newline: \n\r ∨ lf+cr
     , sp  = '&nbsp;'
     , tab = sp.times(4)
     , hr  = '<hr>'
-    , getId     = (s) => document.getElementById(string)
-    , getClass  = (s) => document.getElementsByClassName(string)
+    , getId     = s => document.getElementById(s)
+    , getClass  = s => document.getElementsByClassName(s)
     , bold      = (innerHTML, attributes) => format(innerHTML, 'b', attributes)
     , italics   = (innerHTML, attributes) => format(innerHTML, 'i', attributes)
     , underline = (innerHTML, attributes) => format(innerHTML, 'u', attributes)

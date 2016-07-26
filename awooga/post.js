@@ -62,8 +62,7 @@
     } catch(e) {; alert(e)}
 }
 
-// json
-; function no(s, j) {
+; function no(s, j) {// (j,s)on
     ; try {
         ; return j? JSON.parse(s): JSON.stringify(s)
     } catch(e) {
@@ -338,6 +337,9 @@ rc = {
 
 Can add support for non-hex colours later; like way later, probably...
 Alarms can be gradually ¿dis?colouring, or spontaneously flashing...
+Daily reset option... disarm: [{Y,M,D,D_number,D_name}, seconds_from_start]
+Temporary...          click? `rm` :``
+Add/edit/rm by table name...
 
 */
 ////////////////////////////////////////////////////////////////////////////////
