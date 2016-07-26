@@ -27,7 +27,7 @@ github -d
 # git pull -all
 github -f
 # git commit -m 'm'; git push origin master
-github 'descriptive comment of changes'
+github 'descriptive comment of changes; a wi╫y ңø╪⠑╈ꝏßéﬂ, if you wi║.'
 64_Hare_Kṛṣṇa_Hare_Kṛṣṇa_Kṛṣṇa_Kṛṣṇa_Hare_Hare_Hare_Rāma_Hare_Rāma_Rāma_Rāma_Hare_Hare_108
 # ...is there a way to automate password?!?
 # ...does `git status` check GitHub "Pull requests"? Like I'll ever get any of those anyway...
