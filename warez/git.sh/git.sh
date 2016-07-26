@@ -45,7 +45,7 @@ cat ~/.gitignore
 # Destroy
 rm ~/.gitignore
 # Append/Create
-cat>>~/.gitignore<<WHEN
+cat>>~/.gitignore <<WHEN
 test-*
 *pass*
 *key*
