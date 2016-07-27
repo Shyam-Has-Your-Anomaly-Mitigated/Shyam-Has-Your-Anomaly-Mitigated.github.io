@@ -65,7 +65,11 @@
     + br + '"n depends on d": d\\n x nyd, c̄ x∈{∧,∨} ∧ y∈{/,%}'
     + br + '÷ is ambiguous..?'
     + heading('Binary Stored DynamicaLanguage', 4)
-    +      'Dots and Lines; 2⁶ to 2¹⁰ c̄∅ ' + hover('accentuation₂', 'accentuation÷accentuation') + ', otherwise 2¹⁰ (StaticaLanguage)'
+    +      '○-○'
+    + br + '|X|'
+    + br + '○-○'
+    + br
+    + br + 'Dots and Lines; 2⁶ to 2¹⁰ c̄∅ ' + hover('accentuation₂', 'accentuation÷accentuation') + ', otherwise 2¹⁰ (StaticaLanguage)'
     + br + '{←,↓,↑,→,⤢,⤡}+{↙,↘,↗,↖}'
     + br + tab + '↙÷{←,↓,⤢}'
     + br + tab + '↘÷{↓,→,⤡}'
