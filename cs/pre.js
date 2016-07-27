@@ -59,4 +59,18 @@
     + br + '; loop(logic) {; if(condition) {; a()} else {; b()}}'
     + br
     + br + format('It\'s redundant to repetitively compute "-thing"s; ' + format('if you can help it.', 'b'), 'i')
+    + heading(format('Farraginous Concepts', 'u'), 3)
+    + heading('Symbolic Communication', 4)
+    +      '"n depends on d": d\\n y nxd, c̄ y∈{∧,∨} ∧ x∈{/,%}'
+    + br + '"n depends on d": d\\n x nyd, c̄ x∈{∧,∨} ∧ y∈{/,%}'
+    + br + '÷ is ambiguous..?'
+    + heading('Binary Stored DynamicaLanguage', 4)
+    +      'Dots and Lines; 2⁶ to 2¹⁰ c̄∅ ' + hover('accentuation₂', 'accentuation÷accentuation') + ', otherwise 2¹⁰ (StaticaLanguage)'
+    + br + '{←,↓,↑,→,⤢,⤡}+{↙,↘,↗,↖}'
+    + br + tab + '↙÷{←,↓,⤢}'
+    + br + tab + '↘÷{↓,→,⤡}'
+    + br + tab + '↗÷{↑,→,⤢}'
+    + br + tab + '↖÷{←,↑,⤡}'
+    + br
+    + br + format('What happened to my monospacial typesetting?', 'i')
 )
