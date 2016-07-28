@@ -36,7 +36,7 @@
             "colour": "#000"
         }
 
-    }, "T0" : {
+    }, "Table A" : {
 
         "Lucid REMS": {
             "time"    : null
@@ -148,7 +148,7 @@
                 , "hover": "Lower Body"
             }
 
-    }, "T1" : {
+    }, "Table B" : {
 
         "Monday Musts": {
             "time"   : null
