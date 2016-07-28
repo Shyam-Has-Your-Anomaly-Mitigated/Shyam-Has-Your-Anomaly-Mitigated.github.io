@@ -170,19 +170,18 @@ https://xkcd.com/1179/
 
 ; function css_keyframes(o) {// object
     ; var css = document.createElement('style')
-    ; css.type = 'text/css'
     ; for(var a in o) {// for alarm in object
         ; var ta = tz = ba = bz = false
         // This could use some validation to avoid reassignments..?
-        ; if('background_A' in o[a]) {; ba = o[a].background_A         }
-        ; if('background_Z' in o[a]) {; bz = o[a].background_Z         }
-        ; if('text_A'       in o[a]) {; ta = o[a].text_A               }
-        ; if('text_Z'       in o[a]) {; tz = o[a].text_Z               }
-        ; if('background'   in o[a]) {; ba = bz = o[a].background      }
-        ; if('text'         in o[a]) {; ta = tz = o[a].text            }
+        ; if('colour'       in o[a]) {; ba = bz = ta = tz = o[a].colour}
         ; if('colour_A'     in o[a]) {; ba = tz = o[a].colour_A        }
         ; if('colour_Z'     in o[a]) {; ta = bz = o[a].colour_Z        }
-        ; if('colour'       in o[a]) {; ba = bz = ta = tz = o[a].colour}
+        ; if('text'         in o[a]) {; ta = tz = o[a].text            }
+        ; if('background'   in o[a]) {; ba = bz = o[a].background      }
+        ; if('text_A'       in o[a]) {; ta = o[a].text_A               }
+        ; if('text_Z'       in o[a]) {; tz = o[a].text_Z               }
+        ; if('background_A' in o[a]) {; ba = o[a].background_A         }
+        ; if('background_Z' in o[a]) {; bz = o[a].background_Z         }
         ; css.innerHTML += ''
             + '@keyframes ' + a + '{0%,100%{'
             + (ta? ';color:' + ta: '') + (ba? ';background-color:' + ba: '')
