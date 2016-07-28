@@ -93,7 +93,7 @@
                 , "alarm": null
             }
 
-    , "Exercise": {
+        , "Exercise": {
             "time"   : null
             , "alarm": null
             , "title": true
@@ -113,7 +113,7 @@
 
     }, "T1" : {
 
-    "Monday Musts": {
+        "Monday Musts": {
             "time"   : null
             , "alarm": null
             , "hover": "Weeklies"
@@ -137,7 +137,7 @@
                 , "alarm": null
             }
 
-    , "Daily Duties": {
+        , "Daily Duties": {
             "time"   : null
             , "alarm": null
             , "hover": "Dailies"
@@ -183,7 +183,7 @@
                 , "hover": "There are other sites, I'll get around to sorting all of these out later... I have plans to write a better system for learning languages; but it's ¿inconceivably? ambitious! :D"
             }
 
-    , "Hourly Habits": {
+        , "Hourly Habits": {
             "time"   : null
             , "alarm": null
             , "hover": "Hourlies"
@@ -196,7 +196,7 @@
                 , "alarm": null
             }
 
-    , "Reading": {
+        , "Reading": {
             "time"   : null
             , "alarm": null
             , "hover": "file://PDF#link"
