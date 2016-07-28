@@ -69,7 +69,7 @@
     + br + '|X|'
     + br + '○-○'
     + br
-    + br + 'Dots and Lines; 2⁶ to 2¹⁰ c̄∅ ' + hover('accentuation₂', 'accentuation÷accentuation') + ', otherwise 2¹⁰ (StaticaLanguage)'
+    + br + 'Dots and Lines; 2⁶ to 2¹⁰ c̄∅ ' + hover('(accentuation)₂', 'accentuation÷accentuation') + ', otherwise 2¹⁰ (StaticaLanguage)'
     + br + '{←,↓,↑,→,⤢,⤡}+{↙,↘,↗,↖}'
     + br + tab + '↙÷{←,↓,⤢}'
     + br + tab + '↘÷{↓,→,⤡}'
