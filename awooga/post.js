@@ -172,7 +172,6 @@ https://xkcd.com/1179/
     ; var css = document.createElement('style')
     ; for(var a in o) {// for alarm in object
         ; var ta = tz = ba = bz = false
-        // This could use some validation to avoid reassignments..?
         ; if('colour'       in o[a]) {; ba = bz = ta = tz = o[a].colour}
         ; if('colour_A'     in o[a]) {; ba = tz = o[a].colour_A        }
         ; if('colour_Z'     in o[a]) {; ta = bz = o[a].colour_Z        }
