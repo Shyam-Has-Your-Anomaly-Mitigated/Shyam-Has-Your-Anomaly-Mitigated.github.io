@@ -243,7 +243,7 @@ https://xkcd.com/1179/
 // implement statistical logging; move/reformat "Download"...
 // implement start/stop for statistical logging...
 // scrutinise paperwork before scanning/shredding...
-// add study, and what not, to the awoogarc.json file...
+// add study, &␦¬, to the awoogarc.json file...
 
 // FFS; make the whole row clickable!!! D-:<
 // The background alarm will be triggered according by Sleep; but should be customisable...
@@ -304,7 +304,7 @@ awooga_profiles
 taboo always static?
     but all of that pre-emptive flashing..?
         mostly just for consumption..!
-            taboo always static! :D
+            taboo always static! 8=D
 taboo: {
     duration: 60*60*1.5
     type    : static
@@ -334,7 +334,7 @@ Only alarms will flash the tabs; no taboo...
 
 https://en.wikipedia.org/wiki/General_medical_examination
     BMI = (height, weight) => kg ÷ m²
-    Nutrition = (age, {food}) => ...switch or something; I'm 26, so 1000mg/day Calcium for me! :-D
+    Nutrition = (age, {food}) => ...switch or something; I'm 26, so 1000mg/day Calcium for me! 8-D
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
