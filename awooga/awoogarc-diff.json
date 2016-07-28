@@ -1,5 +1,42 @@
 {
-    "T0" : {
+
+    "Alarms" : {
+
+        "Awooga" : {
+            "colour_A"  : "#FF0"
+            , "colour_Z": "#F00"
+        }, "Prāṇa" : {
+            "background_A"  : "#FF0"
+            , "background_Z": "#0FF"
+        }, "Taboo" : {
+            "colour_A"  : "#FFF"
+            , "colour_Z": "#000"
+        }, "Popo" : {
+            "text": "blue"
+            , "background_A": "#FFF"
+            , "background_Z": "#000"
+        }, "Siren" : {
+            "background_A": "#F00"
+            , "text_A": "#00F"
+            , "background_Z": "#00F"
+            , "text_Z": "#F00"
+        }, "Subtle" : {
+            "background": "#FFF"
+            , "text_A": "#590"
+            , "text_Z": "#099"
+        }, "Party" : {
+            "background_A": "#F0F"
+            , "text_A": "#0FF"
+            , "text_Z": "#0F0"
+            , "background_Z": "#FF0"
+        }, "Static" : {
+            "background": "#000"
+            , "text": "FFF"
+        }, "Blind" : {
+            "colour": "#000"
+        }
+
+    }, "T0" : {
 
         "Lucid REMS": {
             "time"    : null

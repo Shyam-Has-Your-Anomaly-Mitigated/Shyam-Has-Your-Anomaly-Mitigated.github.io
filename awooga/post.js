@@ -148,6 +148,7 @@ https://xkcd.com/1179/
 
 ; function reconfigure(json, reset) {
     ; rc = no(json, 1)
+    ; css_keyframes(rc.Alarms)
     ; if(reset) {; reset_timers()}// to reset, or not to reset; that is configurable...
     ; localStorage.rc = no(rc, 0)
     ; Molly()
@@ -155,25 +156,53 @@ https://xkcd.com/1179/
 }
 ; function reset_timers() {
     ; for(var t in rc) {; for(var e in rc[t]) {// for each in table in rc
-        ; rc[t][e].time = Date.now()
+        ; if(t != 'Alarms') {; rc[t][e].time = Date.now()}
     }}
 }
 ; function reset_tables() {
     ; for(var id in timeout) {; clearTimeout(timeout[id])}
     ; for(var t in rc) {; for(var id in rc[t]) {// for id in table in rc
-        ; if(!rc[t][id].title) {
+        ; if(t != 'Alarms' && !rc[t][id].title) {
             ; timer(id, rc[t][id], 'time')
         }
     }}
 }
+
+; function css_keyframes(o) {// object
+    ; var css = document.createElement('style')
+    ; css.type = 'text/css'
+    ; for(var a in o) {// for alarm in object
+        ; var ta = tz = ba = bz = false
+        // This could use some validation to avoid reassignments..?
+        ; if('background_A' in o[a]) {; ba = o[a].background_A         }
+        ; if('background_Z' in o[a]) {; bz = o[a].background_Z         }
+        ; if('text_A'       in o[a]) {; ta = o[a].text_A               }
+        ; if('text_Z'       in o[a]) {; tz = o[a].text_Z               }
+        ; if('background'   in o[a]) {; ba = bz = o[a].background      }
+        ; if('text'         in o[a]) {; ta = tz = o[a].text            }
+        ; if('colour_A'     in o[a]) {; ba = tz = o[a].colour_A        }
+        ; if('colour_Z'     in o[a]) {; ta = bz = o[a].colour_Z        }
+        ; if('colour'       in o[a]) {; ba = bz = ta = tz = o[a].colour}
+        ; css.innerHTML += ''
+            + '@keyframes ' + a + '{0%,100%{'
+            + (ta? ';color:' + ta: '') + (ba? ';background-color:' + ba: '')
+            + '}50%{'
+            + (tz? ';color:' + tz: '') + (bz? ';background-color:' + bz: '')
+            + '}}'
+    }
+    ; document.body.appendChild(css)
+}
+
 ; function Molly() {
     ; var h = getId('Holly')// ^
     ; h.innerHTML = ''
     ; for(var table in rc) {
-        ; h.innerHTML += tabulate(
-            Molly_table(foldm(Object.keys(rc[table]), 1), table)
-            , {style: "; display: inline-block; vertical-align: top; margin: 3px"}
-        )
+        if(table != 'Alarms') {
+            ; h.innerHTML += tabulate(
+                Molly_table(foldm(Object.keys(rc[table]), 1), table)
+                , {style: "; display: inline-block; vertical-align: top; margin: 3px"}
+            )
+        }
     }
 }
 ; function Molly_table(list, table) {
