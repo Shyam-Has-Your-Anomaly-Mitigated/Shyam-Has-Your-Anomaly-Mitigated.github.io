@@ -171,16 +171,16 @@ https://xkcd.com/1179/
     ; h.innerHTML = ''
     ; for(var table in rc) {
         ; h.innerHTML += tabulate(
-            Molly_row(foldm(Object.keys(rc[table]), 1), table)
+            Molly_table(foldm(Object.keys(rc[table]), 1), table)
             , {style: "; display: inline-block; vertical-align: top; margin: 3px"}
         )
     }
 }
-; function Molly_row(list, table) {
+; function Molly_table(list, table) {
     ; var
         Molly_hover = (object, name) => 'hover' in object? span(name, {class: 'hover', title: object.hover.replace(/'/g, '&#x27;')}): name
         , Molly_link = (object, name) => 'link' in object? name + ' ∞': name
-    ; for(var e in list) {
+    ; for(var e in list) {// for rows in table
         ; if(rc[table][list[e]].title) {
             ; list[e] = [
                 [
