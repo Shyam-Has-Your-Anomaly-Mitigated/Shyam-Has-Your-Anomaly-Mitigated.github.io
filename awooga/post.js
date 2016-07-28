@@ -83,7 +83,7 @@
         ; return j? JSON.parse(s): JSON.stringify(s)
     } catch(e) {
         ; alert(
-            'Your JSON file is compromised!'
+            'Your JSON file is compromised! (http://www.json.org/)'
             + '\n\n\nHere are some JSON validation services:'
             + '\n\nhttp://www.jsoneditoronline.org/\n(This one supports objectivity.)'
             + '\n\nhttp://jsonformatter.org/\n(This one does everything, and more!)'
