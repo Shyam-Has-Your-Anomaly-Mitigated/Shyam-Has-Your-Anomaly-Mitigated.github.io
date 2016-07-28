@@ -177,35 +177,32 @@ https://xkcd.com/1179/
     }
 }
 ; function Molly_table(list, table) {
-    ; var
-        Molly_hover = (object, name) => 'hover' in object? span(name, {class: 'hover', title: object.hover.replace(/'/g, '&#x27;')}): name
-        , Molly_link = (object, name) => 'link' in object? name + ' ∞': name
+    ; var Molly_hover = (object, name) => 'hover' in object? span(name, {c: 'hover'}): name
     ; for(var e in list) {// for rows in table
+        ; var attributes = {onclick: '; rc["' + table + '"]["' + list[e] + '"]' + '.time = new Date; localStorage.rc = no(rc, 0)'}
+        ; if('link'  in rc[table][list[e]]) {; attributes.onclick = 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Test-titles...
+        ; if('hover' in rc[table][list[e]]) {; attributes.c = 'hover'; attributes.t = rc[table][list[e]].hover.replace(/'/g, '&#x27;')}
         ; if(rc[table][list[e]].title) {
             ; list[e] = [
                 [
-                    Molly_link(rc[table][list[e]], Molly_hover(rc[table][list[e]], list[e]))// WTF is this?!? I don't think that's how you hover a link..?
+                    Molly_hover(rc[table][list[e]], list[e]) + ('link' in rc[table][list[e]]? ' ∞': '')
                     , {colspan: 4}
                 ]
                 , 'th'
-                , 'link' in rc[table][list[e]]
-                ? {onclick: 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Hopefully this works; need to test it..! :D
-                : {}
+                , attributes
             ]
         } else {
-            ; var js = '; rc["' + table + '"]["' + list[e] + '"]' + '.time = new Date; localStorage.rc = no(rc, 0)'
+            ; attributes.id = list[e] + '-row'
             ; list[e] = [
                 [  '↦', {id: list[e] + '-start', class: 'start'}]
                 , ['⇥', {id: list[e] + '-stop' , class: 'stop' }]
                 , [
-                    Molly_link(rc[table][list[e]], Molly_hover(rc[table][list[e]], list[e]))// WTF is this?!? I don't think that's how you hover a link..?
-                    , {id: list[e] + '-ident', class: 'ident', onclick: js}
+                    Molly_hover(rc[table][list[e]], list[e]) + ('link' in rc[table][list[e]]? ' ∞': '')
+                    ,  {id: list[e] + '-ident', class: 'ident'}
                 ]
-                , ['', {id: list[e] + '-time' , class: 'time' , onclick: js}]
+                , ['', {id: list[e] + '-time' , class: 'time' }]
                 , 'td'
-                , 'link' in rc[table][list[e]]
-                ? {id: list[e] + '-row', onclick: 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}
-                : {id: list[e] + '-row'}
+                , attributes
             ]
         }
     }
