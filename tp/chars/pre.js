@@ -43,7 +43,7 @@ var
     + br + link(format('Ordinals &nbsp;&nbsp;&nbsp;:' , 'u'), 'https://en.wikipedia.org/wiki/Ordinal_indicator') + ' ˢᵗ,ⁿᵈ,ʳᵈ,ᵗʰ'
     + br + link(format('Fractionals :' , 'u'), 'https://en.wikipedia.org/wiki/Fraction_%28mathematics%29#Typographical_variations') + ' ½,' + link('↉', 'https://en.wikipedia.org/wiki/Number_Forms') + ',⅓,⅔,¼,¾,⅕,⅖,⅗,⅘,⅙,⅚,⅛,⅜,⅝,⅞,⅐,⅑,⅒,⅟'
     + br
-    + br + link(format('EmojiMarks:' , 'u'), 'https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks') + ' ⸮,¿,?,‽,¡,!,.' //https://en.wikipedia.org/wiki/Content_clause#Interrogative_content_clauses
+    + br + link(format('EmojiMarks:' , 'u'), 'https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks') + ' ␦,⸮,¿,?,‽,¡,!,.' //https://en.wikipedia.org/wiki/Content_clause#Interrogative_content_clauses
     + br + link(format('BoxedMarks:' , 'u'), 'https://en.wikipedia.org/wiki/Ballot_box#Unicode') + ' ■,□,☐,☑'
     + br + link(format('CheckMarks:' , 'u'), 'https://en.wikipedia.org/wiki/Check_mark') + ' ⍻,✓,✔,✅'
     + br + link(format('CrossMarks:' , 'u'), 'https://en.wikipedia.org/wiki/X_mark') + ' x,×,X,✕,☓,✖,✗,✘'
