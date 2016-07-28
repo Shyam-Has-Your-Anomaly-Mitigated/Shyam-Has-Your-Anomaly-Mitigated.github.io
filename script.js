@@ -21,7 +21,7 @@
     + n + 'https://youtu.be/M94ii6MVilw'
 )
 
-// Should this be anonymous..?
+// Should this be arrowic..?
 ; String.prototype.times = function(n) {// multiplier
     var r = ''
     for(var e in [...Array(n)]) {r += this}// this is a problem...

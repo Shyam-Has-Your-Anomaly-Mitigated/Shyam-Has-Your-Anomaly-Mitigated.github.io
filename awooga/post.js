@@ -154,63 +154,60 @@ https://xkcd.com/1179/
     ; reset_tables()
 }
 ; function reset_timers() {
-    ; for(var t in rc) {; for(var e in rc[t].row) {// for each in table in rc
-        ; rc[t].row[e].time = Date.now()
+    ; for(var t in rc) {; for(var e in rc[t]) {// for each in table in rc
+        ; rc[t][e].time = Date.now()
     }}
 }
 ; function reset_tables() {
     ; for(var id in timeout) {; clearTimeout(timeout[id])}
-    ; for(var t in rc) {; for(var id in rc[t].row) {// for id in table in rc
-        ; timer(id, rc[t].row[id], 'time')
+    ; for(var t in rc) {; for(var id in rc[t]) {// for id in table in rc
+        ; if(!rc[t][id].title) {
+            ; timer(id, rc[t][id], 'time')
+        }
     }}
 }
 ; function Molly() {
     ; var h = getId('Holly')// ^
     ; h.innerHTML = ''
     ; for(var table in rc) {
-        ; var head = Molly_header(foldm(Object.keys(rc[table].header), 1), table)
-        ; var list = Molly_row(foldm(Object.keys(rc[table].row), 1), table)
         ; h.innerHTML += tabulate(
-            [head].concat(list)
+            Molly_row(foldm(Object.keys(rc[table]), 1), table)
             , {style: "; display: inline-block; vertical-align: top; margin: 3px"}
         )
     }
 }
-; function Molly_hover(object, name) {
-    ; var s = 'hover' in object
-        ? {class: 'hover', title: object.hover.replace(/'/g, '&#x27;')}
-        : {}
-    ; return 'hover' in object? span(name, s): name
-}
-; function Molly_link(object, name) {; return 'link' in object? name + ' ∞': name}
-; function Molly_header(list, table) {
-    ; return [
-        [
-            Molly_link(rc[table].header, Molly_hover(rc[table].header, table))// WTF is this?!? I don't think that's how you hover a link..?
-            , {colspan: 4}
-        ]
-        , 'th'
-        , 'link' in rc[table].header
-        ? {onclick: 'window.open(&#x27;' + rc[table].header.link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Hopefully this works; need to test it..! :D
-        : {}
-    ]
-}
 ; function Molly_row(list, table) {
+    ; var
+        Molly_hover = (object, name) => 'hover' in object? span(name, {class: 'hover', title: object.hover.replace(/'/g, '&#x27;')}): name
+        , Molly_link = (object, name) => 'link' in object? name + ' ∞': name
     ; for(var e in list) {
-        ; var js = '; rc["' + table + '"].row' + '["' + Object.keys(rc[table].row)[e] + '"].time = new Date; localStorage.rc = no(rc, 0)'
-        ; list[e] = [
-            [  '↦', {id: list[e] + '-start', class: 'start'}]
-            , ['⇥', {id: list[e] + '-stop' , class: 'stop' }]
-            , [
-                Molly_link(rc[table].row[list[e]], Molly_hover(rc[table].row[list[e]], list[e]))
-                , {id: list[e] + '-ident', class: 'ident', onclick: js}
+        ; if(rc[table][list[e]].title) {
+            ; list[e] = [
+                [
+                    Molly_link(rc[table][list[e]], Molly_hover(rc[table][list[e]], list[e]))// WTF is this?!? I don't think that's how you hover a link..?
+                    , {colspan: 4}
+                ]
+                , 'th'
+                , 'link' in rc[table][list[e]]
+                ? {onclick: 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Hopefully this works; need to test it..! :D
+                : {}
             ]
-            , ['', {id: list[e] + '-time' , class: 'time' , onclick: js}]
-            , 'td'
-            , 'link' in rc[table].row[list[e]]
-            ? {id: list[e] + '-row', onclick: 'window.open(&#x27;' + rc[table].row[list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}
-            : {id: list[e] + '-row'}
-        ]
+        } else {
+            ; var js = '; rc["' + table + '"]["' + list[e] + '"]' + '.time = new Date; localStorage.rc = no(rc, 0)'
+            ; list[e] = [
+                [  '↦', {id: list[e] + '-start', class: 'start'}]
+                , ['⇥', {id: list[e] + '-stop' , class: 'stop' }]
+                , [
+                    Molly_link(rc[table][list[e]], Molly_hover(rc[table][list[e]], list[e]))// WTF is this?!? I don't think that's how you hover a link..?
+                    , {id: list[e] + '-ident', class: 'ident', onclick: js}
+                ]
+                , ['', {id: list[e] + '-time' , class: 'time' , onclick: js}]
+                , 'td'
+                , 'link' in rc[table][list[e]]
+                ? {id: list[e] + '-row', onclick: 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}
+                : {id: list[e] + '-row'}
+            ]
+        }
     }
     ; return list
 }
@@ -224,6 +221,7 @@ https://xkcd.com/1179/
 // add study, and what not, to the awoogarc.json file...
 
 // FFS; make the whole row clickable!!! D-:<
+// The background alarm will be triggered according by Sleep; but should be customisable...
 
 /* Awoogas
 taboo
@@ -303,25 +301,6 @@ custom_files
 drag&drop
     /awoogarc/
 NEED TO WRITE UP SOME KIND OF WYSIWYG FOR THIS... (temporal conversions to seconds, and the rest of JSON; replace the recommendations.)
-
-The old style should be kept...
-
-| Heading_0 | | Heading_3 |
-|   Task_0  | |   Task_0  |
-|   Task_1  | |   Task_1  |
-|   Task_2  | |   Task_2  |
-| separator | | separator |
-| Heading_1 | | Heading_4 |
-|   Task_0  | |   Task_0  |
-|   Task_1  | |   Task_1  |
-|   Task_2  | |   Task_2  |
-| separator | |   Task_3  |
-| Heading_2 | |   Task_4  |
-|   Task_0  |
-|   Task_1  | | Heading_5 |
-|   Task_2  | |   Task_0  |
-
-but the separator is a waste of space..!
 
 What about tabs?
 Only alarms will flash the tabs; no taboo...
