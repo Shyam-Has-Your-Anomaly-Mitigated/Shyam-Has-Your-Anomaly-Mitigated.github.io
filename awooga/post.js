@@ -169,9 +169,10 @@ https://xkcd.com/1179/
 }
 
 ; function css_keyframes(o) {// object
-    ; var css = document.createElement('style')
+    ; var css = getId('keyframes')
+    ; css.innerHTML = ''
     ; for(var a in o) {// for alarm in object
-        ; var ta = tz = ba = bz = false
+        ; var ta = tz = ba = bz = false, style
         ; if('colour'       in o[a]) {; ba = bz = ta = tz = o[a].colour}
         ; if('colour_A'     in o[a]) {; ba = tz = o[a].colour_A        }
         ; if('colour_Z'     in o[a]) {; ta = bz = o[a].colour_Z        }
@@ -181,14 +182,14 @@ https://xkcd.com/1179/
         ; if('text_Z'       in o[a]) {; tz = o[a].text_Z               }
         ; if('background_A' in o[a]) {; ba = o[a].background_A         }
         ; if('background_Z' in o[a]) {; bz = o[a].background_Z         }
-        ; css.innerHTML += ''
-            + '@keyframes ' + a + '{0%,100%{'
+        ; style = ' '
+            + a + '{0%,100%{'
             + (ta? ';color:' + ta: '') + (ba? ';background-color:' + ba: '')
             + '}50%{'
             + (tz? ';color:' + tz: '') + (bz? ';background-color:' + bz: '')
             + '}}'
+        ; css.innerHTML += '@keyframes' + style + '@-webkit-keyframes' + style
     }
-    ; document.body.appendChild(css)
 }
 
 ; function Molly() {
