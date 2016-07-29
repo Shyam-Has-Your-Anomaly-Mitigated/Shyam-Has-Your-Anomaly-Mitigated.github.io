@@ -412,4 +412,7 @@ Usa population control via terrorism of everyone, including themselves..!
 Inception Memorisation
 Mnemonics can be used to remember mnemonics, to remember mnemonics,..
 
+su   = Super User
+sudo = Super User Do Once
+
 */
