@@ -401,7 +401,7 @@ THE CURSE IS ℝEAL!!!
 इति सिद्धम्
 
 https://youtu.be/O0f_nFKVoyQ
-Is this really worse than having robots taking over from humans?
+Is robots taking over from humans, really worse than that?
 It reminds me of WikiLeaks...
 Usa population control via terrorism of everyone, including themselves..!
 
