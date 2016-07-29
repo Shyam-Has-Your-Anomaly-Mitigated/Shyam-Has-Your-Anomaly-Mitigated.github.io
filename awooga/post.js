@@ -339,6 +339,7 @@ https://en.wikipedia.org/wiki/General_medical_examination
     BMI = (height, weight) => kg ÷ m²
     Nutrition = (age, {food}) => ...switch or something; I'm 26, so 1000mg/day Calcium for me! 8-D
     https://youtu.be/fNnStvdG-VY
+    https://youtu.be/pWOQuPczY4c
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
