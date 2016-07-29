@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # su; # SuperUser authentication.
 # apt-get install iptables-persistent; # Install iptables-persistent.
-# wget -O- https://raw.github.com/ROBOTS-WAREZ/Tuxnet/master/netinst.sh | bash; # Run this script.
+# wget -O- https://raw.github.com/Shyam-Has-Your-Anomaly-Mitigated/Shyam-Has-Your-Anomaly-Mitigated.github.io/master/warez/iptables.sh/iptables.sh | bash; # Run this script.
 
 # Just in case, you never know. ;=)
 ip6tables -F;#--flush;
