@@ -335,6 +335,7 @@ Only alarms will flash the tabs; no taboo...
 https://en.wikipedia.org/wiki/General_medical_examination
     BMI = (height, weight) => kg ÷ m²
     Nutrition = (age, {food}) => ...switch or something; I'm 26, so 1000mg/day Calcium for me! 8-D
+    https://youtu.be/fNnStvdG-VY
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
@@ -398,5 +399,13 @@ Females are forbidden to practice Tuvan Throat Singing; cursed with "infecundity
     Otherwise their husband'll put it in their mouth instead; which =^^^^^^^^^^^
 THE CURSE IS ℝEAL!!!
 इति सिद्धम्
+
+https://youtu.be/O0f_nFKVoyQ
+Is this really worse than having robots taking over from humans?
+It reminds me of WikiLeaks...
+Usa population control via terrorism of everyone, including themselves..!
+
+Inception Memorisation
+Mnemonics can be used to remember mnemonics, to remember mnemonics,..
 
 */
