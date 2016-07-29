@@ -1,42 +1,42 @@
 {
 
-    "Alarms" : {
+    "Alarms": {
 
-        "DONT_PANIC" : {
+        "DONT_PANIC": {
             "colour_A"  : "#FF0"
             , "colour_Z": "#F00"
-        }, "Prāṇa" : {
+        }, "Prāṇa": {
             "background_A"  : "#FF0"
             , "background_Z": "#0FF"
-        }, "Taboo" : {
+        }, "Taboo": {
             "colour_A"  : "#FFF"
             , "colour_Z": "#000"
-        }, "Popo" : {
+        }, "Popo": {
             "text": "blue"
             , "background_A": "#FFF"
             , "background_Z": "#000"
-        }, "Siren" : {
+        }, "Siren": {
             "background_A"  : "#F00"
             , "text_A"      : "#00F"
             , "background_Z": "#00F"
             , "text_Z"      : "#F00"
-        }, "Subtle" : {
+        }, "Subtle": {
             "background": "#FFF"
             , "text_A"  : "#590"
             , "text_Z"  : "#099"
-        }, "Party" : {
-            "background_A": "#F0F"
+        }, "Party": {
+            "background_A"  : "#F0F"
             , "text_A"      : "#0FF"
             , "text_Z"      : "#0F0"
             , "background_Z": "#FF0"
-        }, "Static" : {
+        }, "Static": {
             "background": "#000"
             , "text"    : "FFF"
-        }, "Blind" : {
+        }, "Blind": {
             "colour": "#000"
         }
 
-    }, "Table A" : {
+    }, "Table A": {
 
         "Lucid REMS": {
             "time"   : null
@@ -148,7 +148,7 @@
                 , "hover": "Lower Body"
             }
 
-    }, "Table B" : {
+    }, "Table B": {
 
         "Monday Musts": {
             "time"   : null
