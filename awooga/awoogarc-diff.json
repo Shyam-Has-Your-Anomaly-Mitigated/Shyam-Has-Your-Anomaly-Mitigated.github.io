@@ -16,22 +16,22 @@
             , "background_A": "#FFF"
             , "background_Z": "#000"
         }, "Siren" : {
-            "background_A": "#F00"
-            , "text_A": "#00F"
+            "background_A"  : "#F00"
+            , "text_A"      : "#00F"
             , "background_Z": "#00F"
-            , "text_Z": "#F00"
+            , "text_Z"      : "#F00"
         }, "Subtle" : {
             "background": "#FFF"
-            , "text_A": "#590"
-            , "text_Z": "#099"
+            , "text_A"  : "#590"
+            , "text_Z"  : "#099"
         }, "Party" : {
             "background_A": "#F0F"
-            , "text_A": "#0FF"
-            , "text_Z": "#0F0"
+            , "text_A"      : "#0FF"
+            , "text_Z"      : "#0F0"
             , "background_Z": "#FF0"
         }, "Static" : {
             "background": "#000"
-            , "text": "FFF"
+            , "text"    : "FFF"
         }, "Blind" : {
             "colour": "#000"
         }
@@ -39,9 +39,9 @@
     }, "Table A" : {
 
         "Lucid REMS": {
-            "time"    : null
-            , "alarm" : null
-            , "hover" : "Dynamic Polyphasic Reboot"
+            "time"   : null
+            , "alarm": null
+            , "hover": "Dynamic Polyphasic Reboot"
             , "title": true
             }, "Sleep": {
                 "time"   : null
@@ -58,9 +58,9 @@
             }
 
         , "Input": {
-            "time"    : null
-            , "alarm" : null
-            , "hover" : "Garbage In, Garbage Out"
+            "time"   : null
+            , "alarm": null
+            , "hover": "Garbage In, Garbage Out"
             , "title": true
             }, "Inhalation": {
                 "time"   : null
@@ -105,9 +105,9 @@
             }
 
        , "शुचि": {
-            "time"     : null
-            , "alarm"  : null
-            , "hover"  : "Śuci"
+            "time"   : null
+            , "alarm": null
+            , "hover": "Śuci"
             , "title": true
             },
             "Brush Teeth": {
@@ -158,7 +158,7 @@
             }, "Watch TGIM": {
                 "time"   : null
                 , "alarm": null
-                , "link": "https://www.youtube.com/user/etthehiphoppreacher/videos"
+                , "link" : "https://www.youtube.com/user/etthehiphoppreacher/videos"
                 , "hover": "Thank God It's Monday!!! :D"
             }, "Laundry": {
                 "time"   : null
@@ -182,41 +182,41 @@
             }, "Study Maths": {
                 "time"   : null
                 , "alarm": null
-                , "link": "https://www.khanacademy.org/math/"
+                , "link" : "https://www.khanacademy.org/math/"
             }, "Test Maths": {
                 "time"   : null
                 , "alarm": null
-                , "link": "https://www.symbolab.com/practice/order-of-operations-practice"
+                , "link" : "https://www.symbolab.com/practice/order-of-operations-practice"
             }, "Cubing": {
                 "time"   : null
                 , "alarm": null
-                , "link": "http://www.cubetimer.com/"
+                , "link" : "http://www.cubetimer.com/"
             }, "Touch Typing": {
                 "time"   : null
                 , "alarm": null
-                , "link": "https://www.typing.com/"
+                , "link" : "https://www.typing.com/"
                 , "hover": "Need to find the one I wrote ages ago... http://stackoverflow.com/a/19530852"
             }, "Vim Golf": {
                 "time"   : null
                 , "alarm": null
-                , "link": "http://vimgolf.com/"
+                , "link" : "http://vimgolf.com/"
             }, "Regex Golf": {
                 "time"   : null
                 , "alarm": null
-                , "link": "http://regex.alf.nu/"
+                , "link" : "http://regex.alf.nu/"
             }, "Regex X-word": {
                 "time"   : null
                 , "alarm": null
-                , "link": "https://regexcrossword.com/"
+                , "link" : "https://regexcrossword.com/"
             }, "Java": {
                 "time"   : null
                 , "alarm": null
-                , "link": "http://docs.oracle.com/javase/tutorial/reallybigindex.html"
+                , "link" : "http://docs.oracle.com/javase/tutorial/reallybigindex.html"
                 , "hover": "This will probably be my job; if I ever get one..? (Who will give me money? LOL XD ...there's always the army reserves; info sys techie...should I drop out and Nike?)"
             }, "Polylingual": {
                 "time"   : null
                 , "alarm": null
-                , "link": "https://www.duolingo.com/"
+                , "link" : "https://www.duolingo.com/"
                 , "hover": "There are other sites, I'll get around to sorting all of these out later... I have plans to write a better system for learning languages; but it's ¿inconceivably? ambitious! :D"
             }
 
@@ -250,15 +250,15 @@
                 "time"   : null
                 , "alarm": null
                 , "hover": "Mental Calculation"
-                , "link": "https://www.math.hmc.edu/~benjamin/papers.html"
+                , "link" : "https://www.math.hmc.edu/~benjamin/papers.html"
             }, "XKCD": {
                 "time"   : null
                 , "alarm": null
-                , "link": "https://xkcd.com/"
+                , "link" : "https://xkcd.com/"
             }, "CommitStrip": {
                 "time"   : null
                 , "alarm": null
-                , "link": "http://www.commitstrip.com/"
+                , "link" : "http://www.commitstrip.com/"
             }
 
     }
