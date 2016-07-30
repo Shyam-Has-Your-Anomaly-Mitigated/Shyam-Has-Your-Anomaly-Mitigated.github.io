@@ -438,6 +438,12 @@ js export spreadsheet
     https://datatables.net/extensions/buttons/examples/initialisation/export.html
 http://lhorie.github.io/mithril-blog/a-spreadsheet-in-60-lines-of-javascript.html
 
+awoogarc-*.json
+    * = version number
+    load the relevant script
+    this will provide legacy support
+    a modular approach to save bandwidth
+
 */
 ////////////////////////////////////////////////////////////////////////////////
 /*
