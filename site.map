@@ -18,11 +18,12 @@ shyam.id.au
                 ^AYOR
                 /9Hr34k
 
-\in_progress
+\pending
 /awooga
 /warez
     ^vim...
     ^git.sh
+    ^iptables.sh
     ^gimp...
     ^inkscape...
     ^blender...
@@ -36,6 +37,4 @@ shyam.id.au
     ^<N>
     (make a similar /student directory, for the forums; thread-based /{cpt,enr}<XXX>/<descriptor> (sub)²directories)
     (also the other emails, especially what happened in scripting, and the base-{2,3,10,16} computer systems)
-
-\unfinished_business
 /perl
