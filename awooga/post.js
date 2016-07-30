@@ -425,6 +425,19 @@ Daily reset option... disarm: [{Y,M,D,D_number,D_name}, seconds_from_start]
 Temporary...          click? `rm` :``
 Add/edit/rm by table name... (right-click context menu, contenteditable,..)
 
+I kind of want something more intelligent; but I guess it's a good place to start..?
+    https://en.wikipedia.org/wiki/Category:Spreadsheet_file_formats
+    https://en.wikipedia.org/wiki/Attribute-value_system
+    https://en.wikipedia.org/wiki/Model_audit
+        ...due diligence?
+js export spreadsheet
+    http://stackoverflow.com/questions/18234448/exporting-html-tables-to-excel-xls-in-a-separate-sheet
+    http://stackoverflow.com/questions/5524143/how-can-i-export-tables-to-excel-from-a-webpage
+    http://jordiburgos.com/post/2013/javascript-export-to-excel.html
+    http://www.kubilayerdogan.net/javascript-export-html-table-to-excel-with-custom-file-name/
+    https://datatables.net/extensions/buttons/examples/initialisation/export.html
+http://lhorie.github.io/mithril-blog/a-spreadsheet-in-60-lines-of-javascript.html
+
 */
 ////////////////////////////////////////////////////////////////////////////////
 /*
