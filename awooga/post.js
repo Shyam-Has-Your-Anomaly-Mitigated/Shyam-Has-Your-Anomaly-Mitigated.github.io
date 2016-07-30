@@ -210,7 +210,7 @@ https://xkcd.com/1179/
 ; function Molly_table(list, table) {
     ; var Molly_hover = (object, name) => 'hover' in object? span(name, {c: 'hover'}): name
     ; for(var e in list) {// ∀ rows ∈ table
-        ; var attributes = {onclick: '; rc["' + table + '"]["' + list[e] + '"]' + '.time = new Date; localStorage.rc = no(rc, 0)'}
+        ; var attributes = {onclick: '; getId("' + list[e] + '-ident").style=""; rc["' + table + '"]["' + list[e] + '"]' + '.time = new Date; localStorage.rc = no(rc, 0)'}
         ; if('link'  in rc[table][list[e]]) {; attributes.onclick = 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Test-titles...
         ; if('hover' in rc[table][list[e]]) {; attributes.c = 'hover'; attributes.t = rc[table][list[e]].hover.replace(/'/g, '&#x27;')}
         ; if(rc[table][list[e]].title) {
