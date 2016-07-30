@@ -316,10 +316,12 @@ taboo: {
     duration: 60*60*1.5
     type    : static
 }
-alarm: {
+deadline: {
     time: 60*60*24
     type: DONT_PANIC
 }
+
+Don't worry about validation(taboo≤deadline), /awooga/rc (or something like that) will do it instead
 
 linked_clicks
     update time
