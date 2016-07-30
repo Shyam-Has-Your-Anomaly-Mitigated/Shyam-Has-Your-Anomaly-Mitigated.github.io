@@ -444,7 +444,7 @@ awoogarc-*.json
     this will provide legacy support
     a modular approach to save bandwidth
 awoogarc.json
-    volatile, current, testing, All The&Things
+    volatile, current, testing, All The&Things, experimental, active, unstable, instable, astable, singularitously stable
 
 */
 ////////////////////////////////////////////////////////////////////////////////
