@@ -12,7 +12,7 @@
             "colour_A"  : "#FFF"
             , "colour_Z": "#000"
         }, "Popo": {
-            "text": "blue"
+            "text"          : "blue"
             , "background_A": "#FFF"
             , "background_Z": "#000"
         }, "Siren": {
