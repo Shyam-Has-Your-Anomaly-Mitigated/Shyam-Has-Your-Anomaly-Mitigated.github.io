@@ -486,4 +486,7 @@ Advertisements are an invasion to privacy.
 That includes word-of-mouth adware.
 If I find out about your base, all your base are belong to me.
 
+They should have to pay me, to advertise to me.
+I'll pay them what they pay me.
+
 */
