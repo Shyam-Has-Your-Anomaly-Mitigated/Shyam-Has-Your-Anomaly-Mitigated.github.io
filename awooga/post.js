@@ -489,4 +489,8 @@ If I find out about your base, all your base are belong to me.
 They should have to pay me, to advertise to me.
 I'll pay them what they pay me.
 
+This is the future!
+https://youtu.be/TR0baWuB6v4
+Internet access routed through the waterways.
+
 */
