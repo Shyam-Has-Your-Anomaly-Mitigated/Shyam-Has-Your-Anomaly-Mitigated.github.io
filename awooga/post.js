@@ -256,7 +256,7 @@ https://xkcd.com/1179/
             onclick: '; rc["' + table + '"]["' + list[e] + '"]' + '.time = new Date; localStorage.rc = no(rc, 0)'
             , id   : list[e] + '-row'
         }
-        ; if('link'  in rc[table][list[e]]) {; attributes.onclick = 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Test-titles...
+        ; if('link'  in rc[table][list[e]]) {; attributes.onclick += '; window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Test-titles...
         ; if('hover' in rc[table][list[e]]) {; attributes.c = 'hover'; attributes.t = rc[table][list[e]].hover.replace(/'/g, '&#x27;')}
         ; if(rc[table][list[e]].title) {
 //            ; attributes.onclick += '; this.style=""'// 'getId("' + list[e] + '-row")'
