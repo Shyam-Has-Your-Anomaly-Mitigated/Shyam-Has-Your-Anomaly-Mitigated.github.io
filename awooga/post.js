@@ -287,15 +287,15 @@ time∈{
         "secondly", "minutely"   , "hourly" , "daily"
         , "weekly", "fortnightly", "monthly", "yearly"
     }
-    , {"seconds"∈ℤ|[1,+∞ )}
-    , {"second" ∈ℤ|[1,60 ]}
-    , {"minute" ∈ℤ|[1,60 ]}
-    , {"hour"   ∈ℤ|[1,24 ]}
-    , {"wday"   ∈ℤ|[1,7  ]}
-    , {"mday"   ∈ℤ|[1,31 ]}
-    , {"day"    ∈ℤ|[1,365]}
-    , {"week"   ∈ℤ|[1,52 ]}
-    , {"month"  ∈ℤ|[1,12 ]}
+    , {"seconds"∈ℕ|[1,+∞ )}
+    , {"second" ∈ℕ|[1,60 ]}
+    , {"minute" ∈ℕ|[1,60 ]}
+    , {"hour"   ∈ℕ|[1,24 ]}
+    , {"wday"   ∈ℕ|[1,7  ]}
+    , {"mday"   ∈ℕ|[1,31 ]}
+    , {"day"    ∈ℕ|[1,365]}
+    , {"week"   ∈ℕ|[1,52 ]}
+    , {"month"  ∈ℕ|[1,12 ]}
 }
 
 awooga_profiles
