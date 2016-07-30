@@ -424,6 +424,8 @@ Alarms can be gradually ¿dis?colouring, or spontaneously flashing...
 Daily reset option... disarm: [{Y,M,D,D_number,D_name}, seconds_from_start]
 Temporary...          click? `rm` :``
 Add/edit/rm by table name... (right-click context menu, contenteditable,..)
+    options/settings tab
+    no need for validation or wysiwyg
 
 I kind of want something more intelligent; but I guess it's a good place to start..?
     https://en.wikipedia.org/wiki/Category:Spreadsheet_file_formats
