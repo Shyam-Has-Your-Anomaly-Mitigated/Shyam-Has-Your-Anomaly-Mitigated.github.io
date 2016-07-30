@@ -15,6 +15,7 @@
     , dnd      = getId('dnd')
     , clock
     , init
+    , css_diff = x => parseInt((new Date(new Date() - new Date(x))) / 1000)// This is from long ago; what does it do..?
 
 // main
 ; (clock = () => {; getId('clock').innerHTML = timestamp(new Date()); setTimeout(clock, 1)})()
@@ -148,11 +149,18 @@ https://xkcd.com/1179/
 
 ; function reconfigure(json, reset) {
     ; rc = no(json, 1)
-    ; css_keyframes(rc.Alarms)
     ; if(reset) {; reset_timers()}// to reset, or not to reset; that is configurable...
     ; localStorage.rc = no(rc, 0)
     ; Molly()
+    ; reset_timeout()
     ; reset_tables()
+    ; css_keyframes(rc.Alarms)
+    ; css_clear()
+    ; css_timer()
+}
+; function reset_timeout() {
+    ; for(var id in timeout) {; clearTimeout(timeout[id])}
+    ; timeout = {}
 }
 ; function reset_timers() {
     ; for(var t in rc) {; for(var e in rc[t]) {// ∀ each ∈ table ∈ rc
@@ -160,7 +168,6 @@ https://xkcd.com/1179/
     }}
 }
 ; function reset_tables() {
-    ; for(var id in timeout) {; clearTimeout(timeout[id])}
     ; for(var t in rc) {; for(var id in rc[t]) {// ∀ id ∈ table ∈ rc
         ; if(t != 'Alarms' && !rc[t][id].title) {
             ; timer(id, rc[t][id], 'time')
@@ -168,6 +175,17 @@ https://xkcd.com/1179/
     }}
 }
 
+; function css_clear() {
+    ; for(var t in rc) {; for(var e in rc[t]) {// ∀ each ∈ table ∈ rc
+        ; if(t != 'Alarms') {
+            ; if(rc[t][e].title) {
+                ; getId(e + '-row').style = ''
+            } else {
+                ; getId(e + '-ident').style = ''
+            }
+        }
+    }}
+}
 ; function css_keyframes(o) {// object
     ; var css = getId('keyframes')
     ; css.innerHTML = ''
@@ -194,6 +212,30 @@ https://xkcd.com/1179/
         ; css.innerHTML += '@keyframes' + style + '@-webkit-keyframes' + style
     }
 }
+; function css_timer() {
+    /*
+        This should be changed...
+            included in the individual timers?
+            onclick will do the trick?
+    */
+    ; for(var t in rc) {; for(var e in rc[t]) {// ∀ each ∈ table ∈ rc
+        ; if(t != 'Alarms' && rc[t][e].alarm) {
+            ; var
+                deadline = rc[t][e].alarm.deadline
+                , taboo  = rc[t][e].alarm.taboo
+                , title  = rc[t][e].title
+                , time   = rc[t][e].time
+            ; if(deadline && (deadline.time <= css_diff(time))) {
+                ; getId(e + (title? '-row': '-ident')).style = 'animation: ' + deadline.style + ' ' + deadline.interval + 's infinite'
+            } else if(taboo && (css_diff(time) <= taboo.duration)) {
+                ; getId(e + (title? '-row': '-ident')).style = 'animation: ' + taboo.style    + ' ' + taboo.interval    + 's infinite'
+            } else {
+                ; getId(e + (title? '-row': '-ident')).style = ''
+            }
+        }
+    }}
+    ; timeout['Shyam'] = setTimeout(css_timer, 100)
+}
 
 ; function Molly() {
     ; var h = getId('Holly')// ^
@@ -217,7 +259,7 @@ https://xkcd.com/1179/
         ; if('link'  in rc[table][list[e]]) {; attributes.onclick = 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Test-titles...
         ; if('hover' in rc[table][list[e]]) {; attributes.c = 'hover'; attributes.t = rc[table][list[e]].hover.replace(/'/g, '&#x27;')}
         ; if(rc[table][list[e]].title) {
-            ; attributes.onclick += '; this.style=""'// 'getId("' + list[e] + '-row")'
+//            ; attributes.onclick += '; this.style=""'// 'getId("' + list[e] + '-row")'
             ; list[e] = [
                 [
                     Molly_hover(rc[table][list[e]], list[e]) + ('link' in rc[table][list[e]]? ' ∞': '')
@@ -227,7 +269,7 @@ https://xkcd.com/1179/
                 , attributes
             ]
         } else {
-            ; attributes.onclick += '; getId("' + list[e] + '-ident").style=""'
+//            ; attributes.onclick += '; getId("' + list[e] + '-ident").style=""'
             ; list[e] = [
                 [  '↦', {id: list[e] + '-start', class: 'start'}]
                 , ['⇥', {id: list[e] + '-stop' , class: 'stop' }]
@@ -314,12 +356,22 @@ taboo always static?
             taboo always static! 8=D
 taboo: {
     duration: 60*60*1.5
-    type    : static
+    style   : static
+    interval: 5
+    reset   : daily
 }
 deadline: {
-    time: 60*60*24
-    type: DONT_PANIC
+    time    : 60*60*24
+    style   : DONT_PANIC
+    interval: 5
+    reset   : weekly
 }
+
+should taboo be subtracted from deadline? it can be configurable..? (akin to optional settings like inverted controls; ¿gamification?)
+
+resets will be logged
+    logs will have a statistical; ∀reset:-1
+    a-=-1 ≠ a-=1 ≠ a=-1
 
 Don't worry about validation(taboo≤deadline), /awooga/rc (or something like that) will do it instead
 
@@ -421,5 +473,17 @@ Mnemonics can be used to remember mnemonics, to remember mnemonics,..
 
 su   = Super User
 sudo = Super User Do Once
+
+If this wasn't hosted on GitHub, a license would be required to even know the address∈{IP,URI,URL,..}.
+@future: amend the AYOR license to include "shyam.id.au" and any preppendages/appendages...
+...Or just the domain name will do? Any and all property...
+This will give me an excuse to physically tinker with their brains against their will (to protect my intellectual property! :D)...
+You so much as think of me, my name, or anything..!
+Yeah, fuck you all and your so-called IP; it's in my intellectual/cyber/air/~ space now. q:
+https://youtu.be/kJa2kwoZ2a4
+
+Advertisements are an invasion to privacy.
+That includes word-of-mouth adware.
+If I find out about your base, all your base are belong to me.
 
 */

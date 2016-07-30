@@ -70,7 +70,17 @@
                 , "alarm": null
             }, "Consumption": {
                 "time"   : null
-                , "alarm": null
+                , "alarm": {
+                    "taboo": {
+                        "duration"  : 5
+                        , "style"   : "Taboo"
+                        , "interval": 5
+                    }, "deadline": {
+                        "time"      : 10
+                        , "style"   : "Prāṇa"
+                        , "interval": 5
+                    }
+                }
             }, "Electrification": {
                 "time"   : null
                 , "alarm": null
