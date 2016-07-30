@@ -155,13 +155,13 @@ https://xkcd.com/1179/
     ; reset_tables()
 }
 ; function reset_timers() {
-    ; for(var t in rc) {; for(var e in rc[t]) {// for each ∈ table ∈ rc
+    ; for(var t in rc) {; for(var e in rc[t]) {// ∀ each ∈ table ∈ rc
         ; if(t != 'Alarms') {; rc[t][e].time = Date.now()}
     }}
 }
 ; function reset_tables() {
     ; for(var id in timeout) {; clearTimeout(timeout[id])}
-    ; for(var t in rc) {; for(var id in rc[t]) {// for id ∈ table ∈ rc
+    ; for(var t in rc) {; for(var id in rc[t]) {// ∀ id ∈ table ∈ rc
         ; if(t != 'Alarms' && !rc[t][id].title) {
             ; timer(id, rc[t][id], 'time')
         }
@@ -171,7 +171,7 @@ https://xkcd.com/1179/
 ; function css_keyframes(o) {// object
     ; var css = getId('keyframes')
     ; css.innerHTML = ''
-    ; for(var a in o) {// for alarm ∈ object
+    ; for(var a in o) {// ∀ alarm ∈ object
         ; var ta = tz = ba = bz = false, style
         ; if('color'        in o[a]) {; ba = bz = ta = tz = o[a].color }
         ; if('color_A'      in o[a]) {; ba = tz = o[a].color_A         }
@@ -209,7 +209,7 @@ https://xkcd.com/1179/
 }
 ; function Molly_table(list, table) {
     ; var Molly_hover = (object, name) => 'hover' in object? span(name, {c: 'hover'}): name
-    ; for(var e in list) {// for rows ∈ table
+    ; for(var e in list) {// ∀ rows ∈ table
         ; var attributes = {onclick: '; rc["' + table + '"]["' + list[e] + '"]' + '.time = new Date; localStorage.rc = no(rc, 0)'}
         ; if('link'  in rc[table][list[e]]) {; attributes.onclick = 'window.open(&#x27;' + rc[table][list[e]].link + '&#x27;, &#x27;_blank&#x27;).focus()'}// Test-titles...
         ; if('hover' in rc[table][list[e]]) {; attributes.c = 'hover'; attributes.t = rc[table][list[e]].hover.replace(/'/g, '&#x27;')}
