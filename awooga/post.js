@@ -355,6 +355,8 @@ star trek
 primary links have optional/variable secondary links for things like webcomics, file://pdf#pages, and http://pdf#pages
     plink
     slink
+permalink = static
+tempolink = dynamic: this.onclick=link(prompt())
 
 rc = {
     tables: {<current(awoogarc.json)>}
@@ -366,11 +368,10 @@ rc = {
     }
 }
 
-Can add support for non-hex colours later; like way later, probably...
 Alarms can be gradually ¿dis?colouring, or spontaneously flashing...
 Daily reset option... disarm: [{Y,M,D,D_number,D_name}, seconds_from_start]
 Temporary...          click? `rm` :``
-Add/edit/rm by table name...
+Add/edit/rm by table name... (right-click context menu, contenteditable,..)
 
 */
 ////////////////////////////////////////////////////////////////////////////////
