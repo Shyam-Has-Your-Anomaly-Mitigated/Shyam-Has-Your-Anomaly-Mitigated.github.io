@@ -443,6 +443,8 @@ awoogarc-*.json
     load the relevant script
     this will provide legacy support
     a modular approach to save bandwidth
+awoogarc.json
+    volatile, current, testing, All The&Things
 
 */
 ////////////////////////////////////////////////////////////////////////////////
