@@ -537,4 +537,22 @@ I wonder what happened to the Mandarini Sampradaya..?
 These are all states of matter...
     https://en.wikipedia.org/wiki/Classical_element#Hinduism
 
+Colours support colour-blindness.
+A central room with different coloured/shaped buttons to open coloured/shaped doors and ENTER other rooms.
+Other rooms for food/water, sleep, play, bathe/swim,.. (What am I missing..?)
+...
+All other rooms have a monitor with coloured/shaped buttons.
+Monitor displays pseudo-randomised coloured shapes.
+Press the matching button to open door and ESCAPE from the room.
+...
+Train apes to use this system.
+Allow offspring to learn by observation (or some other means).
+The test is to isolate the offspring and observe whether they learned by observation (or any other means).
+...
+How long does learning by observation take, compared with professional training?
+What about hobbyists?
+...
+https://en.wikipedia.org/wiki/Great_ape_personhood
+https://en.wikipedia.org/wiki/Great_ape_language
+
 */
