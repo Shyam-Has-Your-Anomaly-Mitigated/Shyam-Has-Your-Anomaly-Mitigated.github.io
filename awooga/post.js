@@ -538,8 +538,9 @@ These are all states of matter...
     https://en.wikipedia.org/wiki/Classical_element#Hinduism
 
 Colours support colour-blindness.
-A central room with different coloured/shaped buttons to open coloured/shaped doors and ENTER other rooms.
+A central room with different coloured/shaped buttons to open matching coloured/shaped doors and ENTER other rooms.
 Other rooms for food/water, sleep, play, bathe/swim,.. (What am I missing..?)
+The panel has the buttons oriented relative to the spacial orientation of the doors.
 ...
 All other rooms have a monitor with coloured/shaped buttons.
 Monitor displays pseudo-randomised coloured shapes.
