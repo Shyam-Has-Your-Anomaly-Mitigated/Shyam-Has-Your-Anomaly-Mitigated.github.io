@@ -523,7 +523,7 @@ I'd say they overshot by 50%..?
     https://en.wikipedia.org/wiki/Age_of_the_universe
 The kṣīra-sāgaraḥ orbit also has an epic range of 25 million sūrya orbits...
     https://en.wikipedia.org/wiki/Galactic_year
-...how is universal age related to galactic momentum? (and margin of error?)
+...how is universal age related to galactic momentum? (the margin of error?)
 ^(the first dot is a Majuscule periodic)
 
 ...I have reason to believe poeple call themselves Aryan, for the same reason "royalty" call themselves Majesty; or even Royalty for that matter.
@@ -533,5 +533,8 @@ The 卐misinterpretation卐 occured at a temporal convenience...
 This has also been greedily compromised...
     https://en.wikipedia.org/wiki/Manu_Smriti#Authenticity_and_inconsistencies_in_various_manuscripts
 I wonder what happened to the Mandarini Sampradaya..?
+
+These are all states of matter...
+    https://en.wikipedia.org/wiki/Classical_element#Hinduism
 
 */
