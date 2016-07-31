@@ -566,4 +566,8 @@ It's worth looking into, in any case, all possibilities must be explored.
 Bruteforce/failed attempts will trigger a timeout; the button/door coloured lights will be deactivated.
 The colours will change periodically, the timeout will be for the next rotation.
 
+If we encounter alien life...
+How will we treat them? People will want to eat them...
+We can only expect the same treatment from other lifeforms.
+
 */
