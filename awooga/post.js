@@ -516,4 +516,22 @@ This is the future!
 https://youtu.be/TR0baWuB6v4
 Internet access routed through the waterways.
 
+They should teach Vedic creationism in schools; it's more ℝealistic..!
+    https://en.wikipedia.org/wiki/Hindu_cosmology#Reception
+8.64 × 1.5 = 12.96
+I'd say they overshot by 50%..?
+    https://en.wikipedia.org/wiki/Age_of_the_universe
+The kṣīra-sāgaraḥ orbit also has an epic range of 25 million sūrya orbits...
+    https://en.wikipedia.org/wiki/Galactic_year
+...how is universal age related to galactic momentum? (and margin of error?)
+^(the first dot is a Majuscule periodic)
+
+...I have reason to believe poeple call themselves Aryan, for the same reason "royalty" call themselves Majesty; or even Royalty for that matter.
+Some people probably choose to interpret at their own discretion...
+The 卐misinterpretation卐 occured at a temporal convenience...
+    https://en.wikipedia.org/wiki/Aryan
+This has also been greedily compromised...
+    https://en.wikipedia.org/wiki/Manu_Smriti#Authenticity_and_inconsistencies_in_various_manuscripts
+I wonder what happened to the Mandarini Sampradaya..?
+
 */
