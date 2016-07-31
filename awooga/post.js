@@ -555,5 +555,12 @@ What about hobbyists?
 ...
 https://en.wikipedia.org/wiki/Great_ape_personhood
 https://en.wikipedia.org/wiki/Great_ape_language
+...
+Due to unfamiliarity with buttons and their purpose/use...
+I don't think it's reasonable to assume any lifeform would be likely to figure it out without inital help.
+Especially with the lack of knowing how the system works, because it's hidden from view.
+But maybe they will get bored and play with the buttons?
+Then there must be a possiblity for them to learn.
+It's worth looking into, in any case, all possibilities must be explored.
 
 */
