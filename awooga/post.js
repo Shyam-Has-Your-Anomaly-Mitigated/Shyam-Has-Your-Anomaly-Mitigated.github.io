@@ -218,22 +218,26 @@ https://xkcd.com/1179/
             included in the individual timers?
             onclick will do the trick?
     */
-    ; for(var t in rc) {; for(var e in rc[t]) {// ∀ each ∈ table ∈ rc
-        ; if(t != 'Alarms' && rc[t][e].alarm) {
-            ; var
-                deadline = rc[t][e].alarm.deadline
-                , taboo  = rc[t][e].alarm.taboo
-                , title  = rc[t][e].title
-                , time   = rc[t][e].time
-            ; if(deadline && (deadline.time <= css_diff(time))) {
-                ; getId(e + (title? '-row': '-ident')).style = 'animation: ' + deadline.style + ' ' + deadline.interval + 's infinite'
-            } else if(taboo && (css_diff(time) <= taboo.duration)) {
-                ; getId(e + (title? '-row': '-ident')).style = 'animation: ' + taboo.style    + ' ' + taboo.interval    + 's infinite'
-            } else {
-                ; getId(e + (title? '-row': '-ident')).style = ''
+    ; for(var t in rc) {// ∀ each ∈ {'Alarms'} ∉ table ∈ rc
+        ; if(t != 'Alarms') {// ^
+            ; for(var e in rc[t]) {// ^
+                ; if(rc[t][e].alarm) {
+                    ; var
+                        deadline = rc[t][e].alarm.deadline
+                        , taboo  = rc[t][e].alarm.taboo
+                        , title  = rc[t][e].title
+                        , time   = rc[t][e].time
+                    ; if(deadline && (deadline.time <= css_diff(time))) {
+                        ; getId(e + (title? '-row': '-ident')).style = 'animation: ' + deadline.style + ' ' + deadline.interval + 's infinite'
+                    } else if(taboo && (css_diff(time) <= taboo.duration)) {
+                        ; getId(e + (title? '-row': '-ident')).style = 'animation: ' + taboo.style    + ' ' + taboo.interval    + 's infinite'
+                    } else {
+                        ; getId(e + (title? '-row': '-ident')).style = ''
+                    }
+                }
             }
         }
-    }}
+    }
     ; timeout['Shyam'] = setTimeout(css_timer, 100)
 }
 
