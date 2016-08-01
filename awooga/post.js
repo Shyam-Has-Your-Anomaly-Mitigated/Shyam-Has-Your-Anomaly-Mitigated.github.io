@@ -593,5 +593,6 @@ It's just Yet Another Excuse; "YAE we can do what ever we want ∵ we aren't res
 Be offended ∵ कर्म is not your fawlt either.
 ...
 It's not a birth defect if it occurs later in life.
+And we aren't devolving into our own demise; procreation isn't going extinct.
 
 */
