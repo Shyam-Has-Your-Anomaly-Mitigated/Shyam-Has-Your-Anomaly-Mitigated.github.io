@@ -659,11 +659,24 @@ Expression is illogical and requires suppression!
 
 I wish all books came with a character/word/page count; average reading time..?
 
+Do any games have crying?
+I don't mean, as a game mechanic to flood a room and swim against gravity...
+Or in a cutscene...
+I mean: due to damage, an action/inaction,..
+As in: the character you roleplay as, cries in ℝealtime.
+
 */
 
 // http://shyam.id.au/tp
+//
 // Ė to ė, and back
 // unicode casings
 // cases += 'leading majuscules'
 // cases += 'initial majuscule'
 // cases += 'punctuated majuscules'
+//
+// 1/2 to ½, and back
+// ae to æ, and back
+// c^- to c̄, and back
+// (La)TeX
+// ,..
