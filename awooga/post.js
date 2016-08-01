@@ -621,9 +621,49 @@ Hmm, (tip-of-the-tongue)s...
 Use overtones to shatter a wine glass? Without a mic?
 Tuvan people could make a movie, "The Drunken Хөөмей".
 
+CPT330: Software Engineering Project Management
+    The Girl Who Never Ate
+        Scrumptious daily stand-up meetings... (c̄ munchy honeycakes and yellow jelly; I can't believe there is a BiP wiki, who does this?!? OMG WTF BBQ 123)
+    http://www.newyorker.com/magazine/2007/12/10/the-checklist
+        Best practices? Hospitals are just another business, so what do they care..?
+It would seem I forgot to write about ^those^ in the forums; I can assure you, they are relevant..!
+    https://zapier.com/blog/the-checklist-manifesto/
+    http://adverselling.typepad.com/how_law_firms_sell/2010/09/project-management-part-14-the-power-of-checklists.html
+Checklists are programs; programmers should be good at developing checklists, and implementing new "features".
+    http://atulgawande.com/book/the-checklist-manifesto/
+    http://www.realsimple.com/checklist
+        Computer assembly...
+            http://www.realsimple.com/home-organizing/organizing/closets/professional-closet-organizer-tips?iid=feat-story-3
+    http://checklists.com/
+    http://checklist.com/
+http://www.nature.com/news/hospital-checklists-are-meant-to-save-lives-so-why-do-they-often-fail-1.18057
+    http://www.projectcheck.org/checklist-for-checklists.html
+...
+https://en.wikipedia.org/wiki/Antimicrobial_surface#Antimicrobial_Activity
+https://en.wikipedia.org/wiki/Antimicrobial_properties_of_copper#E._coli
+https://en.wikipedia.org/wiki/Antimicrobial_copper-alloy_touch_surfaces
+https://en.wikipedia.org/wiki/Infection_control#Antimicrobial_surfaces
+https://en.wikipedia.org/wiki/Hospital-acquired_infection#Antimicrobial_surfaces
+https://en.wikipedia.org/wiki/Coating#Functions_of_coatings
+...
+Pharmaceutical = Mechanical
+Fix something here, break something there...
+Side effects are dysfunctional!
+
+What do they care?
+It's the way it sounds...
+Not the meaning of the words...
+What is going on here?
+Going on = Progressing ≠ ~What is this?~
+Expression is illogical and requires suppression!
+
+I wish all books came with a character/word/page count; average reading time..?
+
 */
 
 // http://shyam.id.au/tp
 // Ė to ė, and back
 // unicode casings
-// cases += 'leading majuscule'
+// cases += 'leading majuscules'
+// cases += 'initial majuscule'
+// cases += 'punctuated majuscules'
