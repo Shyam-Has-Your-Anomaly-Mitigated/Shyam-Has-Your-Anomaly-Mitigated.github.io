@@ -173,11 +173,11 @@
                 , "alarm": null
                 , "link" : "http://www.prohands.net/"
             }, "Touch Typing": {
-                "time"   : null
-                , "alarm": null
-                , "link" : "https://www.typing.com/"
-                , "hover": "While palming coins/cards; coins can also be fingered, but cums at a cost of higher demand, from the movement of the hand..."
-                , "comment: "Need to find the one I wrote ages ago... http://stackoverflow.com/a/19530852"
+                "time"     : null
+                , "alarm"  : null
+                , "link"   : "https://www.typing.com/"
+                , "hover"  : "While palming coins/cards; coins can also be fingered, but cums at a cost of higher demand, from the movement of the hand..."
+                , "comment": "Need to find the one I wrote ages ago... http://stackoverflow.com/a/19530852"
             }, "Coin Walk": {
                 "time"   : null
                 , "alarm": null
@@ -187,9 +187,10 @@
                 , "alarm": null
                 , "hover": "I doubt I'll ever get it..."
             }, "Cubing": {
-                "time"   : null
-                , "alarm": null
-                , "link" : "http://www.cubetimer.com/"
+                "time"     : null
+                , "alarm"  : null
+                , "link"   : "http://www.cubetimer.com/"
+                , "comment": "Needs to write a new \"-thing\", using SVG."
             }, "Juggling": {
                 "time"   : null
                 , "alarm": null
