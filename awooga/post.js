@@ -591,5 +591,7 @@ I think he just memorised a bunch of star charts, or something..?
 Sequencing can prove if sexuality is pre-decided at birth; I doubt it is.
 It's just Yet Another Excuse; "YAE we can do what ever we want ∵ we aren't responsible"...
 Be offended ∵ कर्म is not your fawlt either.
+...
+It's not a birth defect if it occurs later in life.
 
 */
