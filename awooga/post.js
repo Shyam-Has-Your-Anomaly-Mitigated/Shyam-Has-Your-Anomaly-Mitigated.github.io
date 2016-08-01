@@ -618,4 +618,11 @@ The flower industry is responsible for valentines day.
 ...
 Hmm, (tip-of-the-tongue)s...
 
+Use overtones to shatter a wine glass? Without a mic?
+Tuvan people could make a movie, "The Drunken Хөөмей".
+
 */
+
+// http://shyam.id.au/tp
+// Ė to ė, and back
+// unicode casings
