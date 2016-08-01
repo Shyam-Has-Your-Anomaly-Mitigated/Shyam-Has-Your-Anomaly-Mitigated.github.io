@@ -452,6 +452,11 @@ awoogarc-*.json
 awoogarc.json
     volatile, current, testing, All The&Things, experimental, active, unstable, instable, astable, singularitously stable
 
+new alarm
+    "start": {}
+click anywhere the row to disable alarm
+the temporal shift behaves no differently
+
 */
 ////////////////////////////////////////////////////////////////////////////////
 /*

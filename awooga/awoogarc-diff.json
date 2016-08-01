@@ -190,7 +190,7 @@
                 "time"     : null
                 , "alarm"  : null
                 , "link"   : "http://www.cubetimer.com/"
-                , "comment": "Needs to write a new \"-thing\", using SVG."
+                , "comment": "Need to write a new \"-thing\", using SVG; with a header=timer+algorhythm_generator."
             }, "Juggling": {
                 "time"   : null
                 , "alarm": null
