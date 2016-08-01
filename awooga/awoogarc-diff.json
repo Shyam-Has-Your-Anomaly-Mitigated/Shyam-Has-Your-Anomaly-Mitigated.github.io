@@ -158,6 +158,59 @@
                 , "hover": "Lower Body"
             }
 
+        , "Hands": {
+            "time"   : null
+            , "alarm": null
+            , "title": true
+            , "hover": "∧Feet, muscle memory, both sides = ambidextrous, (fingering)¹⁰"
+            , "link" : "https://en.wikipedia.org/wiki/Category:Physical_activity_and_dexterity_toys"
+            }, "Fine Motor Skills": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "http://handhealth.com/"
+            }, "Grippers": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "http://www.prohands.net/"
+            }, "Touch Typing": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "https://www.typing.com/"
+                , "hover": "While palming coins/cards. Need to find the one I wrote ages ago... http://stackoverflow.com/a/19530852"
+            }, "Coin Walk": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "https://en.wikipedia.org/wiki/Coin_manipulation#Coin_walk"
+            }, "Muscle Pass": {
+                "time"   : null
+                , "alarm": null
+                , "hover": "I doubt I'll ever get it..."
+            }, "Cubing": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "http://www.cubetimer.com/"
+            }, "Juggling": {
+                "time"   : null
+                , "alarm": null
+                , "hover": "Hand-eye coordination"
+            }, "Stringless Yo-Yo!": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "https://youtu.be/-i0InwW0V9k"
+            }, "Catching Kendama": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "https://www.youtube.com/user/numberphile/search?query=Tadashi"
+            }, "折り紙": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "https://en.wikipedia.org/wiki/Origami"
+            }, "保定健身球": {
+                "time"   : null
+                , "alarm": null
+                , "link" : "https://en.wikipedia.org/wiki/Baoding_balls"
+            }
+
     }, "Table B": {
 
         "Monday Musts": {
@@ -197,15 +250,6 @@
                 "time"   : null
                 , "alarm": null
                 , "link" : "https://www.symbolab.com/practice/order-of-operations-practice"
-            }, "Cubing": {
-                "time"   : null
-                , "alarm": null
-                , "link" : "http://www.cubetimer.com/"
-            }, "Touch Typing": {
-                "time"   : null
-                , "alarm": null
-                , "link" : "https://www.typing.com/"
-                , "hover": "Need to find the one I wrote ages ago... http://stackoverflow.com/a/19530852"
             }, "Vim Golf": {
                 "time"   : null
                 , "alarm": null
