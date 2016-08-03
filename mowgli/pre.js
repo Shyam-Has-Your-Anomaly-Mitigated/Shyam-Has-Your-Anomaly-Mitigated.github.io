@@ -18,4 +18,9 @@
     + br + br + br + 'infinitesimals approach zero, so where do infinit' + span('æ', {id: 'flip'}) + 'ls tend towards?'
     + br + '\\usepackage{amsmath}\\usepackage{amsfonts}'
     + br + '$$\\sqrt[\\mp\\frac{i}{e}]{\\mp r}=1\\text{, where $\\{r$adicand$\\in\\mathbb{R}|(+0,+\\infty)\\}\\land\\{i$ndex$\\in\\mathbb{R}|(+0,+\\infty)\\}\\land\\{e$xponent$\\in\\mathbb{R}|[+0,+0]\\}$}$$'
+    + br
+    + br + '1÷x is asymmetrically graphed'
+    + br + '2^x is' + sp.times(2) + 'symmetrically graphed'
+    + br + 'Or are they all symetrical..?'
+    + br + 'I wish Desmos and WolframAlpha could reach an agreement on x!'
 )
