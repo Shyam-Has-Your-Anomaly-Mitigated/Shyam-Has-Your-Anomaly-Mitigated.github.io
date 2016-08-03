@@ -678,6 +678,7 @@ As in: the character you roleplay as, cries in ℝealtime.
 ...たまごっち
 
 Can juggling prevent <relevant_disease>? (arthritis?)
+Prevention = Cure ¬c̄ Hospital ∨ Medicine
 
 */
 
