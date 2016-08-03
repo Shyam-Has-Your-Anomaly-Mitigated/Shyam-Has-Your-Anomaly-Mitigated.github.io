@@ -16,6 +16,9 @@
     , clock
     , init
     , css_diff = x => parseInt((new Date(new Date() - new Date(x))) / 1000)// This is from long ago; what does it do..?
+    , css_minute = 60
+    , css_hour   = 3600  // 60*60
+    , css_day    = 86400 // 60*60*24
 
 // main
 ; (clock = () => {; getId('clock').innerHTML = timestamp(new Date()); setTimeout(clock, 1)})()
@@ -402,6 +405,8 @@ https://en.wikipedia.org/wiki/General_medical_examination
     Nutrition = (age, {food}) => ...switch or something; I'm 26, so 1000mg/day Calcium for me! 8-D
     https://youtu.be/fNnStvdG-VY
     https://youtu.be/pWOQuPczY4c
+    http://waterprint.net/soy_milk.html
+    http://theconversation.com/soy-versus-dairy-whats-the-footprint-of-milk-8498
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
@@ -508,7 +513,7 @@ sudo = Super User Do Once
 
 If this wasn't hosted on GitHub, a license would be required to even know the address∈{IP,URI,URL,..}.
 @future: amend the AYOR license to include "shyam.id.au" and any preppendages/appendages...
-...Or just the domain name will do? Any and all property...
+...Or just the domain name will serve? Any and all property...
 This will give me an excuse to physically tinker with their brains against their will (to protect my intellectual property! :D)...
 You so much as think of me, my name, or anything..!
 Yeah, fuck you all and your so-called IP; it's in my intellectual/cyber/air/~ space now. q:
@@ -528,14 +533,14 @@ Internet access routed through the waterways.
 They should teach Vedic creationism in schools; it's more ℝealistic..!
     https://en.wikipedia.org/wiki/Hindu_cosmology#Reception
 8.64 × 1.5 = 12.96
-I'd say they overshot by 50%..?
+I'd say they overshot by 60%..?
     https://en.wikipedia.org/wiki/Age_of_the_universe
 The kṣīra-sāgaraḥ orbit also has an epic range of 25 million sūrya orbits...
     https://en.wikipedia.org/wiki/Galactic_year
-...how is universal age related to galactic momentum? (the margin of error?)
+...how is universal age related to galactic momentum? (margin of error?)
 ^(the first dot is a Majuscule periodic)
 
-...I have reason to believe poeple call themselves Aryan, for the same reason "royalty" call themselves Majesty; or even Royalty for that matter.
+...I have reason to believe some "humans" call themselves Aryan, for the same reason "royalty" call themselves Majesty; or even Royalty for that matter.
 Some people probably choose to interpret at their own discretion...
 The 卐misinterpretation卐 occured at a temporal convenience...
     https://en.wikipedia.org/wiki/Aryan
@@ -577,6 +582,7 @@ The colours will change periodically, the timeout will be for the next rotation.
 Auditry feedback will indicate valid button pushes.
 ...
 They must perform ordered tasks; bathe before food/water..?
+Depends on where the sun is; who's on duty for a midnight snack..?
 
 If we encounter alien life...
 How will we treat them? People will want to eat them...
@@ -669,6 +675,7 @@ I don't mean, as a game mechanic to flood a room and swim against gravity...
 Or in a cutscene...
 I mean: due to damage, an action/inaction,..
 As in: the character you roleplay as, cries in ℝealtime.
+...たまごっち
 
 Can juggling prevent <relevant_disease>? (arthritis?)
 
@@ -686,4 +693,5 @@ Can juggling prevent <relevant_disease>? (arthritis?)
 // ae to æ, and back
 // c^- to c̄, and back
 // (La)TeX
+// subscript, script, superscript
 // ,..
