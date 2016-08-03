@@ -23,4 +23,5 @@
     + br + '2^x is' + sp.times(2) + 'symmetrically graphed'
     + br + 'Or are they all symetrical..?'
     + br + 'I wish Desmos and WolframAlpha could reach an agreement on x!'
+    + br + '...once it collides with the equidistant locality (cardioid, cusp, antipode, pole, axis, lateral latitudinal singularity,.?), it probably asymmetrically reconnects directly to the first quadrant.'
 )
