@@ -31,4 +31,6 @@
     + br + 'The summation of all negative integers proves a perfect circle; discover at least one numerical discrepancy to disprove the perfect circle concept (and mathematics altogether).'
     + br + '...the ¿straightish? number line is being stretched into a perfect circle of uniformity (it has always been that way); ei incumbit probatio qui dicit, non qui negat.'
     + br + 'Rotating that perfect circle proves a perfect sphere; I cannot remember how I did it last time, but it was better than this..!'
+    + br
+    + br + '1+0÷x cannot prove a cylindrical plane; graph multiple additional lines, expecially x=1!'
 )
