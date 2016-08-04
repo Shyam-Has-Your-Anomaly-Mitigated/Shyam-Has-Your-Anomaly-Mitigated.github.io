@@ -27,4 +27,7 @@
     + br + '√x is symmetrical; so should be x!'
     + br + 'I fail to see the logic behind negative x!'
     + br + 'x² is symmetrical...'
+    + br
+    + br + 'The summation of all negatvie integers proves a perfect circle.'
+    + br + 'Rotating that circle proves a sphere; I cannot remember how I did it last time, but it was better than this..!'
 )
