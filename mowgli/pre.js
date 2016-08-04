@@ -28,6 +28,6 @@
     + br + 'I fail to see the logic behind negative x!'
     + br + 'x² is symmetrical...'
     + br
-    + br + 'The summation of all negatvie integers proves a perfect circle.'
-    + br + 'Rotating that circle proves a sphere; I cannot remember how I did it last time, but it was better than this..!'
+    + br + 'The summation of all negative integers proves a perfect circle.'
+    + br + 'Rotating that circle proves a perfect sphere; I cannot remember how I did it last time, but it was better than this..!'
 )
