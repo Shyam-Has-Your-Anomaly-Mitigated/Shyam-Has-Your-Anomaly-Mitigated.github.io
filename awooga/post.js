@@ -673,6 +673,7 @@ Side effects are dysfunctional!
 ...
 Medical practitioners should have to pass a handwriting test, regularly.
 https://youtu.be/ivq2a9iXeJs
+Random testing, without notice, should keep them on their toes.
 
 What do they care?
 It's the way it sounds...
