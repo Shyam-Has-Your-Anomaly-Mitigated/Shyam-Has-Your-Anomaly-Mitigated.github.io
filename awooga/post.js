@@ -667,6 +667,9 @@ https://en.wikipedia.org/wiki/Coating#Functions_of_coatings
 Pharmaceutical = Mechanical
 Fix something here, break something there...
 Side effects are dysfunctional!
+...
+Medical practitioners should have to pass a handwriting test, regularly.
+https://youtu.be/ivq2a9iXeJs
 
 What do they care?
 It's the way it sounds...
