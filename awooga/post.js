@@ -723,6 +723,7 @@ Telescope from Earth looking through the Moon during an eclipse...
 
 https://youtu.be/qRnU0bqsyq0
 9HR34K ATTACKS!
+http://shyam.id.au/mowgli
 
 */
 
