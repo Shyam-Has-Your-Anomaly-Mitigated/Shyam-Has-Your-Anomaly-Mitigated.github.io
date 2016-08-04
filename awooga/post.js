@@ -721,6 +721,9 @@ Turn it into a telescope...
 It should face Earth, and be wide enough to compensate for the wobble...
 Telescope from Earth looking through the Moon during an eclipse...
 
+https://youtu.be/qRnU0bqsyq0
+9HR34K ATTACKS!
+
 */
 
 // http://shyam.id.au/tp
