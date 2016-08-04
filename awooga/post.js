@@ -701,6 +701,8 @@ My blood feels weird; I need a syringe to get it out..!
 My theory is that my body will work overtime to produce more blood; fresh blood..!
 I think my eyes are drifting apart when I look at the gap..?
 But they must auto-re-align; without my notice..!
+...
+My right ear and nose is bleeding!?!
 
 */
 
