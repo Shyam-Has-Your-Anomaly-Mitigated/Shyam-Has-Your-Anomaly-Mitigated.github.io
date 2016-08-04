@@ -407,6 +407,8 @@ https://en.wikipedia.org/wiki/General_medical_examination
     https://youtu.be/pWOQuPczY4c
     http://waterprint.net/soy_milk.html
     http://theconversation.com/soy-versus-dairy-whats-the-footprint-of-milk-8498
+    http://theconversation.com/soy-versus-dairy-which-milk-is-better-for-you-9379
+    http://empoweredsustenance.com/avoid-soy-milk/
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
@@ -461,6 +463,11 @@ new alarm
     "start": {}
 click anywhere the row to disable alarm
 the temporal shift behaves no differently
+
+Cycle of text; a list...
+    Laundry <---> Hangout Washing
+    A --> B --> C --> D
+    ^-----------------v
 
 */
 ////////////////////////////////////////////////////////////////////////////////
