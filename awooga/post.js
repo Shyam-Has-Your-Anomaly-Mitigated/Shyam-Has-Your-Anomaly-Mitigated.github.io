@@ -639,6 +639,7 @@ Hmm, (tip-of-the-tongue)s...
 Use overtones to shatter a wine glass? Without a mic?
 Tuvan people could make a movie, "The Drunken Хөөмей".
 
+https://youtu.be/A4INSuaT1os
 CPT330: Software Engineering Project Management
     The Girl Who Never Ate
         Scrumptious daily stand-up meetings... (c̄ munchy honeycakes and yellow jelly; I can't believe there is a BiP wiki, who does this?!? OMG WTF BBQ 123)
@@ -736,3 +737,5 @@ Telescope from Earth looking through the Moon during an eclipse...
 // (La)TeX
 // subscript, script, superscript
 // ,..
+
+// AMOD: At My Own Discretion
