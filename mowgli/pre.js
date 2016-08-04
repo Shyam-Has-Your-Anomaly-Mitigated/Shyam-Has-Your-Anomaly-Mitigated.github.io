@@ -33,4 +33,5 @@
     + br + 'Rotating that perfect circle proves a perfect sphere; I cannot remember how I did it last time, but it was better than this..!'
     + br
     + br + '1+0÷x cannot prove a cylindrical plane; graph multiple additional lines, expecially x=1!'
+    + br + 'Rotate the plane of existence for a perfect circle.'
 )
