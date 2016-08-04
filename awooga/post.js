@@ -409,6 +409,7 @@ https://en.wikipedia.org/wiki/General_medical_examination
     http://theconversation.com/soy-versus-dairy-whats-the-footprint-of-milk-8498
     http://theconversation.com/soy-versus-dairy-which-milk-is-better-for-you-9379
     http://empoweredsustenance.com/avoid-soy-milk/
+    https://youtu.be/mvvx2yQRbzQ
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
@@ -664,6 +665,7 @@ https://en.wikipedia.org/wiki/Antimicrobial_copper-alloy_touch_surfaces
 https://en.wikipedia.org/wiki/Infection_control#Antimicrobial_surfaces
 https://en.wikipedia.org/wiki/Hospital-acquired_infection#Antimicrobial_surfaces
 https://en.wikipedia.org/wiki/Coating#Functions_of_coatings
+https://youtu.be/DjZ6b20LSoc
 ...
 Pharmaceutical = Mechanical
 Fix something here, break something there...
@@ -724,6 +726,22 @@ Telescope from Earth looking through the Moon during an eclipse...
 https://youtu.be/qRnU0bqsyq0
 9HR34K ATTACKS!
 http://shyam.id.au/mowgli
+
+https://youtu.be/0MVGeRa-vLo
+I bet asbestos had something to do with Starlite..!
+https://youtu.be/KuHL7hiFTnc
+Who in their right mind...
+No wonder his family won't release it; they know the cause of death!
+Why this kolaveri di?
+https://www.quora.com/Which-theoretically-is-a-better-thermal-insulator-Starlite-or-Aerogel-and-why
+
+https://youtu.be/Pl0icc3XiVI
+Humans like picante, even though it's designed to prevent us from consuming it in the first place..!
+Humans also consume sugar until they get diabetes..!
+Heat could be like a drug for insects, until they need to rest and decide to..!
+One thing is for sure; humans are no more intelligent.
+
+Everything is moving, nothing is where it was, so where is everything?!?
 
 */
 
