@@ -29,6 +29,6 @@
     + br + 'x² is symmetrical...'
     + br
     + br + 'The summation of all negative integers proves a perfect circle; discover at least one numerical discrepancy to disprove the perfect circle concept (and mathematics altogether).'
-    + br + '...the number line is being stretched into a perfect circle of uniformity (it has always been that way); ei incumbit probatio qui dicit, non qui negat.'
+    + br + '...the ¿straightish? number line is being stretched into a perfect circle of uniformity (it has always been that way); ei incumbit probatio qui dicit, non qui negat.'
     + br + 'Rotating that perfect circle proves a perfect sphere; I cannot remember how I did it last time, but it was better than this..!'
 )
