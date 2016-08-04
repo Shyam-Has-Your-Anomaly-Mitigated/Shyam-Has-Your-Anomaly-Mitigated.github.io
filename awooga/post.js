@@ -734,6 +734,10 @@ Who in their right mind...
 No wonder his family won't release it; they know the cause of death!
 Why this kolaveri di?
 https://www.quora.com/Which-theoretically-is-a-better-thermal-insulator-Starlite-or-Aerogel-and-why
+...
+https://youtu.be/gg5PYU2CznY
+I have a theory for the last one...
+http://shyam.id.au/mowgli
 
 https://youtu.be/Pl0icc3XiVI
 Humans like picante, even though it's designed to prevent us from consuming it in the first place..!
@@ -761,3 +765,7 @@ Everything is moving, nothing is where it was, so where is everything?!?
 // ,..
 
 // AMOD: At My Own Discretion
+
+// /metrology
+//      unit conversions
+//      calendar conversions
