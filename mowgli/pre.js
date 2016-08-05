@@ -26,6 +26,7 @@
     + br + '...once it collides with the equidistant locality (cardioid, cusp, antipode, pole, axis, lateral latitudinal singularity,.?), it probably asymmetrically reconnects directly to the first quadrant.'
     + br + '√x is symmetrical; so should be x!'
     + br + 'I fail to see the logic behind negative x!'
+    + br + '⸮..discontinuous = x!'
     + br + 'x² is symmetrical...'
     + br
     + br + 'The summation of all negative integers proves a perfect circle; discover at least one numerical discrepancy to disprove the perfect circle concept (and mathematics altogether).'
