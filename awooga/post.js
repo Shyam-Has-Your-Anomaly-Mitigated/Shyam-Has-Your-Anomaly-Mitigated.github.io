@@ -747,6 +747,7 @@ Humans like picante, even though it's designed to prevent us from consuming it i
 Humans also consume sugar until they get diabetes..!
 Heat could be like a drug for insects, until they need to rest and decide to..!
 One thing is for sure; humans are no more intelligent.
+https://youtu.be/MwWACB6w8D0
 
 Everything is moving, nothing is where it was, so where is everything?!?
 
@@ -772,3 +773,11 @@ Everything is moving, nothing is where it was, so where is everything?!?
 // /metrology
 //      unit conversions
 //      calendar conversions
+//      language conversions
+
+// /icanninja
+//      #4*: open the sauce...may the sauce be ȯn you
+//      metadata.pl (Perl Language)
+//      crack.asm   (A Shifty Mechanism)
+//      1st!contact (ClOse eNcounTers of thÆ 8Th kind)
+//      st.ego      (stEnOps||eGaNo)
