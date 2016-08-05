@@ -526,13 +526,15 @@ This will give me an excuse to physically tinker with their brains against their
 You so much as think of me, my name, or anything..!
 Yeah, fuck you all and your so-called IP; it's in my intellectual/cyber/air/~ space now. q:
 https://youtu.be/kJa2kwoZ2a4
-
+...
 Advertisements are an invasion to privacy.
 That includes word-of-mouth adware.
 If I find out about your base, all your base are belong to me.
-
+...
 They should have to pay me, to advertise to me.
 I'll pay them what they pay me.
+...
+Radio waves that pass through my body and into my brain/mind..!
 
 This is the future!
 https://youtu.be/TR0baWuB6v4
