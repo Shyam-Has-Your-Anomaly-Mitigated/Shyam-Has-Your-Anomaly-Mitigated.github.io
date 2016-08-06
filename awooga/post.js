@@ -471,6 +471,10 @@ Cycle of text; a list...
     A --> B --> C --> D
     ^-----------------v
 
+Minimise/maximise headings (drop down, folding,..)
+    Instead of tabs..?
+    ...what about optional settings?
+
 */
 ////////////////////////////////////////////////////////////////////////////////
 /*
