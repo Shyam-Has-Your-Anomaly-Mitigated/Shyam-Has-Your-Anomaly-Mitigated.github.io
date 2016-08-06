@@ -410,6 +410,7 @@ https://en.wikipedia.org/wiki/General_medical_examination
     http://theconversation.com/soy-versus-dairy-which-milk-is-better-for-you-9379
     http://empoweredsustenance.com/avoid-soy-milk/
     https://youtu.be/mvvx2yQRbzQ
+    https://www.youtube.com/playlist?list=PLJicmE8fK0EihspOYDP20Aody8zonQVEY
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
@@ -750,6 +751,8 @@ One thing is for sure; humans are no more intelligent.
 https://youtu.be/MwWACB6w8D0
 
 Everything is moving, nothing is where it was, so where is everything?!?
+
+Tonal clicks for the blind..!
 
 */
 
