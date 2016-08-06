@@ -411,6 +411,28 @@ https://en.wikipedia.org/wiki/General_medical_examination
     http://empoweredsustenance.com/avoid-soy-milk/
     https://youtu.be/mvvx2yQRbzQ
     https://www.youtube.com/playlist?list=PLJicmE8fK0EihspOYDP20Aody8zonQVEY
+    https://en.wikipedia.org/wiki/Template:Cooking_techniques
+    https://en.wikipedia.org/wiki/Template:Lists_of_prepared_foods
+    https://en.wikipedia.org/wiki/Template:Instant_foods
+    https://en.wikipedia.org/wiki/Category:Food_and_drink_preparation
+    https://en.wikipedia.org/wiki/Template:Antioxidants
+    https://en.wikipedia.org/wiki/Template:Gluten_sensitivity
+    https://en.wikipedia.org/wiki/Template:Consumer_Food_Safety
+    https://en.wikipedia.org/wiki/Category:Food_navigational_boxes
+        https://en.wikipedia.org/wiki/Category:E_number_infoboxes
+        https://en.wikipedia.org/wiki/Template:Food_Substitutes
+        https://en.wikipedia.org/wiki/Template:Food_chemistry
+        https://en.wikipedia.org/wiki/Template:Food_preservation
+    https://en.wikipedia.org/wiki/Category:Food_ingredients
+        https://en.wikipedia.org/wiki/Category:Food_additives
+    https://en.wikipedia.org/wiki/Category:Food_preservation
+    https://en.wikipedia.org/wiki/Category:Food_science
+    https://en.wikipedia.org/wiki/Category:Food_safety
+    https://en.wikipedia.org/wiki/Wood_preservation#Chemical_preservatives
+    https://en.wikipedia.org/wiki/Category:Process_chemicals
+    https://en.wikipedia.org/wiki/Category:Free_radicals
+    https://en.wikipedia.org/wiki/Category:Life_extension
+        https://en.wikipedia.org/wiki/Category:Anti-aging_substances
 statistical logs = spreadsheet
 star trek
     Notes = captains logs (the user is the captain)
@@ -782,12 +804,15 @@ Tonal clicks for the blind..!
 
 // AMOD: At My Own Discretion
 
-// /metrology
+// http://shyam.id.au/metrology
 //      unit conversions
 //      calendar conversions
 //      language conversions
 
-// /icanninja
+// http://shyam.id.au/metronomy
+//      astrological comparisons
+
+// http://shyam.id.au/icanninja
 //      #4*: open the sauce...may the sauce be ȯn you
 //      metadata.pl (Perl Language)
 //      crack.asm   (A Shifty Mechanism)
