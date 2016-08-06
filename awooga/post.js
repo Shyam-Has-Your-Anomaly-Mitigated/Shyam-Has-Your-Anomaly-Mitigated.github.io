@@ -753,6 +753,7 @@ https://youtu.be/MwWACB6w8D0
 Everything is moving, nothing is where it was, so where is everything?!?
 
 Tonal clicks for the blind..!
+...to prevent them from walking into poles? (...from that documentary?)
 
 */
 
