@@ -749,6 +749,7 @@ Humans also consume sugar until they get diabetes..!
 Heat could be like a drug for insects, until they need to rest and decide to..!
 One thing is for sure; humans are no more intelligent.
 https://youtu.be/MwWACB6w8D0
+...females!
 
 Everything is moving, nothing is where it was, so where is everything?!?
 
