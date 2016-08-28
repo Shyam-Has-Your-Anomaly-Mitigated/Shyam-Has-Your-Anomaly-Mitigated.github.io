@@ -411,7 +411,7 @@ https://en.wikipedia.org/wiki/General_medical_examination
     http://empoweredsustenance.com/avoid-soy-milk/
     https://youtu.be/mvvx2yQRbzQ
     https://www.youtube.com/playlist?list=PLJicmE8fK0EihspOYDP20Aody8zonQVEY
-	https://youtu.be/UfYpxF32EZo
+    https://youtu.be/UfYpxF32EZo
     https://en.wikipedia.org/wiki/Template:Cooking_techniques
     https://en.wikipedia.org/wiki/Template:Lists_of_prepared_foods
     https://en.wikipedia.org/wiki/Template:Instant_foods
@@ -785,6 +785,43 @@ Everything is moving, nothing is where it was, so where is everything?!?
 
 Tonal clicks for the blind..!
 ...to prevent them from walking into poles? (...from that documentary?)
+
+Cannot logically justify death as both; a punishment, and for mercy.
+    Putting criminals out of their misery; because it's a proven deterrent, which is why it still exists, and is still actively used...
+    Executing innocent animals; to make us feel better about ourselves...
+https://en.wikipedia.org/wiki/Capital_punishment
+https://en.wikipedia.org/wiki/Euthanasia
+Sacrifices must be made! ...logical sacrifices.
+
+https://youtu.be/jAhjPd4uNFY
+https://en.wikipedia.org/wiki/Invasive_species
+https://en.wikipedia.org/wiki/Antimicrobial_resistance
+https://en.wikipedia.org/wiki/Genetically_modified_food_controversies
+https://en.wikipedia.org/wiki/CRISPR
+Think of a triangle with three sides; a, b, and c.
+Changing one of those sides, doesn't require the other two sides to change.
+But the angles will change. (It can be done the other way, but for the purposes of the point I'm attempting to make here...)
+Imagine the angles represent the relationships in our DNA.
+Until we can run computer simulations...
+I mean input=DNA, and output=virtually_cloned_lifeform...
+CRISPR cannot be considered safe.
+We cannot pretend to know everything.
+Trial and error is not for the intelligent; it's called "brute" force for a reason.
+What are the psychological implications? KHAN!!!
+As I understand it, there are known genetic diseases which affect our psychology.
+So a computer simulation must include an environment; for the virtual lifeform to interact with, learn, memory,..
+Artificial intelligence has a very long way to go; as does computational power.
+Then psychology can be tested.
+Genetic Programming, is just like any other kind of programming; think of all the bugs!
+Accidents happen; accidental new diseases/problems.
+#WeArentReady
+#WAR
+#BurnTheLabs
+#ActifistThemInTheFace
+#WeveEnoughProblemsAsItIsNow
+#wePAIIN
+https://en.wikipedia.org/wiki/Wireless_electronic_devices_and_health
+https://en.wikipedia.org/wiki/Brain_tumor#Cause
 
 */
 

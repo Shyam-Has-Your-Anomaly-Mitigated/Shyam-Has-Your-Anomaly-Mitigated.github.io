@@ -78,3 +78,150 @@
     + br
     + br + format('What happened to my monospacial typesetting?', 'i')
 )
+
+/*
+
+declarations
+~ var = dynamical
+◼ var = logical  declaration, var∈{0,1}, unless ¬binary ∨ non-binary ∨ anti-binary ∨ counter-binary, if you will?..
+ℤ var = integer  declaration
+ℕ var = natural  declaration
+ℚ var = rational declaration
+ℝ var = ℝeal     declaration
+ℂ var = complex  declaration
+' var = char   literal
+" var = string literal
+∅ var = dynamical array, synonyms(`~∅ var`,`∅~ var`)
+∅? var = array, ?∈{~,◼,ℤ,ℕ,ℚ,ℝ,ℂ,',",∅,..}
+?∅ var = array, ?∈{~,◼,ℤ,ℕ,ℚ,ℝ,ℂ,',",∅,..}
+?¬ var = null-terminated variable, ?∈{"}, "¬
+?␀ var = null-terminated variable, ?∈{"}, "␀
+https://en.wikipedia.org/wiki/Data_type
+https://en.wikipedia.org/wiki/Sigil_%28computer_programming%29
+...numerical precision?
+https://en.wikipedia.org/wiki/Primitive_data_type
+https://en.wikipedia.org/wiki/Template:Data_types
+https://en.wikipedia.org/wiki/Template:Floating-point
+https://en.wikipedia.org/wiki/Null-terminated_string
+https://en.wikipedia.org/wiki/Null_character
+https://en.wikipedia.org/wiki/Control_character
+
+mathematical operations
+ |b|
+ ⌈b⌉
+ [b]
+ ⌊b⌋
+∑ℤ
+Σ-ℤ
+a+b
+a×b
+a^b
+a↑b
+a↑↑b
+a↑↑↑b
+a↑↑↑↑b
+a↑^?b, where ?∈ℤ, as many hyperoperations as you want; but time is a factor!..
+a!
+a−b
+a÷b
+ √b
+ ∛b
+ ∜b
+ ∫b
+a′
+a″
+a‴
+a◌ʹ, as many derivations as you want; but time is a factor..!
+https://en.wikipedia.org/wiki/Prime_%28symbol%29
+...
+https://en.wikipedia.org/wiki/Logarithm
+    would like log_n(x) as a function, where n is numerical
+    but consistency is an issue..?
+https://en.wikipedia.org/wiki/Modulo
+https://en.wikipedia.org/wiki/Modulus
+https://en.wikipedia.org/wiki/Template:Large_numbers
+
+logic
+{a,b}|a=b:...
+{a,b}|a≤b:...
+{a,b}|a≥b:.., this is frowned upon, but supported; for right-to-left languages
+{a,b}|a<b:...
+{a,b}|a>b:.., this is frowned upon, but supported; for right-to-left languages
+{a,b}|a∧b:...
+{a,b}|a∨b:...
+{a,b}|a⊕b:.., ∨exclusive
+{a,b}|a→b:.., material implication
+{a,b}|a≡b:.., equivalence, synonymous(`a=b`) ?
+   b | ¬b:..◼
+{a,b}|a≠b:.., this is preferable to ¬(a=b)
+ a   |a∉ℕ:...
+ a   |a∈ℝ:...
+ a   |ℕ∌a:...
+ a   |ℝ∋a:...
+ a   |[∓1):..∵∴◼
+ a   |[±1):.., this is frowned upon, but supported; for right-to-left languages
+ a   |(0,10]∧a∈ℕ:..◻..◼.., proposals:
+    {a,b,c}|{(0,1),(0,1],[0,1]}∧∀{a,b,c}∈ℕ:...
+    {a,b,c}|{(0,1),(0,1],[0,1]}∧(∀x∈{a,b,c}:x∈ℕ):...
+https://en.wikipedia.org/wiki/Boolean_algebra#Operations
+https://en.wikipedia.org/wiki/Boolean_data_type
+https://en.wikipedia.org/wiki/True_and_false_%28commands%29#Null_command
+https://en.wikipedia.org/wiki/Non-English-based_programming_languages
+https://en.wikipedia.org/wiki/Visual_programming_language
+https://en.wikipedia.org/wiki/TeX
+...not sure about `logic:` as an if statement, need to think about if,.,else
+...shorthand?..stenography?..brachygraphy?..tachygraphy?..tachyons!
+
+https://en.wikipedia.org/wiki/Assignment_%28computer_science%29#Notation
+a:=b is an assignment
+
+b:=['a','b','c']
+^b=[0,1,2], where this equation is true
+a^b = is a mathematical expression, which treats b as a $calar value; probably 3 in this instance
+
+https://www.mathsisfun.com/definitions/index-power-.html
+^var = indexed var, not the index of var ∵ that wouldn't make sense
+#var = address of var, not the value of var ∵ that would make sense
+https://en.wikipedia.org/wiki/Hash_symbol
+https://en.wikipedia.org/wiki/Reference_%28computer_science%29
+(# was @, but the lines line up...it is more logical this way)
+
+https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29
+https://en.wikipedia.org/wiki/Dereference_operator
+https://en.wikipedia.org/wiki/At_sign
+@var = var as an address; a pointer, if you will
+https://en.wikipedia.org/wiki/Function_pointer
+var:=#fun
+@var()=fun()
+
+https://en.wikipedia.org/wiki/Foreach_loop
+∀e∈^E∈S:cat>&1 E[e]
+//js_equivalent
+var S = [[1,2,3],['a','b','c']];
+for(var E of S) {
+    for(var e in E) {
+        console.log(E[e]);
+    }
+}
+
+http://shyam.id.au/awooga/post.js
+∀ each ∈ {'Alarms'} ∉ table ∈ rc
+...needs further thought/considerations
+
+https://en.wikipedia.org/wiki/Standard_streams
+https://en.wikipedia.org/wiki/Printf_format_string
+...need to figure this out (I do like perl/bash; to some extent, anyway)
+
+https://en.wikipedia.org/wiki/Scope_%28computer_science%29
+...
+
+https://en.wikipedia.org/wiki/Comment_%28computer_programming%29
+... ← why not use these?
+    ... pause, I need to explain!\ncontinue ...
+    !!! docstrings are important !!!
+https://en.wikipedia.org/wiki/Docstring
+
+https://en.wikipedia.org/wiki/Literate_programming
+...read it, may be of interest.
+
+*/
