@@ -32,6 +32,7 @@
     + br + 'Obviously initiating at x=0 is more logical...'
     + br + 'Non-negative is unsigned, otherwise signed...'
     + br + 'Geometric/spiral/orbital/wave/whatever equations...'
+    + br + br + 'Indexable.otp files and filesystem format.'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
