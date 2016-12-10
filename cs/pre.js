@@ -33,6 +33,7 @@
     + br + 'Non-negative is unsigned, otherwise signed...'
     + br + 'Geometric/spiral/orbital/wave/whatever equations...'
     + br + 'Numerical ' + link('sequences', 'https://oeis.org/') + '...'
+    + br + '(...use the ' + link('OEIS.ORG', 'https://oeis.org/') + ' database to crack numerical sequences!)'
     + br + 'Can just loop any kind of dysfunctional password...'
     + br + '(...use the fsource to crack dysfunctional passwords!)'
     + br + br + 'Indexable.otp files and filesystem format.'
