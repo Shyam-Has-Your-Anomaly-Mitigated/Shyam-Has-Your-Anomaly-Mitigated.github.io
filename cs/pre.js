@@ -33,6 +33,7 @@
     + br + 'Non-negative is unsigned, otherwise signed...'
     + br + 'Geometric/spiral/orbital/wave/whatever equations...'
     + br + 'Numerical ' + link('sequences', 'https://oeis.org/') + '...'
+    + br + 'Can just loop any kind of dysfunctional password...'
     + br + br + 'Indexable.otp files and filesystem format.'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
