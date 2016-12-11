@@ -26,7 +26,7 @@
     + heading('Image-based Language', 4)
     +      'I like Sergei Lewis\'s and Joshua Schulter\'s well-ordered ' + link('Piet(-Q, ++)', 'http://www.dangermouse.net/esoteric/piet/samples.html') + ' style(&iquest;s?)...'
     + heading(format('Security', 'u'), 3)
-    + heading('Functional ' + span('OTP', {c: 'hover', t: 'One Time Pad'}), 4 + ' (AKA Functional Passwords)')
+    + heading('Functional ' + span('OTP', {c: 'hover', t: 'One Time Pad'}) + ' (AKA Functional Passwords)', 4)
     +      'y = f(x), graphically...'
     + br + 'Example: OTP initiates at y=0 in Quadrant I, and positively increasing...'
     + br + 'Obviously initiating at x=0 is more logical...'
