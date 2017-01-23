@@ -55,6 +55,7 @@ var
     + br
     + br + link('Arrowic', 'https://en.wikipedia.org/wiki/Arrow_(symbol)')
     + br + link('Borders', 'https://en.wikipedia.org/wiki/Box-drawing_character')
+    + br + link('Filling', 'https://en.wikipedia.org/wiki/Block_Elements')
     + br + link('Unicode', 'https://en.wikipedia.org/wiki/Unicode_compatibility_characters')
     + br + link('Writing', 'https://en.wikipedia.org/wiki/Template:List_of_writing_systems')
     + br + link('UCSfont', 'https://en.wikipedia.org/wiki/Unicode_font')
