@@ -37,6 +37,8 @@
     + br + 'Can just loop any kind of dysfunctional password...'
     + br + '(...use the fsource to crack dysfunctional passwords!)'
     + br + br + 'Indexable.otp files and filesystem format.'
+    + br + br + 'Mathematical functions can also be used to describe data in a compressed format...'
+    + br + 'f(x){a<x<b'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
