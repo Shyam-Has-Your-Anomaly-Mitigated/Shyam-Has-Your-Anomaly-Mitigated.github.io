@@ -36,6 +36,7 @@
     + br + '(...use the ' + link('OEIS.ORG', 'https://oeis.org/') + ' database to crack numerical sequences!)'
     + br + 'Can just loop any kind of dysfunctional password...'
     + br + '(...use the fsource to crack dysfunctional passwords!)'
+    + br + 'User-specified alphanumerical base for enhanced security measures...'
     + br + br + 'Indexable.otp files and filesystem format.'
     + heading('Functional Compression', 4)
     +      'Mathematical functions can also be used to describe data in a compressed format...'
