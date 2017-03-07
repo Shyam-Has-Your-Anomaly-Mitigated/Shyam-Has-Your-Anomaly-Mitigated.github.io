@@ -91,7 +91,7 @@
     + br
     + br + "4 different clicks: two dots and a line (':|', '|:',..)"
     + br + 'https://youtu.be/31zzMb3U0iY'
-    + br + '!x: tow side dots (the side indicates which side the tongue should be)'
+    + br + '!x: two side dots (the side indicates which side the tongue should be)'
     + br + '!c: two high dots (tip of the tongue)'
     + br + '!q: two low dots (is it floored, or does it pop of the ceiling? ...maybe swap with !c?)'
     + br
