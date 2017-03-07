@@ -96,6 +96,7 @@
     + br + '!q: two low dots (is it floored, or does it pop of the ceiling? ...maybe swap with !c?)'
     + br
     + br + '3 different tones: one high dot, one low dot, and dotless (I guess SINGularity dots are vowels?)'
+    + br + "5 different tones: '↙', '↘', ' ', '↗', '↖'"
     + br
     + br + '4 different vowels: *angle with blank (dot or empty)'
     + br + '↙u: |_\\'
