@@ -123,7 +123,7 @@
     + br + 'blank is singular, dot is double; triple is redundant c̄ an exception'
     + br
     + br + 'CONSTANTS'
-    + br + 'bp,dt,kg,sz,wy,vf,bvfw,rdt,jy,hlmn'
+    + br + 'bp,dt,kg,sz,wy,vf,bvfw,rdt,jyr,..hlmn'
     + br + 'bitonals...'
     + br + '   p=^b'
     + br + '   b=_p'
