@@ -117,6 +117,8 @@
     + br + 'eee=i∈i'
     + br + 'eye=ae∨ai∨aye≠ay???'
     + br + '...'
+    + br + 'uoae=why'
+    + br + '...'
     + br + '4 different vowels: triangles (right angle follows the arrows at the top of the block)'
     + br + 'blank is singular, dot is double; triple is redundant c̄ an exception'
 )
