@@ -96,6 +96,25 @@
     + br + '!q: two low dots (is it floored, or does it pop of the ceiling? ...maybe swap with !c?)'
     + br
     + br + '3 different tones: one high dot, one low dot, and dotless (I guess SINGularity dots are vowels?)'
+    + br
+    + br + '4 different vowels: *angle with blank (dot or empty)'
+    + br + '↙u: |_\\'
+    + br + '↘o: |_'
+    + br + '↗a: |\\'
+    + br + '↖e: _\\'
+    + br + 'u=o∈book'
+    + br + 'uu=...'
+    + br + 'uuu=o'
+    + br + 'o=o∈body'
+    + br + 'oo=...'
+    + br + 'ooo=a'
+    + br + 'a=u∈hut'
+    + br + 'aa=a∈apple'
+    + br + 'aaa=e'
+    + br + 'e=e∈error'
+    + br + 'ee=e∈leer'
+    + br + 'eee=i∈i'
+    + br + 'eye=ai∨aye≠ay???'
 )
 
 /*
