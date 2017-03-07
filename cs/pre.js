@@ -37,6 +37,7 @@
     + br + 'Can just loop any kind of dysfunctional password...'
     + br + '(...use the fsource to crack dysfunctional passwords!)'
     + br + 'User-specified CAPalphanum3r1c4l base for enhanced security measures...'
+    + br + 'User-specified x-axis character; or just use the @ symbol, as in @ x-coordinate...'
     + br + br + 'Indexable.otp files and filesystem format.'
     + heading('Functional Compression', 4)
     +      'Mathematical functions can also be used to describe data in a compressed format...'
