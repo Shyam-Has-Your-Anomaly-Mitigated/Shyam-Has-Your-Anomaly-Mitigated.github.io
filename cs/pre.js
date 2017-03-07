@@ -74,7 +74,7 @@
     +      '"n depends on d": d\\n y nxd, c̄ y∈{∧,∨} ∧ x∈{/,%}'
     + br + '"n depends on d": d\\n x nyd, c̄ x∈{∧,∨} ∧ y∈{/,%}'
     + br + '÷ is ambiguous..?'
-    + heading('Binary Stored DynamicaLanguage', 4)
+    + heading('Binary Stored DynamicaLanguage (AKA Decentralised Language)', 4)
     +      '○-○'
     + br + '|X|'
     + br + '○-○'
