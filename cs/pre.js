@@ -121,6 +121,19 @@
     + br + '...'
     + br + '4 different vowels: triangles (right angle follows the arrows at the top of the block)'
     + br + 'blank is singular, dot is double; triple is redundant c̄ an exception'
+    + br
+    + br + 'CONSTANTS'
+    + br + 'bp,dt,kg,sz,wy,vf,bvfw,rdt,jy,hlmn'
+    + br + 'bitonals...'
+    + br + '   p=^b'
+    + br + '   b=_p'
+    + br + '   d=_t'
+    + br + '   t=^d'
+    + br + 'redundancy...'
+    + br + '   c∈{s,k}...ch! (sh...tsh...tshh)'
+    + br + '   q∈{kw,ky}'
+    + br + '   x∈{ks,kz}'
+    + br + 'where g=j?'
 )
 
 /*
