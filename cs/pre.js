@@ -119,7 +119,7 @@
     + br + '...'
     + br + 'uoae=why'
     + br + 'uo,ua,ue=w (oh, it double-u!..)'
-    + br + 'ea=y'
+    + br + 'ea,eo,eu=y (this can just be double-e so..?)'
     + br + '...'
     + br + '4 different vowels: triangles (right angle follows the arrows at the top of the block)'
     + br + 'blank is singular, dot is double; triple is redundant c̄ an exception'
