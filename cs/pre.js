@@ -127,7 +127,8 @@
     + br
     + br + 'CONSTANTS'
     + br + 'bp,dt,kg,sz,wy,vf,bvfw,rdt,jyr,..hlmn'
-    + br + 'k=↖, g=↗, j=↘, y=↙'
+    + br + 'k=↖, g=↗, y=↘, j=↙'
+    + br + 'kgyrRdt'
     + br + 'bitonals...'
     + br + tab + 'p=^b'
     + br + tab + 'b=_p'
