@@ -115,7 +115,7 @@
     + br + 'aaa=e'
     + br + 'e=e∈error'
     + br + 'ee=e∈leer'
-    + br + 'eee=i∈i'
+    + br + 'eee=i∈is'
     + br + 'eye=ae∨ai∨aye≠ay???'
     + br + '...'
     + br + 'uoae=why'
