@@ -127,11 +127,11 @@
     + br
     + br + 'CONSTANTS: bp,rdt,kg,sz,vf...jyr,h,l,m,n'
     + br + 'p=↖, pp=↗, b=↘, bb=↙'
-    + br + 't=↖, r=↗, d=↘, dh=↙'
+    + br + 't=↖, R=↗, d=↘, dh=↙'
     + br + 'k=↖, kh=↗, g=↘, gh=↙'
     + br + 's=↖, ss=↗, z=↘, zh=↙'
     + br + 'f=↖, ph=↗, v=↘, vv=↙'
-    + br + '...th,sh,tsh'
+    + br + '...TH,th,sh,tsh'
     + br + 'kgyrRdt'
     + br + 'wy,bvfw'
     + br + 'bitonals...'
