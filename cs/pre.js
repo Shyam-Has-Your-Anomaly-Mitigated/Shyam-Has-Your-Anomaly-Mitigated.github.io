@@ -118,7 +118,7 @@
     + br + 'eye=ae∨ai∨aye≠ay???'
     + br + '...'
     + br + 'uoae=why'
-    + br + 'uo=w'
+    + br + 'uo,ua,ue=w (oh, it double-u!..)'
     + br + 'ea=y'
     + br + '...'
     + br + '4 different vowels: triangles (right angle follows the arrows at the top of the block)'
