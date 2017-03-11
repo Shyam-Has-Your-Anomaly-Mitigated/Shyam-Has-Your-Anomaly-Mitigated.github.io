@@ -70,6 +70,12 @@
     + br + '; loop(logic) {; if(condition) {; a()} else {; b()}}'
     + br
     + br + format('It\'s redundant to repetitively compute "-thing"s; ' + format('if you can help it.', 'b'), 'i')
+    + heading(format('Electronic Circuitry', 'u'), 3)
+    + heading('Flip-Flops', 4)
+    +      'A  B'
+    + br + '├○◁┤'
+    + br + '├▷○┤'
+    + br + 'C  D'
     + heading(format('Farraginous Concepts', 'u'), 3)
     + heading('Symbolic Communication', 4)
     +      '"n depends on d": d\\n y nxd, c̄ y∈{∧,∨} ∧ x∈{/,%}'
