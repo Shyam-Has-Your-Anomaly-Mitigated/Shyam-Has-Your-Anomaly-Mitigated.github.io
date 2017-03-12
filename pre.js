@@ -11,6 +11,7 @@
     + br + br + Shyam + ' means ' + link('Dark-Complexioned Lord', 'https://en.wikipedia.org/wiki/List_of_titles_and_names_of_Krishna')
     + br + br + 'Here is how to pronounce Śyāma'
     + br + '<iframe width=\'200\' height=\'113\' src=\'https://www.youtube-nocookie.com/embed/CxU3JOWzZdg?rel=0&amp;controls=0&amp;showinfo=0\' frameborder=\'0\' allowfullscreen></iframe>'
+    + br + br + 'On my left forearm, I have 3 magickal dots in a straight line; those of which, I can cause to disappear/reappear seemingly at will! (I am a 3-bit computer!)'
     + br + br + 'I whisper sweet nothings to my machine and it just listens to me (' + format('like nobody else will', 'i') + '); I am a ' + format('Computer Whisperer', 'b') + ', but I whisper with my ' + link('finger tips', '/mæssage') + '...'
     + br + br + format('Transceiver: ', 'b') + link('shyam@shyam.id.au', 'mailto:shyam@shyam.id.au?Subject=YOU%20HAVE%20MAIL%20!!!')
     + br + '^Don\'t ' + link('bother', '/cv') + ' me if I become a ' + link('Ben, Dick, & Forelife', '/bdfl') + '; I will contact you. ;)'
