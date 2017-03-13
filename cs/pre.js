@@ -100,6 +100,10 @@
     + br + '!x: two side dots (the side indicates which side the tongue should be)'
     + br + '!c: two high dots (tip of the tongue)'
     + br + '!q: two low dots (is it floored, or does it pop of the ceiling? ...maybe swap with !c?)'
+    + br + '...'
+    + br + '!x: ☒'
+    + br + '!c: ×'
+    + br + '!q: ☐'
     + br
     + br + '3 different tones: one high dot, one low dot, and dotless (I guess SINGularity dots are vowels?)'
     + br + "5 different tones: low... '↙', '↘', ' ', '↗', '↖' ...high"
