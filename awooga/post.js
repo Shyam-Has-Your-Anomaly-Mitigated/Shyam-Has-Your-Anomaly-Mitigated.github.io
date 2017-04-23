@@ -661,6 +661,7 @@ https://en.wikipedia.org/wiki/Hindu_cosmology#Reception
 If G-waves were produced by a pair of black holes:
 The two black holes of which our universe (AKA "Milky Way galaxy") revolves around; represent ब्रह्मा (creator), and शिव (destroyer).
 विष्णु is somewhere (everywhere) out there in the multiverse of so-called galaxies.
+https://en.wikipedia.org/wiki/Trimurti
 
 The wine industry sponsors scientific research that conveniently promotes the theory that wine/alcohol is healthy, and extends longevity.
 Grapes are healthy; fresh grapes are the healthiest grapes.
