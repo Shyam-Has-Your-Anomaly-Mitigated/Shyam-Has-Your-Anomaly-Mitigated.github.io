@@ -1,0 +1,1379 @@
+/* discussion board css shared across all themes */
+
+/* star rating code - use lists because its more semantic */
+/* all the stars are contained in one matrix to solve rollover problems with delay */
+/* the background position is just shifted to reveal the correct image. */
+/* the images are 16px by 16px and the background position will be shifted in negative 16px increments */
+/*  key:  B=Blank : O=Orange : G = Green * /
+/*..... The Matrix ....... */
+/* colours ....Background position */
+/* B B B B B - (0 0)*/
+/* G B B B B - (0 -16px)*/
+/* G G B B B - (0 -32px)*/
+/* G G G B B - (0 -48px)*/
+/* G G G G B - (0 -64px)*/
+/* G G G G G - (0 -80px)*/
+/* O B B B B - (0 -96px)*/
+/* O O B B B - (0 -112px)*/
+/* O O O B B - (0 -128px)*/
+/* O O O O B - (0 -144px)*/
+/* O O O O O - (0 -160px)*/
+
+/* the default rating is placed as a background image in the ul */
+/* use the background position according to the table above to display the required images*/
+.rating {
+ position: relative;
+ margin: 0;
+ padding: 0;
+ width: 80px;
+ height: 16px;
+ background: url(images/controls.png) no-repeat 0 -20px;
+ list-style: none;
+}
+
+/* add these classes to the ul to effect the change to the correct number of stars */
+.star0 {
+ background-position: 0 -20px;
+}
+
+.star1 {
+ background-position: 0 -36px;
+}
+
+.star2 {
+ background-position: 0 -52px;
+}
+
+.star3 {
+ background-position: 0 -68px;
+}
+
+.star4 {
+ background-position: 0 -84px;
+}
+
+.star5 {
+ background-position: 0 -100px;
+}
+
+ul.rating li {
+ cursor: pointer;
+ text-indent: -999em;
+ float: left; /* Required to make sure the li doesn't interfere with the 'reply' button for short messages on the stream */
+}
+
+ul.rating li a {
+ z-index: 200;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 16px;
+ height: 16px;
+ text-decoration: none;
+}
+
+ul.rating li.one a {
+ left: 0;
+}
+
+ul.rating li.two a {
+ left: 16px;
+}
+
+ul.rating li.three a {
+ left: 32px;
+}
+
+ul.rating li.four a {
+ left: 48px;
+}
+
+ul.rating li.five a {
+ left: 64px;
+}
+
+ul.rating li a:hover,
+ul.rating li a:focus {
+ z-index: 2;
+ width: 80px;
+ height: 16px;
+ overflow: hidden;
+ left: 0;
+ background: url(images/controls.png) no-repeat -90px -36px;
+}
+
+ul.rating li.one a:hover,
+ul.rating li.one a:focus {
+ background-position: -90px -36px;
+}
+
+ul.rating li.two a:hover,
+ul.rating li.two a:focus {
+ background-position: -90px -52px;
+}
+
+ul.rating li.three a:hover,
+ul.rating li.three a:focus {
+ background-position: -90px -68px;
+}
+
+ul.rating li.four a:hover,
+ul.rating li.four a:focus {
+ background-position: -90px -84px;
+}
+
+ul.rating li.five a:hover,
+ul.rating li.five a:focus {
+ background-position: -90px -100px;
+}
+
+.ratingsContainer {
+overflow: hidden;
+}
+/* end rating code */
+
+/* Receipt-Lite styles 
+(may be integrated  into Learn mainline 
+eventually. Designed to allow for receipts 
+that are not as "in-your-face as the 
+standard receipt that have darker 
+background colors)
+-----------------------------------------*/
+.good.receipt-lite {
+ background-color: #F7FFD8;
+ color: #333;
+ border: 1px solid #C7EC88;
+}
+
+.infoReceipt.receipt-lite {
+ background-color: #CFE5F1;
+ color: #333;
+ border: 1px solid #6E8AB0;
+}
+
+.good.receipt-lite a.close,.bad.receipt-lite a.close,.infoReceipt.receipt-lite a.close {
+ right: 6px;
+ top: 5px;
+ width: 16px;
+ height: 16px;
+}
+
+.post-first-container {
+ text-align: center;
+ padding: 30px;
+ margin: 0 0 30px;
+ border-bottom: 1px solid #ddd;
+}
+
+.post-first-button {margin-top:20px;}
+
+.post-first-button > a {
+	display:inline-block;
+	box-sizing:border-box;
+}
+
+.forum-post-first-existing-threads {
+ margin: 0 auto;
+ font: 19px/27px Georgia, serif;
+ text-align: center;
+ color: #777;
+ color: rgba(0, 0, 0, .55);
+ text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+}
+
+.forum-post-first-queued-threads {
+ text-align: center;
+ margin: 10px;
+ color: #666;
+}
+
+.post_first_message {
+ font: 600 23px "Helvetica Neue", sans-serif;
+ margin-bottom: 18px;
+ text-align: center;
+ color:#777;
+ color: rgba(0, 0, 0, .55);
+ text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+}
+
+.post_first_forum_title {
+	color: #666666;
+    font-size: 13px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.post_first_forum_description {
+ margin: 16px 0;
+}
+
+.msg-fringe {
+ background-color: yellow;
+ float: left;
+}
+
+.msg-nexus {
+ margin-left: 37px;
+}
+.has-avatar .msg-nexus {
+ margin-left: 120px;
+}
+
+.forum_role_manager {
+ display: inline-block;
+}
+
+.author_props {
+	display: inline-table;
+	width: 18px;
+	height: 18px;
+	position: relative;
+}
+
+.author_props .highlight-pop {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: transparent url(../images/icon_status-badge.png) center 0px no-repeat;
+	z-index: 2;
+	position: relative;
+	top: 4px;
+}
+
+.author_props .author_highlight {
+	display: inline-block;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	/* Firefox */
+	-moz-transition-property: opacity;
+	-moz-transition-duration: .3s;
+	-moz-transition-delay: .3s;
+	/* WebKit */
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-delay: .3s;
+	/* Opera */
+	-o-transition-property: opacity;
+	-o-transition-duration: .3s;
+	-o-transition-delay: .3s;
+	/* Standard */
+	transition-property: opacity;
+	transition-duration: .3s;
+	transition-delay: .3s;
+	
+	background: #fff !important;	
+  border: 0 none !important;
+  color: #666 !important;
+  padding: 3px 8px 5px 15px;
+	
+	border: 1px solid #999 !important;
+	position: absolute;
+	top: 0px;
+	left: 9px;
+	-webkit-border-radius: 99px 3px 3px 99px;
+	-moz-border-radius: 99px 3px 3px 99px;
+	border-radius: 99px 3px 3px 99px;
+}
+
+.author_props:hover .author_highlight,
+.author_props:focus .author_highlight {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.forum_role_manager .author_highlight > span,
+.forum_role_moderator .author_highlight > span {
+	display: inline;
+	margin-right: 10px;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #333;
+	font-weight: bold;
+}
+.forum_role_manager span:last-child,
+.forum_role_moderator span:last-child {
+	margin-right: 0;
+}
+
+.db_msg_age {
+ float: right;
+ position: relative;
+}
+
+.db_msg_metadata {
+ visibility: hidden;
+ position: absolute;
+ z-index: 99999;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ /* If you do this then the base page text is still partially visible - you see a few pixels of it depending on what it says - and it looks 'broken' border-width: 0 0 1px 1px; */
+ /* 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
+ /* 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
+ /* 	box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
+ 
+ border-width: 0 0 1px 1px;
+ background: white;
+ -moz-border-radius: 0 0 0 2px;
+ -webkit-border-radius: 0 0 0 2px;
+ border-radius: 0 0 0 2px;
+ line-height: 1.5;
+ top: 3px;
+ right: 3px;
+ min-width: 140px;
+ text-align: right;
+}
+
+.reply-lvl-0 .db_msg_metadata {
+ background: #e6e6e6;
+  top: 3px;
+ right: 3px;
+}
+
+.db_viewcount_metadata {
+ display: none;
+}
+
+.unreadmessage,h3.unreadmessage {
+ font-weight: bold;
+}
+
+.dbheading.unreadmessage {
+ font-size: 100%;
+}
+
+.unread-count {
+ background: #128FA8;
+ -moz-border-radius: 12px;
+ -webkit-border-radius: 12px;
+ border-radius: 12px;
+ padding: 2px 6px;
+ color: #fff;
+}
+
+/* "message frame" of thread detail page (message_frame.jsp) */
+.dbParentPost {
+ margin: -.6em 0 1.2em;
+ padding: .6em .6em 0;
+ font-size: 95%;
+ color: #444;
+}
+
+.dbParentPost h4 {
+ margin: 0 0 .6em
+}
+
+.dbParentPost h4 a {
+ display: block;
+ width: 100%;
+}
+
+.dbParentPost p {
+ margin: 0;
+ padding: 0 0 1.2em;
+ font-size: 100%;
+}
+
+.dbParentPostBody {
+ clear: both;
+ margin-bottom: .6em;
+ background: #fcfcfc;
+ padding: 0.6em;
+}
+
+.loadingElipse {
+ display: block;
+ padding: 4px 14px;
+ /*     font-weight: bold; */
+ text-align: center;
+ /*     border: 1px solid #ccc; */
+ /*     background: #FFF7DE; */
+ width: 260px;
+ margin: 12px auto;
+ text-transform: uppercase;
+ color: #888;
+}
+
+/* end "message frame" of thread detail page (message_frame.jsp) */
+.select,.read-status,.flag {
+ position: absolute;
+ left: 9px;
+}
+
+.message-wrapper-inner {
+  position: relative;
+}
+
+.read-status {
+ left: 10px;
+ top: 19px;
+}
+
+.collapsedMessage .flag {
+/*  display: none; */
+}
+
+.flag {
+ left: 10px;
+ top: 38px;
+ border: 0px;
+ padding: 0px;
+ border-radius: 0px;
+ margin: 0px;
+ background: none;
+}
+
+a.readmsg,a.unreadmsg,a.flaggedmsg,a.unflaggedmsg {
+ width: 16px;
+ height: 16px;
+ line-height: 16px;
+ margin: 0;
+ padding: 0;
+ background-repeat: no-repeat;
+ display: block;
+ background-image: url(../images/status-icons.png);
+}
+
+a.unflaggedmsg {
+ background-position: center 0px;
+}
+
+a.flaggedmsg {
+ background-position: center -16px;
+}
+
+a.readmsg {
+ background-position: center -32px;
+}
+
+a.unreadmsg {
+ background-position: center -48px;
+}
+
+.attachment {
+ width: 18px;
+ overflow: hidden;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.rumble_top {
+ 
+}
+
+.exp-col,.indent {
+ 
+}
+
+a.reply-count-link {
+ bottom: 3px;
+ position: absolute;
+ background: transparent;
+ display: block;
+ padding: 6px 12px 6px 20px;
+ right: 3px;
+ border-radius: 3px 0 0 0;
+ border: 1px solid #DDD;
+ border-width: 1px 0 0 1px;
+ cursor: pointer;
+}
+
+.collapsedMessage a.reply-count-link {
+	bottom: 2px;
+}
+
+a.reply-collapsed:before {
+ content: "\25BC"; /*down-pointing triangle*/
+ margin-right: 3px;
+ color: #999;
+ text-decoration: none
+}
+
+a.reply-expanded:before {
+ content: "\25B2"; /*up-pointing triangle*/
+ margin-right: 3px;
+ color: #999;
+ text-decoration: none
+}
+
+a.reply-count-link:hover {
+ text-decoration: underline;
+}
+
+.thread-controls-top .rumble_top {
+ float: left;
+}
+
+/* thread detail page */
+.dbThreadInfo {
+ color: #555;
+ float: right;
+ /*
+	position: relative;
+	top: 4px;
+*/
+}
+
+.dbThreadInfo>div {
+ display: inline-block;
+}
+
+#totalPostsCount,#unreadPostsCount,#moderatedPostsCount {
+ font-size: 130%;
+}
+
+#totalPostsCount,#unreadPostsCount a,#moderatedPostsCount a {
+ font-weight: bold;
+}
+
+.unread-posts,.need-moderation {
+ border: 1px solid rgb(205, 213, 224);
+ padding: 3px 9px;
+ border-radius: 2px;
+ background: #E2EBF6;
+ margin-left: 0px;
+}
+
+.unread-posts {
+ margin-left: 4px;
+}
+
+.need-moderation {
+ background-color: #FAFACC;
+ border: 1px solid #D8D89C;
+}
+
+.dbThreadInfo p {
+ padding: .6em;
+}
+
+.dbThreadBody {
+	padding-bottom: .6em;
+}
+
+
+.dbThreadInfo p.detailButtons {
+ float: right;
+}
+
+.dbThreadInfo dl {
+ float: left;
+ font-size: 95%;
+}
+
+.dbThreadInfo dt {
+ float: left;
+ clear: left;
+ margin: 0;
+ padding: 0.1em;
+ width: 8em;
+ font-weight: bold;
+ color: #999;
+}
+
+.dbThreadInfo dd {
+ margin: 0 0 0 .5em;
+ padding: 0.1em;
+ float: left;
+}
+
+.dbThreadTree {
+ border: 1px solid #ccc;
+ max-height: 200px;
+ min-height: 80px;
+ overflow: auto;
+}
+
+.dbThreadFooter .navButtons {
+ border-right: 1px solid #CCCCCC;
+ display: inline-block;
+ float: left;
+ padding: 12px 12px 12px 0;
+ width: 49%;
+}
+
+.dbThreadFooter .threadButtons {
+ float: right;
+ text-align: right;
+ display: inline-block;
+ padding: 1em 0;
+ width: 49%;
+}
+
+div.dbThreadDetailTreeRow:hover {
+ cursor: pointer;
+}
+
+div.dbThreadDetailTreeRowCell {
+ clear: both;
+ display: block;
+ width: 100%;
+}
+
+div.dbThreadDetailTreeRowCellItem {
+ white-space: nowrap;
+}
+
+#collectionListContainerDiv div.dbThreadBody {
+ clear: both;
+}
+
+.db-message .timestamp {
+ float: right;
+ font-size: 95%;
+ color: #666;
+}
+
+.timestamp-divider {
+	padding: 0 3px;
+	display: inline-block;
+}
+
+.dbParentPost p.dbAttachment {
+ padding: 0.6em .6em 0 0;
+}
+
+.db-message .author {
+ margin-bottom: 6px;
+ float: left;
+}
+
+.message-subject {
+ font-weight: bold;
+ font-size: 110%;
+ line-height: 1.5;
+}
+
+.profileCardAvatarThumb {
+ font-weight: 600;
+ font-weight: bold;
+ font-size: 110%;
+ position: relative;
+}
+
+.stream-detail-contents .profileCardAvatarThumb {
+ position: static;
+}
+
+/* Note: Pulling the whole a back, not just the img, so the cloud profile card renders on top of the img itself. */
+.db-message .profileCardAvatarThumb a,
+.db-message .profileCardAvatarThumb > img {
+ position: absolute;
+ left: -84px;
+}
+
+.db-message .profileCardAvatarThumb img {
+ width: 64px;
+ height: 64px;
+ position: absolute;
+}
+
+.collapsedMessage .db-message .profileCardAvatarThumb img {
+/*
+ width: 36px;
+ height: 36px;
+ left: -70px;
+*/
+}
+
+.collapsedMessage .db-message .profileCardAvatarThumb:after {
+	content: "";
+	width: 68px;
+	height: 20px;
+	position: absolute;
+	top: 56px;
+	left: -84px;
+	box-shadow: 0 -9px 19px #FFFFFF, 
+				0 -6px 12px #FFFFFF, 
+				0 -3px 4px #FFFFFF;
+	background: #fff;
+}
+
+.collapsedMessage.reply-lvl-0 .db-message .profileCardAvatarThumb:after {
+	
+	box-shadow: 0 -9px 19px #DEDEDE, 
+				0 -6px 12px #DEDEDE, 
+				0 -3px 4px #DEDEDE;
+	background: #dedede;
+}
+
+
+
+.reply-lvl-2 .profileCardAvatarThumb img,.reply-lvl-3 .profileCardAvatarThumb img,.reply-lvl-4 .profileCardAvatarThumb img,.reply-lvl-5 .profileCardAvatarThumb img,.reply-lvl-6 .profileCardAvatarThumb img,.reply-lvl-7 .profileCardAvatarThumb img,.reply-lvl-8 .profileCardAvatarThumb img,.reply-lvl-9 .profileCardAvatarThumb img,.reply-lvl-10 .profileCardAvatarThumb img,.reply-lvl-11 .profileCardAvatarThumb img,.reply-lvl-12 .profileCardAvatarThumb img
+ { /*
+width: 48px;
+height: 48px;
+left: -68px;
+*/
+ position: absolute;
+}
+
+
+.db-message-wrapper {
+ border: 1px solid #ccc;
+ padding: 16px 18px 16px 0;
+ position: relative;
+ border-width: 1px 0 1px 1px;
+ margin-top: -1px;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+.db-message-wrapper.collapsedMessage {
+	padding-bottom: 10px;
+	height: 82px;
+	overflow: hidden;
+}
+
+.db-message-wrapper.collapsedMessage.collapsedMsgWithInlinePost {
+  overflow: auto;
+}
+
+.collapsedMessage.reply-lvl-0 .message-wrapper-inner {
+	height: 82px;
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.collapsedMessage.reply-lvl-0 {
+	height: 96px;
+}
+
+.emailAuthor {
+ margin-left: 9px;
+}
+
+.db-message-wrapper .dbThreadFooter .threadButtons,
+.db-message-wrapper .dbThreadFooter .navButtons {
+ float: none;
+ text-align: left;
+ padding: 0;
+ opacity: 0;
+ filter: alpha(opacity=0);
+ -webkit-transition: opacity .5s ease-in-out;
+ transition: opacity .5s ease-in-out;
+}
+
+.db-message-wrapper.reply-lvl-0 .dbThreadFooter .threadButtons,
+.db-message-wrapper:hover .dbThreadFooter .threadButtons,
+.db-message-wrapper:hover .dbThreadFooter .navButtons {
+ opacity: 1!important;
+ filter: alpha(opacity=100)!important;
+}
+
+.db-message-wrapper.reply-lvl-0 .dbThreadFooter .threadButtons .browse {
+ opacity: 0;
+ filter: alpha(opacity=0);
+ -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.db-message-wrapper.reply-lvl-0:hover .dbThreadFooter .threadButtons .browse {
+ opacity: 1!important;
+ filter: alpha(opacity=100)!important;
+}
+
+
+
+.db-message-wrapper .dbThread {
+ position: relative;
+ border: 0;
+ -moz-border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-box-shadow: none;
+ -webkit-box-shadow: none;
+ background: transparent;
+ margin: 0;
+}
+
+.db-message-wrapper .dbThreadTree {
+ border: 0;
+ max-height: 1000px;
+ min-height: 1px;
+ overflow: visible;
+}
+
+.db-message-wrapper .dbThreadMessage .dbThread {
+ margin: 0;
+}
+
+.collapsedMessage .dbThreadMessage {
+ display: none;
+}
+
+.db-message-wrapper .dbThreadFooter {
+ padding: 0;
+}
+
+.db-message {
+	padding-bottom: 3px;
+}
+
+/*Expand/collapse control under post subject line*/
+.db-collapse-control {
+	width: 60%;
+	margin: 0 auto;
+	height: 12px;
+	text-align: center;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	background: transparent url("images/jagged.png") repeat-x center center;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.db-collapse-control a {
+	background: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding: 0 9px;
+	font-weight: bold;
+	color: #666;
+	letter-spacing: 1px;
+}
+
+.reply-lvl-0 .db-collapse-control a {
+	background: #e8e8e8;
+}
+
+.db-message:hover .db-collapse-control {
+	opacity: 1!important;
+	filter: alpha(opacity=100)!important;
+}
+
+/**/
+
+
+#threadArea {
+ padding: 18px 30px;
+ margin: 0 -30px 0px;
+}
+
+#message {
+ border-top: 1px solid #ccc;
+ margin: 0 -30px -20px;
+}
+
+#message_upper {
+ border-bottom: 1px solid #ccc;
+ padding-bottom: 1px;
+ margin: -20px -30px 0;
+}
+
+#message:empty,#message_upper:empty {
+ border: 0;
+ padding: 0;
+}
+
+#threadArea.db-conversation {
+ padding: 0px 30px;
+}
+
+#threadArea div.checked {
+ -moz-border-radius: 0 0 3px 3px;
+ -webkit-border-radius: 0 0 3px 3px;
+ border: 0;
+ /*
+  border: 1px solid #ccc;
+  border-top: 0;
+  */
+}
+
+#threadArea div.checked_top {
+ -moz-border-radius: 3px 3px 0 0;
+ -webkit-border-radius: 3px 3px 0 0;
+ border-bottom: 0;
+}
+
+.db-conversation-block {
+ border: 1px solid #CCC;
+ padding: 9px;
+ margin-bottom: 18px;
+ box-shadow: 0 3px 6px #CCC;
+}
+
+.db-reply-block,
+.reply-lvl-0 .messageTemplate {
+ border: 1px solid #ccc;
+ margin: 0 0 12px 0;
+ -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+ -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+ box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+ background: #fff;
+ -moz-border-radius: 2px;
+ -webkit-border-radius: 2px;
+ border-radius: 2px;
+}
+
+/*MOdifications to Data Collection element on thread page*/
+.thread-detail-page div[id*="stepcontent"],.messageTemplate div[id*="stepcontent"] {
+ padding: 12px 24px;
+ border-top: 0;
+}
+
+.thread-detail-page  div[id*="step"],.messageTemplate  div[id*="step"] {
+ padding: 0 18px;
+ border: 0
+}
+
+.thread-detail-page  div#dataCollectionContainer .taskbuttonhelp+.taskbuttondiv,.messageTemplate  div#dataCollectionContainer .taskbuttonhelp+.taskbuttondiv
+ {
+ padding: 0 18px 18px;
+}
+
+#inlineMessageForm #dataCollectionContainer {
+ /* This is specifically required when you are replying to a message with replies - without this the top buttons are pushed to the left. */
+ clear: both;
+}
+
+#inlineMessageForm #dataCollectionContainer .reqfield,#inlineMessageForm #dataCollectionContainer .taskbuttondiv {
+ padding: 18px 24px 18px 58px;
+}
+
+.thread-detail-page h3.steptitle,.thread-detail-page .submittitle,.thread-detail-page .taskbuttonhelp,.messageTemplate h3.steptitle,.messageTemplate .submittitle,.messageTemplate .taskbuttonhelp
+ {
+ height: 0;
+ overflow: hidden;
+ line-height: 0;
+ padding: 0;
+ border: 0;
+}
+
+.thread-detail-page  div[id="stepcontent1"] input[type="text"],.messageTemplate  div[id="stepcontent1"] input[type="text"]
+ {
+	 font-size: 110%;
+	 font-weight: bold;
+	 vertical-align: bottom;
+	 width: 530px;
+	 padding: 3px 6px;
+	 margin-top: 3px;
+}
+/*End data collection mods*/
+
+/*Page title/action bar modifications on thread page*/
+.thread-detail-page .containerOptions { /* 	margin-top: 11px; */
+ 
+}
+
+.db-reply-block .db-message-wrapper:first-child {
+ border-left: 0;
+}
+
+.db-reply-block .db-message-wrapper:last-child {
+ margin-bottom: 18px;
+}
+
+.db-reply-block .db-message-wrapper:only-child,
+.db-reply-block .db-message-wrapper:first-child {
+ margin-bottom: 0;
+}
+
+.thread-detail-page .contentBox {
+ background: #f0f0f0;
+ position: relative;
+}
+
+.reply-lvl-0 {
+ margin-left: 0;
+}
+
+.reply-lvl-0 .select {
+ top: 16px
+}
+
+.reply-lvl-0 .read-status,
+.reply-lvl-0 .flag {
+ display: none;
+}
+
+/*.reply-lvl-0 is currently the top message in a thread. The class name will change to .db-head-message. */
+.reply-lvl-0 {
+ border: 0;
+ padding: 0!important;
+}
+
+.reply-lvl-0 .message-wrapper-inner,
+.db-head-message .message-wrapper-inner {
+ border: 1px solid #CCC;
+ border-radius: 2px;
+ margin: 14px 0 24px;
+ padding: 16px 18px 16px 0;
+}
+
+.reply-lvl-1 {
+ margin-left: 0;
+}
+
+.reply-lvl-2 {
+ margin-left: 18px;
+}
+
+.reply-lvl-3 {
+ margin-left: 36px;
+}
+
+.reply-lvl-4 {
+ margin-left: 54px;
+}
+
+.reply-lvl-5 {
+ margin-left: 72px;
+}
+
+.reply-lvl-6 {
+ margin-left: 90px;
+}
+
+.reply-lvl-7 {
+ margin-left: 108px;
+}
+
+.reply-lvl-8 {
+ margin-left: 126px;
+}
+
+.reply-lvl-9 {
+ margin-left: 144px;
+}
+
+.reply-lvl-10 {
+ margin-left: 162px;
+}
+
+.reply-lvl-11 {
+ margin-left: 180px;
+}
+
+.selectedmessage {
+ background: #E2EBF6;
+}
+
+ul.nestedInlineReceipt {
+ list-style: disc inside none;
+}
+
+.receipt a.close:hover:before,a.closeCopyright:hover:before {
+ color: #333
+}
+
+.container .receipt {
+ padding-right: 24px;
+}
+
+.db-confirm-msg {
+ line-height: 125%;
+ margin: 20px;
+}
+
+.db-confirm-btns {
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.db-message-fringe-show {
+ display: inline;
+}
+
+.db-message-fringe-hide {
+ display: none;
+}
+
+.db-message-status-indicator {
+ background-color: #CAECCA;
+ border: 1px solid #ABDAAB;
+ text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+ display: inline-block;
+ padding: 3px 5px;
+ font-size: 9px;
+ text-transform: uppercase;
+ border-radius: 1px;
+ color: #3D6B3D;
+ font-weight: bold;
+ box-shadow: 1px 1px 1px rgba(255, 255, 255, .5) inset;
+}
+
+.db-message-status-indicator:empty {
+ display: none;
+}
+
+#updatedSubject {
+ font-weight: bold;
+ font-size: 110%;
+ margin-bottom: 3px;
+ display: inline-block;
+}
+
+
+/*Unavailable options styling on Create page*/
+input[type="radio"]:disabled+label,input[type="checkbox"]:disabled+label {
+ color: #777;
+ text-decoration: line-through;
+}
+
+input[type="radio"]:disabled:checked+label,input[type="checkbox"]:disabled:checked+label {
+ text-decoration: none;
+}
+
+.db-reply-block .receipt { /* including all receipt types: .receipt.good, .receipt.warningReceipt, .receipt.bad */
+ display: block; /* default in core is inline-block, which required we specify a width here. removed width to correct odd overflow issues.  */
+ z-index: 1000;
+ margin: 0 -18px 0 0;
+ border-radius: 0;
+ text-align: center;
+ top: -16px
+}
+
+.db-reply-block .receipt a.close {
+ top: 5px;
+ right: 7px;
+}
+
+div.lb-wrapper div.lb-content {
+ padding: 10px;
+}
+
+/* TODO: This should probably be in shared.css - or if_mybb.css (copied from 2012 theme)*/
+.streamReply div#dataCollectionContainer .taskbuttondiv:first-child,
+.streamReply div#dataCollectionContainer .reqfield+.taskbuttondiv,
+.streamReply div#containerdiv .mapCanvasForm .taskbuttondiv:first-child {
+ padding: 18px 24px 18px 58px;
+ margin: 9px 0 0 0;
+}
+
+/* TODO: This should probably be in shared.css - or if_mybb.css (copied from 2012 theme) */
+.streamReply .taskbuttondiv,.streamReply .taskButtonsContent,.okbutton {
+ padding: 12px 24px 24px 58px;
+ margin: 0;
+ text-align: right;
+}
+
+/* TODO: This should probably be in shared.css - or if_mybb.css (copied from 2012 theme) */
+.streamReply .reqfield {
+ float: left;
+ color: #777;
+ padding: 24px 0 0 40px;
+ font: italic 105% Georgia, serif;
+ position: relative;
+ display: block;
+ line-height: 2;
+}
+
+.streamReply .stepcontent ol li
+{
+		word-wrap:break-word;
+}
+
+/* TODO: This should probably be in shared.css - or if_mybb.css (copied from 2012 theme) */
+.streamReply .stepcontent ol li div.label {
+ font-weight: normal;
+}
+
+/* TODO: This should probably be in shared.css - or if_mybb.css (copied from 2012 theme) */
+.streamReply div.label,
+.streamReply div.gb_gridCell_inner h3.label {
+ float: left;
+ width: 20%;
+ min-width: 6em;
+ max-width: 15em;
+ margin: 0 0 3px;
+ position: relative;
+ word-wrap: break-word;
+}
+
+/* Not setting a title on the reply lightbox in stream - just hide the header bar. */
+.streamReply div.lb-wrapper div.lb-header {
+ margin: 0;
+ height: 0;
+ padding: 0;
+}
+
+.collapsedMessage .emailAuthor {
+ display:none;
+}
+
+/*Collection page*/
+
+#collectionContainer .threadButtons {
+	text-align: left;	
+	padding-top: 0;
+}
+
+#collectionContainer .dbThreadInfo {
+	float: none;
+}
+
+#collectionContainer .dbThreadInfo dl {
+	width: 50%;
+}
+
+
+#collectionContainer .dbThread .dbThreadInfo {
+	padding: 12px
+}
+
+/*Gradebook Classes*/
+.subActionBar:hover { z-index: 1000 }
+
+.subActionBar div.block,
+.subActionBar div.button {
+    float: left;
+    margin: 0;
+    padding: 2px 9px 4px;
+    border-left: 1px dotted #999;
+}
+
+.subActionBar span.block,
+.subActionBar span.button { float: none }
+
+.subActionBar li.sub { position: relative }
+
+.subActionBar fieldset legend + div.block { border-left: 0!important }
+
+.subActionBar select {
+    max-width: 180px;
+    vertical-align: middle;
+}
+
+.subActionBar div.button { padding: 6px 12px }
+
+.subActionBar div.last { border-right: none }
+
+.subActionBar fieldset {
+    padding: 0;
+    margin: 0;
+}
+
+.subActionBar optgroup {
+    font-style: normal;
+    font-weight: normal;
+    color: #777;
+    border-top: 1px solid #ddd;
+    margin-top: 6px;
+}
+
+.subActionBar optgroup option { color: #000 }
+
+.subActionBar ul li.sortableSelector a { padding-left: 18px }
+
+.selectList {
+    list-style: none;
+    margin: 0 6px 0 0;
+    padding: 0;
+    float: left;
+    z-index: 100;
+}
+
+.selectList li {
+    float: left;
+    margin: 0 4px 0 0;
+    z-index: 101;
+}
+
+.selectList .sub a {
+    display: block;
+    text-decoration: none;
+}
+
+.selectList .sub:hover ul {
+    left: 0;
+    top: 20px!important;
+}
+
+.selectList .sub ul li {
+    float: none;
+    position: static!important;
+    margin: 0;
+    padding: 0;
+}
+
+.selectList .sub ul li h4 {
+    color: #888;
+    margin: 0;
+    padding: 6px 0 0 3px;
+    font-weight: bold;
+    font-size: 90%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.selectList .sub ul li h4 { width: 152px }
+
+.selectList .sub ul li a,
+.selectList .sub ul li a:hover,
+.selectList .sub ul li a:focus {
+    background-image: none;
+    padding-left: 18px!important;
+}
+
+.selectList .sub a #currentView,
+.selectList .sub a #currentSortBy,
+.selectList .sub a #currentColSortDir { background-image: none }
+
+ul.selectList li.sub ul li.current a,
+ul.selectList li.sub ul li.current a:hover,
+.nav .sub .current a,
+.nav .sub .current a:hover,
+.nav .sub .current.favorite a,
+.nav .sub .current.favorite a:hover {
+    background-color: #f9f9f9;
+    background-image: url(/images/ci/icons/current_li.png)!important;
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+/*Gradebook classes*/
+
+/* Discussion Boards in Inline Grading styles */
+.inlineGrader .previewer {
+	min-width: 635px;
+}
+
+/* Reduce vertical space - discussionboard */
+.inlineGrader #inlineMessageForm #dataCollectionContainer .reqfield, 
+.inlineGrader #inlineMessageForm #dataCollectionContainer .taskbuttondiv {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding: 0px 24px 0px 35px;
+}
+.inlineGrader #inlineMessageForm .taskbuttondiv_wrapper {
+  height: auto;
+}
+.inlineGrader #inlineMessageForm div#step1 {
+  margin-top: 0px;
+}
+
+#top_list_action_bar {
+ float: left;
+}
+
+.navigationBar {
+ text-align: right;
+ margin-bottom: 6px;
+ padding-top: 12px;
+}
+
+.navigationBar div {
+ display: inline-block;
+}
+
+.navigationBar div.text-area {
+ vertical-align: middle;
+ margin: 0;
+}
+
+.navigationBar div > button {
+ border: 1px solid #ccc;
+ display: inline-block;
+ box-shadow: 1px 1px 0 rgba(255,255,255,0.3) inset;
+ background: -webkit-linear-gradient(#f9f9f9, #dedede);
+ background: linear-gradient(#f9f9f9, #dedede);
+ border-radius: 2px;
+ color: #444;
+ font-size: 95%;
+ text-shadow: 0 1px 0 #eee;
+ margin: 0;
+ padding: 0;
+}

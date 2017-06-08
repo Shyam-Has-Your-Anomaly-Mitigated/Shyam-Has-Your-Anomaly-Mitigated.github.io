@@ -1,0 +1,628 @@
+/* @group FONTS
+----------------------------------------------- */
+
+/*UTILICONS*/
+@font-face {
+ font-family: 'Utilicons-discussions';
+ src: url('fonts/utilicons/utilicons-web-webfont.eot');
+ src: local('☺'), url('fonts/utilicons/utilicons-web-webfont.woff') format('woff'),
+  url('fonts/utilicons/utilicons-web-webfont.ttf') format('truetype'),
+  url('fonts/utilicons/utilicons-web-webfont.svg#webfontphKv1xv9') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+/* @end FONTS */
+
+/* star rating code - use lists because its more semantic */
+/* all the stars are contained in one matrix to solve rollover problems with delay */
+/* the background position is just shifted to reveal the correct image. */
+/* the images are 16px by 16px and the background position will be shifted in negative 16px increments */
+/*  key:  B=Blank : O=Orange : G = Green * /
+/*..... The Matrix ....... */
+/* colours ....Background position */
+/* B B B B B - (0 0)*/
+/* G B B B B - (0 -16px)*/
+/* G G B B B - (0 -32px)*/
+/* G G G B B - (0 -48px)*/
+/* G G G G B - (0 -64px)*/
+/* G G G G G - (0 -80px)*/
+/* O B B B B - (0 -96px)*/
+/* O O B B B - (0 -112px)*/
+/* O O O B B - (0 -128px)*/
+/* O O O O B - (0 -144px)*/
+/* O O O O O - (0 -160px)*/
+
+/* the default rating is placed as a background image in the ul */
+/* use the background position according to the table above to display the required images*/
+.rating {
+ position: relative;
+ margin: 0;
+ padding: 0;
+ width: 80px;
+ height: 16px;
+ background: url(images/controls.png) no-repeat 0 -20px;
+ list-style: none;
+}
+
+/* add these classes to the ul to effect the change to the correct number of stars */
+.star0 {
+ background-position: 0 -20px;
+}
+
+.star1 {
+ background-position: 0 -36px;
+}
+
+.star2 {
+ background-position: 0 -52px;
+}
+
+.star3 {
+ background-position: 0 -68px;
+}
+
+.star4 {
+ background-position: 0 -84px;
+}
+
+.star5 {
+ background-position: 0 -100px;
+}
+
+ul.rating li {
+ cursor: pointer;
+ text-indent: -999em;
+}
+
+ul.rating li a {
+ z-index: 200;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 16px;
+ height: 16px;
+ text-decoration: none;
+}
+
+ul.rating li.one a {
+ left: 0;
+}
+
+ul.rating li.two a {
+ left: 16px;
+}
+
+ul.rating li.three a {
+ left: 32px;
+}
+
+ul.rating li.four a {
+ left: 48px;
+}
+
+ul.rating li.five a {
+ left: 64px;
+}
+
+ul.rating li a:hover,
+ul.rating li a:focus {
+ z-index: 2;
+ width: 80px;
+ height: 16px;
+ overflow: hidden;
+ left: 0;
+ background: url(images/controls.png) no-repeat -90px -36px;
+}
+
+ul.rating li.one a:hover,
+ul.rating li.one a:focus {
+ background-position: -90px -36px;
+}
+
+ul.rating li.two a:hover,
+ul.rating li.two a:focus {
+ background-position: -90px -52px;
+}
+
+ul.rating li.three a:hover,
+ul.rating li.three a:focus {
+ background-position: -90px -68px;
+}
+
+ul.rating li.four a:hover,
+ul.rating li.four a:focus {
+ background-position: -90px -84px;
+}
+
+ul.rating li.five a:hover,
+ul.rating li.five a:focus {
+ background-position: -90px -100px;
+}
+/* end rating code */
+
+div.collectionViewReadMessageBorder {
+ border-left: 1px solid #ccc;
+ margin-left: 30px;
+}
+
+div.collectionViewUnreadMessageBorder {
+ border: 3px solid #999;
+ margin-left: 30px;
+}
+
+.gradefield {
+ overflow: visible;
+ padding: 4px 12px;
+ margin: 9px 0 9px 0;
+ color: #000;
+ font-size: 120%;
+ vertical-align: middle;
+ text-align: center;
+}
+
+.gradefield input {
+ padding: 1px 3px 0 3px;
+ margin: 0px;
+ border: 2px solid #666;
+ font-weight: bold;
+ font-size: 110%;
+ vertical-align: middle;
+ font-family: arial, sans-serif;
+ background: #ffffff;
+ line-height: 100%;
+}
+
+.gradefield input.inputtypebutton {
+ display: inline;
+ overflow: visible;
+ padding: 2px 6px 1px 6px;
+ padding: 2px 8px 1px 8px;
+ font-size: 80%;
+ font-weight: normal;
+ width: auto;
+ height: auto;
+ border: 1px solid #ccc;
+ background: #ededed;
+}
+
+.gradefield a {
+ font-weight: bold;
+ font-size: 120%;
+}
+
+.gradefield span {
+ font-size: 80%;
+ padding: 0 9px;
+ color: #555;
+}
+
+.overridegrade {
+ margin: 3px 0 3px 9px;
+ font-size: 80%;
+ padding: 0px 12px 0px 12px;
+ display: inline;
+ border-left: 1px solid #ccc;
+ vertical-align: middle;
+}
+
+.overridegrade input.inputtypebutton {
+ font-size: 70%;
+ font-weight: normal;
+ vertical-align: middle;
+ margin-top: -3px;
+}
+
+div.parentmessage {
+ clear: both;
+ border-right: #ccc 1px solid;
+ padding-right: 6px;
+ border-top: #ccc 1px solid;
+ padding-left: 6px;
+ font-size: 90%;
+ background: #ededed;
+ padding-bottom: 9px;
+ margin: 6px;
+ border-left: #ccc 1px solid;
+ padding-top: 3px;
+ border-bottom: #ccc 1px solid
+}
+
+.availability {
+ padding-right: 3px;
+ padding-left: 3px;
+ font-size: 85%;
+ padding-bottom: 1px;
+ margin: 6px 0px;
+ width: auto;
+ padding-top: 1px;
+ font-style: italic
+}
+
+td.tag_controls {
+ background: #cad7e7;
+ border-bottom: 1px solid #ccc;
+ padding: 3px 3px 3px 6px;
+}
+
+td.msg_controls {
+ background: #cad7e7;
+ border-bottom: 1px solid #ccc;
+ padding: 3px 3px 3px 0;
+}
+
+td.checkbox_cell {
+ padding: 6px 6px 0 6px;
+ vertical-align: top;
+ border-right: 1px solid #cccccc
+}
+
+td.prevnextpostarea {
+ white-space: nowrap;
+ text-align: center;
+ padding: 2px 5px 3px 5px;
+ background: #fff;
+ border: 1px solid #ccc;
+}
+
+h3.dbheading { /* inserted to counteract margins in discussion board. */
+ margin-top: 0;
+ margin-bottom: 0;
+ font-weight: normal;
+ display: inline;
+}
+
+/* ------------- Collection and Thread Detail pages -----------------------------*/
+.dbThread {
+ position: relative;
+ border: 1px solid #aaa;
+ -moz-border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-box-shadow: 0 3px 6px #ccc;
+ -webkit-box-shadow: 0 3px 6px #ccc;
+ background: #eee;
+ margin: 0 0 12px;
+}
+
+.dbThreadMessage .dbThread {
+ margin: 24px 30px;
+}
+
+.dbThreadCheckbox {
+ position: absolute
+}
+
+.dbThreadCheckbox input {
+ margin: 10px
+}
+
+.dbThread .dbThreadInfo { /*     padding: 1em 2em; */
+ color: #555;
+}
+
+.dbThreadInfo dl {
+ float: left;
+ margin: 0;
+ /*     width: 50%; */
+ /*     font-size: 95%; */
+ /*     min-width: 23em; */
+}
+
+.dbThreadInfo dt {
+ float: left;
+ clear: left;
+ margin: 0;
+ padding: 0.1em;
+ width: 8em;
+ font-weight: bold;
+ color: #999;
+}
+
+.dbThreadInfo dd {
+ margin: 0 0 0 .5em;
+ padding: 0.1em;
+ float: left;
+}
+
+div.dbThreadFooter div.navButtons,div.dbThreadHeader div.navButtons {
+ width: 100%;
+}
+
+div.dbThreadFooter div.threadButtons,div.dbThreadHeader div.threadButtons {
+ width: 100%;
+}
+
+.dbThreadBody { /*     padding: 2em; */
+ /*     background: #fff; */
+ clear: both;
+ outline: 0;
+}
+
+.dbThreadBody p {
+ font: 120%/1.3 Georgia, serif;
+}
+
+p.dbAttachment,.dbParentPost p.dbAttachment {
+ margin: 0 0 12px;
+ font: 100% 'Lucida Grande', sans-serif;
+}
+
+div.spacerDiv {
+ clear: both
+}
+
+/*Experiments*/
+.pageTitle {
+ background: #EEE;
+ border-bottom: 1px solid #DDD;
+}
+
+/*B2 DB Overrides*/
+
+/*.reply-lvl-0 is currently the top message in a thread. The class name will change to .db-head-message. */
+.reply-lvl-0,.db-head-message {
+ margin: 14px 0 24px;
+}
+
+div.dbParentPost {
+ -moz-border-radius: 3px;
+ -webkit-border-radius: 3px;
+ border: 1px dashed #bbb;
+}
+
+ul.nestedInlineReceipt {
+ margin: 4px 8px;
+}
+
+.infoReceipt.receipt-lite {
+ padding: 6px 30px 6px 12px;
+}
+
+.infoReceipt a.close:before { color: rgba(0,0,0, 0.56); }
+
+.infoReceipt a.close:hover:before { color: rgba(0,0,0, 0.8) }
+
+.db-message-wrapper .dbThreadFooter {
+ 
+}
+
+.db-reply-block {
+ margin: 0 0 12px;
+}
+
+#inlineMessageForm #dataCollectionContainer {
+ margin: 0;
+ margin-top: -9px;
+}
+
+#collectionContainer .dbThreadBody {
+ padding: 10px;
+}
+
+#collectionContainer .dbThreadFooter {
+ margin: 0 10px;
+}
+
+#collectionListContainerDiv .rumble_top ul {
+ float: left;
+}
+
+/*THREAD DETAIL PAGE ACTION BAR*/
+/*==========================================*/
+.thread-detail-page .actionBar {
+ position: absolute;
+ top: -4px;
+ right: -4px;
+ background: -moz-linear-gradient(center top, #777 0%, #555 100%) !important;
+ background: -webkit-gradient(linear, center top, right bottom, color-stop ( 0%, #777), color-stop(100%, #555 ) )
+  !important;
+ background: -webkit-linear-gradient(top, #777 0%, #555 100%) !important;
+ background: linear-gradient(center top, #777 0%, #555 100%) !important;
+ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#777777, endColorstr=#555555" !important;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#777777, endColorstr=#555555 ) !important;
+ border-radius: 3px;
+ border: 1px solid #555;
+ box-shadow: 0 0 3px rgba(0, 0, 0, .3), 1px 1px 1px rgba(255, 255, 255, .2) inset;
+ opacity: 0;
+ -webkit-transition: opacity .5s ease-in-out;
+ transition: opacity .5s ease-in-out;
+ filter: alpha(opacity=0);
+}
+
+
+.thread-detail-page .contentPane:hover .actionBar,.thread-detail-page .contentBox:hover .actionBar {
+ 	opacity: 1!important;
+ 	filter: alpha(opacity=100)!important;
+}
+
+
+.thread-detail-page  .actionBar  .secondaryButton>a,.thread-detail-page  .actionBar  .mainButton>a {
+ color: #E9E9E9 !important;
+ padding: 6px 9px;
+ background: transparent !important;
+ -ms-filter: none !important;
+ filter: none !important;
+ border: 0 !important;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, .9);
+}
+
+.thread-detail-page  .actionBar  .secondaryButton>a:hover,.thread-detail-page .actionBar  .secondaryButton>a:focus,.thread-detail-page  .actionBar  .mainButton>a:hover,.thread-detail-page  .actionBar  .mainButton>a:focus
+ {
+ color: #FFF !important;
+ box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+  background: #555 !important;
+  background: rgba(0,0,0,.4) !important;
+}
+
+.thread-detail-page  .actionBar ul li.mainButton:last-child,.thread-detail-page  .actionBarMicro ul li.mainButton:last-child
+ {
+ box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+}
+
+.thread-detail-page  .actionBar ul li.secondaryButton:last-child {
+ box-shadow: none;
+ -webkit-box-shadow: none;
+}
+
+/*Thread detail page actionbar buttons*/
+.thread-detail-page #navsecondary .secondaryButton {
+ position: relative !important;
+ /* page.js will toggle these buttons back and forth between relative and static positioning when you select the action-drop-menu (i.e. 'messageactions').  When position is static, all the css icons overlap each other */
+ /* 	margin: 0 0 0 6px; */
+}
+
+.thread-detail-page #navsecondary .secondaryButton a,.thread-detail-page .actionBar .mainButton a {
+	 padding: 0 9px 0 34px !important;
+	 line-height: 32px;
+	 /* Note : Replace the above two lines with the below two lines once we add a mechanism in SP12 to add tool tips to the action buttons in action control bar. */
+	 /*padding: 0 0 0 38px!important;
+		width: 0px!important;*/
+	 overflow: hidden;
+	 display: block;
+	 height: 32px;
+	 border: 0;
+	 font-weight: normal;
+	 font-size: 100%;
+	 position: relative;
+}
+
+.thread-detail-page #navsecondary .secondaryButton a:before,
+.thread-detail-page .actionBar .mainButton a:before {
+ color: #CCC;
+ font: 20px 'Utilicons-discussions';
+ font-weight: normal;
+ position: absolute;
+ left: 10px;
+ top: 7px;
+}
+
+.thread-detail-page #navsecondary .secondaryButton a:hover:before,.thread-detail-page #navsecondary .secondaryButton a:focus:before,.thread-detail-page .actionBar .mainButton a:hover:before,.thread-detail-page .actionBar .mainButton a:focus:before
+ {
+ color: #FFF;
+}
+
+/*Refresh button*/
+.thread-detail-page #navsecondary a#refreshTreeActionButtonId:before {
+	content: "r";
+}
+
+/*Search button*/
+.thread-detail-page #navsecondary #searchActionButtonId a:before {
+ content: "F";
+}
+
+/*MOderate button*/
+.thread-detail-page a#moderateActionButtonId:before {
+ content: "q";
+}
+
+/*Subscription*/
+.thread-detail-page a#subUnSubActionButtonId:before {
+ content: "M";
+}
+
+/*Alignments button*/
+.thread-detail-page #navsecondary #alignmentsActionButtonId a:before {
+ content: "a";
+}
+
+/*Grading button*/
+.thread-detail-page a#gradeActionButtonId:before,
+.thread-detail-page a#studentGradeActionButtonId:before {
+ content: "g";
+}
+
+/* REPLY-LVL-0 STYLES */
+.reply-lvl-0 .message-wrapper-inner,.db-head-message .message-wrapper-inner {
+ box-shadow: 1px 1px 0 rgba(255, 255, 255, .9), 0 0 18px rgba(0, 0, 0, .1) inset;
+ background: #E6E6E6;
+ border: 1px solid #CCC;
+ border-radius: 2px;
+}
+
+.reply-lvl-0 .threadButtons .reply {
+ background: #0099B6;
+ background-image: -moz-linear-gradient(100% 100% 90deg, #076D88, #0099B6);
+ background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#0099B6), to(#076D88) );
+ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0099B6, endColorstr=#076D88";
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0099B6, endColorstr=#076D88 );
+ color: white;
+ font-size: 105%;
+ font-weight: bold;
+ border: none;
+ text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+ border: 1px solid #076D88;
+ -moz-border-radius: 2px;
+ -webkit-border-radius: 2px;
+ border-radius: 2px;
+ padding: 6px 16px 7px;
+ color: #fff;
+ box-shadow: none;
+ vertical-align: baseline;
+}
+
+.reply-lvl-0 .threadButtons .reply:hover {
+ background: #0188A3;
+ background-image: -moz-linear-gradient(100% 100% 90deg, #076D88, #076D88);
+ background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#076D88), to(#076D88) );
+ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#076D88, endColorsr= #076D88";
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#076D88, endColorstr=  #076D88 );
+ -moz-box-shadow: none;
+ -webkit-box-shadow: none;
+ color: #fff;
+ border: 1px solid #076D88;
+ box-shadow: none;
+}
+
+.reply-lvl-0 .threadButtons .browse,
+.threadButtons .browse,
+.threadButtons .reply {
+ -moz-border-radius: 2px;
+ -webkit-border-radius: 2px;
+ border-radius: 2px;
+ background: #CFCFCF;
+ background-image: -moz-linear-gradient(100% 100% 90deg, #CFCFCF, #EFEFEF);
+ background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#EFEFEF), to(#CFCFCF) );
+ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#cfcfcf";
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#cfcfcf );
+ border: 1px solid #BBB;
+ color: #333;
+ font-size: 105%;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+ padding: 6px 16px 7px;
+ vertical-align: baseline;
+ position: static\9; /* this is to override position:relative; in theme_specific.css */
+}
+
+.reply-lvl-0 .threadButtons .browse:hover,
+.threadButtons .browse:hover,
+.threadButtons .reply:hover {
+ background: #EFEFEF;
+ color: black;
+ background-image: -moz-linear-gradient(100% 100% 90deg, #CFCFCF, #CFCFCF);
+ background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#CFCFCF), to(#CFCFCF) );
+ -moz-box-shadow: none;
+ -webkit-box-shadow: none;
+ border-color: #999;
+}
+
+.threadButtons .browse,
+.threadButtons .reply {
+ padding: 3px 9px;
+}
+
+.threadButtons .reply {
+ font-weight: bold;
+}
+
+.messageCollectionContainer {
+ float: left;
+ width: 75%;
+}
+
+.post-first-container {
+	margin: -20px -30px 30px;
+	background:#f9f9f9;
+}
