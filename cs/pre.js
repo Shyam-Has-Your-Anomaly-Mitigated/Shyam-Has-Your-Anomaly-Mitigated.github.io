@@ -154,6 +154,19 @@
     + br + tab + 'q∈{kw,ky}'
     + br + tab + 'x∈{ks,kz}'
     + br + 'where g=j?'
+    + br
+    + br + '"Shyamskrit" from SHYAM & Sanskrit (Saṃskṛtam)'
+    + br + '☑ character set'
+    + br + '☐ mapping: control codes, punctuation, numerical, auditory(African clicks, Asian tones, ETC), ETC'
+    + br + '☐ grammar/syntax/style'
+    + br + '☐ pronunciation/semantics/detonation'
+    + br + '☐ scientific naming convention (Latin/Greek/ETC)'
+    + br + '☐ mathematical notation; 1 and 2 = 1 + 2 ?'
+    + br + '☐ designed for Natural Language Processing'
+    + br + link('enyay (Tom Scott)', 'https://www.youtube.com/playlist?list=PL96C35uN7xGLDEnHuhD7CTZES3KXFnwm0')
+    + br + link('NativLang', 'https://www.youtube.com/user/NativLang')
+    + br + 'pronunciation alphabet within phonetic alphabet? (inception)'
+    + br + 'orthography: upper-case and lower-case is sleightly STUPID; need less rules (but remember taxi driver vs bus driver for neuroplastic developments), need lesser STUPID rules then for greater freedom'
 )
 
 /*
