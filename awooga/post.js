@@ -833,6 +833,19 @@ Accidents happen; accidental new diseases/problems.
 https://en.wikipedia.org/wiki/Wireless_electronic_devices_and_health
 https://en.wikipedia.org/wiki/Brain_tumor#Cause
 
+the birds and the bees
+the bird is female (that's why we call humanoid females "chicks")
+the bee is male (only their queens are female, and working-class men are the busy bees of our pre-feminist society)
+the bee has a...stinger
+the bee "stings" the bird with his...stinger
+~
+¿the bird somehow has a baby?..this is where the magic ℝeally happens!
+~
+the bird is a stalk
+the stalk is like santa
+the bird flies the baby home to mummy and daddy
+now go play outside, while spying with your little eye for the stalk carrying your new baby sibling (just ignore how morbidly obese mummy is...she's just sick, and that's why she throws up every morning; and it's also how we tell when it's time for the stalk to visit us, because mummies are allergic to stalks)
+
 */
 
 // http://shyam.id.au/tp
