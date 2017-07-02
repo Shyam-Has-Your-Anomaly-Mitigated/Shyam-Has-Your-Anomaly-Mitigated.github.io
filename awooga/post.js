@@ -840,6 +840,8 @@ the bee has a...stinger
 the bee "pricks" the bird with his...stinger
 ~
 ¿the bird somehow has a baby?..this is where the magic ℝeally happens!
+   the bird has an allergic reaction that your mother empathically experiences
+   it just occurred to me that females are just reusable eggs; eggception, an egg within an egg
 ~
 the bird is a stalk
 the stalk is like santa
@@ -851,6 +853,12 @@ we have to take mummy to the hospital so they can make her better again; quick, 
 ...
 sorry you missed the stalk; it flew in through the window as the doctor was fixing mummy
 say hello to your little friend (shtylf***!!!)
+
+science is fawlty
+dark matter is just an excuse to support nescience
+lets just do whatever we can to support archaically accepted theories
+even though it doesn't work, lets just patch it with a new concept (dark matter) to force it to work
+May the F be c̄ you
 
 */
 
