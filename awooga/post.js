@@ -859,6 +859,49 @@ dark matter is just an excuse to support nescience
 lets just do whatever we can to support archaically accepted theories
 even though it doesn't work, lets just patch it with a new concept (dark matter) to force it to work
 May the F be c̄ you
+...
+: quantum experiments; perhaps I'll get to try them myself one day (never going to happen)
+...
+double-slit experiment
+sounds like an illusion; I can make <object> disappear, unless you check my hands
+is this not evidence that proves magic is ¬ℂomplex!? (because you can't see ℝeal magic)
+...
+entanglement: particular spins
+I have notes/notions about this somewhere
+...
+: biological experiments; probably achievable now, but I'm not ready yet
+...
+botanical communication
+plants communicate with other plants via roots, so why can't we understand them?
+...
+animalistic communication
+same as plants, but animals can learn to communicate on our level; we are pathetic
+...
+human subject research
+I want to murder someone, and then attempt to revive them; I feel like there's not enough research being done here
+and the other "-thing"s (injuries, IPO, thermoplastic brains, and one more that is dancing on my neurotongue)
+...
+: temporal experiments
+...
+dimensions can be explored, but only as an observer; need to discover some"-thing" new
+...
+perpetual motion machine, that also disassembles/reassembles atomic structures faster than the needle & thread technique (gas -> solid)
+what else can it do?
+it has too many moving parts; so it's immutable, and sensitive to the planetary influences (earth quakes/tremors/orbits/ETC)
+can always go back to the purely perpetual motion machine, with fewer moving parts (simpler); but it's a primitive concept
+...
+electronic experiments
+...
+???
+what was the other machine?
+something finicky
+heavy on the mathematics
+I think it's just to make a computer from scratch, but first I have to make the electronic components from scratch
+like the size of deep thought, and about as useful; effortlessly
+...
+atomic experiments
+...
+science from scratch
 
 */
 
