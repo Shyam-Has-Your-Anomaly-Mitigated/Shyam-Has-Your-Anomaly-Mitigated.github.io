@@ -903,6 +903,22 @@ atomic experiments
 ...
 science from scratch
 
+somthing about madified scientists
+   Bill Nye, the science guy, was abducted by Monsanto and replaced by GMO Nye, the modified guy.
+something about skepticism
+   pyramid power is ℝeal
+      https://en.wikipedia.org/wiki/Leyden_jar
+something about atomic particles
+   floaters are atoms; trekkIbm
+      https://en.wikipedia.org/wiki/Floater
+      https://en.wikipedia.org/wiki/A_Boy_and_His_Atom
+      http://www.research.ibm.com/articles/madewithatoms.shtml
+something about spin
+   string theory
+      http://localhost/
+something about dimensions
+   if time is different for every "-thing" (relativity, altitude, velocity, dimensions)
+
 */
 
 // http://shyam.id.au/tp
