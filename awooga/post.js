@@ -913,6 +913,7 @@ something about atomic particles
       https://en.wikipedia.org/wiki/Floater
       https://en.wikipedia.org/wiki/A_Boy_and_His_Atom
       http://www.research.ibm.com/articles/madewithatoms.shtml
+   do robots see floaters?
 something about spin
    string theory
       http://localhost/
