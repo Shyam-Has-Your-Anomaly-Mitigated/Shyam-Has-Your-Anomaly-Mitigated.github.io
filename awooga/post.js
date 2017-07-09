@@ -665,7 +665,7 @@ https://en.wikipedia.org/wiki/Trimurti
 ...
 NASA just found विष्णु!!!
 https://www.nasa.gov/feature/goddard/2017/gravitational-wave-kicks-monster-black-hole-out-of-galactic-core
-
+A neutrino of our recursive ℝeality (reincarnation); and there are black/white/ETC "holes" (who came up with that?!? where do they go?!? what is on the other side?!? are they *-dimensional portals?!?)
 
 The wine industry sponsors scientific research that conveniently promotes the theory that wine/alcohol is healthy, and extends longevity.
 Grapes are healthy; fresh grapes are the healthiest grapes.
