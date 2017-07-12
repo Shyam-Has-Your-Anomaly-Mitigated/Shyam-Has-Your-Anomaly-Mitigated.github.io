@@ -923,7 +923,7 @@ something about spin
 		http://localhost/
 something about dimensions
 	if time is different for every "-thing" (relativity, altitude, velocity, dimensions)
-	biologists found temporal anomalies in comparable mammalian heart beats
+	biologists discovered temporal anomalies in comparable mammalian heart beats
 		https://www.youtube.com/watch?v=ZT59QUlrTFQ
 
 */
