@@ -906,21 +906,25 @@ atomic experiments
 science from scratch
 
 somthing about madified scientists
-   Bill Nye, the science guy, was abducted by Monsanto and replaced by GMO Nye, the modified guy.
+	Bill Nye, the science guy, was abducted by Monsanto and replaced by GMO Nye, the modified guy.
 something about skepticism
-   pyramid power is ℝeal
-      https://en.wikipedia.org/wiki/Leyden_jar
+	pyramid power is ℝeal
+		https://en.wikipedia.org/wiki/Leyden_jar
+something about Mexicans
+	aliens are ℝeal; micro-aliens
 something about atomic particles
-   floaters are atoms; trekkIbm
-      https://en.wikipedia.org/wiki/Floater
-      https://en.wikipedia.org/wiki/A_Boy_and_His_Atom
-      http://www.research.ibm.com/articles/madewithatoms.shtml
-   do robots see floaters?
+	floaters are atoms; trekkIbm
+		https://en.wikipedia.org/wiki/Floater
+		https://en.wikipedia.org/wiki/A_Boy_and_His_Atom
+		http://www.research.ibm.com/articles/madewithatoms.shtml
+	do robots see floaters?
 something about spin
-   string theory
-      http://localhost/
+	string theory
+		http://localhost/
 something about dimensions
-   if time is different for every "-thing" (relativity, altitude, velocity, dimensions)
+	if time is different for every "-thing" (relativity, altitude, velocity, dimensions)
+	biologists found temporal anomalies in comparable mammalian heart beats
+		https://www.youtube.com/watch?v=ZT59QUlrTFQ
 
 */
 
