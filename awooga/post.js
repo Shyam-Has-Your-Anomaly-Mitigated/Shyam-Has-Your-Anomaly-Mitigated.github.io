@@ -834,6 +834,14 @@ Accidents happen; accidental new diseases/problems.
 #wePAIIN
 https://en.wikipedia.org/wiki/Wireless_electronic_devices_and_health
 https://en.wikipedia.org/wiki/Brain_tumor#Cause
+...
+https://www.youtube.com/watch?v=9nCHK97kwR4
+making pigs more human is like making computers more sentient; at some point you have to query self-destructive exploitation
+why not just have a "slave" class of humans who serve as organ donors, and replace artificial intelligence in the workforce?
+https://www.youtube.com/watch?v=lrzXE5XttOE
+"us" versus "them"
+https://www.youtube.com/watch?v=6grLJyqIM8E
+"he who fights too long against dragons becomes a dragon himself"
 
 the birds and the bees
 the bird is female (that's why we call humanoid females "chicks")
