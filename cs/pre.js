@@ -170,7 +170,7 @@
     + br
     + br + 'it should be designed for textually poetic art, reminiscent of ASCII art'
     + br
-    + br + link('unicameral alphabet', 'https://en.wikipedia.org/wiki/Unicase')
+    + br + link('unicameral alphabet', 'https://en.wikipedia.org/wiki/Unicase') + ' = more usefule shift/capslock keys'
 )
 
 /*
