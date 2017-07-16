@@ -169,6 +169,8 @@
     + br + 'orthography: upper-case and lower-case is sleightly STUPID; need less rules (but remember taxi driver vs bus driver for neuroplastic developments), need lesser STUPID rules then for greater freedom (as in freedom fighting freethinkers)...just use contextual clues for intelligent Holmesian deduction and broaden your intellectual capacity while you\'re at it'
     + br
     + br + 'it should be designed for textually poetic art, reminiscent of ASCII art'
+    + br
+    + br + link('unicameral alphabet', 'https://en.wikipedia.org/wiki/Unicase')
 )
 
 /*
