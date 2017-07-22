@@ -79,6 +79,8 @@
     + br + 'this goes somewhere up there, but I am tired...it is past midnight!'
     + br + '2FA costs money, so the internauts will be taxed...wait, are not the internet explorers/browsers the internauts, and the hosts the netizens? (that makes more sense to me.)'
     + br + 'rego = ' + link('randomised testing via a monthy email captcha', 'http://thewebsiteisdown.com/')
+    + br
+    + br + 'the archaic URI can still be used; just throw scheme/user/password/port into the querystring...WTF is password in there for?!? ..!.. -_- ..!.. (but this is in my SEP field; DIY however you want, it is your website...standards just improve UI/UX, but you may discover a better standard.)'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
