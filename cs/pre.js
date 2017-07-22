@@ -71,6 +71,10 @@
     + br + 'if addresses are auctioned, with yearly taxes, perhaps the infrastructure could be improved?..it would be biased towards hosting locations, but would also impact local netizens which would in-turn fund the rest of the netizens.'
     + br + 'side effects should be avoided, and nothing should be stored; no big data mining, just equality'
     + br + 'privacy, net neutrality, artificial intelligence..."webcloud"?'
+    + br
+    + br + 'I will be the mahārājaḥ of the Internet, but it needs a new name..?'
+    + br + 'the gurus will be determined by ' + link('sampradāya', 'https://en.wikipedia.org/wiki/Jedi#Organization_of_the_Old_Jedi_Order')
+    + br + 'the name should have something to do with data/information, particles/electrons, waves/photons, string theory ($name ~~ /string/ && $logo ~~ /str/), text processing, rational/regular language/expression, freedom from Idiocracy (2006)'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
