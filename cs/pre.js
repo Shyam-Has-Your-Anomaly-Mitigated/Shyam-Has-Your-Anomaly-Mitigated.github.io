@@ -87,6 +87,8 @@
     + br + 'I also want an official single sign-on; on a network scale (websites can still host DIY SSO, official to that website; but I would not use it)'
     + br
     + br + 'I see no reason why email cannot simply be user@address, ommitting all else...unless user ~~ /^shyam\:/? LOL'
+    + br + '"mailto:" is starting to make sense, but could just be "mail:", or even "msg:"...can I ℝeally transmit from my browser? I think it just loads that annoying program...'
+    + br + 'so does just about everything else...'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
