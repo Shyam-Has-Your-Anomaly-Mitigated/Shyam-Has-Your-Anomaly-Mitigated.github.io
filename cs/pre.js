@@ -85,6 +85,8 @@
     + br + 'those bits about green/red; how do colour-blind see safe/dangerous??? colour-blind mode in web browsers can handle it; &gt;&gt;SEP_field.'
     + br
     + br + 'I also want an official single sign-on; on a network scale (websites can still host DIY SSO, official to that website; but I would not use it)'
+    + br
+    + br + 'I see no reason why email cannot simply be user@address, ommitting all else...unless user="shyam://"? LOL'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
