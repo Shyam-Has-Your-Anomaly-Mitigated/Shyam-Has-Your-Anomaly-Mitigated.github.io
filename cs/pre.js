@@ -43,7 +43,7 @@
     +      'Mathematical functions can also be used to describe data in a compressed format...'
     + br + 'f(x)|a&lt;x&lt;b'
     + br + br + 'Indexable.fun files and ' + link('filesystem format', 'https://en.wikipedia.org/wiki/List_of_Linux_distributions_that_run_from_RAM') + '.'
-    + heading('Functional Network')
+    + heading('Functional Network', 4)
     +      'shyam://address/parameterstring'
     + br
     + br + 'error_controlled(functionally_encrypted(functionally_compressed(transmissions))) by default; asymmetrical cryptography will be used to establish a shared secret in the form of a function, for functional security (functional compression provides the functions).'
