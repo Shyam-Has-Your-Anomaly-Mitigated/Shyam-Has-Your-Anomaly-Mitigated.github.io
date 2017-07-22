@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="700px"
+   height="550px"
+   viewBox="0 0 700 550"
+   enable-background="new 0 0 700 550"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="IP_spoofing_de.svg"><metadata
+   id="metadata115"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs113" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1280"
+   inkscape:window-height="776"
+   id="namedview111"
+   showgrid="false"
+   inkscape:zoom="0.85818182"
+   inkscape:cx="214.56651"
+   inkscape:cy="324.36879"
+   inkscape:window-x="0"
+   inkscape:window-y="24"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg2" />
+<g
+   id="internet_cloud_1_">
+	<linearGradient
+   id="internet_cloud_2_"
+   gradientUnits="userSpaceOnUse"
+   x1="264.0898"
+   y1="242.5918"
+   x2="474.1787"
+   y2="242.5918">
+		<stop
+   offset="0"
+   style="stop-color:#000000;stop-opacity:0.5"
+   id="stop6" />
+		<stop
+   offset="0.0928"
+   style="stop-color:#000000;stop-opacity:0.4536"
+   id="stop8" />
+		<stop
+   offset="1"
+   style="stop-color:#000000;stop-opacity:0"
+   id="stop10" />
+	</linearGradient>
+	<path
+   id="internet_cloud"
+   fill="url(#internet_cloud_2_)"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-miterlimit="10"
+   d="   M284.169,271.998c4.123-37.105-20.667-25.334-19.333-81.334s9.333-64,19.333-63.333s9.333,8.252,40,13.459s40.666-16.126,66-9.459   s15.334,18.374,15.334,25.333c0,27.333,16,47.333,39.333,50.667s28.666,7.334,29.333,28.667s-33.332,52.666-58.666,52   s-31.999,8-42,30.667c-10,22.667-24,34.001-42.667,38.667s-61.458-20.667-66.062-46.667S280.169,307.998,284.169,271.998z" />
+	<text
+   transform="matrix(1 0 0 1 313.9692 233.6641)"
+   font-family="'Arial'"
+   font-size="30"
+   id="text13">Internet</text>
+
+</g>
+<g
+   id="box_1">
+	<rect
+   id="light_box"
+   x="72.63"
+   y="141.79"
+   fill="#86B4E2"
+   width="113.87"
+   height="144.21" />
+	<rect
+   id="dark_box"
+   x="85.922"
+   y="181.349"
+   fill="#197FF9"
+   width="84.578"
+   height="86.651" />
+	<rect
+   id="white_box"
+   x="99.213"
+   y="225.729"
+   fill="#FFFFFF"
+   width="61.052"
+   height="33.212" />
+	<g
+   id="lines">
+		<path
+   id="line_1"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M110.298,246.334l3.292-9.874L110.298,246.334z" />
+		<path
+   id="line_2"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M114.298,246.334l3.292-9.874L114.298,246.334z" />
+		<path
+   id="line_3"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M118.298,246.334l3.292-9.874L118.298,246.334z" />
+		<path
+   id="line_4"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M122.298,246.334l3.292-9.874L122.298,246.334z" />
+		<path
+   id="line_5"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M126.298,246.334l3.292-9.874L126.298,246.334z" />
+		<path
+   id="line_6"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M130.298,246.334l3.292-9.874L130.298,246.334z" />
+		<path
+   id="line_7"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M134.298,246.334l3.292-9.874L134.298,246.334z" />
+		<path
+   id="line_8"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M138.298,246.334l3.292-9.874L138.298,246.334z" />
+		<path
+   id="line_9"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M142.298,246.334l3.292-9.874L142.298,246.334z" />
+		<path
+   id="line_10"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M146.298,246.334l3.292-9.874L146.298,246.334z" />
+	</g>
+	<text
+   transform="matrix(1 0 0 1 141.0068 173.9673)"
+   font-family="'Arial'"
+   font-size="30"
+   id="text30">IP</text>
+
+	<text
+   transform="matrix(1 0 0 1 103.0381 215.5571)"
+   font-family="'Arial'"
+   font-size="30"
+   id="text32">TCP</text>
+
+	<text
+   font-size="22"
+   id="text34"
+   style="font-size:22px;font-family:Arial"
+   x="58.526398"
+   y="331.04001">destination: 2.2.2.2</text>
+
+	<text
+   font-size="22"
+   id="text36"
+   style="font-size:22px;font-family:Arial"
+   x="10.873497"
+   y="310.82129">source (spoofed): 3.3.3.3</text>
+
+</g>
+<g
+   id="box_2">
+	<rect
+   id="light_box_1_"
+   x="531.631"
+   y="147.569"
+   fill="#86B4E2"
+   width="113.869"
+   height="144.21" />
+	<rect
+   id="dark_box_1_"
+   x="544.922"
+   y="187.128"
+   fill="#197FF9"
+   width="84.578"
+   height="86.651" />
+	<rect
+   id="white_box_1_"
+   x="558.213"
+   y="231.509"
+   fill="#FFFFFF"
+   width="61.053"
+   height="33.212" />
+	<g
+   id="lines_1_">
+		<path
+   id="line_1_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M569.299,252.113l3.291-9.874L569.299,252.113z" />
+		<path
+   id="line_2_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M573.299,252.113l3.291-9.874L573.299,252.113z" />
+		<path
+   id="line_3_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M577.299,252.113l3.291-9.874L577.299,252.113z" />
+		<path
+   id="line_4_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M581.299,252.113l3.291-9.874L581.299,252.113z" />
+		<path
+   id="line_5_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M585.299,252.113l3.291-9.874L585.299,252.113z" />
+		<path
+   id="line_6_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M589.299,252.113l3.291-9.874L589.299,252.113z" />
+		<path
+   id="line_7_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M593.299,252.113l3.291-9.874L593.299,252.113z" />
+		<path
+   id="line_8_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M597.299,252.113l3.291-9.874L597.299,252.113z" />
+		<path
+   id="line_9_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M601.299,252.113l3.291-9.874L601.299,252.113z" />
+		<path
+   id="line_10_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M605.299,252.113l3.291-9.874L605.299,252.113z" />
+	</g>
+	<text
+   transform="matrix(1 0 0 1 600.0068 179.7466)"
+   font-family="'Arial'"
+   font-size="30"
+   id="text53">IP</text>
+
+	<text
+   transform="matrix(1 0 0 1 562.0381 221.3364)"
+   font-family="'Arial'"
+   font-size="30"
+   id="text55">TCP</text>
+
+	<text
+   font-size="22"
+   id="text57"
+   style="font-size:22px;font-family:Arial"
+   x="487.63092"
+   y="137.9492">destination: 2.2.2.2</text>
+
+	<text
+   font-size="22"
+   id="text59"
+   style="font-size:22px;font-family:Arial"
+   x="489.63092"
+   y="115.9492">source: 3.3.3.3</text>
+
+</g>
+<g
+   id="box_3">
+	<rect
+   id="light_box_2_"
+   x="398.694"
+   y="345.413"
+   fill="#86B4E2"
+   width="101.806"
+   height="72.105" />
+	<rect
+   id="dark_box_2_"
+   x="406.386"
+   y="355.398"
+   fill="#197FF9"
+   width="84.487"
+   height="52.631" />
+	
+		<rect
+   id="white_box_2_"
+   x="419.437"
+   y="365.289"
+   fill="#FFFFFF"
+   stroke="#000000"
+   stroke-width="1.0385"
+   stroke-miterlimit="10"
+   width="60.378"
+   height="33.047" />
+	<g
+   id="lines_2_">
+		<path
+   id="line_1_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M469.986,388.148    l-3.488-11.272L469.986,388.148z" />
+		<path
+   id="line_2_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M465.746,388.148    l-3.488-11.272L465.746,388.148z" />
+		<path
+   id="line_3_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M461.506,388.148    l-3.489-11.272L461.506,388.148z" />
+		<path
+   id="line_4_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M457.266,388.148    l-3.489-11.272L457.266,388.148z" />
+		<path
+   id="line_5_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M453.025,388.148    l-3.489-11.272L453.025,388.148z" />
+		<path
+   id="line_6_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M448.785,388.148    l-3.489-11.272L448.785,388.148z" />
+		<path
+   id="line_7_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M444.545,388.148    l-3.489-11.272L444.545,388.148z" />
+		<path
+   id="line_8_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M440.305,388.148    l-3.489-11.272L440.305,388.148z" />
+		<path
+   id="line_9_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M436.064,388.148    l-3.489-11.272L436.064,388.148z" />
+		<path
+   id="line_10_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2.2003"
+   stroke-miterlimit="10"
+   d="M431.823,388.148    l-3.488-11.272L431.823,388.148z" />
+	</g>
+	<text
+   font-size="22"
+   id="text76"
+   style="font-size:22px;font-family:Arial"
+   x="209.66891"
+   y="415.58789">destination: 3.3.3.3</text>
+
+	<text
+   font-size="22"
+   id="text78"
+   style="font-size:22px;font-family:Arial"
+   x="230.01611"
+   y="395.36911">source: 2.2.2.2</text>
+
+</g>
+<g
+   id="arrows">
+	<g
+   id="arrow_5">
+		<path
+   id="line"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-miterlimit="10"
+   d="M154.225,440.808    C319.529,275,442.168,292.999,484.834,430.799" />
+		<path
+   id="head"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M163.464,417.519c-12.239,25.289-12.239,25.289-12.239,25.289    s0,0,24.921-11.28C167.869,427.146,167.869,427.146,163.464,417.519z" />
+	</g>
+	<g
+   id="arrow_4">
+		<path
+   id="line_4_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-miterlimit="10"
+   d="M551.568,427.691    C582.604,382.366,612.5,315,597,250" />
+		<path
+   id="head_4_"
+   stroke="#000000"
+   stroke-width="1.0411"
+   stroke-miterlimit="10"
+   d="M573.521,411.619    c-23.26,17.734-23.26,17.734-23.26,17.734s0,0,6.338-27.766C562.785,409.122,562.785,409.122,573.521,411.619z" />
+	</g>
+	<g
+   id="arrow_3">
+		<path
+   id="line_3_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-miterlimit="10"
+   d="M538.865,180.453    c-53.028-14.339-114.498-19.036-129.373,12.839" />
+		<path
+   id="head_3_"
+   stroke="#000000"
+   stroke-width="1.0411"
+   stroke-miterlimit="10"
+   d="M516.448,165.032    c24.417,16.106,24.417,16.106,24.417,16.106s0,0-28.302,3.181C517.634,175.991,517.634,175.991,516.448,165.032z" />
+	</g>
+	<g
+   id="arrow_2">
+		<path
+   id="line_2_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-miterlimit="10"
+   d="M309.122,197.714    c-53.028,14.339-114.497,19.036-129.372-12.839" />
+		<path
+   id="head_2_"
+   stroke="#000000"
+   stroke-width="1.1212"
+   stroke-miterlimit="10"
+   d="M285.825,214.001    c26.297-17.346,26.297-17.346,26.297-17.346s0,0-30.48-3.425C287.103,202.199,287.103,202.199,285.825,214.001z" />
+	</g>
+	<g
+   id="arrow_1">
+		<path
+   id="line_1_"
+   fill="none"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-miterlimit="10"
+   d="M96.213,163.165    c-43.057-34.113-60.529-57.409-50.336-94.432" />
+		<path
+   id="head_1_"
+   stroke="#000000"
+   stroke-miterlimit="10"
+   d="M72.63,156.072c26.583,9.093,26.583,9.093,26.583,9.093    s0,0-14.208-23.375C81.655,150.536,81.655,150.536,72.63,156.072z" />
+	</g>
+</g>
+<g
+   id="Host_confíavel"
+   transform="translate(4,0)">
+	<text
+   transform="translate(74.6304,507)"
+   font-size="22"
+   id="text97"
+   style="font-size:22px;font-family:Arial">IP: 3.3.3.3</text>
+
+	<text
+   font-size="30"
+   id="text99"
+   style="font-size:30px;font-family:Arial"
+   x="36.5"
+   y="478">trusted Host</text>
+
+</g>
+<g
+   id="Vítima">
+	<text
+   transform="translate(460.1396,498.0313)"
+   font-size="22"
+   id="text102"
+   style="font-size:22px;font-family:Arial">IP: 2.2.2.2</text>
+
+	<text
+   font-size="30"
+   id="text104"
+   style="font-size:30px;font-family:Arial"
+   x="471.09079"
+   y="469.03909">Victim</text>
+
+</g>
+<g
+   id="Atacante">
+	
+	<text
+   transform="translate(58.5,68.7329)"
+   font-size="30"
+   id="text109"
+   style="font-size:30px;font-family:Arial">Attacker</text>
+
+<text
+   font-size="22"
+   id="text107"
+   style="font-size:22px;font-family:Arial"
+   x="51.5"
+   y="93">real IP: 1.1.1.1</text>
+</g>
+<g
+   transform="translate(451.8559,21.179291)"
+   id="Atacante-8"><text
+     font-size="30"
+     id="text109-3"
+     style="font-size:30px;font-family:Arial"
+     x="30.533897"
+     y="68.732903">Internet-Router</text>
+</g><text
+   y="531.12256"
+   x="3.7709134"
+   font-size="22"
+   id="text97-8"
+   style="font-size:22px;font-family:Arial">(might be target of DoS-attack)</text>
+<text
+   y="521.94012"
+   x="399.95319"
+   font-size="22"
+   id="text102-9"
+   style="font-size:22px;font-family:Arial">(possible security breach)</text>
+</svg>
