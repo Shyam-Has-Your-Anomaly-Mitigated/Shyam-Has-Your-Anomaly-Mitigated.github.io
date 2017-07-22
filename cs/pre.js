@@ -44,7 +44,7 @@
     + br + 'f(x)|a&lt;x&lt;b'
     + br + br + 'Indexable.fun files and ' + link('filesystem format', 'https://en.wikipedia.org/wiki/List_of_Linux_distributions_that_run_from_RAM') + '.'
     + heading('Functional Network', 4)
-    +      'shyam://address/parameterstring'
+    +      'shyam:[/[/]]address/parameterstring'
     + br
     + br + 'error_controlled(functionally_encrypted(functionally_compressed(transmissions))) by default; asymmetrical cryptography will be used to establish a shared secret in the form of a function, for functional security (functional compression provides the functions).'
     + br + 'address is just a unique case-sensitive string that supports any encoding; with "invisible" whitespace, but "0b101_0011_1001 0x5_39" ≠ "0b101_0011_10010x5_39" = "0b101_0011_1001_0x5_39", even though "1337 1337" = "13371337", because literals should be spaced out'
@@ -86,7 +86,7 @@
     + br
     + br + 'I also want an official single sign-on; on a network scale (websites can still host DIY SSO, official to that website; but I would not use it)'
     + br
-    + br + 'I see no reason why email cannot simply be user@address, ommitting all else...unless user="shyam://"? LOL'
+    + br + 'I see no reason why email cannot simply be user@address, ommitting all else...unless user ~~ /^shyam\:/? LOL'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
