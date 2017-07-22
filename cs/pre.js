@@ -75,6 +75,10 @@
     + br + 'I will be the mahārājaḥ of the Internet, but it needs a new name..?'
     + br + 'the gurus will be determined by ' + link('sampradāya', 'https://en.wikipedia.org/wiki/Jedi#Organization_of_the_Old_Jedi_Order')
     + br + 'the name should have something to do with data/information, particles/electrons, waves/photons, string theory ($name ~~ /string/ && $logo ~~ /str/), text processing, rational/regular language/expression, freedom from Idiocracy (2006)'
+    + br
+    + br + 'this goes somewhere up there, but I am tired...it is past midnight!'
+    + br + '2FA costs money, so the internauts will be taxed...wait, are not the internet explorers/browsers the internauts, and the hosts the netizens? (that makes more sense to me.)'
+    + br + 'rego = ' + link('randomised testing via a monthy email captcha', 'http://thewebsiteisdown.com/')
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
