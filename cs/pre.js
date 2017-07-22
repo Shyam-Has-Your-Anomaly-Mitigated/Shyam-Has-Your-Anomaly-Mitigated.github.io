@@ -51,8 +51,14 @@
     + br + 'parameterstring has "visible" whitespace'
     + br + 'underscores are whitespace'
     + br + 'unencrypted simply takes the function f(x)=0, which is trivial to recognise'
-    + br + 'uncompressed is simply any file other than <name>.<extension>.fun, which is trivial to recognise'
+    + br + 'uncompressed is simply any file other than &lt;name&gt;.&lt;extension&gt;.fun, which is trivial to recognise'
     + br + 'browsers should colourise the address bar green for secure connections, and red for insecure connections; SHYAM://* for uncompressed bandwidth hoggers, because bigger is bloated'
+    + br
+    + br + 'international means if any company wants to "own" anything, they must be registered in all nationals; whether recognised by the big nationals, or not (this includes Antarctica, and extraterrestrial space).'
+    + br + 'but they can sue an owner/host if they are registered in those respective nationals, or if the national permits it; this is in my SEP field.'
+    + br + 'but then there are proxies, cryptocurrency, etcetera; this is not supposed to be Tor...I want cybeℝeality domination! :D'
+    + br + 'the internet is not public property, because servers are private property mostly hosted within nationals, but internet access can be international.'
+    + br + 'the network is international, and no national will influence it; I have some "-thing"s up my sleeve for China, unethical netizens, and malicious netizens, but I am unsure how to refactor them for open source without compromising their integrity...they may not require to be refactored?'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
