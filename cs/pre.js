@@ -58,7 +58,19 @@
     + br + 'but they can sue an owner/host if they are registered in those respective nationals, or if the national permits it; this is in my SEP field.'
     + br + 'but then there are proxies, cryptocurrency, etcetera; this is not supposed to be Tor...I want cybeℝeality domination! :D'
     + br + 'the internet is not public property, because servers are private property mostly hosted within nationals, but internet access can be international.'
-    + br + 'the network is international, and no national will influence it; I have some "-thing"s up my sleeve for China, unethical netizens, and malicious netizens, but I am unsure how to refactor them for open source without compromising their integrity...they may not require to be refactored?'
+    + br + 'the network is internætional, and no national will influence it; I have some "-thing"s up my sleeve for China, unethical netizens, and malicious netizens, but I am unsure how to refactor them for open source without compromising their integrity...they may not require to be refactored?'
+    + br
+    + br + '"shyam://" will be the official search engine without any adware, also rego, and whatnot...'
+    + br + 'no cybersquatting; all addresses will be monitored, and if you do not use it, then you will lose it.'
+    + br + 'registration will probably be auction-style, with the first bid triggering the auction; I think this is fair, but so is FIFO...for free? (it could be like Wikipedia, just periodically spam the known ℝeality for funding.)'
+    + br + 'although, initially (as in pre-auction/FIFO/*) current WWW domain holders can transmit emails from their domain to claim a name; a response will partially verify, but a public key hosted at the domain will be required, and verified via multiple locations...is that good enough? (I still see weaknesses...) ...the name has to resemble what they already have, or they can perform 切腹 for trolling.'
+    + br + 'spoofing is illegal (all addresses will be periodically monitored via dynamic/proxy addresses), and punishable by death via vigilantes (samurai style).'
+    + br + 'just joking! :D (I am not joking... -_-)'
+    + br
+    + br + link('plan b', 'https://www.ted.com/talks/danny_hillis_the_internet_could_crash_we_need_a_plan_b#t-76669') + 'etter (that guy is OG!!!)'
+    + br + 'if addresses are auctioned, with yearly taxes, perhaps the infrastructure could be improved?..it would be biased towards hosting locations, but would also impact local netizens which would in-turn fund the rest of the netizens.'
+    + br + 'side effects should be avoided, and nothing should be stored; no big data mining, just equality'
+    + br + 'privacy, net neutrality, artificial intelligence..."webcloud"?'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
