@@ -85,6 +85,8 @@
     + br + 'those bits about green/red; how do colour-blind see safe/dangerous??? colour-blind mode in web browsers can handle it; &gt;&gt;SEP_field.'
     + br
     + br + 'I also want an official single sign-on; on a network scale (websites can still host DIY SSO, official to that website; but I would not use it)'
+    + br + 'this would store big data; but the user can opt-out'
+    + br + 'big data = history/log; get deduplicated address (from table) sort -time (decrementing, start from last; "+" = incrementing, start from first).'
     + br
     + br + 'I see no reason why email cannot simply be user@address, ommitting all else...unless user ~~ /^shyam\:/? LOL'
     + br + '"mailto:" is starting to make sense, but could just be "mail:", or even "msg:"...can I ℝeally transmit from my browser? I think it just loads that annoying program...'
