@@ -87,6 +87,7 @@
     + br + 'I also want an official single sign-on; on a network scale (websites can still host DIY SSO, official to that website; but I would not use it)'
     + br + 'this would store big data; but the user can opt-out'
     + br + 'big data = history/log; get deduplicated address (from table) sort -time (decrementing, start from last; "+" = incrementing, start from first).'
+    + br + 'I would find it useful to keep track of myself; there are so many cyberspacial dimensions...but I would not want to use it for banking (single point of failure) unless security was 1337% (user ERR)'
     + br
     + br + 'I see no reason why email cannot simply be user@address, ommitting all else...unless user ~~ /^shyam\:/? LOL'
     + br + '"mailto:" is starting to make sense, but could just be "mail:", or even "msg:"...can I ℝeally transmit from my browser? I think it just loads that annoying program...'
