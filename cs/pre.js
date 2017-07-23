@@ -92,6 +92,8 @@
     + br + 'I see no reason why email cannot simply be user@address, ommitting all else...unless user ~~ /^shyam\:/? LOL'
     + br + '"mailto:" is starting to make sense, but could just be "mail:", or even "msg:"...can I ℝeally transmit from my browser? I think it just loads that annoying program...'
     + br + 'so does just about everything else...'
+    + br
+    + br + 'source files (HTML/CSS/JS/ETC) should automatically be stripped of redundant whitespace by servers (all good server software does this by default; all good web browsers format source files according to plain-text-based configuration files); but this is in my SEP field'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
