@@ -39,6 +39,15 @@
     + br + 'User-specified CAPalphanum3r1c4l base for enhanced security measures...'
     + br + 'User-specified x-axis character; or just use the @ symbol, as in @ x-coordinate...'
     + br + br + 'Indexable.otp files and filesystem format.'
+    + heading('compositional verification')
+    +      'a = Ada private function'
+    + br + 'b = Babbage private function'
+    + br + 'c = cracker Charles'
+    + br + 'd = data'
+    + br + 'Ada and Babbage can share both the functioal, and dysfunctional, data: d + a(b(d))'
+    + br + 'Ada and Babbage can verify each others identity'
+    + br + 'Charles needs either {a + b, a + Babbage, b + Ada} to get d, and spoof them...but there is SE via user error'
+    + br + 'and there is no way to use the functionality without compromising the integrity..."The Curse of the Flying Hellfish"'
     + heading('steganographic decryption', 4)
     +      'c: clear decryption'
     + br + 's: steganographic decryption'
