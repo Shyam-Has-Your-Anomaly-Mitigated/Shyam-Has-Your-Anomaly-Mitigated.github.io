@@ -97,7 +97,11 @@
     + br
     + br + 'it costs non-refundable pre-paid money to bid at the auction to avoid trolling.'
     + br
-    + br + '"country:address" networks could be interlinked with other networks'
+    + br + '"country:address" networks could be interlinked with other networks.'
+    + br + 'connections within a nation may fall soley under that national jurisdiction, and whether/not web browsing software indicates the jurisdiction status, everyone can just use proxy servers as a means for jurisdictional escape.'
+    + br + 'national firewalls only stop users from accessing content they would not access anyway; users who actually want to access it simply use proxy servers, so the nationals are only restricting the users who are not interested in the first place.'
+    + br + 'they may as well just perform pseudo-random searches/raids of homes c̄ ¬warranty, and demand decryption; even though steganographic decryption is possible with functional OTP, which reduces it to a trivial exercise (as in, why waste your time/effort/tax?).'
+    + br + 'China is no exception; their people can travel outside the country (blindspotted), which means they can arrange a private proxy with non-standard transmission protocols which avoid deep packet inspection...I call it Egyptian, as in the rosetta stone; but it could also be Greek, as in boustrophēdón.'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
