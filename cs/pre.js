@@ -94,6 +94,8 @@
     + br + 'so does just about everything else...'
     + br
     + br + 'source files (HTML/CSS/JS/ETC) should automatically be stripped of redundant whitespace by servers (all good server software does this by default; all good web browsers format source files according to plain-text-based configuration files); but this is in my SEP field'
+    + br
+    + br + 'it costs non-refundable pre-paid money to bid at the auction to avoid trolling.'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
