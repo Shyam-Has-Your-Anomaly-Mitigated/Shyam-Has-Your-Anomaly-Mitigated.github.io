@@ -39,6 +39,15 @@
     + br + 'User-specified CAPalphanum3r1c4l base for enhanced security measures...'
     + br + 'User-specified x-axis character; or just use the @ symbol, as in @ x-coordinate...'
     + br + br + 'Indexable.otp files and filesystem format.'
+    + heading('steganographic decryption', 4)
+    +      'c: clear decryption'
+    + br + 's: steganographic decryption'
+    + br + 'f: functional otp'
+    + br + 'd: dysfunctional otp'
+    + br + 's is the same width as c'
+    + br + 'c = f(f(c)) ...the composition will cancel f'
+    + br + 's = d(f(c)) ...but d is dependent on s'
+    + br + 'd = s(f(c))'
     + heading('Functional Compression', 4)
     +      'Mathematical functions can also be used to describe data in a compressed format...'
     + br + 'f(x)|a&lt;x&lt;b'
