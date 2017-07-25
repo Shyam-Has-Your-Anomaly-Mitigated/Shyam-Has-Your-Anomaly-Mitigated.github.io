@@ -39,7 +39,7 @@
     + br + 'User-specified CAPalphanum3r1c4l base for enhanced security measures...'
     + br + 'User-specified x-axis character; or just use the @ symbol, as in @ x-coordinate...'
     + br + br + 'Indexable.otp files and filesystem format.'
-    + heading('compositional verification')
+    + heading('compositional verification', 4)
     +      'a = Ada private function'
     + br + 'b = Babbage private function'
     + br + 'c = cracker Charles'
