@@ -123,6 +123,8 @@
     + br + 'national firewalls only stop users from accessing content they would not access anyway; users who actually want to access it simply use proxy servers, so the nationals are only restricting the users who are not interested in the first place.'
     + br + 'they may as well just perform pseudo-random searches/raids of homes c̄ ¬warranty, and demand decryption; even though steganographic decryption is possible with functional OTP, which reduces it to a trivial exercise (as in, why waste your time/effort/tax?).'
     + br + 'China is no exception; their people can travel outside the country (blindspotted), which means they can arrange a private proxy with non-standard transmission protocols which avoid deep packet inspection...I call it Egyptian, as in the rosetta stone; but it could also be Greek, as in boustrophēdón.'
+    + br
+    + br + 'transport/exchange physicals in international waters...'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
