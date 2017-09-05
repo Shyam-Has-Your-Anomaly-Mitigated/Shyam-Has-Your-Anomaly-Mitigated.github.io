@@ -127,6 +127,7 @@
     + br + 'transport/exchange physicals in international waters...'
     + br
     + br + 'I want an official web browser, with official web languages; and it will all be better than the WWW!!!'
+    + br + 'When the time comes, and the language is updated, all the rajas will be notified, and be expected to update their lokas with the provided source-to-source translators in less than 3 magical months;` or die("thewebsiteisdown.com")`!'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
