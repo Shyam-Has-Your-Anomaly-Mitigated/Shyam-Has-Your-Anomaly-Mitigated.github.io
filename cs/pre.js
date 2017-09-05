@@ -125,6 +125,8 @@
     + br + 'China is no exception; their people can travel outside the country (blindspotted), which means they can arrange a private proxy with non-standard transmission protocols which avoid deep packet inspection...I call it Egyptian, as in the rosetta stone; but it could also be Greek, as in boustrophēdón.'
     + br
     + br + 'transport/exchange physicals in international waters...'
+    + br
+    + br + 'I want an official web browser, with official web languages; and it will all be better than the WWW!!!'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
