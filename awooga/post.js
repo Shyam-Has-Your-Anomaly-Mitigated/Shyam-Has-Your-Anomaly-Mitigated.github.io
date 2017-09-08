@@ -934,6 +934,8 @@ something about dimensions
 	biologists discovered temporal anomalies in comparable mammalian heart beats
 		https://www.youtube.com/watch?v=ZT59QUlrTFQ
 
+I also want to use ice as a fuel source; like (char)coal.
+
 */
 
 // http://shyam.id.au/tp
