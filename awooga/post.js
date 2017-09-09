@@ -936,6 +936,10 @@ something about dimensions
 
 I also want to use ice as a fuel source; like (char)coal.
 
+Our galactic orbit could alter our distance from the middle; which could influence our bio-chemistry, electricity/technology, ETC...
+This would explain our short-lived existence, and ancestral abnormalities.
+ETC...
+
 */
 
 // http://shyam.id.au/tp
