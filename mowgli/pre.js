@@ -37,4 +37,7 @@
     + br
     + br + '1+0÷x cannot prove a cylindrical plane; graph multiple additional lines, expecially x=1!'
     + br + 'Rotate the plane of existence for a perfect circle.'
+    + br
+    + br + 'not sure if it mentions it here, but I do not see it...'
+    + br + 'addition & subtraction are just clockwise & anti-clockwise rotations/traversals of the number circle'
 )
