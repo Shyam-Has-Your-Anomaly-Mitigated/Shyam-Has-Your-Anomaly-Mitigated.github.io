@@ -128,6 +128,18 @@
     + br
     + br + 'I want an official web browser, with official web languages; and it will all be better than the WWW!!!'
     + br + 'When the time comes, and the language is updated, all the rajas will be notified, and be expected to update their lokas with the provided source-to-source translators in less than 3 magical months;` or die("thewebsiteisdown.com")`!'
+    + br
+    + br + 'The language will be scalable to solve the pixel density problem; %-based c̄ scroll & zoom.'
+    + br + 'Do not include a widget toolkit; encourage DIY & browser independence! :D'
+    + br + '...but what will be scalable then???'
+    + br + 'There will be an official meta/lib/rary with scalability as a requirement/option/category.'
+    + br + '...but scalability = warpage!!!'
+    + br + 'Linguistic options include whether text warps, wraps, or runs off with the money; advanced hackers can also DIY.'
+    + br + 'this is in my SEP field, just provide virtual instruction sets to choose from; shebangs can specify the binary interpreter, and binaries can specify virtual instruction sets.'
+    + br + 'shyam:///lib/interpreters'
+    + br + 'it could be a store; but statistics c̄ cryptographically transparent donations are superior, and would not be taxed.'
+    + br + 'https://en.wikipedia.org/wiki/Template:CPU_technologies'
+    + br + 'virtual instruction sets include: ASIP CISC RISC EDGE (TRIPS) VLIW (EPIC) MISC OISC NISC ZISC Comparison'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
