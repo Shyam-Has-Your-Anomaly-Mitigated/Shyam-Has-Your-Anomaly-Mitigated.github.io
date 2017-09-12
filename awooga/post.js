@@ -926,6 +926,8 @@ something about atomic particles
 		https://en.wikipedia.org/wiki/A_Boy_and_His_Atom
 		http://www.research.ibm.com/articles/madewithatoms.shtml
 	do robots see floaters?
+	...
+	the balls of light that sporadically flash in the corners of my eyes are either "cosmic ray visual phenomena", or phosphene
 something about spin
 	string theory
 		http://localhost/
@@ -939,6 +941,8 @@ I also want to use ice as a fuel source; like (char)coal.
 Our galactic orbit could alter our distance from the middle; which could influence our bio-chemistry, electricity/technology, ETC...
 This would explain our short-lived existence, and ancestral abnormalities.
 ETC...
+
+cosmic rays could cause "-thing"s like autism
 
 */
 
