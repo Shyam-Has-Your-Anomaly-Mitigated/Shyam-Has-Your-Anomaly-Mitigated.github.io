@@ -943,6 +943,42 @@ This would explain our short-lived existence, and ancestral abnormalities.
 ETC...
 
 cosmic rays could cause "-thing"s like autism
+ozone layer protects us from cosmic rays, right?
+...
+caffeine, alcohol, and other artificially stimulating in"toxic"ants could cause "-thing"s like neurodegeneration
+Gus Bonner (Stargate Infinity) mentions "athletes back on Earth thought so too, when they used chemicals to boost their performance; it seemed to work for a while", and his niece finished with "until they discover it harmed them"; the context was Mandro stones
+some humans are lactose intolerant, albino, ETC, and then there is the bubble boy (Seinfeld); we are not all created as equals
+the placebo effect is the best; decaf tea/coffee, and non-alcoholic
+epinephrine/cortisol/norepinephrine/dopamine/serotonin/oxytocin/endorphins rushes, and other mental states, can be forced with the meditative/suggestible/ETC mind; use the force
+it's all in your head
+https://en.wikipedia.org/wiki/Caffeine_dependence
+https://en.wikipedia.org/wiki/Effect_of_caffeine_on_memory
+https://en.wikipedia.org/wiki/Caffeine-induced_sleep_disorder
+https://en.wikipedia.org/wiki/Caffeine-induced_anxiety_disorder
+https://en.wikipedia.org/wiki/Ban_on_caffeinated_alcoholic_drinks
+https://en.wikipedia.org/wiki/Alcohol_dependence
+https://en.wikipedia.org/wiki/Alcohol_abuse
+https://en.wikipedia.org/wiki/Alcoholism
+https://en.wikipedia.org/wiki/High-functioning_alcoholic
+https://en.wikipedia.org/wiki/Disease_theory_of_alcoholism
+https://en.wikipedia.org/wiki/Alcohol-related_dementia
+https://en.wikipedia.org/wiki/Alcohol_and_cancer
+https://en.wikipedia.org/wiki/Long-term_effects_of_alcohol_consumption
+https://en.wikipedia.org/wiki/Long-term_impact_of_alcohol_on_the_brain
+https://en.wikipedia.org/wiki/Alcohol-related_brain_damage
+https://en.wikipedia.org/wiki/Alcoholic_liver_disease
+https://en.wikipedia.org/wiki/Alcoholic_hepatitis
+https://en.wikipedia.org/wiki/Austrian_syndrome
+https://en.wikipedia.org/wiki/Alcohol_myopia
+https://en.wikipedia.org/wiki/Alcohol_withdrawal_syndrome
+https://en.wikipedia.org/wiki/Alcoholic_hallucinosis
+https://en.wikipedia.org/wiki/Alcohol_intoxication
+https://en.wikipedia.org/wiki/Drunk_driving_law_by_country
+https://en.wikipedia.org/wiki/Drunk_drivers
+https://en.wikipedia.org/wiki/List_of_deaths_through_alcohol
+
+I want to advertise on a road-side billboard...
+https://en.wikipedia.org/wiki/Photosensitive_epilepsy
 
 */
 
