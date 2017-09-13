@@ -944,6 +944,7 @@ ETC...
 
 cosmic rays could cause "-thing"s like autism, headaches, ETC
 ozone layer protects us from cosmic rays, right?
+https://en.wikipedia.org/wiki/Tin_foil_hat
 ...
 caffeine, alcohol, and other artificially stimulating in"toxic"ants could cause "-thing"s like neurodegeneration
 Gus Bonner (Stargate Infinity) mentions "athletes back on Earth thought so too, when they used chemicals to boost their performance; it seemed to work for a while", and his niece finished with "until they discover it harmed them"; the context was Mandro stones
