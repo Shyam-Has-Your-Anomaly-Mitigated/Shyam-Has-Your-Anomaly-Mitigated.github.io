@@ -942,13 +942,13 @@ Our galactic orbit could alter our distance from the middle; which could influen
 This would explain our short-lived existence, and ancestral abnormalities.
 ETC...
 
-cosmic rays could cause "-thing"s like autism
+cosmic rays could cause "-thing"s like autism, headaches, ETC
 ozone layer protects us from cosmic rays, right?
 ...
 caffeine, alcohol, and other artificially stimulating in"toxic"ants could cause "-thing"s like neurodegeneration
 Gus Bonner (Stargate Infinity) mentions "athletes back on Earth thought so too, when they used chemicals to boost their performance; it seemed to work for a while", and his niece finished with "until they discover it harmed them"; the context was Mandro stones
 some humans are lactose intolerant, albino, ETC, and then there is the bubble boy (Seinfeld); we are not all created as equals
-the placebo effect is the best; decaf tea/coffee, and non-alcoholic
+the placebo effect is the best; decaf tea/coffee, and non-alcoholic versions of alcoholic drinks
 epinephrine/cortisol/norepinephrine/dopamine/serotonin/oxytocin/endorphins rushes, and other mental states, can be forced with the meditative/suggestible/ETC mind; use the force
 it's all in your head
 https://en.wikipedia.org/wiki/Caffeine_dependence
