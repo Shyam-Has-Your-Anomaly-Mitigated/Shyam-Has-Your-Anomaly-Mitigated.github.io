@@ -30,6 +30,7 @@
     + br + 'I fail to see the logic behind negative x!'
     + br + '⸮..discontinuous = x!'
     + br + 'x² is symmetrical...'
+    + br + 'nx is symmetrical...'
     + br
     + br + 'The summation of all negative integers proves a perfect circle; discover at least one numerical discrepancy to disprove the perfect circle concept (and mathematics altogether).'
     + br + '...the ¿straightish? number line is being stretched into a perfect circle of uniformity (it has always been that way); ei incumbit probatio qui dicit, non qui negat.'
