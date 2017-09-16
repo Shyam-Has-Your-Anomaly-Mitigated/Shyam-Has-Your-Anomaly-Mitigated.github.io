@@ -40,4 +40,7 @@
     + br
     + br + 'not sure if it mentions it here, but I do not see it...'
     + br + 'addition & subtraction are just clockwise & anti-clockwise rotations/traversals of the number circle'
+    + br + '...this was from x÷0, the polar opposite of 0.'
+    + br
+    + br + 'number line is perfectly straight in 3D ∴ number circle is perfectly circular'
 )
