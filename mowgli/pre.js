@@ -44,4 +44,7 @@
     + br + '...this was from x÷0, the polar opposite of 0.'
     + br
     + br + 'number line is perfectly straight in 3D ∴ number circle is perfectly circular'
+    + br + 'ovals are imperfectly circular...'
+    + br + 'nothing needs to be perfect, but perfection is preferable; maths is free, numbers are free, and the 3D axis can be manipulated to imperfection...'
+    + br + '(im)perfection is relative to the observable perspective...'
 )
