@@ -145,6 +145,9 @@
     + br + 'but the virtual machine can be programmable virtual hardware; what size registers/bytes/ETC'
     + br + 'https://en.wikipedia.org/wiki/Hardware_description_language'
     + br + 'https://en.wikipedia.org/wiki/Hardware_verification_language'
+    + br
+    + br + 'if a function is shared, any anomalous data would be known to be a Deliberately Intentional Effort to misdirect cracking attacks; or to be mistaken as an erroneous transmission...'
+    + br + 'at least it works for unshared functions!!! :D'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
