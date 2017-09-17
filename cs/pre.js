@@ -148,6 +148,9 @@
     + br
     + br + 'if a function is shared, any anomalous data would be known to be a Deliberately Intentional Effort to misdirect cracking attacks; or to be mistaken as an erroneous transmission...'
     + br + 'at least it works for unshared functions!!! :D'
+    + br + 'a cracking procedure: check for bug control, then check data'
+    + br + 'self-dstructing passwords: backup data before cracking'
+    + br + 'it is optimal to allow only one single code, and self-destruct for all others; a temporal/temporary measurement... (but the self-destruct mechanism is vulnerable; and the decryption program can be replaced with an alternative to decipher the data towards a vacuumous memory address)'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
