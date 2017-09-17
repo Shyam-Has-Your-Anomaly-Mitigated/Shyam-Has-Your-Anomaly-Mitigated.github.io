@@ -151,6 +151,9 @@
     + br + 'a cracking procedure: check for bug control, then check data'
     + br + 'self-dstructing passwords: backup data before cracking'
     + br + 'it is optimal to allow only one single code, and self-destruct for all others; a temporal/temporary measurement... (but the self-destruct mechanism is vulnerable; and the decryption program can be replaced with an alternative to decipher the data towards a vacuumous memory address)'
+    + br
+    + br + 'net neutrality has not been mentioned? the mahārājaḥ will be the mahā exception; obvs...'
+    + br + 'pricing will not be by data transmission; pay monthly for x bandwidth is better ∵ I hate dialing-up my bandwidth!!! :C'
     + heading(format('Instructional Whispers', 'u'), 3)
     + heading('Logic: Vulcan vs ' + link('Jedi', 'https://en.wikipedia.org/wiki/Yoda_conditions'), 4)
     +      'Numerical logic must be ordered according to the number line; just as in the field of mathematics.'
