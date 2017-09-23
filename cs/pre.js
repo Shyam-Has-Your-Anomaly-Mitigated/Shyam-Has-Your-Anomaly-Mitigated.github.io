@@ -140,12 +140,12 @@
     + br + 'it could be a store; but statistics c̄ cryptographically transparent donations are superior, and would not be taxed.'
     + br + 'https://en.wikipedia.org/wiki/Template:CPU_technologies'
     + br + 'virtual instruction sets include: ASIP CISC RISC EDGE (TRIPS) VLIW (EPIC) MISC OISC NISC ZISC Comparison'
-    + br + '...quantity of cores, lisp machines, ETC.'
     + br
     + br + 'what about non-binaries; like trinaries, quandaries, hexes, ETC? worry about it when we take-over the infrastructure; use highest base c̄ a bug controlled margin of buggage.'
     + br + 'but the virtual machine can be programmable virtual hardware; what size registers/bytes/ETC'
     + br + 'https://en.wikipedia.org/wiki/Hardware_description_language'
     + br + 'https://en.wikipedia.org/wiki/Hardware_verification_language'
+    + br + '...quantity of cores, lisp machines, quantum computer, cpu/gpu, ETC.'
     + br
     + br + 'if a function is shared, any anomalous data would be known to be a Deliberately Intentional Effort to misdirect cracking attacks; or to be mistaken as an erroneous transmission...'
     + br + 'at least it works for unshared functions!!! :D'
