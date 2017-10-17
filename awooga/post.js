@@ -981,6 +981,34 @@ https://en.wikipedia.org/wiki/List_of_deaths_through_alcohol
 I want to advertise on a road-side billboard...
 https://en.wikipedia.org/wiki/Photosensitive_epilepsy
 
+I think I have discovered at least three ways to process nuclear waste...
+But one is just feeding the sun...
+Another is based on solar simulations...
+Another is cerebral, at best!
+
+Rick Sanchez     is comparable c̄ Homer Simspon, the burping alcoholic nuclear physicist who abuses Bart Simpson, but does not let him die.
+Jerry Smith      is comparable c̄ Maggie Simpson.
+Summer Smith     is comparable c̄ Lisa Simpson.
+Morty Smith      is comparable c̄ Bart Simpson.
+Beth Smith       is comparable c̄ Marge Simpson.
+Principal Vagina is comparable c̄ Superintendent Chalmers.
+Mr. Goldenfold   is comparable c̄ Dewey Largo.
+Jessica          is comparable c̄ Mary Spuckler
+
+Rick has travelled through time; the time travel box is full of "-thing"s to expect (not the concept being shelved by the devs; "it's on the shelf"), and is the reason he didn't shoot Jerry.
+
+Rick knows too much about the other Ricks, than Morty, for Morty to be his original Morty; Rick also has memories of Morty as a baby/child, which is contradictory to his supposed backstory with the first observable dimension...
+S01E06 -> S02E05; explains Rick upholding baby Morty, in an image on Birdpersons' wall.
+
+Most Rickless Mortys are probably the result of failed attempts to establish a stable portal; I'm thinking about StarGate...
+
+Evil Morty...
+I like the theory that Evil Rick body swapped with his Morty, and used tech to control his old body.
+
+A big query is; who is Ricks' wife?
+She did not die, with her daughter; Rick & baby Morty contradict such a falsified memory.
+Rick is drooling from mega drugs; but he, and his daughter, are highly intelligent; so he could've studied their biodata, as it's a genetic trait compromised only by Jerrys' Y chromosome...
+
 */
 
 // http://shyam.id.au/tp
