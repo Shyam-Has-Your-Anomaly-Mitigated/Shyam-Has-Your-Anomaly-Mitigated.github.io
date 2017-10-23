@@ -942,7 +942,7 @@ Our galactic orbit could alter our distance from the middle; which could influen
 This would explain our short-lived existence, and ancestral abnormalities.
 ETC...
 
-cosmic rays & ultrasounds could cause "-thing"s like autism, headaches, ETC
+cosmic rays & ultrasounds & radio waves & ETC could cause "-thing"s like autism, headaches, ETC
 ozone layer protects us from cosmic rays, right?
 https://en.wikipedia.org/wiki/Tin_foil_hat
 ...
