@@ -71,6 +71,7 @@
     + br + '^ those two points can be infinitesimally close to x (as integers); single value functions'
     + br + 'terms ∈ {xpᵉ, <s>xp, x</s>}, where p = nᵗʰ prime, e = power, x = constant; and just connect terms c̄ addition, subtraction, multiplication, division, ETC'
     + br + '(a^b)^(c^d); is that a hyper operation?'
+    + br + 'prime factorisation'
     + br + br + 'Indexable.fun files and ' + link('filesystem format', 'https://en.wikipedia.org/wiki/List_of_Linux_distributions_that_run_from_RAM') + '.'
     + heading('Functional Network', 4)
     +      'shyam:[/[/]]address/parameterstring'
