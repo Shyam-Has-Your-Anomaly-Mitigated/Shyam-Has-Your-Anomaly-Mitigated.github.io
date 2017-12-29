@@ -65,6 +65,8 @@
     + br + 'f(x)|a&lt;x&lt;b'
     + br + 'EG: (pᵉ)+x, where p = nᵗʰ prime, e = nᵗʰ exponent, x = coefficient; stored as dpex, p & x bytes start c̄ 1, d & e bytes start c̄ 0, d is the recursive depth'
     + br + '^ no; the exponent is actually supposed to be 2ᵉ, as in 2ᵉp+x ...the nᵗʰ doubling of the nᵗʰ prime; some"-thing" like that, I cannot remember...'
+    + br + 'FFS: pi∓e, where p = nᵗʰ primality, i = multiplicity, e = your ȧncestor ..!.. -_- ..!..'
+    + br + '^ stored as spite; s = shallowness, t ∈ {0,1}'
     + br + br + 'Indexable.fun files and ' + link('filesystem format', 'https://en.wikipedia.org/wiki/List_of_Linux_distributions_that_run_from_RAM') + '.'
     + heading('Functional Network', 4)
     +      'shyam:[/[/]]address/parameterstring'
