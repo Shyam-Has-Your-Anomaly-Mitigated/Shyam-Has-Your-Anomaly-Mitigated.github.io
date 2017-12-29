@@ -63,6 +63,7 @@
     + heading('Functional Compression', 4)
     +      'Mathematical functions can also be used to describe data in a compressed format...'
     + br + 'f(x)|a&lt;x&lt;b'
+    + br + 'EG: (pᵉ)+x, where p = nᵗʰ prime, e = nᵗʰ exponent, x = coefficient; stored as pex, p & x bytes start c̄ 1, e bytes start c̄ 0'
     + br + br + 'Indexable.fun files and ' + link('filesystem format', 'https://en.wikipedia.org/wiki/List_of_Linux_distributions_that_run_from_RAM') + '.'
     + heading('Functional Network', 4)
     +      'shyam:[/[/]]address/parameterstring'
