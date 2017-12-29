@@ -68,6 +68,7 @@
     + br + 'FFS: pi∓e, where p = nᵗʰ primality, i = multiplicity, e = your ȧncestor ..!.. -_- ..!..'
     + br + '^ stored as spite; s = shallowness, t ∈ {0,1}'
     + br + 'f(x)|a&lt;x&lt;b is different though; EG a wave of "data" between two points'
+    + br + '^ those two points can be infinitesimally close to x (as integers); single value functions'
     + br + br + 'Indexable.fun files and ' + link('filesystem format', 'https://en.wikipedia.org/wiki/List_of_Linux_distributions_that_run_from_RAM') + '.'
     + heading('Functional Network', 4)
     +      'shyam:[/[/]]address/parameterstring'
