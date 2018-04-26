@@ -1024,6 +1024,7 @@ episode "I, E.T."; isolated aliens who've never met other aliens, nor left their
 
 Kay'me maia kosa Visha'meel maia kosa ah Khalaan ah Khalaan
 Yu Mo Gui Gwai Fai Di Zao
+oṃ maṇi padme hūṃ
 */
 
 // http://shyam.id.au/tp
