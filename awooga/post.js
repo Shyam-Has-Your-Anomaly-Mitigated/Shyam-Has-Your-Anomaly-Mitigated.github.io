@@ -1019,7 +1019,11 @@ Farscape
 Pa'u Zotoh Zhaan; Pa'u = Power (she has level 9/10/ETC power; AKA The Powerful Zotoh Zhaan), and Zs are like lightning bolts
 episode "Look at the Princess"; while she was a statue, she was witness/evidence to events that could incriminate her bro & scarran...why didn't they just ask her what happened to Kryten? she had all of the answers!?! I guess she couldn't speak out against them before, so why would now be any different... But the others could've at least asked when nobody else was around (or not, since only one person at a time can hear her; why not put her on speaker, so it's almost like she's not even a statue, and they all could use that tech + networking for socialising without using up their age); to find his head...
 episode "Till the Blood Runs Clear"; wasn't Furlow in Resident Evil?
+episode "The Locket"; "Kahanyu protect Moya" (Can you protect Moya? ,,,there's another one of these; probably in the primary season...) & "I am too old for this shit"
+episode "I, E.T."; isolated aliens who've never met other aliens, nor left their planet, have translator microbes?
 
+Kay'me maia kosa Visha'meel maia kosa ah Khalaan ah Khalaan
+Yu Mo Gui Gwai Fai Di Zao
 */
 
 // http://shyam.id.au/tp
