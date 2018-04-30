@@ -1021,6 +1021,7 @@ episode "Look at the Princess"; while she was a statue, she was witness/evidence
 episode "Till the Blood Runs Clear"; wasn't Furlow in Resident Evil?
 episode "The Locket"; "Kahanyu protect Moya" (Can you protect Moya? ,,,there's another one of these; probably in the primary season...) & "I am too old for this shit"
 episode "I, E.T."; isolated aliens who've never met other aliens, nor left their planet, have translator microbes?
+episode "Green Eyed Monster"; Aeryn Sun is a sun...
 
 Kay'me maia kosa Visha'meel maia kosa ah Khalaan ah Khalaan (may the goddess accept me to her bosom)
 Yu Mo Gui Gwai Fai Di Zao
