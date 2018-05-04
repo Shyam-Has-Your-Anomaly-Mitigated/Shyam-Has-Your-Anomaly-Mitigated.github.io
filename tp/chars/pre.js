@@ -15,6 +15,7 @@ var
     + br + a + '2, Brute?'
     + br + 'Be' + n + 'afraid!'
     + br + 'May the F be ' + w + ' you'
+    + br + 'Come ' + w + ' me'
     + br
     + br + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
     + br + link(format('Proofs' , 'u'), '')
