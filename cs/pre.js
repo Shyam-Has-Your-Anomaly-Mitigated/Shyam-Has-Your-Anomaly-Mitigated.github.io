@@ -42,6 +42,8 @@
     + br
     + br + 'pad strings out to the maximum width (EG for storing user profile; 108 chars per first_name, last_name, address, ETC ... DOB = POSIX ... phone depends on portability/country)'
     + br + 'I am thinking more along the lines of a blockchain; open-source databases/instructions/security/ETC means 100% transparency, and a forum/wiki should be hosted for user support (no adware; just do what Wikipedia does, but use cryptocurrency, and show where the money is actually going; EG users can recommend cheaper alternative hosting ...and plagiarise the Humble Bundle "Choose where your money goes", allowing users to tip individuals for forum support, source contributions, ETC)'
+    + br
+    + br " 'characters can represent integers; just loop them as an OTP'
     + heading('compositional verification', 4)
     +      'a = Ada private function'
     + br + 'b = Babbage private function'
