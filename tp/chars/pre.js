@@ -21,6 +21,7 @@ var
     + br + link(format('Proofs' , 'u'), '')
     + br + 'Therefore: ∴'
     + br + 'Because &nbsp;: ∵'
+    + br + '...: …'
     + br + link(format('Counts:' , 'u'), '') + ' ±,∓,+,−,(×,⋅,·),(÷,⁄),√,∛,∜,∑,Σ,∫,∞,∝,π'
     + br + link(format('Groups' , 'u'), '')
     + br + 'e∈{S}'
