@@ -16,13 +16,14 @@ var
     + br + 'Be' + n + 'afraid!'
     + br + 'May the F be ' + w + ' you'
     + br + 'Come ' + w + ' me'
+    + br + '2B…'
     + br
     + br + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
     + br + link(format('Proofs' , 'u'), '')
     + br + 'Therefore: ∴'
     + br + 'Because &nbsp;: ∵'
     + br + '...: …'
-    + br + link(format('Counts:' , 'u'), '') + ' ±,∓,+,−,(×,⋅,·),(÷,⁄),√,∛,∜,∑,Σ,∫,∞,∝,π'
+    + br + link(format('Counts:' , 'u'), '') + ' ±,∓,+,−,(×,⋅,·),(÷,⁄),√,∛,∜,∑,Σ,∫,∞,∝,π,λx∘y,⌈x⌉,⌊x⌋'
     + br + link(format('Groups' , 'u'), '')
     + br + 'e∈{S}'
     + br + 'e∉{S}'
