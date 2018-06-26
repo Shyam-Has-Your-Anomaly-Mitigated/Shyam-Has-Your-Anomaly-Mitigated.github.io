@@ -1000,7 +1000,7 @@ RAM(
 	Jessica          is comparable c̄ Mary Spuckler
 	Annie            is comparable c̄ Jenda Simpson
 	https://en.wikipedia.org/wiki/Grandfather_paradox
-		rick knows annie has a puffy pussy
+		rick knows annie has a puffy pussy (the query we all want to know is does she spit, or does sh swallow? ∵ that's all that ℝeally matters in life, the universe, and every"-thing")
 		rick + annie have beth have morty who is rick
 		annie blonde
 		beth yellow
@@ -1008,6 +1008,7 @@ RAM(
 		morty light brown
 		jerry dark brown
 		rick dies hair blue to inconspicuously fit in c̄ the timeline (it's ℝeally light brown)
+		…this explains all the fractured dimensions revolving around rick & morty
 
 	Rick has travelled through time; the time travel box is full of "-thing"s to expect (not the concept being shelved by the devs; "it's on the shelf"), and is the reason he didn't shoot Jerry.
 
