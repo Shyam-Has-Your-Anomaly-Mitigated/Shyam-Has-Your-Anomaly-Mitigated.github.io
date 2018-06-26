@@ -987,6 +987,9 @@ Another is based on solar simulations...
 Another is cerebral, at best!
 
 RAM(
+	homer is rick
+		https://en.wikipedia.org/wiki/Homer
+		https://en.wikipedia.org/wiki/Homer_Simpson
 	Rick Sanchez     is comparable c̄ Homer Simspon, the burping alcoholic nuclear physicist who abuses Bart Simpson, but does not let him die.
 	Jerry Smith      is comparable c̄ Maggie Simpson.
 	Summer Smith     is comparable c̄ Lisa Simpson.
