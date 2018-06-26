@@ -1009,6 +1009,7 @@ RAM(
 		jerry dark brown
 		rick dies hair blue to inconspicuously fit in c̄ the timeline (it's ℝeally light brown)
 		…this explains all the fractured dimensions revolving around rick & morty
+		…annie has a blue bow (why rick dye blue?)
 
 	Rick has travelled through time; the time travel box is full of "-thing"s to expect (not the concept being shelved by the devs; "it's on the shelf"), and is the reason he didn't shoot Jerry.
 
