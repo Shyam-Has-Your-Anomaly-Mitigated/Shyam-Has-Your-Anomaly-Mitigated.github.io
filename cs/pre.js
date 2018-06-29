@@ -46,6 +46,7 @@
     + br + 'characters can represent integers; just loop them as an OTP, or use (functionally generated) lazy lists, or ETC...'
     + br
     + br + 'OMFG; functional OTP + RNG language = perfection!!! :D'
+    + br + 'both human & computational languages are translatable'
     + heading('compositional verification', 4)
     +      'a = Ada private function'
     + br + 'b = Babbage private function'
