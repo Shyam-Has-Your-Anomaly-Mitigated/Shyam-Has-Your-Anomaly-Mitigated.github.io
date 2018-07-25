@@ -17,6 +17,7 @@ var
     + br + 'May the F be ' + w + ' you'
     + br + 'Come ' + w + ' me'
     + br + '2B…'
+    + br + 'do ' + o + ' die'
     + br
     + br + link(format('Others:', 'u'), '') + ' ∮,˜,∎,▮'
     + br + link(format('Proofs' , 'u'), '')
