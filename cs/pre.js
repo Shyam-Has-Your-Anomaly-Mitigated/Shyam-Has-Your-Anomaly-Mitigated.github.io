@@ -289,7 +289,7 @@
     + br + '☐ grammar/syntax/style'
     + br + '☐ pronunciation/semantics/detonation'
     + br + '☐ scientific naming convention (Latin/Greek/ETC)'
-    + br + '☐ mathematical notation; 1 and 2 = 1 + 2 ?'
+    + br + '☑ mathematical notation; 1 and 2 = 1 + 2 ?'
     + br + '☐ designed for Natural Language Processing'
     + br + link('enyay (Tom Scott)', 'https://www.youtube.com/playlist?list=PL96C35uN7xGLDEnHuhD7CTZES3KXFnwm0')
     + br + link('NativLang', 'https://www.youtube.com/user/NativLang')
