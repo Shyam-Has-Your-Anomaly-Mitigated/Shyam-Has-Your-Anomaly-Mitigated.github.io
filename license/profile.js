@@ -8,7 +8,7 @@
     , details = (e, s, t) => ''
         + heading(format('Details', 'u'), 3)
         + format('Name&nbsp;: ', 'b') + document.title
-        + br + format('Email: ', 'b') + link(e, 'mailto:' + e + '?Subject=' + s==C? 'Subpœna': 'Hello%20' + document.title + '!%20:D')
+        + br + format('Email: ', 'b') + link(e, 'mailto:' + e + '?Subject=' + (s==C? 'Subpœna': 'Hello%20' + document.title + '!%20:D'))
         + br + format('Ratio: ', 'b') + percentage(t) + '%'
     , license = (i, u, l, p) => br
         + hr + format('Installation&nbsp;&nbsp;: ', 'b') + i
