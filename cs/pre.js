@@ -49,6 +49,8 @@
     + br + 'both human & computational languages/protocols/ETC are translatable'
     + br
     + br + 'r*n*g* dexing look-up table; the positional address of the table could be based entirely on the o*t*p*, the length of the data (including the table),..'
+    + br
+    + br + 'garbage line noise throughout the message'
     + heading('compositional verification', 4)
     +      'a = Ada private function'
     + br + 'b = Babbage private function'
