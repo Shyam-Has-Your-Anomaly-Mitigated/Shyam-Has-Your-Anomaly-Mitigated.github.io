@@ -9,7 +9,7 @@
     + br + tab + format('A', 'b') + 'nomaly.'
     + br + tab + format('M', 'b') + 'itigated.'
     + br + br + Shyam + ' means ' + link('Dark-Complexioned Lord', 'https://en.wikipedia.org/wiki/List_of_titles_and_names_of_Krishna')
-    + br + br + 'Here is how to pronounce Śyāma'
+    + br + br + 'Here is how to pronounce śyāma'
     + br + '<iframe width=\'200\' height=\'113\' src=\'https://www.youtube-nocookie.com/embed/CxU3JOWzZdg?rel=0&amp;controls=0&amp;showinfo=0\' frameborder=\'0\' allowfullscreen></iframe>'
     + br + br + 'On my left forearm, closer to my elbow, I have 3 magickal dots (a cm each, and spaced that way) in a straight line, extending towards my left hand; those of which, I can cause to disappear/reappear seemingly at will! (I am a 3-bit computer!)'
     + br + br + 'I whisper sweet nothings to my machine and it just listens to me (' + format('like nobody else will', 'i') + '); I am a ' + format('Computer Whisperer', 'b') + ', but I whisper with my ' + link('finger tips', '/mæssage') + '...'
